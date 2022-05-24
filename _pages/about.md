@@ -1,24 +1,25 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: MSc Physics student at <a href="https://www.ubc.ca">The University of British Columbia</a> and the <a href="https://qmi.ubc.ca">Stewart Blusson Quantum Matter Institute</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: self_pic.jpg
+  #address:
+    #<p>555 your office number</p>
+    #<p>123 your address street</p>
+    #<p>Your City, State 12345</p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+My research is in the field of quantum computation and quantum information theory, under the supervision of Dr. [Robert Raussendorf](https://phas.ubc.ca/~raussen/). Broadly, I am interested in understanding the source of the computational speedup that quantum computers have over their classical counterparts. Specifically, my work centers around understanding the computational capabilities of measurement-based quantum computing (MBQC) resource states. I also have an interest in quantum algorithms, quantum machine learning, and quantum compilation.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I graduated with a BSc in Combined Honours in Physics and Mathematics from UBC in May 2022. My honours thesis was on [algorithms for MBQC experiments](/assets/pdf/papers/bach_thesis.pdf), supervised by Dr. Robert Raussendorf.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My CV can be found [here](/assets/pdf/cv/cv.pdf).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Outside of research, I enjoy teaching and outreach (such as through the [UBC Physics Circle](https://outreach.phas.ubc.ca/events/metro-vancouver-physics-circle/)). When I'm not thinking about physics, I like to spend my time biking, playing indie games, and listening to/playing music (you can find songs from my a cappella group Choral Reef [here](https://www.youtube.com/user/UBCacappella/videos)).

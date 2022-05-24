@@ -1,13 +1,19 @@
 ---
 layout: page
-title: submenus
+title: Projects
 nav: true
 nav_order: 3
 dropdown: true
 children: 
-    - title: publications
-      permalink: /publications/
+    - title: Lecture Notes
+      permalink: /notes/
     - title: divider
-    - title: projects
-      permalink: /projects/
+    - title: Textbook Solutions
+      permalink: /solutions/
+    - title: divider
+    - title: Course Projects
+      permalink: /courseprojects/
+    - title: divider
+    - title: Miscellaneous
+      permalink: /misc/
 ---
