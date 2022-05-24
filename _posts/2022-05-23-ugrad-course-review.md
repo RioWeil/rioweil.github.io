@@ -3,7 +3,7 @@ layout: post
 title: "Looking back: reviewing undergrad courses"
 date: 2022-05-23
 description: Personal thoughts/evaluations of courses I took during my undergrad at UBC.
-categories: [UBC]
+categories: UBC
 ---
 **May 23, 2022.** *Having come to the end of my undergraduate education, it seems like a fitting time to look back at all of the courses I took over my four years at UBC. For each course I have taken, I will list the content covered, give my impressions and opinions, and give two ratings from 1-5; one of the difficulty of the course (relative to when I took it), and another on my overall enjoyment of it. Hopefully this will be a nice way to reflect on all I have learned, and also provide a resource for future physics/math students at UBC for course selection!*
 
