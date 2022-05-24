@@ -23,3 +23,5 @@ I graduated with a BSc in Combined Honours in Physics and Mathematics from UBC i
 My CV can be found [here](/assets/pdf/cv/cv.pdf).
 
 Outside of research, I enjoy teaching and outreach (such as through the [UBC Physics Circle](https://outreach.phas.ubc.ca/events/metro-vancouver-physics-circle/)). When I'm not thinking about physics, I like to spend my time biking, playing indie games, and listening to/playing music (you can find songs from my a cappella group Choral Reef [here](https://www.youtube.com/user/UBCacappella/videos)).
+
+Testing...
