@@ -7,10 +7,10 @@ nav: false
 ---
 Below are solutions to textbooks I have worked through. Please send me an [email](mailto:ryoweil6@student.ubc.ca) if you spot any errors!
 
-## *Introduction to Cosmology* 2nd Edition (Ryden)
+### *Introduction to Cosmology* 2nd Edition (Ryden)
 - **Files:** [PDF](/assets/pdf/projects/solutions/ryden-solutions.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/Ryden-solutions)
 
-## *Quantum Computation and Quantum Information* 10th Anniversary Edition (Nielsen & Chuang)
+### *Quantum Computation and Quantum Information* 10th Anniversary Edition (Nielsen & Chuang)
 - **Files:** [PDF](/assets/pdf/projects/solutions/nc-solutions.pdf)
 - Jointly written with Arnab Adhikary. Currently a work in progress. Hoping to finish by the time I complete my PhD.
 - Progress log is below (X - complete, P - partial).

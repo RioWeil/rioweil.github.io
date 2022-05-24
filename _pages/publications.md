@@ -11,7 +11,7 @@ nav_order: 1
 
 ## Preprints -->
 
-## Bachelor's Thesis
+### Bachelor's Thesis
 - **A Simulation of a Simulation: Algorithms for Measurement-Based Quantum Computing Experiments** 
   - [PDF](/assets/pdf/papers/bach_thesis.pdf)
   - UBC Library Link: Coming soon!

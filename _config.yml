@@ -84,7 +84,7 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 
 blog_name: Rio's Ramblings # blog_name will be displayed in your blog page
 blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: Various thoughts about Physics and university.
+blog_description: Thoughts on physics and everything else.
 permalink: /blog/:year/:title/
 
 # Pagination

@@ -7,7 +7,7 @@ categories: ubc
 ---
 **May 23, 2022.** *Having come to the end of my undergraduate education, it seems like a fitting time to look back at all of the courses I took over my four years at UBC. For each course I have taken, I will list the content covered, give my impressions and opinions, and give two ratings from 1-5; one of the difficulty of the course (relative to when I took it), and another on my overall enjoyment of it. Hopefully this will be a nice way to reflect on all I have learned, and also provide a resource for future physics/math students at UBC for course selection!*
 
-## Contents
+### Contents
 
 1. <a href="#sec-phys">Physics</a>
 - <a href="#course-SCIE001PHYS" name="#course-SCIE001PHYS"> SCIE 001 - Science One Physics</a>
@@ -70,9 +70,9 @@ categories: ubc
 - <a href="#course-PSYC307" name="#course-PSYC307"> PSYC 307 - Cultural Psychology</a>
 
 
-## 1. Physics <a id="sec-phys" name="sec-phys"></a>
+### 1. Physics <a id="sec-phys" name="sec-phys"></a>
 
-### SCIE 001 - Science One Physics <a id="course-SCIE001PHYS" name="course-SCIE001PHYS"></a>
+#### SCIE 001 - Science One Physics <a id="course-SCIE001PHYS" name="course-SCIE001PHYS"></a>
 - **Instructors:** James Charbonneau & Robert Raussendorf
 - **Textbook:** *Physics for Scientists and Engineers* by Knight.
 - **Topics Covered:** Translational Kinematics (Newton's Laws, Momentum), The Euler Method, Thermodynamics (Energy, Temperature, Laws of Thermodynamics, Heat Engines, Entropy), Rotational Kinematics (Newton's Laws for Rotations, Angular Momentum), Special Relativity (Time Dilation, Length Contraction, Relativity of Simultaneity, Relativistic Momentum and Energy), Waves (Mathematical Description, Standing Waves and Music, Interference), Quantum Mechanics (Double Slit Experiment, Schrodinger Equation, Stern-Gerlach and Spin), Electrostatics (Electric Fields, Gauss's Law, Electric Potential), Circuits (Current, Resistance, Kirchhoff's Laws, Capacitance (Magnetic Fields, Induction, Faraday's Law).
@@ -80,7 +80,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - A definite step up from high school physics, and some of the units were quite conceptually challenging (e.g. thermodynamics, special relativity, quantum mechanics).
 - **Overall Rating:** 5/5 - I can't imagine a better introduction to the subject.
 
-### PHYS 107 - Enriched Experimental Physics I <a id="course-PHYS107" name="course-PHYS107"></a>
+#### PHYS 107 - Enriched Experimental Physics I <a id="course-PHYS107" name="course-PHYS107"></a>
 - **Instructor:** Joss Ives
 - **Textbook:** None.
 - **Topics Covered:** Experimental Design and Iteration, Using Excel, Uncertainty Estimation, Uncertainty Propogation, Mean and Standard Deviation, Model Fitting and Residuals. Experiments done were Hooke's Law, Pendulum Period, Single-Slit Diffraction, RC Circuits, Light Intensity.
@@ -88,7 +88,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - There are quite a few new concepts here and being such a departure from previous encounters with experiments, it can be a lot to take in. The pacing is also a bit stressful.
 - **Overall Rating:** 3.5/5 - I honestly didn't enjoy the course too much at the time, so don't want to rate it too high; that said it is a course that I find extremely valuable in retrospect and can almost universally recommend.
 
-### PHYS 109 - Enriched Experimental Physics II <a id="course-PHYS109" name="course-PHYS109"></a>
+#### PHYS 109 - Enriched Experimental Physics II <a id="course-PHYS109" name="course-PHYS109"></a>
 - **Instructor:** Joss Ives
 - **Textbook:** None.
 - **Topics Covered:** Everything covered in PHYS 107, as well as Log-log/semi-log plots and $$\chi^2$$ fitting. Experiments done were Radiation shielding, Index of refraction, Spring-mass oscillation, Distance dependence of quadrapole potential, LR circuits, Standing waves.
@@ -96,7 +96,7 @@ categories: ubc
 - **Difficulty Rating:** 3/5 - Easier to deal with after the slight cognitive overload of concepts in 107.
 - **Overall Rating:** 4/5 - Many small factors that make the second half of first-year labs slightly more enjoyable.
 
-### PHYS 200 - Relativity and Quanta <a id="course-PHYS200" name="course-PHYS200"></a>
+#### PHYS 200 - Relativity and Quanta <a id="course-PHYS200" name="course-PHYS200"></a>
 - **Instructor:** Douglas Scott
 - **Textbook:** *Special Relativity* by Helliwell.
 - **Topics Covered:** Historical Development of Special Relativity, Time Dilation, Length Contraction, Relativity of Simultaneity, Lorentz Transformations, Spacetime Intervals and Invariants, Relativistic Momentum and Energy, Historical Development of Quantum, Photoelectric Effect, Quantum States and Eigenstates, Superposition, Position and Momentum Wavefunctions, Measurement, Heisenberg Uncertainty Principle, Time Evolution and the Schrodinger Equation, Infinite Square Well, Absorption and Emission.
@@ -104,7 +104,7 @@ categories: ubc
 - **Difficulty Rating:** 3/5 - Relativity and QM are notorious for being tricky conceptually. But if one engages with the course material, doing well is not too difficult.
 - **Overall Rating:** 3.5/5 - Fun, but has the potential to be better! Perhaps I would have also enjoyed it a bit more if I hadn't learned the concepts already in Science One.
 
-### PHYS 203 - Thermal Physics I <a id="course-PHYS203" name="course-PHYS203"></a>
+#### PHYS 203 - Thermal Physics I <a id="course-PHYS203" name="course-PHYS203"></a>
 - **Instructor:** Joanna Karczmarek
 - **Textbook:** *An Introduction to Thermal Physics* by Schroeder.
 - **Topics Covered:** Probability, Laws of Thermodynamics, Temperature, The Partition Function, Ideal Gases, Equipartition Theorem, Heat Capacities, Heat Engines, Macrostates and Microstates, Entropy, 2-State Paramagnet, Einstein Solid, Enthalpy and Free Energy, Chemical Potential, Thermochemistry, Thermodynamics of Water, The Steam Engine, Canonical and Grand Canonical Ensembles, Fermi-Dirac and Bose-Einstein Statistics, Density of States, Blackbody Radiation.
@@ -112,7 +112,7 @@ categories: ubc
 - **Difficulty Rating:** 4.5/5 - Covers a lot of material, and a lot of it is novel and not initially intuitive. 
 - **Overall Rating:** 5/5 - The best second-year physics course by some margin.
 
-### PHYS 210 - Introduction to Computational Physics <a id="course-PHYS210" name="course-PHYS210"></a>
+#### PHYS 210 - Introduction to Computational Physics <a id="course-PHYS210" name="course-PHYS210"></a>
 - **Instructor:** Carl Michal
 - **Textbook:** None; but [*Think Python*](https://greenteapress.com/wp/think-python-2e/) by Downey was an optional resource.
 - **Thoughts:** Linux and Terminal Usage, Coding in Python, Numbers and Strings, NumPy, Arrays and Broadcasting, Functions, File I/O, Conditionals, SciPy Fitting, Loops, Matplotlib, Containers, Animation, Numerical Methods for ODEs and PDEs, Simulations.
@@ -120,7 +120,7 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - I think the difficulty of this course largely boils down to how quickly one can become comfortable with programming; I didn't struggle with it too much, but could see it being more difficult for others. I could certainly see some prior experience with programming helping.
 - **Overall Rating:** 4/5 - A good intro to Physics programming, with some great projects!
 
-### PHYS 216 - Intermediate Mechanics <a id="course-PHYS216" name="course-PHYS216"></a>
+#### PHYS 216 - Intermediate Mechanics <a id="course-PHYS216" name="course-PHYS216"></a>
 - **Instructor:** Ludovic Van Waerbeke
 - **Textbook:** *Classical Mechanics* by Taylor.
 - **Topics Covered:** Newton's Laws, Cylindrical/Spherical Polar Coordinates, Air Resistance and Trajectories, Charge in B-field, Momentum, Angular Momentum, Kinetic and Potential Energy, Conservative Forces, Simple Harmonic Motion, Damped and Driven Damped Oscillators, The Euler-Lagrange Equations, Lagrangian Mechanics, The Two-Body Problem, Kepler Orbits, Non-Inertial Frames, Fictitious Forces, Rigid Body Rotation, The Inertia Tensor.
@@ -128,7 +128,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - Definitely trickier than previous encounters with mechanics, and there is a lot to chew on; but nothing that can't be understood with effort and time spend solving problems.
 - **Overall Rating:** 3.5/5 - Overall an enjoyable course that formalizes what came before, and introduces many new enjoyable topics in mechanics.
 
-### PHYS 219 - Intermediate Experimental Physics I <a id="course-PHYS219" name="course-PHYS219"></a>
+#### PHYS 219 - Intermediate Experimental Physics I <a id="course-PHYS219" name="course-PHYS219"></a>
 - **Instructors:** Rob Kiefl & Andrzej Kotlicki
 - **Textbook:** None.
 - **Topics Covered:** Circuit Construction, Oscilloscopes, Function Generators, RC Circuits, AC Filters, LCR Circuits, Semiconductor Diodes, Transistors, Operational Amplifiers, AM Radio Receivers.
@@ -136,7 +136,7 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - The course is more time-consuming than difficult, but does occasionally require banging one's head against the wall (or calling a TA for help) when things don't work.
 - **Overall Rating:** 2.5/5 - Not particularly fun, but saved by a great final project and TA.
 
-### PHYS 229 - Intermediate Experimental Physics II <a id="course-PHYS229" name="course-PHYS229"></a>
+#### PHYS 229 - Intermediate Experimental Physics II <a id="course-PHYS229" name="course-PHYS229"></a>
 - **Instructor:** Douglas Bonn
 - **Textbook:** None.
 - **Topics Covered:** Experimental Design and Iteration, Scientific Writing, Producing Figures. Experiments done were determining the transfer function of a system via Fourier analysis, Measurement of the gas constant, and Measuring heat expansion of metal with laser interferometry.
@@ -144,7 +144,7 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - All experiments in the course have problems to work through, but with thought and effort it is not hard to do well.
 - **Overall Rating:** 4.5/5 - My favourite lab course of my undergrad.
 
-### PHYS 301 - Electricity and Magnetism <a id="course-PHYS301" name="course-PHYS301"></a>
+#### PHYS 301 - Electricity and Magnetism <a id="course-PHYS301" name="course-PHYS301"></a>
 - **Instructor:** Joerg Rottler
 - **Textbook:** *Introduction to Electrodynamics* by Griffiths.
 - **Topics Covered:** Vector Fields, Div-Grad-Curl, The Dirac Delta Function, The Electric Field, Gauss's LawElectric Potential, Work and Energy, Conductors, Laplace's Equation, The Method of Images, Separation of Variables, Multipole Expansion, Polarization, Electric Displacement, Dielectrics, Lorentz Force Law, Biot-Savart Law, Ampere's Law, Magnetic Vector Potential, Magnetization, Auxiliary Fields, Electromagnetic Induction, Faraday's Law, Maxwell's Equations.
@@ -152,7 +152,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - Geometry gives me some trouble, so I struggled at times; but if your vector calculus chops are up to speed then the course shouldn't give you too much trouble.
 - **Overall Rating:** 4/5 - Standard material delivered well; E&M is my least favourite physics subfield, but I did enjoy this course.
 
-### PHYS 304 - Introduction to Quantum Mechanics <a id="course-PHYS304" name="course-PHYS304"></a>
+#### PHYS 304 - Introduction to Quantum Mechanics <a id="course-PHYS304" name="course-PHYS304"></a>
 - **Instructor:** Jeff Young
 - **Textbook:** *Introduction to Quantum Mechanics* by Griffiths.
 - **Topics Covered:** The Schrodinger Equation, Probability, Position and Momentum, The Uncertainty Principle, Stationary States, the Infinite Square Well, The Quantum Harmonic Oscillator, The Free Particle, The Gaussian Wavepacket, the Finite Square Well, Hilbert Space, Hermitian Operators, General Uncertainty Principle, Time-Energy Uncertainty Principle, The Schrodinger Equation in 3D, Radial Potentials and Spherical Harmonics, The Hydrogen Atom, Angular Momentum, Spin.
@@ -160,7 +160,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - Can be occasionally tricky as many of the problems dealt with are departures from techniques used in other parts of physics.
 - **Overall Rating:** 3.5/5 - Certainly enjoyable, but unfortunately the first course in quantum mechanics is left having to cover some content that isn't the most interesting.
 
-### PHYS 306 - Advanced Mechanics <a id="course-PHYS306" name="course-PHYS306"></a>
+#### PHYS 306 - Advanced Mechanics <a id="course-PHYS306" name="course-PHYS306"></a>
 - **Instructor:** Joerg Rottler
 - **Textbook:** *Classical Mechanics* by Taylor.
 - **Topics Covered:** The Variational Principle, Generalized Momenta and Ignorable Coordinates, Lagrange's Equations for Holonomic Systems, Lagrangians for Electromagnetic Fields, Symmetries and Conservation Laws, Lagrange Multipliers, Coupled Oscillators, Normal Coordinates, Non-inertial Frames, Focault Pendulum, Rigid Body Rotational Motion, Inertia Tensor, Principle Axes of Inertia, Euler's Equations, Spinning Top, Euler Angles, Hamiltonian Mechanics, Phase Space and Canonical Transformations, The Poisson Bracket, Liouville's Theorem, Scattering Theory, Differential Cross Section, The Wave Equation, Stress and Strain, Nonlinear Dynamics and Chaos.
@@ -168,7 +168,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - Some tricky topics (rigid body rotation especially), but with practice/effort not too hard to do well.
 - **Overall Rating:** 3.5/5 - An enjoyable second course in classical mechanics, though nothing to rave about.
 
-### PHYS 319 - Electronics Laboratory <a id="course-PHYS319" name="course-PHYS319"></a>
+#### PHYS 319 - Electronics Laboratory <a id="course-PHYS319" name="course-PHYS319"></a>
 - **Instructor:** Andrzej Kotlicki
 - **Textbook:** *Introduction to Embedded Systems* by Jimenez/Palomera/Couvertier
 - **Topics Covered:** Circuit Design, "Programming" in Binary, Programming in Assembly, Programming in C, Using various electronic components (such as LED displays, buzzers, microphones, temperature sensors, and ultrasonic sensors).
@@ -176,7 +176,7 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - Can be tricky (particularly troubleshooting and working out problems in low-level languages), but you are guaranteed to do well if you put in the effort.
 - **Overall Rating:** 3.5/5 - Quite fun when things work, frustrating when they don't.
 
-### PHYS 401 - Electromagnetic Theory <a id="course-PHYS401" name="course-PHYS401"></a>
+#### PHYS 401 - Electromagnetic Theory <a id="course-PHYS401" name="course-PHYS401"></a>
 - **Instructor:** Kristin Schleich
 - **Textbook:** *Introduction to Electrodynamics* by Griffiths and [*The Feynman Lectures on Physics Volume II*](https://www.feynmanlectures.caltech.edu/II_toc.html) by Feynman/Leighton/Sands.
 - **Topics Covered:** Maxwell's Equations in Vacuum, Plane Waves, Poynting Vectors, Intensity, Polarization, Scalar and Vector Potentials, Gauges, Maxwell's Equations in Dielectrics, Reflection and Transmission at an Interface, EM Waves in Ohmic Conductors, Frequency Dependence of Index of Refraction, Phase and Group Velocity, Slab Waveguide, Rectangular Waveguide, Transmission Lines, Retarded Potentials, Electric Dipole Radiation, Magnetic Dipoles,  Lienard-Wiechert Potentials, Fields from Moving Charges, Special Relativity, Four-Vectors, Physics in Minkowski Spacetime, Relativistic Dynamics, Transformations of Electromagnetic Fields.
@@ -184,7 +184,7 @@ categories: ubc
 - **Difficulty Rating:** 4/5 - Quite a few nontrivial derivations that can be difficult to wrap your head around.
 - **Overall Rating:** 2/5 - Disappointing, but also possible that I just dislike E&M.
 
-### PHYS 402 - Applications of Quantum Mechanics <a id="course-PHYS402" name="course-PHYS402"></a>
+#### PHYS 402 - Applications of Quantum Mechanics <a id="course-PHYS402" name="course-PHYS402"></a>
 - **Instructor:** Robert Raussendorf
 - **Textbook:** *Modern Quantum Mechanics* by Sakurai/Napolitano.
 - **Topics Covered:** The Stern-Gerlach Experiment, Bra-Ket Formalism, Quantum Measurement, Observables, Position and Momentum, The Schrodinger Equation, The Heisenberg Picture, Ehrenfest's Theorem, The Quantum Harmonic Oscillator, Entanglement and Its Applications, The No-Cloning Theorem, Density Operators, Impossibility of Superluminal Communication, Quantum Cryptography, Noether's Theorem, Parity Symmetry, Lattice Translation and Bloch's Theorem, Rotational Symmetry, Eigenvalues of Angular Momentum, Addition of Angular Momentum, The Wigner-Eckart Theorem, Time-Independent Perturbation Theory, Time-Dependent Perturbation Theory, The WKB Approximation. 
@@ -192,7 +192,7 @@ categories: ubc
 - **Difficulty Rating:** 4/5 - Definitely a more advanced approach to quantum mechanics. There were some concepts that didn't fully click until TAing the course a year later.
 - **Overall Rating:** 5/5 - Possibly my favourite physics course to date.
 
-### PHYS 403 - Statistical Mechanics <a id="course-PHYS403" name="course-PHYS403"></a>
+#### PHYS 403 - Statistical Mechanics <a id="course-PHYS403" name="course-PHYS403"></a>
 - **Instructor:** Philip Stamp
 - **Textbook:** None; used [notes](https://phas.ubc.ca/~stamp/TEACHING/PHYS403/NOTES/index22.html) written by Stamp.
 - **Topics Covered:** Probability, Indistinguishability in Quantum Mechanics, Thermodynamics, Temperature, Thermodynamic Potentials, Heat Capacity, Chemical Potential, Ideal Gases, Microstates and Macrostates, Density of States, Microcanonical Ensemble, Entropy, Canonical Ensemble, Grand Canonical Ensemble, Quantum and Classical Gases, Fermi-Dirac Statistics, Bose-Einstein Statistics, Maxwell-Boltzmann Statistics, Bose Einstein Condensation, Superfluids, Photon Gas, Planck Distribution, Black Body Radiation, Fermi Liquids, Introduction to Phase Transitions.
@@ -200,7 +200,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - Definitely some tricky problems (in lecture and in the assignments), though the exams were very fair. I don't completely understand everything that was discussed.
 - **Overall Rating:** 3.5/5 - A bit chaotic, but also a good bit of fun.
 
-### ASTR 403 - Cosmology <a id="course-ASTR403" name="course-ASTR403"></a>
+#### ASTR 403 - Cosmology <a id="course-ASTR403" name="course-ASTR403"></a>
 - **Instructor:** Douglas Scott
 - **Textbook:** *Introduction to Cosmology* by Ryden.
 - **Topics Covered:** Units in Astronomy, Olber's Paradox, The Cosmological Principle, Redshift, Types of Particles, Special Relativity, General Relativity and Curvature, The Robertson-Walker Metric, Proper Distance, The Friedmann Equation, The Fluid Equation, The Acceleration Equation, The Cosmological Constant, Model Universes, The Benchmark Model, Measuring Cosmological Parameters, Types of Distances, Dark Matter, Gravitational Lensing, The Cosmic Microwave Background, Recombination, Temperature Fluctuations in the CMB, Nucleosynthesis, Inflation, Structure Formation, The Power Spectrum, Baryon Acoustic Oscillations. 
@@ -208,7 +208,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - Nothing mathematically hard, but towards the end there are some harder concepts to grasp (e.g the CMB, Inflation, Structure Formation). 
 - **Overall Rating:** 3.5/5 - Nice to finally understand the universe, but not sure if I enjoyed the course as much as I would have liked to.
 
-### PHYS 449 - Honours Thesis <a id="course-PHYS449" name="course-PHYS449"></a>
+#### PHYS 449 - Honours Thesis <a id="course-PHYS449" name="course-PHYS449"></a>
 - **Instructor:** Rob Kiefl & Robert Raussendorf (supervisor)
 - **Textbook:** None.
 - **Topics Covered:** Scientific Writing, Scientific Presentations, Conducting Research. Topics in My Thesis: Quantum Computation, Measurement-Based Quantum Computation, Experiments with Noisy Intermediate-Scale Quantum Devices, Quantum Computational Power, Symmetry-Protected Topological Phases, Decoherence, Non-Unitary Operations, Variational Quantum Eigensolvers.
@@ -216,9 +216,9 @@ categories: ubc
 - **Difficulty Rating:** 5/5 - Conducting original research is hard (even with extensive support from supervisors), and so is writing and presenting about it. 
 - **Overall Rating:** 4.5/5 - Research is slower and less linear than coursework (of course), but also more meaningful.
 
-## 2. Math <a id="sec-math" name="sec-math"></a>
+### 2. Math <a id="sec-math" name="sec-math"></a>
 
-### SCIE 001 - Science One Mathematics <a id="course-SCIE001MATH" name="course-SCIE001MATH"></a>
+#### SCIE 001 - Science One Mathematics <a id="course-SCIE001MATH" name="course-SCIE001MATH"></a>
 - **Instructors:** Stephen Gustafson & Costanza Piccolo
 - **Textbook:** [*CLP-1 Differential Calculus*](https://personal.math.ubc.ca/~CLP/CLP1/) and [*CLP-2 Integral Calculus*](https://personal.math.ubc.ca/~CLP/CLP2/) by Feldman/Rechnitzer/Yeager.
 - **Topics Covered:** Limits, Continuity, Intermediate Value Theorem, Derivatives, Linear Approximation and the Euler Method, Implicit Differentiation, Antiderivatives, The Mean Value Theorem, Related Rates, Taylor Polynomials, Optimization, Curve Sketching, Riemann Sums, The Fundamental Theorem of Calculus, Substitution, Area, Volume, Integration by Parts, Trigonometric Substitution, Partial Fractions, Numerical Integration, Improper Integrals, Work, Averages, Centre of Mass, Differential Equations, Probability, Sequences, Series, Convergence Tests, Power Series, Taylor Series.
@@ -226,7 +226,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - The exams are a step up from high school, even if the content is somewhat standard.
 - **Overall Rating:** 3.5/5 - Nothing to complain about, but nothing super striking, either!
 
-### MATH 215 - Elementary Differential Equations I <a id="course-MATH215" name="course-MATH215"></a>
+#### MATH 215 - Elementary Differential Equations I <a id="course-MATH215" name="course-MATH215"></a>
 - **Instructor:** Wayne Nagata
 - **Textbook:** [*Notes on Diffy Qs: Differential Equations for Engineers*](https://www.jirka.org/diffyqs/) by Lebl.
 - **Topics Covered:** Separation of Variables, Integration Factor, The Euler Method, Constant Coefficient Second Order Linear ODEs, Mechanical Vibrations, Nonhomogenous Equations, Forced Oscillations and Resonance, Phase Space, Systems of ODEs, Eigenvalue Method, Variation of Parameters, The Laplace Transform, Transforms of ODEs, Impulse Response.
@@ -234,7 +234,7 @@ categories: ubc
 - **Difficulty Rating:** 2/5 - Nothing really hard, but that's not saying much when nothing is really interesting.
 - **Overall Rating:** 1.5/5 - Boring is the word that comes to mind when asked to describe this course.
 
-### MATH 217 - Multivariable and Vector Calculus <a id="course-MATH217" name="course-MATH217"></a>
+#### MATH 217 - Multivariable and Vector Calculus <a id="course-MATH217" name="course-MATH217"></a>
 - **Instructor:** Stephen Gustafson
 - **Textbook:** [*CLP-3 Multivariable Calculus*](https://personal.math.ubc.ca/~CLP/CLP3/) and [*CLP-4 Vector Calculus*](https://personal.math.ubc.ca/~CLP/CLP4/) by Feldman/Rechnitzer/Yeager.
 - **Topics Covered:** Vectors and Geometry, Vector Functions and Curves, Surfaces, Functions of Several Variables, Continuity, Partial Derivatives, Tangent Planes, Linear Approximation, Chain Rule, Directional Derivatives, Gradient, Optimization, Derivative Tests, Lagrange Multipliers, Double Integrals, Polar Coordinates, Triple Integrals, Cylindrical and Spherical Coordinates, Line Integrals, Conservative Vector Fields, Surface Integrals, The Divergence Theorem, Green's Theorem, Stoke's Theorem.
@@ -242,7 +242,7 @@ categories: ubc
 - **Difficulty Rating:** 4/5 - Conceptually is a natural extension of first-year calculus, but moves fast. 
 - **Overall Rating:** 3.5/5 - Well-taught, but not the most intriguing material.
 
-### MATH 220 - Mathematical Proof <a id="course-MATH220" name="course-MATH220"></a>
+#### MATH 220 - Mathematical Proof <a id="course-MATH220" name="course-MATH220"></a>
 - **Instructor:** Boaz Elazar
 - **Textbook:** [*Book of Proof*](https://www.people.vcu.edu/~rhammack/BookOfProof/) by Hammack.
 - **Topics Covered:** Sets, Logic, Direct Proof, Contrapositive Proof, Proof by Contradiction, Induction, Relations, Cardinality of Sets.
@@ -250,7 +250,7 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - Not hard compared to honours math courses. May be trickier if it is one's first introduction to mathematical proof.
 - **Overall Rating:** 3.5/5 - Nothing to complain about, but I wouldn't have taken it unless I had to.
 
-### MATH 223 - Honours Linear Algebra <a id="course-MATH223" name="course-MATH223"></a>
+#### MATH 223 - Honours Linear Algebra <a id="course-MATH223" name="course-MATH223"></a>
 - **Instructor:** Yaniv Plan
 - **Textbook:** None; used [notes](https://www.yanivplan.com/math-223) written by Richard Anstee. *Linear Algebra and Its Applications* by Lay and *Linear Algebra* by Friedberg/Insel/Spence were optional resources.
 - **Topics Covered:** Matrix Algebra, Inverses, Linear Transformations, Eigenvectors and Eigenvalues, Diagonalization, Change of coordinates, Gaussian elimination, Determinants, Abstract Vector Spaces, Span, Linear Independence, Dimension, Bases, Differential Equations, Complex Numbers, Vector Geometry, Orthogonal Vector Spaces, Gram-Schmidt Algorithm, Least Squares, Symmetric Matrices, Spectral Theorem, Singular Value Decomposition.
@@ -258,7 +258,7 @@ categories: ubc
 - **Difficulty Rating:** 5/5 - Brutal examinations and difficult homeworks. Honours math courses do give me the impression of ``throwing students off the deep end'' and seeing how they do. But at least here I think people do reasonably well in the end; the true difficulties arise in third year.
 - **Overall Rating:** 5/5 - The course that made me switch into doing a Combined Honours in Physics and Math (from Biophysics). Probably one of my favourite courses in university, and I can't reccomend it enough. 
 
-### MATH 300 - Introduction to Complex Variables <a id="course-MATH300" name="course-MATH300"></a>
+#### MATH 300 - Introduction to Complex Variables <a id="course-MATH300" name="course-MATH300"></a>
 - **Instructor:** Gordon Slade
 - **Textbook:** *Fundamentals of Complex Analysis: with Applications to Engineering and Science* by Saff/Snider.
 - **Topics Covered:** Complex Numbers, Complex Exponentials and Polar Form, Powers and Roots, Functions, Limits and Continuity, Derivatives, Analyticity, The Cauchy-Riemann Equations, Harmonic Functions, Polynomials, Trigonometric and Hyperbolic Functions, The Complex Logarithm, Branch Cuts, Contours, Contour Integrals, Cauchy's Integral Theorem, Cauchy's Integral Formula, Bounds on Analytic Functions, Series, Taylor Series, Convergence, Laurent Series, Zeros and Singularities, The Residue Theorem, Evaluating Integrals with the Residue Theorem, Iterated Maps: Julia and Mandelbrot Sets.
@@ -266,7 +266,7 @@ categories: ubc
 - **Difficulty Rating:** 3/5 - No hard proofs, mainly computation/applying the theorems learned in class; do the practice problems and it is not too hard to do well. 
 - **Overall Rating:** 3.5/5 - Elegant at times to be sure, but there are more stimulating math courses out there.
 
-### MATH 301 - Applied Analysis <a id="course-MATH301" name="course-MATH301"></a>
+#### MATH 301 - Applied Analysis <a id="course-MATH301" name="course-MATH301"></a>
 - **Instructor:** Gordon Slade
 - **Textbook:** *Fundamentals of Complex Analysis: with Applications to Engineering and Science* by Saff/Snider and *Complex Variables: Introduction and Applications* by Ablowitz/Fokas.
 - **Topics Covered:** Integrals of Multi-Valued Functions, The Argument Principle, Rouche's Theorem, Analytic Continuation, Conformal Mapping, Mobius Transformations, The Schwarz-Christoffel Transformation, Solving Boundary Value Problems with Conformal Mappings, Solving Flow Problems with Conformal Mappings, Asymptotic Notation, Asymptotic Evaluation of Integrals, The Laplace Transform, The Gamma Function, Watson's Lemma, Laplace's Method, Stirling's formula, Bessel Functions, Stationary Phase Theorem, The Method of Steepest Descent, Inverse Laplace Transform, Fourier and Inverse Fourier Transform.
@@ -274,7 +274,7 @@ categories: ubc
 - **Difficulty Rating:** 3/5 - Basically the same difficulty as MATH 300; you don't have to prove difficult theorems, but just know how to apply them.
 - **Overall Rating:** 3/5 - I enjoyed conformal mapping, but other than that on average the MATH 300 material was a little more fundamental and a little more interesting.
 
-### MATH 316 - Elementary Differential Equations II <a id="course-MATH316" name="course-MATH316"></a>
+#### MATH 316 - Elementary Differential Equations II <a id="course-MATH316" name="course-MATH316"></a>
 - **Instructor:** Shamil Asgarli
 - **Textbook:** None; used [notes](https://personal.math.ubc.ca/~peirce/) written by Anthony Peirce.
 - **Topics Covered:** Review of ODEs, Series Solutions to Differential Equations, Singular Points, Frobenius Series, Finite Difference Method, Separation of Variables, Fourier Series, Bessel's Inequality, Parseval's Theorem, Heat Equation, Eigenfunction Expansion, Wave Equation, D’Alembert’s Solution, Laplace's Equation on Rectangular and Circular Domains, Boundary Conditions, Sturm-Louiville Theory.
@@ -282,7 +282,7 @@ categories: ubc
 - **Difficulty Rating:** 2/5 - Nothing too conceptually challenging; mainly computational.
 - **Overall Rating:** 4/5 - A case of fantastic prof, OK material.
 
-### MATH 318 - Probability with Physical Applications <a id="course-MATH318" name="course-MATH318"></a>
+#### MATH 318 - Probability with Physical Applications <a id="course-MATH318" name="course-MATH318"></a>
 - **Instructors:** Geoffrey Schiebinger & Omer Angel
 - **Textbook:** *Introduction to Probability Models* by Ross.
 - **Topics Covered:** Permutations and Combinations, Probability Spaces, Conditional Probability, Discrete Random Variables, Continuous Random Variables, Expectation, Variance, Joint Distributions, Independence, Poisson Processes, Moment Generating Functions, Characteristic Functions, Convergence of Random Variables, Weak and Strong Law of Large Numbers, Central Limit Theorem, Statistical Estimation, Hypothesis Testing, Random Walks, Conditional Expectation, Markov Chains, Stationary Distributions, Branching Processes, Ising Model.
@@ -290,7 +290,7 @@ categories: ubc
 - **Difficulty Rating:** 4/5 - Although not as rushed as 217, there are quite a few tricky concepts here, and a lot is covered.
 - **Overall Rating:** 4/5 - Highly interesting course, a great introduction to probability (and non-math students need not go further).
 
-### MATH 320 - Real Variables I <a id="course-MATH320" name="course-MATH320"></a>
+#### MATH 320 - Real Variables I <a id="course-MATH320" name="course-MATH320"></a>
 - **Instructors:** Josh Zahl & Sven Bachmann
 - **Textbook:** *Principles of Mathematical Analysis* by Rudin.
 - **Topics Covered:** The Rational Numbers, Ordered Sets, The LUB Property, Fields and Ordered Fields, Integer Roots, Construction of the Real Numbers, The Complex Field, Euclidean Space, Cardinality, Topology of Metric Spaces, Compactness, The Cantor Set, Sequences, Cauchy Sequences, Limsup and Liminf, Series, Ratio and Root Tests, Power Series, Limits, Continuity, Intermediate Value Theorem, Derivatives, Mean Value Theorem, Taylor's Theorem.
@@ -298,7 +298,7 @@ categories: ubc
 - **Difficulty Rating:** 5/5 - Lives up to the reputation of being one of the most difficult undergraduate courses; prepare to have your mathematical abilities pushed to their limits!
 - **Overall Rating:** 4.5/5 - Though gruelling, I came out of the course being much more proficient in math and with a deeper appreciation for it.
 
-### MATH 321 - Real Variables II <a id="course-MATH321" name="course-MATH321"></a>
+#### MATH 321 - Real Variables II <a id="course-MATH321" name="course-MATH321"></a>
 - **Instructor:** Gordon Slade
 - **Textbook:** *Principles of Mathematical Analysis* by Rudin.
 - **Topics Covered:** The Riemann-Stieltjes Integral and its Properties, The Fundamental Theorem of Calculus, Sequences and Series of Functions, Uniform Convergence, Equicontinuity, The Stone-Weierstrass Theorem, Power Series, The Exponential Function, The Logarithm, Trigonometric Functions, Fourier Series, Banach Fixed Point Theorem, Differentiation of Multi-Variable Functions, The Inverse Function Theorem.
@@ -306,7 +306,7 @@ categories: ubc
 - **Difficulty Rating:** 4.5/5 - On par or more difficult than 320, but I got used to it.
 - **Overall Rating:** 4/5 - Great, though not hitting quite the same highs as MATH 320.
 
-### MATH 322 - Introduction to Group Theory <a id="course-MATH322" name="course-MATH322"></a>
+#### MATH 322 - Introduction to Group Theory <a id="course-MATH322" name="course-MATH322"></a>
 - **Instructor:** Vinayak (Nike) Vatsal
 - **Textbook:** *Abstract Algebra* by Dummit/Foote.
 - **Topics Covered:** Group Axioms, Dihedral Groups, Symmetric Groups, Matrix Groups, Homomorphism and Isomorphism, Subgroups, Centralizers and Normalizers, Stablizers and Kernels, Cylic Groups, Quotient Groups, Cosets and Lagrange's Theorem, Isomorphism Theorem, Transpositions and the Alternating Group, Group Actions, The Sylow theorems.
@@ -314,7 +314,7 @@ categories: ubc
 - **Difficulty Rating:** 5/5 - Probably the most I've ever struggled with a course. But this could also just be that algebra doesn't click as quickly for me as other fields of math.
 - **Overall Rating:** 1/5 - Probably the most dissapointing mathematics experience of my undergrad, and I don't think the course did such a beautiful subject justice.
 
-### MATH 418 - Probability <a id="course-MATH418" name="course-MATH418"></a>
+#### MATH 418 - Probability <a id="course-MATH418" name="course-MATH418"></a>
 - **Instructor:** Gordon Slade
 - **Textbook:** *A First Look at Rigorous Probability Theory* by Rosenthal.
 - **Topics Covered:** Probability Spaces, $$\sigma$$-algebras, Probability Measures, Extension Theorems, Lebesgue Measure, Random Variables, Independence, Limsup and Liminf of Events, Borel-Cantelli Lemma, Tail Fields, Kolmogorov 0-1 Law, Distributions, Culmulative Distribution Functions, Expectation, Mean, Variance, Covariance, Modes of Convergence, Probability Inequalities, Weak and Strong Law of Large Numbers, Probabity Density Functions, Gambler's Ruin, Convergence Theorems, Moment Generating Functions, Large Deviations, Weak Convergence, Characteristic Functions, Continuity Theorem, Central Limit Theorem, Uniform Integrability, Random Walks, Branching Processes, Percolation. 
@@ -322,7 +322,7 @@ categories: ubc
 - **Difficulty Rating:** 4.5/5 - The material and assessments are both challenging; unsurprising for a grad crosslisted course.
 - **Overall Rating:** 4/5 - A clear but rigorous course; that said I think taking both this and MATH 318 was unnecessary, and while I think I understand probability at a deeper level having gone through it, I don't know if the added insights were worth the stress.
 
-### MATH 420 - Real Analysis I <a id="course-MATH420" name="course-MATH420"></a>
+#### MATH 420 - Real Analysis I <a id="course-MATH420" name="course-MATH420"></a>
 - **Instructor:** Young-Heon Kim
 - **Textbook:** *Real Analysis: Modern Techniques and Their Applications* by Folland.
 - **Topics Covered:** $$\sigma$$-algebras, Measures, Outer Measures, Borel Measures, Measurable Functions, Lebesgue Integration, Modes of Convergence, Convergence Theorems, Product Measures, Multi-variable Integration and Fubini-Tonelli, Signed Measures,  The Lebesgue-Radon-Nikodym Theorem, Complex Measures, Differentiation on Euclidean Space, Norms, $$L^p$$ spaces, Inequalities with Norms, Convolution, Optimal Transport.
@@ -330,7 +330,7 @@ categories: ubc
 - **Difficulty Rating:** 4.5/5 - The level of abstraction here makes it quite difficult; again unsurprising for a grad crosslisted course.
 - **Overall Rating:** 3/5 - A little bit too abstract and not inherently interesting enough for me to fully appreciate.
 
-### MATH 426 - Introduction to Topology <a id="course-MATH426" name="course-MATH426"></a>
+#### MATH 426 - Introduction to Topology <a id="course-MATH426" name="course-MATH426"></a>
 - **Instructor:** Ben Williams
 - **Textbook:** None; used [notes](https://personal.math.ubc.ca/~tbjw/426/index.html) written by Williams. *Topology* by Munkres and [*Algebraic Topology*](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf) by Hatcher were optional resources.
 - **Topics Covered:** Topological Spaces, Separation Axioms, Continuity, Generating Topologies, Induced Topologies (The Subspace and Product Topologies), Coinduced Topologies (The Quotient Topology), Closure, Interior, Boundary, Density, Sequences, Compactness, The Tube Lemma, Compactness in Metric Spaces, Compactifications, Connectedness, Path-Connectedness, Basic Category Theory, Homotopy, Homotopy Category and Homotopy Groups, Contractible Spaces, The Fundamental Groupoid, The Fundamental Group, The Van Kampen Thoerem, Quotient Maps, Topological Groups, Group Actions, Quotients by Group Actions, Covering Spaces, Fundamental Group Action, Lifting, Classification of Covering Spaces, Deck Transformation, Fundamental Groups of Quotients, Quotients by Subgroups, Quotients by Group Actions. 
@@ -338,9 +338,9 @@ categories: ubc
 - **Difficulty Rating:** 5/5 - A lot of terminology, and a lot of techniques. The point-set half of the course is alright in difficulty, but the algebraic topology half of of the course is difficult indeed. 
 - **Overall Rating:** 4.5/5 - Fantastic, and also feels like a nice way to end off a degree in mathematics, tying together analysis and algebra.
 
-## 3. Computer Science <a id="sec-cs" name="sec-cs"></a>
+### 3. Computer Science <a id="sec-cs" name="sec-cs"></a>
 
-### CPSC 110 - Computation, Programs, and Programming <a id="course-CPSC110" name="course-CPSC110"></a>
+#### CPSC 110 - Computation, Programs, and Programming <a id="course-CPSC110" name="course-CPSC110"></a>
 - **Instructor:** Gregor Kiczales
 - **Textbook:** None.
 - **Topics Covered:** Functional programming in Racket, Functions, Recursion, Data Types, Self-Reference, Reference, Helper functions, Binary Search Trees, Mutual Reference, Local Functions, Abstract Functions, Generative Recursion, Search, Accumulators, Graphs.
@@ -348,7 +348,7 @@ categories: ubc
 - **Difficulty Rating:** 2/5 - If one puts in practice, doing well is not too difficult (but this is quite subjective; the course is famously bimodal in its distribution).
 - **Overall Rating:** 4/5 - Quite rich and enjoyable, and I could reccomend it to almost anyone.
 
-### CPSC 210 - Software Construction <a id="course-CPSC210" name="course-CPSC210"></a>
+#### CPSC 210 - Software Construction <a id="course-CPSC210" name="course-CPSC210"></a>
 - **Instructor:** Norm Hutchinson
 - **Textbook:** None.
 - **Topics Covered:** Object-oriented programming in Java, Methods, Classes, Objects, Variables, Conditionals, Loops, Data Abstraction, Types, Interfaces, Extensions, Overriding, Exception Handling, Testing, Cohesion and Coupling, Liskov Substitution, Refactoring, Composite and Observer Patterns, Iterators.
@@ -356,7 +356,7 @@ categories: ubc
 - **Difficulty Rating:** 1.5/5 - There isn't much here to learn, so not much effort required.
 - **Overall Rating:** 2/5 - Personal project was fun and that's about it.
 
-### CPSC 221 - Basic Algorithms and Data Structures <a id="course-CPSC221" name="course-CPSC221"></a>
+#### CPSC 221 - Basic Algorithms and Data Structures <a id="course-CPSC221" name="course-CPSC221"></a>
 - **Instructor:** Geoffrey Tien
 - **Textbook:** *Objects, Abstraction, Data Structures, and Design using C++* by Koffman/Wolfgang.
 - **Topics Covered:** Programming in C++, Asymptotic Analysis, Sorting, Stack and Heap Memory, Pointers, Linked Lists, Stacks, Queues, Trees, Binary Search Trees, AVL Trees, B-Trees, Hash Tables, Priority Queues, Heaps, Disjoint Sets, Graphs, Breadth-First and Depth-First Search, Minimum Spanning Trees, Kruskal's Algorithm, Prim's Algorithm, Dijkstra's Algorithm.
@@ -364,7 +364,7 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - Everything here is fairly standard as long as one keeps up with the course content. 
 - **Overall Rating:** 3/5 - Not bad, but not great either; a very bread and butter computer science course.
 
-### CPSC 340 - Machine Learning and Data Mining <a id="course-CPSC340" name="course-CPSC340"></a>
+#### CPSC 340 - Machine Learning and Data Mining <a id="course-CPSC340" name="course-CPSC340"></a>
 - **Instructor:** Michael (Mike) Gelbart
 - **Textbook:** None.
 - **Topics Covered:** Programming in Python, Data and Visualization, Decision Trees, Supervised Learning, Probabilistic Classification, Non-Parametric Models, Ensemble Methods, Clustering, Outlier Detection, Least Squares, Nonlinear Regression, Gradient Descent, Robust Regression, Feature Selection, Regularization, Linear Classifiers, Feature Engineering, Kernels, Stochastic Gradient Descent, Maximum Likelihood Estimation, Maximum a Posteriori Estimation, Principal Component Analysis, Sparse Matrix Factorization, Reccomender Systems, Deep Learning, Convolutions, Convlutional Neural Networks. 
@@ -372,9 +372,9 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - If you're comfortable with linear algebra, this shouldn't be too bad; but certainly a lot more mathematical than other computer science courses, and there is a lot of conceptual material here.
 - **Overall Rating:** 4.5/5 - Easily my favourite CS course.
 
-## 4. Biology <a id="sec-bio" name="sec-bio"></a>
+### 4. Biology <a id="sec-bio" name="sec-bio"></a>
 
-### SCIE 001 - Science One Biology <a id="course-SCIE001BIOL" name="course-SCIE001BIOL"></a>
+#### SCIE 001 - Science One Biology <a id="course-SCIE001BIOL" name="course-SCIE001BIOL"></a>
 - **Instructors:** Jim Berger & Pamela (Pam) Kalas
 - **Textbook:** None.
 - **Topics Covered:** The Great Bear Rainforest, Ecology, Food Webs, Interpreting Scientific Data, DNA Structure, DNA Replication, DNA Repair, Gene Expression, Transcription, Mutation, Translation, PCR, Genotypes and Phenotypes, Mitosis and Meiosis, Genetic Analysis, Genetics of Populations, Phylogenies, Speciation, Selection, Predator-Prey Interactions, Membranes, Phospholipid Bilayers, Amino Acids, Proteins, Regulation of Gene Expression, The Lab Operon, Enzymes, Transport Proteins, Glycolysis and Fermenation, Respiration, ATP Production, Photosynthesis.
@@ -382,7 +382,7 @@ categories: ubc
 - **Difficulty Rating:** 5/5 - A lot is expected of students, such as data analysis, quick problem-solving, and precise writing; making it very difficult to do well.
 - **Overall Rating:** 4/5 - This course changed the way I thought about Biology, and convinced me to pursue something relating to Biology (leading to my choice of degree program as Biophysics) before I later became more interested in Mathematics.
 
-### BIOL 140 - Laboratory Investigations in Life Science <a id="course-BIOL140" name="course-BIOL140"></a>
+#### BIOL 140 - Laboratory Investigations in Life Science <a id="course-BIOL140" name="course-BIOL140"></a>
 - **Instructor:** Rhea Storlund
 - **Textbook:** None.
 - **Topics Covered:** Scientific Reasoning, Development of Scientific Questions, Experimental Design, Tidal Ecosystems.
@@ -390,7 +390,7 @@ categories: ubc
 - **Difficulty Rating:** 2/5 - Nothing conceptually difficult.
 - **Overall Rating:** 2.5/5 - Some great moments, but overall can't reccomend the course itself.
 
-### BIOL 200 - Fundamentals of Cell Biology <a id="course-BIOL200" name="course-BIOL200"></a>
+#### BIOL 200 - Fundamentals of Cell Biology <a id="course-BIOL200" name="course-BIOL200"></a>
 - **Instructors:** Liane Chen & Vivienne Lam
 - **Textbook:** *Essential Cell Biology* by Alberts/Lewis/Hopkin.
 - **Topics Covered:** Microscopy, Membranes, Phospholipid Bilayers, Nuclear Structure, Protein Import, Chromatin and Chromosomes, Gene Expression, Vesicle Traffic, Golgi Structure, Secretion, Lysosomes, Mitochondria, Chloroplasts, Cytoskeleton, Microtubulues, Microfilaments, Cell Cycle, Mitosis and Cytokinesis.
@@ -398,9 +398,9 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - Conceptually not hard, but the arbitrary marking makes it hard to do well.
 - **Overall Rating:** 2/5 - The fact that MATH 223 was so interesting and this course was so not made me drop the "Bio" in my then "Biophysics" degree, and pick up math instead.
 
-## 5. Chemistry <a id="sec-chem" name="sec-chem"></a>
+### 5. Chemistry <a id="sec-chem" name="sec-chem"></a>
 
-### SCIE 001 - Science One Chemistry <a id="course-SCIE001CHEM" name="course-SCIE001CHEM"></a>
+#### SCIE 001 - Science One Chemistry <a id="course-SCIE001CHEM" name="course-SCIE001CHEM"></a>
 - **Instructors:** Chris Addison & Guillaume Bussiere & John Sherman
 - **Textbook:** *General Chemistry: Principles and Modern Applications* by Petrucci/Herring/Madura/Bissonnette.
 - **Topics Covered:** Bonding, Lewis Theory, VSEPR Theory, Hydrocarbons, Conformations, Functional Groups, Stereochemistry, Thermodynamics, Enthalpy, Entropy, Gibbs Energy, Electrochemistry, Kinetics, Intermolecular Forces, Quantum Mechanics, Particle in a Box Model, Orbitals, Shielding, Valence Bond Theory, Molecular Orbital Theory, Acid-Base Chemistry, Substitution (SN1/SN2), Computational Chemistry. 
@@ -408,7 +408,7 @@ categories: ubc
 - **Difficulty Rating:** 3.5/5 - Big step up from high school chemistry, with a lot of new concepts being thrown at you at once.
 - **Overall Rating:** 2.5/5 - Didn't personally enjoy it too much, but may just be a matter of opinion.
 
-### CHEM 121 - Introductory Chemistry Laboratory I  <a id="course-CHEM121" name="course-CHEM121"></a>
+#### CHEM 121 - Introductory Chemistry Laboratory I  <a id="course-CHEM121" name="course-CHEM121"></a>
 - **Instructors:** Sophia Nussbaum & Anne Thomas
 - **Textbook:** None
 - **Topics Covered:** Laboratory Techniques, Gravimetric Analysis, Oxidation and Reduction, Synthesis, Absorbance and Light Transmission, Chromotography, Volumetric Analysis, Standardization, Titration. Experiments done were Lead Content Analysis, Aluminium Crystal Formation, Food Dye Chromotography, and Acid-Base Standardization.
@@ -416,7 +416,7 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - Not super hard to do well, but some proficiency with lab techniques required.
 - **Overall Rating:** 1.5/5 - Definitely would not take a chemistry lab ever again.
 
-### CHEM 123 - Introductory Chemistry Laboratory II <a id="course-CHEM123" name="course-CHEM123"></a>
+#### CHEM 123 - Introductory Chemistry Laboratory II <a id="course-CHEM123" name="course-CHEM123"></a>
 - **Instructors:** Sophia Nussbaum & Anne Thomas
 - **Textbook:** None.
 - **Topics Covered:** Laboratory Techniques, Titration, Melting Point Analysis, Extraction, Purification, Chemical Kinetics, Acid-Base Chemistry. Experiments done were Effects of UV light on Vitamin C, Purification of Caffeine in Cola, Determination of Rate Law of Dye-Bleach Reaction, and Modelling the Blood Buffer System.
@@ -424,7 +424,7 @@ categories: ubc
 - **Difficulty Rating:** 3/5 - Basically the same as 121, but added difficulty comes in the form of reports and less direction.
 - **Overall Rating:** 1/5 - Lab reports make this slightly worse than the 121 labs; again would not repeat.
 
-### CHEM 233 - Organic Chemistry for the Biological Sciences <a id="course-CHEM223" name="course-CHEM223"></a>
+#### CHEM 233 - Organic Chemistry for the Biological Sciences <a id="course-CHEM223" name="course-CHEM223"></a>
 - **Instructor:** John Sherman
 - **Textbook:** *Organic Chemistry* by Klein.
 - **Topics Covered:** Chemical Structure and Bonding, Nomenclature, Functional Groups, Valence Bond Theory, Stereochemistry, Aromaticity, Intermolecular Forces, Organic Acid-Base Chemistry, Substituion (SN1/SN2), Elimination (E1/E2), Electrophilic Addition to Alkenes, Reduction and Oxidation, Nucelophilic Addition to Aldehydes and Ketons, Carbohydrates, Nucleophilic Acyl Substitution of Carboxylic Acid, and Decarboxylation.
@@ -432,9 +432,9 @@ categories: ubc
 - **Difficulty Rating:** 2/5 - Not super difficult, though has a reputation for being so.
 - **Overall Rating:** 2/5 - Reaction mechanisms were fun, but overall didn't feel this course had a ton of substance or intrigue beyond the puzzle-solving.
 
-## 6. Arts <a id="sec-arts" name="sec-arts"></a>
+### 6. Arts <a id="sec-arts" name="sec-arts"></a>
 
-### PHIL 101 - Introduction to Philosophy <a id="course-PHIL101" name="course-PHIL101"></a>
+#### PHIL 101 - Introduction to Philosophy <a id="course-PHIL101" name="course-PHIL101"></a>
 - **Instructor:** Anders Kraal
 - **Textbook:** *Discourse on Method and Meditations* by Descartes, *An Enquiry Concerning Human Understanding* by Hume, *Fundamental Principles of the Metaphysis and Morals* by Kant, and *The Problems of Philosophy* by Russell.
 - **Topics Covered:** A broad survey of ontology, including works by Aristotle, Plato, Epicurus, Aquinas, Anselm, Descartes, Hume, Kant, Russell, Wittgenstein, and Quine.
@@ -442,7 +442,7 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - Nothing too conceptually tricky, but some ideas here meaty enough to mull over. Exams were straightforward enough if following the course material.
 - **Overall Rating:** 4/5 - A very enjoyable introduction to philosophy!
 
-### CLST 212 - Greek Philosophy II <a id="course-CLST212" name="course-CLST212"></a>
+#### CLST 212 - Greek Philosophy II <a id="course-CLST212" name="course-CLST212"></a>
 - **Instructor:** Michael Griffin
 - **Textbook:** *Meditations* by Marcus Aurelius and *How to Be Free* by Epictetus.
 - **Topics Covered:** A broad survey of Greek Philosophy after Socrates, including Plato, Aristotle, Socratic Movements, Stoicism, Marcus Aurelius, Epicureanism, Skepticism, Education, and Neoplatonism.
@@ -450,7 +450,7 @@ categories: ubc
 - **Difficulty Rating:** 2.5/5 - Nothing conceptually difficult (other than perhaps some of the discussion concerning Neoplatonism at the tail end of the course). However as is standard for Arts essays (which make up 50% of the course here), it is easy to do decent but very hard to do well.
 - **Overall Rating:** 3/5 - I think I would have appreciated this course more if I had more time to dedicate to it and critically engage with the material. I also think purely material wise there are other philosophers who I find more convincing; but still an enjoyable course nontheless.
 
-### PSYC 305A - Personality Psychology <a id="course-PSYC305" name="course-PSYC305"></a>
+#### PSYC 305A - Personality Psychology <a id="course-PSYC305" name="course-PSYC305"></a>
 - **Instructor:** David King
 - **Textbook:** *Personality Psychology* by Larsen/Buss/King/Ensley.
 - **Topics Covered:** Personality Definition and Assessment, Traits and Taxonomies, Models of Personality, Stability of Personality in Space and Time, Genetic and Evolutionary Perspectives, Psychoanlytic and Analytical Theory, Motivational and Humanistic Perspectives, Cognitive Psychology, The Self, Authenticity, Sex and Gender, Intersectionality, Culture, Stress, Health, Emotion, Personality Disorders, Positive Psychology. 
@@ -458,7 +458,7 @@ categories: ubc
 - **Difficulty Rating:** 1/5 - Course grade consists solely of three exams, which are mainly centered around memorization; so I didn't struggle too much here (but this is quite subjective).
 - **Overall Rating:** 3/5 - Other than the second half of the course, the course was enjoyable and with some nice takeaways; didn't feel quite as profound to me as cultural psychology, though.
 
-### PSYC 307 - Cultural Psychology <a id="course-PSYC307" name="course-PSYC307"></a>
+#### PSYC 307 - Cultural Psychology <a id="course-PSYC307" name="course-PSYC307"></a>
 - **Instructor:** Steven Heine
 - **Textbook:** *Cultural Psychology* by Heine.
 - **Topics Covered:** Culture and Human Nature, Cultural Evolution, Research Methods, Development, Socialization, Self and Persoanlity, Multiculturalism, Motivation, Cognition, Perception, Emotions, Attraction and Relationships, Morality, Religion, Physical and Mental Heallth, Organizations and Leadership, Justice.
