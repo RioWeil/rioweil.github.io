@@ -6,7 +6,7 @@ description: Finding the Fibonacci numbers through algorithms, linear algebra, a
 categories: math
 hidden: false
 ---
-**June 6, 2022.** *The Fibonacci numbers arise frequently (and often unexpectedly) in mathematics and in biological systems. In this post, we discuss four ways of calculating them: through brute force, through brute force (but in a more clever fashion), through linear algebra, and finally through the use of generating functions.*
+**June 2, 2022.** *The Fibonacci numbers arise frequently (and often unexpectedly) in mathematics and in biological systems. In this post, we discuss four ways of calculating them: through brute force, through brute force (but in a more clever fashion), through linear algebra, and finally through the use of generating functions.*
 
 The Fibonacci numbers are a sequence of integers defined recursively by $$f_0 = 0, f_1 = 1$$, and 
 
