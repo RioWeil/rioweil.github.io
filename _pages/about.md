@@ -16,9 +16,9 @@ news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-My research is in the field of quantum computation and quantum information theory, under the supervision of Dr. [Robert Raussendorf](https://phas.ubc.ca/~raussen/). Broadly, I am interested in understanding the source of the computational speedup that quantum computers have over their classical counterparts. Specifically, my work centers around understanding the computational capabilities of measurement-based quantum computing (MBQC) resource states. I also have an interest in quantum algorithms, quantum machine learning, and quantum compilation.
+My research is in the field of quantum computation and quantum information theory, under the supervision of Dr. [Robert Raussendorf](https://phas.ubc.ca/~raussen/). Broadly, I am interested in understanding the source of the computational speedup that quantum computers have over their classical counterparts. Specifically, my work centers around understanding the computational capabilities of measurement-based quantum computing (MBQC) resource states. I also have an interest in quantum algorithms and other subfields in quantum computing.
 
-I graduated with a BSc in Combined Honours in Physics and Mathematics from UBC in May 2022. My honours thesis was on [algorithms for MBQC experiments](/assets/pdf/papers/bach_thesis.pdf), supervised by Dr. Robert Raussendorf.
+I graduated with a BSc in Combined Honours in Physics and Mathematics (with distinction) from UBC in May 2022. My [honours thesis](/assets/pdf/papers/bach_thesis.pdf) was on algorithms for MBQC experiments, supervised by Dr. Robert Raussendorf.
 
 My CV can be found [here](/assets/pdf/cv/cv.pdf).
 

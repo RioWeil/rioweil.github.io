@@ -424,7 +424,7 @@ categories: ubc
 - **Difficulty Rating:** 3/5 - Basically the same as 121, but added difficulty comes in the form of reports and less direction.
 - **Overall Rating:** 1/5 - Lab reports make this slightly worse than the 121 labs; again would not repeat.
 
-#### CHEM 233 - Organic Chemistry for the Biological Sciences <a id="course-CHEM223" name="course-CHEM223"></a>
+#### CHEM 233 - Organic Chemistry for the Biological Sciences <a id="course-CHEM233" name="course-CHEM233"></a>
 - **Instructor:** John Sherman
 - **Textbook:** *Organic Chemistry* by Klein.
 - **Topics Covered:** Chemical Structure and Bonding, Nomenclature, Functional Groups, Valence Bond Theory, Stereochemistry, Aromaticity, Intermolecular Forces, Organic Acid-Base Chemistry, Substituion (SN1/SN2), Elimination (E1/E2), Electrophilic Addition to Alkenes, Reduction and Oxidation, Nucelophilic Addition to Aldehydes and Ketons, Carbohydrates, Nucleophilic Acyl Substitution of Carboxylic Acid, and Decarboxylation.

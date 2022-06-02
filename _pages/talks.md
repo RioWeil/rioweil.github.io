@@ -18,7 +18,7 @@ nav_order: 2
     - Materials: [Slides](/assets/pdf/talks/2022-physics-of-snowmageddon.pdf)
     - Title: The Physics of Snowmageddon
     - Date: February 2022
-    - Format: 60 minute talk + discussion
+    - Format: 60 minute talk + discussion session
 
 ### 2021
 - **Outreach Talk for UBC Physics Circle**
