@@ -9,7 +9,7 @@ nav_order: 2
 
 ### 2022
 - **22nd Annual Meeting of the APS Northwest Section**
-    - Materials: [Slides](/assets/pdf/talks/2022-a-simulation-of-a-simulation-nws.pdf)
+    - Materials: [Slides](/assets/pdf/talks/2022-a-simulation-of-a-simulation-apsnws.pdf)
     - Title: A Simulation of a Simulation: Algorithms for Measurement-Based Quantum Computing Experiments
     - Date: June 2022
     - Format: 10 minute talk    
