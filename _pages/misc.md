@@ -7,7 +7,7 @@ nav: false
 ---
 
 ### CAP SAC Problem Competition Video
-- **Files:** [Video (YouTube)](https://www.youtube.com/watch?v=j1MCL0u8cpY&t=352s)
+- **Files:** [Video (YouTube)](https://www.youtube.com/watch?v=j1MCL0u8cpY)
 - **Description:** A video created jointly with Annika MacKenzie and Robert Beda for the inaugural Canadian Association of Physicists Student Advisory Committee Problem Competition. Our submission was on a thermodynamics problem centering on entropy and heat engines, and ended up being one of the winning submissions!
 
 ### UBC Course Seat Checker
