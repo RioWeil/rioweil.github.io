@@ -8,18 +8,17 @@ nav_order: 2
 ---
 
 ### 2022
+- **Fifth Workshop on Algebraic Structures in Quantum Computation**
+    - Materials: [Slides](/assets/pdf/talks/2022-a-simulation-of-a-simulation-asqc.pdf) - Video (coming soon)
+    - Title: A Simulation of a Simulation: Algorithms for Measurement-Based Quantum Computing Experiments
+    - Date: June 2022
+    - Format: 45 minute talk
+
 - **22nd Annual Meeting of the APS Northwest Section**
     - Materials: [Slides](/assets/pdf/talks/2022-a-simulation-of-a-simulation-apsnws.pdf)
     - Title: A Simulation of a Simulation: Algorithms for Measurement-Based Quantum Computing Experiments
     - Date: June 2022
     - Format: 10 minute talk    
-
-
-- **Bachelor's Thesis Defense Presentation**
-    - Materials: [Slides](/assets/pdf/talks/2022-a-simulation-of-a-simulation-defense.pdf)
-    - Title: A Simulation of a Simulation: Algorithms for Measurement-Based Quantum Computing Experiments
-    - Date: April 2022
-    - Format: 20 minute talk
 
 - **Outreach Talk for UBC Physics Circle**
     - Materials: [Slides](/assets/pdf/talks/2022-physics-of-snowmageddon.pdf)
