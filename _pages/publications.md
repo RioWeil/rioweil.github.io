@@ -19,4 +19,4 @@ nav_order: 1
 ### Bachelor's Thesis
 - **A Simulation of a Simulation: Algorithms for Symmetry-Protected Measurement-Based Quantum Computing Experiments** 
   - [PDF](/assets/pdf/papers/bach_thesis.pdf)
-  - UBC Library Link: Coming soon!
+  - UBC Library Link: [hdl.handle.net/2429/82098](http://hdl.handle.net/2429/82098)
