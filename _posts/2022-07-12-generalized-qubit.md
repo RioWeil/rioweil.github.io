@@ -116,7 +116,7 @@ We will prove three properties, namely:
 **Proof of 1:** Let $$\rho_\mathcal{E} = \sum_{i} p_i \lvert \psi_i \rangle \langle \psi_i \rvert$$. We then have:
 
 $$
-\rho_\mathcal{E}^\dagger = (\sum_{i} p_i \lvert \psi_i \rangle \langle \psi_i \rvert)^\dagger = \sum_i p_i^* (\lvert \psi_i \rangle \langle \psi_i \rvert)^\dagger = \sum_{i} p_i \lvert \psi_i \rangle \langle \psi_i \rvert = \rho_\mathcal{E}
+\rho_\mathcal{E}^\dagger = \left(\sum_{i} p_i \lvert \psi_i \rangle \langle \psi_i \rvert\right)^\dagger = \sum_i p_i^* (\lvert \psi_i \rangle \langle \psi_i \rvert)^\dagger = \sum_{i} p_i \lvert \psi_i \rangle \langle \psi_i \rvert = \rho_\mathcal{E}
 $$
 
 where in the second equality we use the linearity of the adjoint, and in the third equality we use that the $p_i$s correspond to (real) probabilities and hence $$p_i^* = p_i$$. The claim is therefore proven. $$\square$$
@@ -124,7 +124,7 @@ where in the second equality we use the linearity of the adjoint, and in the thi
 **Proof of 2:** Again let  $$\rho_\mathcal{E} = \sum_{i} p_i \lvert \psi_i \rangle \langle \psi_i \rvert$$. We then have:
 
 $$
-\mathrm{Tr}(\rho_\mathcal{E}) = \sum_{i} p_i \lvert \mathrm{Tr}(\lvert \psi_i \rangle \langle \psi_i \rvert) = \sum_i p_i = 1
+\mathrm{Tr}(\rho_\mathcal{E}) = \sum_{i} p_i \mathrm{Tr}(\lvert \psi_i \rangle \langle \psi_i \rvert) = \sum_i p_i = 1
 $$
 
 where in the first equality we use the linearity of the trace, in the second equality we use that $$\mathrm{Tr}(\lvert \psi \rangle \langle \psi \rvert) = 1$$ (simply take the trace by summing over any ONB containing $$\lvert \psi \rangle$$), and in the final equality we use that the probabilities sum to unity. $$\square$$
