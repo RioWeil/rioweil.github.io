@@ -210,10 +210,12 @@ $$
 \rho = \lvert \psi \rangle \langle \psi \rvert = \cos^2(\theta/2)\lvert 0 \rangle \langle 0 \rvert + \cos(\theta/2)\sin(\theta/2)e^{-i\varphi}\lvert 0 \rangle \langle 1 \rvert + \cos(\theta/2)\sin(\theta/2)e^{i\varphi}\lvert 1\rangle \langle 0\rvert + \sin^2\left(\theta/2\right)\lvert 1 \rangle \langle 1 \rvert
 $$
 
-Additionally, expanding out $\rho = \frac{I + \mathfbf{r} \cdot \mathbf{\sigma}}{2}$ using computational basis states, we find:
+Additionally, expanding out $$\rho = \frac{I + \mathbf{r} \cdot \mathbf{\sigma}}{2}$$ using computational basis states, we find:
+
 $$
 \rho = \frac{1 + r_z}{2}\lvert 0 \rangle \langle 0 \rvert + \frac{r_x - ir_y}{2}\lvert 0 \rangle \langle 1 \rvert + \frac{r_x + ir_y}{2}\lvert 1 \rangle \langle 0 \rvert + \frac{1 - r_z}{2}\lvert 1 \rangle \langle 1 \rvert
 $$
+
 Solving for $$r_x, r_y, r_z$$$ by equating the two expressions for $$\rho$$ (using Euler's formula and $$\sin(2\theta) = 2\cos(\theta)\sin(\theta)$$), we find:
 
 $$
