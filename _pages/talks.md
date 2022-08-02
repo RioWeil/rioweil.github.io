@@ -9,7 +9,7 @@ nav_order: 2
 
 ### 2022
 - **Fifth Workshop on Algebraic Structures in Quantum Computation**
-    - Materials: [Slides](/assets/pdf/talks/2022-a-simulation-of-a-simulation-asqc.pdf) - Video (coming soon)
+    - Materials: [Slides](/assets/pdf/talks/2022-a-simulation-of-a-simulation-asqc.pdf) - [Video](https://www.youtube.com/watch?v=PrwXFuhGmW4)
     - Title: A Simulation of a Simulation: Algorithms for Measurement-Based Quantum Computing Experiments
     - Date: June 2022
     - Format: 45 minute talk
