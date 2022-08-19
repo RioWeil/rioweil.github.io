@@ -17,3 +17,7 @@ nav: false
 ### CPSC 210: Quantum Circuit Simulator
 - **Files:** [Code (GitHub)](https://github.com/RioWeil/onetwo-qubit-quantum-circuit) - [Video (YouTube)](https://www.youtube.com/watch?v=DlA9VmnsXTQ)
 - **Description:** A java app that can simulate one/two qubit quantum circuits. Admittedly super limited, but a fun exercise to learn a new language nonetheless. I don't think the [IBM Quantum Composer](https://quantum-computing.ibm.com/composer/files/new) can be topped, anyway.
+
+### SCIE 001: Acoustic Analysis of Wood Varieties
+- **Files:** [Report](/assets/pdf/projects/courses/s001-report.pdf)
+- **Description:** A first-year's attempt at self-directed research, jointly attempted and written with Annika MacKenzie. We studied acoustic properties of various species of wood (lumber) through acoustic/spectral analysis, to determine what wood types are most suitable for building musical instruments.

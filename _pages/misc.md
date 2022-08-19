@@ -13,3 +13,9 @@ nav: false
 ### UBC Course Seat Checker
 - **Files:** [Code (GitHub)](https://github.com/RioWeil/UBC-seatcheck)
 - **Description:** A hacky python script to get notified whenever seats for a full UBC course become available.
+
+### A Capella Arrangements
+
+##### Universe (opb. Official 髭dandism)
+- **Files:** [PDF](/assets/pdf/music/Universe.pdf) - [Musescore](/assets/pdf/music/Universe.mscz)
+- **Description:** A SATB arrangement of [Universe](https://www.youtube.com/watch?v=6lnS-8FVod4) by Official 髭dandism. The arrangement is a mix of transcribed elements from is-me's [piano cover](https://www.youtube.com), Shimo-Ren's [A capella cover](https://www.youtube.com/watch?v=4-QO8myhHSI), and my own ideas.
