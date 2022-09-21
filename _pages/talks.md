@@ -8,6 +8,12 @@ nav_order: 2
 ---
 
 ### 2022
+- **Max Planck-UBC-UTokyo Centre for Quantum Materials Meeting 2022**
+    - Materials: [Poster](/assets/pdf/talks/2022-sptmbqcnisq-mpubcutokyo.pdf)
+    - Title: Symmetry-protected measurement-based quantum computation on NISQ devices
+    - Date: September 2022
+    - Format: Poster
+
 - **Fifth Workshop on Algebraic Structures in Quantum Computation**
     - Materials: [Slides](/assets/pdf/talks/2022-a-simulation-of-a-simulation-asqc.pdf) - [Video](https://www.youtube.com/watch?v=PrwXFuhGmW4)
     - Title: A Simulation of a Simulation: Algorithms for Measurement-Based Quantum Computing Experiments
