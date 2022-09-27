@@ -8,9 +8,15 @@ nav_order: 2
 ---
 
 ### 2022
-- **Max Planck-UBC-UTokyo Centre for Quantum Materials Meeting 2022**
+- **Stewart Blusson Quantum Matter Institute Retreat**
+    - Materials: [Slides](/assets/pdf/talks/2022-cptnisq-qmiretreat.pdf)
+    - Title: Investigating Computational Phases of Matter on NISQ Devices
+    - Date: September 2022
+    - Format: 10 minute talk
+
+- **Max Planck-UBC-UTokyo Centre for Quantum Materials Meeting**
     - Materials: [Poster](/assets/pdf/talks/2022-sptmbqcnisq-mpubcutokyo.pdf)
-    - Title: Symmetry-protected measurement-based quantum computation on NISQ devices
+    - Title: Symmetry-Protected Measurement-Based Quantum Computation on NISQ Devices
     - Date: September 2022
     - Format: Poster
 
