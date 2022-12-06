@@ -20,9 +20,9 @@ Below are lecture notes for courses I have taken and/or TA'd. Please send me an 
 - **Pre-requisites:** Undergraduate courses in solid-state physics, quantum mechanics, and statistical mechanics.
 
 ### Graduate Quantum Mechanics I (PHYS 500)
-- **Files:** (Course In Progress) [TeX Source (GitHub)](https://github.com/RioWeil/PHYS500-notes)
+- **Files:** [PDF](/assets/pdf/projects/notes/gquantum-notes.pdf) [TeX Source (GitHub)](https://github.com/RioWeil/PHYS500-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 500. The course is a first course in graduate quantum mechanics, and does not follow a set textbook in particular (though primarily references Goswami's *Quantum Mechanics* and Griffith's *Introduction to Quantum Mechanics*).
-- **Topics Covered:** Angular momentum and spin, Electromagnetic interactions, Gauge invariance, The Aharonov-Bohm Effect, Time-independent perturbation theory, The WKB approximation, Time-dependent perturbation theory, Radiation, Electric and magnetic dipole/quadrupole transitions, Selection rules, Adiabatic approximation and the Berry phase, Scattering and resonance scattering.
+- **Topics Covered:** Angular momentum and spin, Electromagnetic interactions, Gauge invariance, Addition of angular momentum, Time-independent perturbation theory, Fine and hyperfine structure of Hydrogen, WKB approximation, Time-dependent perturbation theory, Spontaneous Emission, Electric transitions, Selection rules, Adiabatic approximation, Berry phase, Aharonov-Bohm Effect, Scattering and resonance scattering.
 - **Pre-requisites:** One or two courses in undergraduate quantum mechanics.
 
 ### Quantum Mechanics II (PHYS 402)

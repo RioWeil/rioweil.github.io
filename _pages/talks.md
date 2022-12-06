@@ -8,6 +8,12 @@ nav_order: 2
 ---
 
 ### 2022
+- **Perimeter Institute Quantum Matter Workshop**
+    - Materials: [Poster](/assets/pdf/talks/2022-sptmbqcnisq-mpubcutokyo.pdf)
+    - Title: Symmetry-Protected Measurement-Based Quantum Computation on NISQ Devices
+    - Date: November 2022
+    - Format: Poster
+
 - **Stewart Blusson Quantum Matter Institute Retreat**
     - Materials: [Slides](/assets/pdf/talks/2022-cptnisq-qmiretreat.pdf)
     - Title: Investigating Computational Phases of Matter on NISQ Devices
