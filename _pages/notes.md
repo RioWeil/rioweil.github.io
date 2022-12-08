@@ -8,19 +8,19 @@ nav: false
 Below are lecture notes for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoweil6@student.ubc.ca) if you spot any errors!
 
 ### Quantum Field Theory I (PHYS 526)
-- **Files:** (Course In Progress) [TeX Source (GitHub)](https://github.com/RioWeil/PHYS526-notes)
+- **Files:** [PDF](/assets/pdf/projects/notes/qft-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS526-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 526. The course is a first course in graduate quantum field theory, and uses Gordon Semenoff's *Quantum Field Theory: A Physicist’s Introduction* as the primary textbook.
 - **Topics Covered:** Many-particle systems, Second Quantization, Symmetries and Noether's theorem, Space-time symmetries, Scalar/Tensor/Vector fields, Emergent relativistic QFT, Dirac equation and Dirac QFT, Photons, Quantum Electrodynamics, Functional methods, Perturbation theory, Feynman diagrams, Renormalization of QED. 
 - **Pre-requisites:** (Advanced) undergraduate courses in quantum mechanics, special relativity, calculus, differential equations and linear algebra.
 
 ### Condensed Matter Physics I (PHYS 502)
-- **Files:** (Course In Progress) [TeX Source (GitHub)](https://github.com/RioWeil/PHYS502-notes)
+- **Files:** [PDF](/assets/pdf/projects/notes/cm-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS502-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 502. The course is a first course in graduate condensed matter theory, and uses Aschroft & Mermin's *Solid State Physics* as the primary textbook.
 - **Topics Covered:** Solids as interacting quantum many-body systems, Second quantization for fermions and bosons, Electrons in solids, Boson systems, Electrons in periodic potentials, Semiclassical theory of conduction in metals, Electron-phonon interactions, Elements of superconductivity.
 - **Pre-requisites:** Undergraduate courses in solid-state physics, quantum mechanics, and statistical mechanics.
 
 ### Graduate Quantum Mechanics I (PHYS 500)
-- **Files:** [PDF](/assets/pdf/projects/notes/gquantum-notes.pdf) [TeX Source (GitHub)](https://github.com/RioWeil/PHYS500-notes)
+- **Files:** [PDF](/assets/pdf/projects/notes/gquantum-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS500-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 500. The course is a first course in graduate quantum mechanics, and does not follow a set textbook in particular (though primarily references Goswami's *Quantum Mechanics* and Griffith's *Introduction to Quantum Mechanics*).
 - **Topics Covered:** Angular momentum and spin, Electromagnetic interactions, Gauge invariance, Addition of angular momentum, Time-independent perturbation theory, Fine and hyperfine structure of Hydrogen, WKB approximation, Time-dependent perturbation theory, Spontaneous Emission, Electric transitions, Selection rules, Adiabatic approximation, Berry phase, Aharonov-Bohm Effect, Scattering and resonance scattering.
 - **Pre-requisites:** One or two courses in undergraduate quantum mechanics.
