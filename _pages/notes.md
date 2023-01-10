@@ -5,15 +5,21 @@ title: Lecture Notes
 # description: lecture notes for courses I have taken.
 nav: false
 ---
-Below are lecture notes for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoweil6@student.ubc.ca) if you spot any errors!
+Below are lecture notes for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoheiweil@phas.ubc.ca) if you spot any errors!
 
-### Quantum Field Theory I (PHYS 526)
+### Graduate Statistical Mechanics (PHYS 516)
+- **Files:** (Course In Progress) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS516-notes)
+- **Description:** Notes taken (live) from UBC's PHYS 516. The course is a topics course in statistical mechanics.
+- **Topics Covered:** Fundamentals of statistical mechanics, Phase transitions and critical exponents, $$D = 1,2,3$$ Ising models, mean field theory, quantum field theory, universality, renormalization, and elementary conformal field theory. 
+- **Pre-requisites:** Undergraduate statistical mechanics, thermodynamics, and quantum mechanics.
+
+### Graduate Quantum Field Theory I (PHYS 526)
 - **Files:** [PDF](/assets/pdf/projects/notes/qft-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS526-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 526. The course is a first course in graduate quantum field theory, and uses Gordon Semenoff's *Quantum Field Theory: A Physicist’s Introduction* as the primary textbook.
 - **Topics Covered:** Many-particle systems, Second Quantization, Symmetries and Noether's theorem, Space-time symmetries, Scalar/Tensor/Vector fields, Emergent relativistic QFT, Dirac equation and Dirac QFT, Photons, Quantum Electrodynamics, Functional methods, Perturbation theory, Feynman diagrams, Renormalization of QED. 
 - **Pre-requisites:** (Advanced) undergraduate courses in quantum mechanics, special relativity, calculus, differential equations and linear algebra.
 
-### Condensed Matter Physics I (PHYS 502)
+### Graduate Condensed Matter Physics I (PHYS 502)
 - **Files:** [PDF](/assets/pdf/projects/notes/cm-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS502-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 502. The course is a first course in graduate condensed matter theory, and uses Aschroft & Mermin's *Solid State Physics* as the primary textbook.
 - **Topics Covered:** Solids as interacting quantum many-body systems, Second quantization for fermions and bosons, Electrons in solids, Boson systems, Electrons in periodic potentials, Semiclassical theory of conduction in metals, Electron-phonon interactions, Elements of superconductivity.
@@ -28,7 +34,7 @@ Below are lecture notes for courses I have taken and/or TA'd. Please send me an 
 ### Quantum Mechanics II (PHYS 402)
 - **Files:** (Work In Progress) [TeX Source (GitHub)](https://github.com/RioWeil/PHYS402-notes)
 - **Description:** Notes written for students of UBC's PHYS 402. The course is an advanced undergraduate course in quantum mechanics, covering portions of the first six chapters in Sakurai's *Modern Quantum Mechanics* as well as some additional topics.
-- **Topics Covered:** Fundamental concepts/formalism, Quantum dynamics, Quantum foundations and entanglement, Symmetries, Angular momentum, Approximation methods, Identical particles.
+- **Topics Covered:** Fundamental concepts/formalism, Quantum dynamics, Quantum information and foundations, Symmetries, Angular momentum, Approximation methods.
 - **Pre-requisites:** A first course in quantum mechanics (covering the first four chapters of Griffith's *Introduction to Quantum Mechanics*). However, the theory is developed from the ground up, and formally one only needs linear algebra and some experience with differential equations.
 
 ### Real Analysis I/II (MATH 320/321)
