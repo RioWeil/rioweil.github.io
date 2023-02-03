@@ -8,6 +8,12 @@ nav_order: 2
 ---
 
 ### 2022
+- **Internal Talk for UBC QI Group**
+    - Materials: [Lecture Notes](/assets/pdf/talks/2022-nlts.pdf)
+    - Title: Proof of the NLTS Theorem
+    - Date: November 2022
+    - Format: 90 minute talk
+
 - **Perimeter Institute Quantum Matter Workshop**
     - Materials: [Poster](/assets/pdf/talks/2022-sptmbqcnisq-mpubcutokyo.pdf)
     - Title: Symmetry-Protected Measurement-Based Quantum Computation on NISQ Devices

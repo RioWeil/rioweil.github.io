@@ -18,4 +18,8 @@ nav: false
 
 ##### Universe (opb. Official 髭dandism)
 - **Files:** [PDF](/assets/pdf/music/Universe.pdf) - [Musescore](/assets/pdf/music/Universe.mscz)
-- **Description:** A SATB arrangement of [Universe](https://www.youtube.com/watch?v=6lnS-8FVod4) by Official 髭dandism. The arrangement is a mix of transcribed elements from is-me's [piano cover](https://www.youtube.com), Shimo-Ren's [A capella cover](https://www.youtube.com/watch?v=4-QO8myhHSI), and my own ideas.
+- **Description:** A SATB (2 altos) arrangement of [Universe](https://www.youtube.com/watch?v=6lnS-8FVod4) by Official 髭dandism. The arrangement is a mix of transcribed elements from is-me's [piano cover](https://www.youtube.com), Shimo-Ren's [A capella cover](https://www.youtube.com/watch?v=4-QO8myhHSI), and my own ideas.
+
+##### Racing Into the Night (opb. YOASOBI)
+- **Files:** [PDF](/assets/pdf/music/IntoTheNight.pdf) - [Musescore](/assets/pdf/music/IntoTheNight.mscz)
+- **Description:** A SATB arrangement of [Racing Into the Night](https://www.youtube.com/watch?v=x8VYWazR5mE) by YOASOBI. The arrangement is primarily a transcription of Shimo-Ren's beautiful [A cappella cover](https://www.youtube.com/watch?v=WMU-WQl_yvA) with various modifications/adaptations. 
