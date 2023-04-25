@@ -8,7 +8,7 @@ nav: false
 Below are lecture notes for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoheiweil@phas.ubc.ca) if you spot any errors!
 
 ### Graduate Statistical Mechanics (PHYS 516)
-- **Files:** (Course In Progress) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS516-notes)
+- **Files:** [PDF](/assets/pdf/projects/notes/statmech-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS516-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 516. The course is a topics course in statistical mechanics.
 - **Topics Covered:** Fundamentals of statistical mechanics, Phase transitions and critical exponents, $$D = 1,2,3$$ Ising models, mean field theory, quantum field theory, universality, renormalization, and elementary conformal field theory. 
 - **Pre-requisites:** Undergraduate statistical mechanics, thermodynamics, and quantum mechanics.
