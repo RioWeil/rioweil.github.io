@@ -18,7 +18,7 @@ Below are solutions to textbooks I have worked through. Please send me an [email
 | Chapter | Exercises | Problems |
 | ------- | --------- | -------- |
 | 1       | X         |          |
-| 2       | X         | P        |
+| 2       | X         | X        |
 | 3       | P         |          |
 | 4       | P         |          |
 | 5       |           |          |
