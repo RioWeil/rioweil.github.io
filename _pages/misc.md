@@ -22,7 +22,7 @@ nav: false
 
 ##### Kataomoi (opb. Aimer)
 - **Files:** [PDF](/assets/pdf/music/Kataomoi-Aimer.pdf) - [Musescore](/assets/pdf/music/Kataomoi-Aimer.mscz)
-- **Description:** A Mezzo-Bass duet of [カタオモイ (Kataomoi)](https://www.youtube.com/watch?v=kxs9Su_mbpU) by Aimer.
+- **Description:** A Mezzo-Bass duet of [カタオモイ (Kataomoi)](https://www.youtube.com/watch?v=kxs9Su_mbpU) by Aimer. I recorded a performance with Lydia Li which you can find [here](https://www.instagram.com/p/Cy41-J3rjpQ/?img_index=3).
 
 ##### Racing Into the Night (opb. YOASOBI)
 - **Files:** [PDF](/assets/pdf/music/RacingIntotheNight-YOASOBI.pdf) - [Musescore](/assets/pdf/music/RacingIntotheNight-YOASOBI.mscz)
@@ -38,5 +38,4 @@ nav: false
 
 ##### Universe (opb. Official 髭男dism)
 - **Files:** [PDF](/assets/pdf/music/Universe-Official髭男dism.pdf) - [Musescore](/assets/pdf/music/Universe-Official髭男dism.mscz)
-- **Description:** A SATBarB arrangement of [Universe](https://www.youtube.com/watch?v=6lnS-8FVod4) by Official 髭男dism. The arrangement is a mix of transcribed elements from is-me's [piano cover](https://www.youtube.com), Shimo-Ren's [A capella cover](https://www.youtube.com/watch?v=4-QO8myhHSI), and my own ideas.
-
+- **Description:** A SATBarB arrangement of [Universe](https://www.youtube.com/watch?v=6lnS-8FVod4) by Official 髭男dism. The arrangement is a mix of transcribed elements from is-me's [piano cover](https://www.youtube.com), Shimo-Ren's [A capella cover](https://www.youtube.com/watch?v=4-QO8myhHSI), and my own ideas. I performed a cover with Lydia Li, Churan Chang, Doris Zeng, Myles Hemy-Bain, Caleb Chuang, and Weiyoung Tan which you can find [here](https://drive.google.com/drive/u/0/search?q=universe)
