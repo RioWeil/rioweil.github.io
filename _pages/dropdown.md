@@ -11,6 +11,9 @@ children:
     - title: Textbook Solutions
       permalink: /solutions/
     - title: divider
+    - title: Music
+      permalink: /music/
+    - title: divider
     - title: Course Projects
       permalink: /courseprojects/
     - title: divider
