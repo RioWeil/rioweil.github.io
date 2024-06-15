@@ -8,6 +8,10 @@ nav: false
 
 ### A Capella Arrangements
 
+##### Ditto X Hurt (opb. NewJeans)
+- **Files:** [PDF](/assets/pdf/music/DittoXHurt-NewJeans.pdf) - [Musescore](/assets/pdf/music/DittoXHurt-NewJeans.mscz)
+- **Description:** A SSAAB mashup of [Ditto](https://www.youtube.com/watch?v=pSUydWEqKwE) and [Hurt](https://www.youtube.com/watch?v=tVIXY14aJms) by NewJeans. I performed this arrangement with Samantha Kim, Maria Siminiuc, Anita Zhang, Nerissa Hsiung, and Jocelyn Chun, which you can find [here](https://drive.google.com/file/d/1PxtsvNkVCu1TXddN6DvUohROa_QFSSNa/view?usp=share_link).
+
 ##### For Lovers (opb. Lamp)
 - **Files:** [PDF](/assets/pdf/music/ForLovers-Lamp.pdf) - [Musescore](/assets/pdf/music/ForLovers-Lamp.mscz)
 - **Description:** A SATB arrangement of [恋人へ (For Lovers)](https://www.youtube.com/watch?v=yUcIaHh4HEA) by Lamp.
@@ -30,7 +34,7 @@ nav: false
 
 ##### Seasons of Love (opb. Original Broadway Cast of Rent)
 - **Files:** [PDF](/assets/pdf/music/SeasonsofLove-OriginalBroadwayCastofRent.pdf) - [Musescore](/assets/pdf/music/SeasonsofLove-OriginalBroadwayCastofRent.mscz)
-- **Description:** An SATBarB arrangement of [Seasons of Love](https://www.youtube.com/watch?v=hj7LRuusFqo) by the Original Broadway Cast of Rent. The arrangement is a transcription/edit of Sinfonia's [A capella cover](https://www.youtube.com/watch?v=udtJSgOds0s).
+- **Description:** An SATBarB arrangement of [Seasons of Love](https://www.youtube.com/watch?v=hj7LRuusFqo) by the Original Broadway Cast of Rent. The arrangement is a transcription/edit of Sinfonia's [A capella cover](https://www.youtube.com/watch?v=udtJSgOds0s). A performance of the arrangement from my a cappella group Choral Reef can be found [here](https://www.youtube.com/watch?v=sfmHd9AKK4w).
 
 ##### Universe (opb. Official 髭男dism)
 - **Files:** [PDF](/assets/pdf/music/Universe-Official髭男dism.pdf) - [Musescore](/assets/pdf/music/Universe-Official髭男dism.mscz)
