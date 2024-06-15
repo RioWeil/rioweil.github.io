@@ -26,7 +26,7 @@ Below are solutions to textbooks I have worked through. Please send me an [email
 | 7       |           |          |
 | 8       |           |          |
 | 9       |           |          |
-| 10      |           |          |
+| 10      | P         |  P       |
 | 11      |           |          |
 | 12      |           |          |
 | A1      | X         | N/A      |
