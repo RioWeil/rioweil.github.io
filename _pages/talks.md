@@ -6,6 +6,37 @@ title: Talks
 nav: true
 nav_order: 2
 ---
+### 2024
+- **MSc Thesis Presentation @ UBC**
+    - Materials: [Slide](/assets/pdf/talks/2024-sptmbqcnisq-msc-ubc.pdf)
+    - Title: Quantifying resource states and efficient regimes of MBQC on a superconducting processor
+    - Date: July 2024
+    - Format: 45 minute talk
+
+- **MSc Thesis Presentation @ Leibniz University Hannover**
+    - Materials: [Slide](/assets/pdf/talks/2024-sptbmbqcnisq-msc-hannover.pdf)
+    - Title: Characterizing resource states and efficient regimes of MBQC on NISQ devices
+    - Date: May 2024
+    - Format: 45 minute talk
+
+- **UBC 3-Minute Thesis Competition**
+    - Materials: [Slide](/assets/pdf/talks/2024-qcompcanvases-3mt.pdf)
+    - Title: The art of quantum computing: Crafting computational canvases on a quantum device
+    - Date: February 2024
+    - Format: 3 minute talk
+
+### 2023
+- **Quantum Resources 2023 Workshop**
+    - Materials: [Poster](/assets/pdf/talks/2023-sptmbqcnisq-qresources.pdf)
+    - Title: Characterizing resource states and efficient regimes of measurement-based quantum computation on NISQ devices
+    - Date: December 2023
+    - Format: Poster
+
+- **Stewart Blusson Quantum Matter Institute Quantum Grand Challenge Workshop**
+    - Materials: [Slides](/assets/pdf/talks/2023-sptmbqcnisq-qcgcubc.pdf)
+    - Title: Investigating Computational Phases of Matter on NISQ Devices
+    - Date: January 2023
+    - Format: 10 minute talk
 
 ### 2022
 - **Internal Talk for UBC QI Group**
@@ -67,11 +98,9 @@ nav_order: 2
     - Format: 30 minute talk
 
 ### 2019
-
 - **TRIUMF Summer Student Symposium 2019**
     - Materials: [Slides](/assets/pdf/talks/2019-extractingcryompet.pdf)
     - Title: Extracting CryoMPET
     - Date: August 2019
     - Location: TRIUMF, Vancouver, Canada
     - Format: 10 minute talk
-
