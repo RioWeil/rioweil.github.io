@@ -8,19 +8,19 @@ nav_order: 2
 ---
 ### 2024
 - **MSc Thesis Presentation @ UBC**
-    - Materials: [Slide](/assets/pdf/talks/2024-sptmbqcnisq-msc-ubc.pdf)
+    - Materials: [Slides](/assets/pdf/talks/2024-sptmbqcnisq-msc-ubc.pdf)
     - Title: Quantifying resource states and efficient regimes of MBQC on a superconducting processor
     - Date: July 2024
     - Format: 45 minute talk
 
 - **MSc Thesis Presentation @ Leibniz University Hannover**
-    - Materials: [Slide](/assets/pdf/talks/2024-sptbmbqcnisq-msc-hannover.pdf)
+    - Materials: [Slides](/assets/pdf/talks/2024-sptbmbqcnisq-msc-hannover.pdf)
     - Title: Characterizing resource states and efficient regimes of MBQC on NISQ devices
     - Date: May 2024
     - Format: 45 minute talk
 
 - **UBC 3-Minute Thesis Competition**
-    - Materials: [Slide](/assets/pdf/talks/2024-qcompcanvases-3mt.pdf)
+    - Materials: [Slides](/assets/pdf/talks/2024-qcompcanvases-3mt.pdf)
     - Title: The art of quantum computing: Crafting computational canvases on a quantum device
     - Date: February 2024
     - Format: 3 minute talk
