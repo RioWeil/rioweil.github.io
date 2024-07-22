@@ -26,7 +26,6 @@ categories: physics uchicago quantum
 - <a href="#problem-qm-onedlattice" name="#problem-qm-onedlattice"> Particle on a 1-D Lattice </a>
 - <a href="#problem-qm-spinhalfsg" name="#problem-qm-spinhalfsg"> Spin-1/2 and Stern-Gerlach </a>
 - <a href="#problem-qm-qhotrans" name="#problem-qm-qhotrans"> Harmonic Oscillator and Translation </a>
-4. <a href="#sec-sm">Statistical Mechanics</a>
 
 
 #### Superconducting Microwave Resonator <a id="problem-qm-scmicroresonator" name="problem-qm-scmicroresonator"></a>
@@ -666,6 +665,84 @@ $$
 #### Harmonic Oscillator and Translation <a id="problem-qm-qhotrans" name="problem-qm-qhotrans"></a>
 **Source:** MIT Spring 2001 Doctoral General Examination Quantum Q2
 
-**Problem Statement:**
+**Problem Statement:** *A particle with mass $$m=1$$ is in the ground state of a harmonic oscillator with Hamiltonian*
 
-**Solution:**
+\begin{equation}\label{eq:sho}
+    H = \frac{1}{2}(p^2 + \omega^2x^2)
+\end{equation}
+
+*The state is translated a distance $$d$$ while $$H$$ is left alone.*
+
+*(a) What is the probability that a measurement of the energy will yield the value $$\hbar\omega(j + \frac{1}{2})$$? You may find the following formulas useful:*
+
+\begin{equation}\label{eq:annihilation}
+    a = \frac{1}{\sqrt{2\hbar\omega}}(\omega x + ip) \quad \lvert n \rangle = \frac{(a^\dagger)^n}{\sqrt{n!}}\lvert 0 \rangle
+\end{equation}
+
+*and also if $$A, B$$ are two operators such that $$[A, B]$$ is proportional to a unit operator, then*
+
+\begin{equation}\label{eq:opexponential}
+    e^{A + B} = e^Ae^B + e^{-\frac{1}{2}[A, B]}.
+\end{equation}
+
+*At $$t= 0$$ th equantum system is prepared in the translated state described above. It then evolves according to the Schrodinger equation with the Hamiltonian $$H$$*.
+
+*(b) Supose that at the time $$t$$ the momentum is measured. At what values of $$t$$ wil the probability distribution for getting any value of the momentum be identical to the $$t = 0$$ probability distribution?*
+
+*(c) Repeat (b) with momentum measurement replaced by energy measurement.*
+
+**Solution:** (a) We first note that the translation operator by distance $$d$$ is given by $$T(d) = e^{-\frac{ipd}{\hbar}}$$ recalling momentum as the generator of translations. We also can express $$p$$ in terms of $$a, a^\dagger$$:
+
+$$
+p = i\sqrt{\frac{\hbar\omega}{2}}(a^\dagger - a)
+$$
+
+We also calculate $$[a^\dagger, a]$$:
+
+$$
+[a^\dagger, a] = [\frac{1}{\sqrt{2\hbar\omega}}(\omega x - ip), \frac{1}{\sqrt{2\hbar\omega}}(\omega x + ip)] = \frac{1}{2\hbar\omega}([\omega x, \omega x] + [\omega x, ip] - [ip, \omega x] - [ip, ip]) = \frac{1}{2\hbar\omega}(0 + \omega i (i\hbar) - \omega i (-i\hbar) + 0) = -1
+$$
+
+Thus Eq. \eqref{eq:opexponential} applies. Now calculating the probability of measuring $$E_j = \hbar\omega(j + \frac{1}{2})$$ using the Born rule, we have:
+
+$$
+p(j) = \lvert \langle j \rvert e^{-\frac{ipd}{\hbar}} \lvert 0 \rangle \rvert^2 = \lvert \langle j \rvert e^{\sqrt{\frac{\omega d^2}{2\hbar}}(a^\dagger - a)} \lvert 0 \rangle \rvert^2
+$$
+
+For brevity let us define $$\alpha = \sqrt{\frac{\omega d^2}{2\hbar}}$$. Then using Eq. \eqref{eq:opexponential} with $$A = \alpha a^\dagger$$ and $$B = -\alpha a$$ (and $$[\alpha a^\dagger, -\alpha a] = -\alpha^2 [a^\dagger, a] = \alpha^2$$) we obtain:
+
+$$
+p(j) = \lvert \langle j \rvert e^{\alpha a^\dagger}e^{-\alpha a}e^{-\frac{\alpha^2}{2}}\lvert 0 \rangle \rvert^2
+$$
+
+Now, since $$a\lvert 0 \rangle = 0$$, when expanding $$e^{-\alpha a}$$ in a power series all term vanish except the $$n = 0$$ identity term. Therefore the above reduces to:
+
+$$
+p(j) = e^{-\alpha^2} \lvert \langle j \rvert  e^{\alpha a^\dagger} \lvert 0 \rangle \rvert^2
+$$
+
+Since $$\lvert j \vert i \rangle = \delta_{ji}$$ the only term of the above that survives when expanding $$e^{\alpha a^\dagger}$$ in a power series is the $$n = j$$ term, so:
+
+$$
+p(j) =  e^{-\alpha^2} \lvert \langle j \rvert \frac{(\alpha a^\dagger)^j}{j!} \lvert 0 \rangle \rvert^2 = e^{-\alpha^2} \lvert \langle j \rvert \frac{\alpha^j}{\sqrt{j}!} \lvert j \rangle \rvert^2
+$$
+
+Thus we conclude:
+
+$$
+\color{blue}{p(j) = \frac{e^{-\alpha^2}\alpha^{2j}}{j!}}
+$$
+
+(b) Let us study the time evolution of the state (which starts in $$\lvert\psi(0) \rangle = e^{-\frac{ipd}{\hbar}}\lvert 0 \rangle$$):
+
+$$
+\lvert \psi(t) \rangle = \exp(-iHt)\lvert \psi(0) \rangle = \left(\sum_{n}e^{-i\frac{\hbar\omega(n + \frac{1}{2})}{\hbar}t} \lvert n \rangle \langle n \rvert \right)\lvert\psi(0) \rangle = \sum_{n}e^{-i\omega nt}\langle n \lvert\psi(0) \rangle \lvert n \rangle 
+$$
+
+where in the last equality we discard the global phase factor $$e^{-i\omega t/2}$$ as this does not affect the measurement statistics. Looking at the above, the $$t = 0$$ measurement probabilities of momentum (and any other observable) is reproduced when $$e^{-i\omega nt} = 1$$, i.e. when:
+
+$$
+\color{blue}{t = \frac{2\pi m}{\omega}, \quad m \in \mathbb{N}.}
+$$
+
+(c) Since $$H$$ commutes with itself, the energy is conserved through the time evolution and thus <span style="color:blue">the probability for measuring a given energy is constant in time.</span>
