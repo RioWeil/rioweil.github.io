@@ -246,17 +246,67 @@ and the exact result agrees to perturbation theory to second order.
 #### Symmetries and Transition Amplitudes <a id="problem-qm-symmetryamplitudes" name="problem-qm-symmetryamplitudes"></a>
 **Source:** UBC PHYS 500 2023 HW2 Q2
 
-**Problem Statement:**
+**Problem Statement:** *One of the most important applications of symmetries in quantum mechanics is that they can be used to constrain the amplitudes for many dynamical processes without doing any calculation.*
 
-#### Thermal States <a id="problem-qm-thermalstates" name="problem-qm-thermalstates"></a>
+*(a) Consider a time-independent Hamiltonian $$H$$ and a symmetry operation implemented by a unitary operator $$S$$ that commutes with $$H$$, $$[S, H] = 0$$. Show that the amplitude $$\langle \psi_f \rvert U(t) \lvert \psi_i \rangle$$ for a state $$\lvert \psi_i \rangle$$ to transition to a different state $$\lvert \psi_f \rangle$$ vanishes if $$\lvert \psi_{i, f} \rangle$$ are eigenstates of $$S$$ with different eigenvalues, i.e. if $$S\lvert \psi_{i, f} \rangle = e^{i\phi_{i, f}}\lvert \psi_{i, f} \rangle$$ with $$\phi_i \neq \phi_f$$. Here $$U(t) = \exp(-iHt)$$ is the time evolution unitary.*
+
+*(b) The quadratic/harmonic potential is symmetric under parity, $$\Pi: x \to -x$$ and $$\Pi: p \to -p$$. Denote the unitary opeartor that implements parity by the same symbol, $$\Pi$$. What are the possible eigenvalues of $$\Pi$$? What is the parity of the $$n$$th energy eigenstate $$\lvert n \rangle = \frac{(a^\dagger)^n}{\sqrt{n!}}\lvert 0 \rangle$$? Suppose we start with an initial state equal to the ground state $$\lvert 0 \rangle$$ of the Harmonic oscillator, and turn on a quartic potential $$V_4 = \alpha x^4$$. What is the amplitude to find the particle in the first excited state of the harmonic oscillator at time $$t$$ later?*
+
+**Solution:** (a) We evaluate the expression $$\langle \psi_f \rvert S^\dagger U(t) S - U(t)\lvert \psi_i \rangle$$ in two different ways. First, since $$[S, H] = 0$$ then $$[S, U(t)] = 0$$ and so:
+
+$$
+\langle \psi_f \rvert S^\dagger U(t) S - U(t)\lvert \psi_i \rangle = \langle \psi_f \rvert S^\dagger S U(t) - U(t)\lvert \psi_i \rangle = \langle \psi_f \rvert U(t) - U(t)\lvert \psi_i \rangle = 0
+$$
+
+For the other way we evaluate the two terms:
+
+$$
+\langle \psi_f \rvert S^\dagger U(t) S - U(t)\lvert \psi_i \rangle = \langle \psi_f \rvert S^\dagger U(t) S \lvert \psi_i \rangle - \langle \psi_f \rvert U(t)\lvert \psi_i \rangle = e^{i(\phi_{i} - \phi_f)}\langle \psi_f \rvert U(t)\lvert \psi_i \rangle - \langle \psi_f \rvert U(t)\lvert \psi_i \rangle = (e^{i(\phi_{i} - \phi_f)} - 1)\langle \psi_f \rvert U(t)\lvert \psi_i \rangle
+$$
+
+Thus:
+
+$$
+0 = (e^{i(\phi_{i} - \phi_f)} - 1)\langle \psi_f \rvert U(t)\lvert \psi_i \rangle
+$$
+
+so unless $$\phi_i = \phi_f$$ then $$\color{blue}{\langle\psi_f \rvert U(t)\lvert \psi_i \rangle = 0.}$$
+
+(b) Note that applying spatial inversion twice amounts to doing nothing; $$P^2(x) = P\circ P(x) = P(-x) = x$$ (and analogously for $$p$$) and so $$P^2 = I$$. Hence the square of the eigenvalues of $$P$$ are $$\lambda^2 = 1$$ and hence $$\color{blue}{\lambda = \pm 1}$$. Next, note the definition of the raising operator $$a^\dag$$:
+
+$$
+  a^\dag = \sqrt{\frac{m\omega}{2}}(x - i\frac{p}{m\omega}).
+$$
+
+$$a^\dag$$ is linear in $$x, p$$ and so $$Pa^\dag = -a^\dag$$, and more generally $$P (a^\dag)^n = (-1)^n (a^\dag)^n$$. Noting that $$\ket{0}$$ has even parity (its wavefunction is a Gaussian symmetric about $$x = 0$$), the parity of $$\ket{n} = \frac{1}{\sqrt(n+1)!}(a^\dag)^n\ket{0}$$ is therefore $\color{blue}{(-1)^n}$.
+
+Next, note that $$V_4 = \alpha x^4$$ commutes with $$P$$ as it is even in $$x$$. Therefore, $$[P, H_{\text{SHO}} + V_4] = 0$$ and since the ground state $$\ket{0}$$ and first excited state $$\ket{1}$$ of the harmonic oscillator have different parities, by our result in (a) <span style="color:blue">the transition amplitude vanishes.</span>
+
+#### Thermal States TODO <a id="problem-qm-thermalstates" name="problem-qm-thermalstates"></a>
 **Source:** UBC PHYS 500 2023 HW3 Q1
 
-**Problem Statement:**
+**Problem Statement:** *Consider a single electron spin (spin-1/2) in a magnetic field with Hamiltonian:*
+
+$$
+H = -g\mu_B B S_z
+$$
+
+*where $$g$$ is the g-factor of the spin, $$\mu_B$$ is the Bohr magneton, $$B$$ is the magnetic field (here in the $$z$$-direction) and $$S_z = \frac{1}{2}\sigma_z$$ is the $$z$$-component of spin (with $$\hbar = 1$$).*
+
+*(a) What is the the expected $$z$$-magnetization, $$m = \langle S_z \rangle = \langle \frac{1}{2}\sigma_z \rangle$$ for a thermal equilibrium state of the spin at temperature $$T$$?*
+
+*(b) Compute the spin suceptibility $$\chi = \frac{\partial m}{\partial B}$$ as a function of temperature. How does this quantity behave asymptotically in the extreme limits of $$T \to 0, \infty$$?*
+
+*(c) Compare the entropy as a function of temperature. How does this quantity behave asymptotically in the extreme limits of $$T \to 0, \infty$$?*
+
+**Solution:**
 
 #### Scattering of Identical Particles <a id="problem-qm-identicalscattering" name="problem-qm-identicalscattering"></a>
 **Source:** UBC PHYS 500 2023 HW6 Q4
 
 **Problem Statement:**
+
+**Solution:**
 
 #### Spin-Orbit Coupling in the 3-D Harmonic Oscillator <a id="problem-qm-spinorbitqho" name="problem-qm-spinorbitqho"></a>
 **Source:** UChicago 2014 Quantum Mechanics Graduate Diagnostic Exam Q2
@@ -526,7 +576,7 @@ $$
 
 (c) The Hamiltonian decouples into $$H = H_{cm} + H_{rel}$$ where $$H_{cm}$$ is the Hamiltonian of a free particle with mass $$2m$$ and $$H_{rel}$$ is the Hamiltonian of a particle of mass $$\frac{m}{2}$$ in a 3-D harmonic oscillator potential with spring constant $$k$$. The former has unbounded spectrum $$E_{cm} = \in [0, \infty)$$ and for simplicity we assume that $$E_{cm} = 0$$ for the rest of the problem. The latter has quantized spectrum $$E_{n_x, n_y, n_z} = \frac{3}{2}\hbar\omega(n_x + n_y + n_z + \frac{3}{2})$$ (as $$H_{rel}$$ can be decomposed into 3 1-D simple harmonic oscillators, each with energy $$E_n = \frac{\hbar}\omega(n + \frac{1}{2})$$), with $$\omega = \sqrt{\frac{2k}{m}}$$. Ignoring the restriction from Fermi statistics, the ground state is then the state with $$n_x = n_y = n_z = 0$$ and has energy $$\color{blue}{\frac{3}{2}\hbar\omega}$$. The excited state has one $$n_i = 1$$ and the other two zero, with energy $$\color{blue}{\frac{5}{2}\hbar\omega}$$.
 
-(d) Including the effects of fermionic exchange statistics, the answer to (c) changes. To this end, we note that the eigenstates of the SHO are eigenstates of parity (this follows as $$H$$ is quadratic in the $$x, p$$ quadrature operators and thus $$[\Pi, H] = 0$$), and in particular (recalling the parity of the Hermite polynomials/wavefunctions) $$\Pi\lvert n \rangle = (-1)^n\lvert n \rangle$$. In 3-D this generalizes $$\Pi\lvert n_x, n_y, n_z \rangle = (-1)^{n_x + n_y + n_z} \lvert n_x, n_y, n_z \rangle$$. Since fermionic exchange statistics requires that the acceptable states of this system have odd parity, the $$n_x = n_y = n_z$$ state from (c) with even parity is forbidden. The ground states are instead those with one $$n_i = 1$$ and the other two zero (these have odd parity), with energy $$\color{blue}{\frac{5}{2}\hbar\omega}$$. The ground space is thus <span style="color:blue">3-fold degenerate</span>.
+(d) Including the effects of fermionic exchange statistics, the answer to (c) changes. To this end, we note that the eigenstates of the SHO are eigenstates of parity (this follows as $$H$$ is quadratic in the $$x, p$$ quadrature operators and thus $$[\Pi, H] = 0$$), and in particular (recalling the parity of the Hermite polynomials/wavefunctions, or thinking about the parity of raising operators as is done in <a href="#problem-qm-symmetryamplitudes" name="#problem-qm-symmetryamplitudes"> Symmetries and Transition Amplitudes </a>) $$\Pi\lvert n \rangle = (-1)^n\lvert n \rangle$$. In 3-D this generalizes $$\Pi\lvert n_x, n_y, n_z \rangle = (-1)^{n_x + n_y + n_z} \lvert n_x, n_y, n_z \rangle$$. Since fermionic exchange statistics requires that the acceptable states of this system have odd parity, the $$n_x = n_y = n_z$$ state from (c) with even parity is forbidden. The ground states are instead those with one $$n_i = 1$$ and the other two zero (these have odd parity), with energy $$\color{blue}{\frac{5}{2}\hbar\omega}$$. The ground space is thus <span style="color:blue">3-fold degenerate</span>.
 
 Note: We could reach the same conclusion by observing that the eigenstates of the 3-D harmonic oscillator are eigenstates of angular momentum (see <a href="#problem-qm-spinorbitqho" name="#problem-qm-spinorbitqho"> Spin-Orbit Coupling in the 3-D Harmonic Oscillator </a> for more discussion) and can be labelled by quantum numbers $$l, m$$. We also recall that the angular momentum eigenstates are eigenstates of parity $$\Pi\lvert l, m \rangle = (-1)^l\lvert l, m \rangle$$, thus the fermionic exchange statistics/antisymmetric wavefunction forbids $$l = 0$$ and the ground state(s) consist of the 3-fold degenerate $$l = 1$$ subspace with $$E = \frac{5}{2}\hbar\omega$$.
 
