@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "UChicago Graduate Diagnostic Exam Prep - Problems and Solutions"
+title: "UChicago Graduate Diagnostic Exam Prep - Quantum Mechanics"
 date: 2024-07-18
-description: Interesting physics problems solved while studying for the graduate diagnostic exam.
+description: Interesting quantum mechanics problems solved while studying for the graduate diagnostic exam.
 categories: physics uchicago quantum
 ---
-**July 18, 2024.** *Before the start of my PhD program at UChicago this fall, there is a diagnostic exam to test knowledge/ability in the core subjects of classical mechanics, electromagnetism, quantum mechanics, and statistical mechanics. Here, I share some interesting problems and solutions I came across while preparing for this exam.*
+**July 18, 2024.** *Before the start of my PhD program at UChicago this fall, there is a diagnostic exam to test knowledge/ability in the core subjects of classical mechanics, electromagnetism, quantum mechanics, and statistical mechanics. Here, I share some interesting problems and solutions I came across while preparing for this exam. This is the first post in this series, where I go through quantum mechanics problems.*
 
 ### Contents
-1. <a href="#sec-cm">Classical Mechanics</a>
-- <a href="#problem-cm-sphericalpendulum" name="#problem-cm-sphericalpendulum"> The Spherical Pendulum</a>
-2. <a href="#sec-em">Electromagnetism</a>
-3. <a href="#sec-qm">Quantum Mechanics</a>
 - <a href="#problem-qm-scmicroresonator" name="#problem-qm-scmicroresonator"> Superconducting Microwave Resonator</a>
 - <a href="#problem-qm-twospinmeasurement" name="#problem-qm-twospinmeasurement"> Measuring a Two-Spin System </a>
 - <a href="#problem-qm-rigidrotor" name="#problem-qm-rigidrotor"> Rigid Rotor in Magnetic Field</a>
@@ -28,95 +24,8 @@ categories: physics uchicago quantum
 - <a href="#problem-qm-spinhalfsg" name="#problem-qm-spinhalfsg"> Spin-1/2 and Stern-Gerlach </a>
 - <a href="#problem-qm-qhotrans" name="#problem-qm-qhotrans"> Harmonic Oscillator and Translation </a>
 4. <a href="#sec-sm">Statistical Mechanics</a>
-- <a href="#problem-sm-lennardjonescrystal" name="#problem-sm-lennardjonescrystal"> Lennard-Jones Crystal</a>
 
-### 1. Classical Mechanics <a id="sec-cm" name="sec-cm"></a>
-#### The Spherical Pendulum <a id="problem-cm-sphericalpendulum" name="problem-cm-sphericalpendulum"></a>
-**Source:** UBC Spring 2024 Physics Qualifying Exam Q3
 
-**Problem Statement:** *Consider a pendulum which consists of a weight of mass $$M$$ attatched ot a fixed point by a rigid rod of length $$l$$. The only forces acting on the weight are gravity and the force due to the presence of the rigid rod. Assume that the rod is perfectly rigid, one end is attached to the fixed point, the other end is attached to the weight. Assume that, constrained by these attachments, the rod can take up any orientation, that it is free to move, that it has negligible mass and that its movement involves negligible friction.
-This “spherical pendulum” has stable circular orbits where the height of the weight is a constant. Show that the stable circular orbits occur when and only when the height of the the weight is less than the height of the fixed point where the rod is attached.
-If one considers a stable circular orbit and perturbs it slightly, stability implies that, for a sufficiently small perturbation, there is an oscillatory behaviour. Find the frequency of the oscillation as a function of the height of the stable orbit.*
-
-**Solution:** We first construct the Lagrangian for this system, choosing spherical polar coordinates as the generalized coordinates. $$r = l$$ is fixed, $$\theta$$ measured from the bottom of the orbit is the polar angle, and $$\phi$$ is the azimuthal angle. The position of the pendulum in these coordinates is:
-
-$$
-\mathbf{r} = l\sin\theta\cos\phi \hat{x} + l\sin\theta\sin\phi \hat{y} + l\cos\theta \hat{z}
-$$
-
-Which has time derivative:
-
-$$
-\dot{\mathbf{r}} = l\left((\dot{\theta}\cos\theta\cos\phi - \dot{\phi}\sin\theta\sin\phi)\hat{x} + (\dot{\theta}\cos\theta\sin\phi + \dot{\phi}\sin\theta\cos\phi)\hat{y} -  \dot{\theta}\sin\theta\hat{z}\right)
-$$
-
-thus the kinetic energy is:
-
-$$
-T = \frac{1}{2}m\dot{\mathbf{r}}^2 = \frac{1}{2}ml^2(\dot{\theta}^2 + \dot{\phi}^2\sin^2\theta).
-$$
-
-The potential energy of the pendulum is gravitational and takes the simple form:
-
-$$
-U = mgl(1-\theta)
-$$
-
-and thus the Lagrangian is:
-
-$$
-L = T - U = \frac{1}{2}ml^2(\dot{\theta}^2 + \dot{\phi}^2\sin^2\theta) - mgl(1-\cos\theta).
-$$
-
-We obtain the equations of motion from the Euler-Lagrange equations for $$\theta$$ and $$\phi$$:
-
-$$
-\frac{d}{dt}\frac{\partial L}{\partial \dot{\phi}} = \frac{\partial L}{\partial \phi} \implies \frac{d}{dt}\left(ml^2\dot{\phi}\sin^2\theta\right) = 0 \implies \ddot{\phi}\sin^2\theta + 2\dot{\phi}\dot{\theta}\sin\theta\cos\theta = 0.
-$$
-
-$$
-\frac{d}{dt}\frac{\partial L}{\partial \dot{\theta}} = \frac{\partial L}{\partial \theta} \implies \frac{d}{dt}\left(ml^2\dot{\theta}\right) = ml^2\dot{\phi}^2\sin\theta\cos\theta - mgl\sin\theta \implies \ddot{\theta} = \dot{\phi}^2\sin\theta\cos\theta - \frac{g}{l}\sin\theta
-$$
-
-The $$\phi$$ equation tells us that the angular momentum in the $$z$$-direction of $$L_z = ml^2\dot{\phi}\sin^2\theta$$ is conserved. Thus substituting $$\dot{\phi} = L_z/ml^2\sin^2\theta$$ into the $$\theta$$ equation to remove the $$\phi$$ dependence, we obtain:
-
-$$
-\ddot{\theta} = \frac{L_z^2}{m^2l^4\sin^3\theta}\cos\theta - \frac{g}{l}\sin\theta.
-$$
-
-The equilibrium point is the $$\theta = \theta_0$$ that makes the RHS of the above vanish (since the equation is transcendental in $$\theta$$, it does not have a closed form). At this angle we have $$\color{blue}{\ddot{\theta} = 0}$$ which defines a circular orbit. For this circular orbit, we have that $$L_z = ml^2\dot{\phi}\sin^2\theta_0$$ (from the $$\phi$$ equation), and that $$\dot{\phi} = \sqrt{\frac{g}{l\cos\theta_0}}$$ (from the $$\theta$$ equation) and so:
-
-$$
-L_z = ml^2\sin^2\theta_0\sqrt{\frac{g}{l\cos\theta_0}}.
-$$
-
-We evaluate the stability of the orbit by Taylor expanding $$\ddot{\theta}$$ around the equilibrium point (with $$\delta\theta = \theta - \theta_0$$):
-
-$$
-\ddot{\delta \theta} \approx \ddot{\theta}(\theta=\theta_0) + \frac{d\ddot{\theta}}{d\theta}(\theta=\theta_0)\delta\theta.
-$$
-
-The first term evaluates to zero, and we calculate the second term to be:
-
-$$
-\ddot{\delta \theta} \approx \left(\frac{L_z^2}{m^2l^4}\frac{-\sin^4\theta_0 - 3\sin^2\theta_0\cos^2\theta_0}{\sin^6\theta_0} - \frac{g}{l}\cos\theta_0\right)\delta\theta = -\left(\frac{L_z^2}{m^2l^4}\frac{1 + 2\cos^2\theta_0}{\sin^4\theta_0} + \frac{g}{l}\cos\theta_0\right)\delta\theta
-$$
-
-Inserting our expression for the equilibrium value of $$L_z$$ we obtain:
-
-$$
-\ddot{\delta \theta} = -\frac{g}{l}\frac{1 + 3\cos^2\theta_0}{\cos\theta_0}\delta\theta.
-$$
-
-Since $$\cos\theta_0 > 0$$ for $$0 \leq \theta_0 < \frac{\pi}{2}$$, the sign of the second derivative is negative and hence <span style="color:blue">the circular orbits are stable below the fixed point</span> (and for $$\theta_0 \geq \frac{\pi}{2}$$ the second derivative becomes positive and so <span style="color:blue">the orbit/equilibrium is unstable</span>). For these stable circular orbits, the oscillation frequency $$\Omega$$ about the circular orbit as a function of the height/angle $$\theta_0$$ is:
-
-$$
-\color{blue}{\Omega = \sqrt{\frac{g}{l}\frac{1 + 3\cos^2\theta_0}{\cos\theta_0}}.}
-$$
-
-### 2. Electromagnetism <a id="sec-em" name="sec-em"></a>
-
-### 3. Quantum Mechanics <a id="sec-qm" name="sec-qm"></a>
 #### Superconducting Microwave Resonator <a id="problem-qm-scmicroresonator" name="problem-qm-scmicroresonator"></a>
 **Source:** UBC Spring 2024 Physics Qualifying Exam Q1
 
@@ -649,29 +558,29 @@ Note: We could reach the same conclusion by observing that the eigenstates of th
 #### Spin-1/2 and Stern-Gerlach <a id="problem-qm-spinhalfsg" name="problem-qm-spinhalfsg"></a>
 **Source:** MIT Spring 2001 Doctoral General Examination Quantum Q1
 
-**Problem Statement:** Consider a spin-1/2 particle where $$S_j = \frac{\hbar}{2}\sigma_j$$ and
+**Problem Statement:** *Consider a spin-1/2 particle where $$S_j = \frac{\hbar}{2}\sigma_j$$ and*
 
-$$
-    \sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \quad \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
-$$
+\begin{equation}\label{eq:paulis}
+    \sigma_x = \left( \begin{array}{cc} 0 & 1 \\ 1 & 0\end{array} \right) \quad \sigma_y = \left( \begin{array}{cc} 0 & -i \\ i & 0\end{array} \right) \quad \sigma_z = \left( \begin{array}{cc} 1 & 0 \\ 0 & -1\end{array} \right)
+\end{equation}
 
-(a) The operator along the $$\hat{n} = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$$ direction is:
+*(a) The operator along the $$\hat{n} = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$$ direction is:*
 
 \begin{equation}\label{eq:Sn}
     S_{\hat{n}} = n_xS_x + n_yS_y + n_zS_z.
 \end{equation}
 
-Find the eigenvalues of $$S_{\hat{n}}$$ and the associated eigenvectors.
+*Find the eigenvalues of $$S_{\hat{n}}$$ and the associated eigenvectors.*
 
-(b) Is it possible for a spin-1/2 particle to be in a state $$\lvert\psi\rangle$$ such that:
+*(b) Is it possible for a spin-1/2 particle to be in a state $$\lvert\psi\rangle$$ such that:*
 
 $$
 \langle \psi \rvert S_x \lvert \psi \rangle = \langle \psi \rvert S_y \lvert \psi \rangle = \langle \psi \rvert S_z \lvert \psi \rangle = 0?
 $$
 
-IF it is possible, find $$\lvert \psi \rangle$$. If it is not, show why.
+*If it is possible, find $$\lvert \psi \rangle$$. If it is not, show why.*
 
-(c) A beam of spin-1/2 particles enters a Stern-Gerlach filter which allows only particles whose spin is $$+\frac{\hbar}{2}$$ along the $$z$$ direction to pass. the particles then pass through a region where there is a magnetic field $$\mathbf{B} = (0, B, 0)$$ and spend time $$T$$ in this region. Then the particles enter a Stern-Gerlach filter which allows only particles whose spin is $$+\frac{\hbar}{2}$$ along the $$x$$ direction to pass. What fraction of the electrons which exit the first filter exit the second? Assume that the particles interact with the magnetic field via $$H = -\sum_j B_jS_j$$. 
+*(c) A beam of spin-1/2 particles enters a Stern-Gerlach filter which allows only particles whose spin is $$+\frac{\hbar}{2}$$ along the $$z$$ direction to pass. the particles then pass through a region where there is a magnetic field $$\mathbf{B} = (0, B, 0)$$ and spend time $$T$$ in this region. Then the particles enter a Stern-Gerlach filter which allows only particles whose spin is $$+\frac{\hbar}{2}$$ along the $$x$$ direction to pass. What fraction of the electrons which exit the first filter exit the second? Assume that the particles interact with the magnetic field via $$H = -\sum_j B_jS_j$$.* 
 
 **Solution:** (a) We first calculate:
 
@@ -742,72 +651,3 @@ $$
 **Problem Statement:**
 
 **Solution:**
-
-### 4. Statistical Mechanics <a id="sec-sm" name="sec-sm"></a>
-#### Lennard-Jones Crystal <a id="problem-sm-lennardjonescrystal" name="problem-sm-lennardjonescrystal"></a>
-**Source:** UBC Spring 2024 Physics Qualifying Exam Q4
-
-**Problem Statement:** *The interaction potential between atoms of mass $M$ is given by a Lennard-Jones potential:*
-\begin{equation}\label{eq:lennardjones}
-u(x) = \frac{A}{x^{12}} - \frac{B}{x^6}
-\end{equation}
-*Here $A$ and $B$ are positive constants. Consider a crystal formed from these atoms, with a cubic lattice structure. Calculate the density of the crystal. Give an expression for its specific heat capacity in the low temperature limit. Consider only the interactions of each atom with its six nearest neighbours. Calculate as well the approximate binding energy of the quantum mechanical ground state for the diatomic molecule formed from these atoms.*
-
-**Solution:** We first find the equilibrium spacing $$x_0$$ that minimizes the potential energy. To this end we set the derivative of $$u(x)$$ to zero:
-
-$$
-\left.\frac{du}{dx}\right|_{x=x_0} = -12\frac{A}{x_0^{13}} + 6\frac{B}{x_0^7} = 0 \implies x_0 = \sqrt[6]{\frac{2A}{B}}
-$$
-
-At equilibrium the atoms in the crystal are all $$x_0$$ apart, and hence there is a single atom inside a cube of volume $$x_0^3$$; hence the number density of the crystal is:
-
-$$
-\color{blue}{\rho = \frac{N}{V} = \frac{1}{x_0^3} = \sqrt{\frac{B}{2A}}}
-$$
-
-and the mass density is obtained by multiplying the above by $$M$$, The high-temperature limit of the heat capacity is simple; each atom in the crystal has 6 degrees of freedom (3 translational and 3 vibrational) which contributes $$\frac{1}{2}kT$$ energy via the equipartition theorem, and thus the energy is $$U = 6 \frac{1}{2}NkT = 3NkT$$ and the specific heat capacity is $$C_V = \frac{dU}{dT} = 3Nk$$ (the Dulong-Petit Law). The low-temperature heat capacity requires more careful thought. First, since we consider the low-temperature limit, we can approximate the interatomic potential by Taylor expansion around the minimum $$x = x_0$$. This yields:
-
-$$
-u(x) \approx u(x_0) + \left.\frac{du}{dx}\right|_{x=x_0}(x - x_0) + \left.\frac{d^2u}{dx^2}\right|_{x=x_0}(x-x_0)^2 = -\frac{B^2}{4A} + 0 + \left(\frac{156A}{x_0^{14}} - \frac{42B}{x_0^8}\right)(x - x_0)^2
-$$
-
-We can drop the constant term (it will not matter for the heat capacity) and define $$\frac{1}{2}k = \left(\frac{156A}{x_0^{14}} - \frac{42B}{x_0^8}\right)$$. Now, in a significant approximation we calculate the heat capacity assuming that each of atoms in the crystal can be treated as independent Harmonic oscillators (this is the so-called ``Einstein model'' of solids - a more accurate low-$T$ picture can be obtained using the Debye theory of solids (as discussed in the PHYS 502 lecture notes [here](/notes/)) but this seemed too complicated/esoteric to be derived in an exam setting, so we take the simpler approach). In particular, each atom oscillates independently in $x, y, z$ and so we have $3N$ harmonic oscillators in the crystal in total, with energies given by:
-
-$$
-E_n = \hbar\omega\left(n + \frac{1}{2}\right)
-$$
-
-with $$\omega = \sqrt{k/M}$$. We drop the zero-point energy as it does not contribute to the heat capacity. The partition function for a single one of these oscillators is then:
-
-$$
-Z = \sum_{n=0}^\infty \exp(-\beta E_n) = \sum_{n=0}^\infty \exp\left(-\hbar\omega\left(n + \frac{1}{2}\right)\right) = \frac{\exp(-\beta \hbar \omega/2)}{1 - \exp(-\beta\hbar\omega)}
-$$
-
-where $$\beta = \frac{1}{kT}$$ and we use the geometric series in the last equality. The mean energy per oscillator is then:
-
-$$
-U = -\frac{d\ln Z}{d\beta} = \frac{\hbar\omega}{2} + \frac{\hbar\omega}{\exp(\beta\hbar\omega) - 1}
-$$
-
-so the mean total energy of the crystal is:
-$$
-U = 3N \left(\frac{\hbar\omega}{2} + \frac{\hbar\omega}{\exp(\beta\hbar\omega) - 1}\right)
-$$
-
-and thus we can obtain the heat capacity:
-
-$$
-C_V = \frac{\partial U}{\partial T} = -k\beta^2 \frac{\partial U}{\partial \beta} = 3Nk\frac{(\beta\hbar\omega)^2\exp(\beta\hbar\omega)}{(\exp(\beta\hbar\omega) - 1)^2}
-$$
-
-which in the low $$T$$ limit becomes:
-
-$$
-\color{blue}{C_V = 3Nk(\beta\hbar\omega)^2\exp(-\beta\hbar\omega).}
-$$
-
-The binding energy for the quantum mechanical ground state for the diatomic molecule formed by these atoms is simply the energy needed to break apart the atoms from the equilibrium distance $x_0$ to infinity. The energy at the equilibrium distance was calculated in the Taylor expansion to be $$-\frac{B^2}{2A}$$, and to this we can add the zero point energy of $$\frac{1}{2}\hbar\omega$$. At infinity we have $$\lim_{x \to \infty}u(x) = 0$$ and so the binding energy is simply the ground state energy:
-
-$$
-\color{blue}{E_0 = -\frac{B^2}{2A} + \frac{1}{2}\hbar\omega.}
-$$
