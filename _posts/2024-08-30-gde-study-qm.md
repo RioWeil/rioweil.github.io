@@ -10,7 +10,10 @@ categories: physics uchicago quantum
 ### Contents
 - <a href="#problem-qm-scmicroresonator" name="#problem-qm-scmicroresonator"> Superconducting Microwave Resonator</a>
 - <a href="#problem-qm-twospinmeasurement" name="#problem-qm-twospinmeasurement"> Measuring a Two-Spin System </a>
-- <a href="#problem-qm-rigidrotor" name="#problem-qm-rigidrotor"> Rigid Rotor in Magnetic Field</a>
+- <a href="#problem-qm-rigidrotor" name="#problem-qm-rigidrotor"> Rigid Rotor in Magnetic Field </a>
+- <a href="#problem-qm-symmetryamplitudes" name="#problem-qm-symmetryamplitudes"> Symmetries and Transition Amplitudes </a>
+- <a href="#problem-qm-thermalstates" name="#problem-qm-thermalstates"> Thermal States </a>
+- <a href="#problem-qm-identicalscattering" name="#problem-qm-identicalscattering"> Scattering of Identical Particles </a>
 - <a href="#problem-qm-spinorbitqho" name="#problem-qm-spinorbitqho"> Spin-Orbit Coupling in the 3-D Harmonic Oscillator </a>
 - <a href="#problem-qm-identicalcubicwell" name="#problem-qm-identicalcubicwell"> Identical Particles in an Infinite Cubic Well </a>
 - <a href="#problem-qm-timevaryforce" name="#problem-qm-timevaryforce"> Time-Varying Force </a>
@@ -240,6 +243,21 @@ $$
 $$
 
 and the exact result agrees to perturbation theory to second order.
+
+#### Symmetries and Transition Amplitudes <a id="problem-qm-symmetryamplitudes" name="problem-qm-symmetryamplitudes"></a>
+**Source:** UBC PHYS 500 2023 HW2 Q2
+
+**Problem Statement:**
+
+#### Thermal States <a id="problem-qm-thermalstates" name="problem-qm-thermalstates"></a>
+**Source:** UBC PHYS 500 2023 HW3 Q1
+
+**Problem Statement:**
+
+#### Scattering of Identical Particles <a id="problem-qm-identicalscattering" name="problem-qm-identicalscattering"></a>
+**Source:** UBC PHYS 500 2023 HW6 Q4
+
+**Problem Statement:**
 
 #### Spin-Orbit Coupling in the 3-D Harmonic Oscillator <a id="problem-qm-spinorbitqho" name="problem-qm-spinorbitqho"></a>
 **Source:** UChicago 2014 Quantum Mechanics Graduate Diagnostic Exam Q2
