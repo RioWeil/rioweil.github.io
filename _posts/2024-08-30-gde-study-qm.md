@@ -829,13 +829,13 @@ $$
 [a^\dagger, a] = [\frac{1}{\sqrt{2\hbar\omega}}(\omega x - ip), \frac{1}{\sqrt{2\hbar\omega}}(\omega x + ip)] = \frac{1}{2\hbar\omega}([\omega x, \omega x] + [\omega x, ip] - [ip, \omega x] - [ip, ip]) = \frac{1}{2\hbar\omega}(0 + \omega i (i\hbar) - \omega i (-i\hbar) + 0) = -1
 $$
 
-Thus Eq. \eqref{eq:opexponential} applies. Now calculating the probability of measuring $$E_j = \hbar\omega(j + \frac{1}{2})$$ using the Born rule, we have:
+Thus the provided identity of operator exponentials applies. Now calculating the probability of measuring $$E_j = \hbar\omega(j + \frac{1}{2})$$ using the Born rule, we have:
 
 $$
 p(j) = \lvert \langle j \rvert e^{-\frac{ipd}{\hbar}} \lvert 0 \rangle \rvert^2 = \lvert \langle j \rvert e^{\sqrt{\frac{\omega d^2}{2\hbar}}(a^\dagger - a)} \lvert 0 \rangle \rvert^2
 $$
 
-For brevity let us define $$\alpha = \sqrt{\frac{\omega d^2}{2\hbar}}$$. Then using Eq. \eqref{eq:opexponential} with $$A = \alpha a^\dagger$$ and $$B = -\alpha a$$ (and $$[\alpha a^\dagger, -\alpha a] = -\alpha^2 [a^\dagger, a] = \alpha^2$$) we obtain:
+For brevity let us define $$\alpha = \sqrt{\frac{\omega d^2}{2\hbar}}$$. Then using the operator exponential identity with $$A = \alpha a^\dagger$$ and $$B = -\alpha a$$ (and $$[\alpha a^\dagger, -\alpha a] = -\alpha^2 [a^\dagger, a] = \alpha^2$$) we obtain:
 
 $$
 p(j) = \lvert \langle j \rvert e^{\alpha a^\dagger}e^{-\alpha a}e^{-\frac{\alpha^2}{2}}\lvert 0 \rangle \rvert^2
