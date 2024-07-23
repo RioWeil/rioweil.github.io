@@ -261,7 +261,7 @@ $$
 For the other way we evaluate the two terms:
 
 $$
-\langle \psi_f \rvert S^\dagger U(t) S - U(t)\lvert \psi_i \rangle = \langle \psi_f \rvert S^\dagger U(t) S \lvert \psi_i \rangle - \langle \psi_f \rvert U(t)\lvert \psi_i \rangle = e^{i(\phi_{i} - \phi_f)}\langle \psi_f \rvert U(t)\lvert \psi_i \rangle - \langle \psi_f \rvert U(t)\lvert \psi_i \rangle = (e^{i(\phi_{i} - \phi_f)} - 1)\langle \psi_f \rvert U(t)\lvert \psi_i \rangle
+\langle \psi_f \rvert S^\dagger U(t) S - U(t)\lvert \psi_i \rangle = \langle \psi_f \rvert S^\dagger U(t) S \lvert \psi_i \rangle - \langle \psi_f \rvert U(t)\lvert \psi_i \rangle = (e^{i(\phi_{i} - \phi_f)} - 1)\langle \psi_f \rvert U(t)\lvert \psi_i \rangle
 $$
 
 Thus:
@@ -272,13 +272,13 @@ $$
 
 so unless $$\phi_i = \phi_f$$ then $$\color{blue}{\langle\psi_f \rvert U(t)\lvert \psi_i \rangle = 0.}$$
 
-(b) Note that applying spatial inversion twice amounts to doing nothing; $$P^2(x) = P\circ P(x) = P(-x) = x$$ (and analogously for $$p$$) and so $$P^2 = I$$. Hence the square of the eigenvalues of $$P$$ are $$\lambda^2 = 1$$ and hence $$\color{blue}{\lambda = \pm 1}$$. Next, note the definition of the raising operator $$a^\dag$$:
+(b) Note that applying spatial inversion twice amounts to doing nothing; $$P^2(x) = P\circ P(x) = P(-x) = x$$ (and analogously for $$p$$) and so $$P^2 = I$$. Hence the square of the eigenvalues of $$P$$ are $$\lambda^2 = 1$$ and hence $$\color{blue}{\lambda = \pm 1}$$. Next, note the definition of the raising operator $$a^\dagger$$:
 
 $$
-  a^\dag = \sqrt{\frac{m\omega}{2}}(x - i\frac{p}{m\omega}).
+  a^\dagger = \sqrt{\frac{m\omega}{2}}(x - i\frac{p}{m\omega}).
 $$
 
-$$a^\dag$$ is linear in $$x, p$$ and so $$Pa^\dag = -a^\dag$$, and more generally $$P (a^\dag)^n = (-1)^n (a^\dag)^n$$. Noting that $$\ket{0}$$ has even parity (its wavefunction is a Gaussian symmetric about $$x = 0$$), the parity of $$\ket{n} = \frac{1}{\sqrt(n+1)!}(a^\dag)^n\ket{0}$$ is therefore $\color{blue}{(-1)^n}$.
+$$a^\dagger$$ is linear in $$x, p$$ and so $$Pa^\dagger = -a^\dagger$$, and more generally $$P (a^\dagger)^n = (-1)^n (a^\dagger)^n$$. Noting that $$\ket{0}$$ has even parity (its wavefunction is a Gaussian symmetric about $$x = 0$$), the parity of $$\ket{n} = \frac{1}{\sqrt(n+1)!}(a^\dagger)^n\ket{0}$$ is therefore $\color{blue}{(-1)^n}$.
 
 Next, note that $$V_4 = \alpha x^4$$ commutes with $$P$$ as it is even in $$x$$. Therefore, $$[P, H_{\text{SHO}} + V_4] = 0$$ and since the ground state $$\ket{0}$$ and first excited state $$\ket{1}$$ of the harmonic oscillator have different parities, by our result in (a) <span style="color:blue">the transition amplitude vanishes.</span>
 
@@ -320,16 +320,16 @@ $$
 (b) Computing the susceptibility we have:
 
 $$
-\color{blue}{\chi = \dpd{m}{B} = \frac{g\mu_B}{2T}\sech^2\left(\frac{g\mu_B B}{T}\right)}
+\color{blue}{\chi = \frac{\partial m}{\partial B} = \frac{g\mu_B}{2T}\text{sech}^2\left(\frac{g\mu_B B}{T}\right)}
 $$
 
-where we use that $$\partial_x \tanh(x) = \sech^2(x)$$ and the chain rule. In the $$T \to \infty$$ limit, we note first that $$\lim_{T \to \infty}\sech(\frac{g\mu_B B}{T}) \sim \frac{1}{4}$$ and so:
+where we use that $$\partial_x \tanh(x) = \text{sech}^2(x)$$ and the chain rule. In the $$T \to \infty$$ limit, we note first that $$\lim_{T \to \infty}\text{sech}(\frac{g\mu_B B}{T}) \sim \frac{1}{4}$$ and so:
 
 $$
 \color{blue}{\lim_{T \to \infty}\chi \sim \frac{g\mu_B}{32T}}
 $$
 
-and the magnetization drops to 0 as $$\sim 1/T$$. in the $$T \to 0$$ limit, $\lim_{T \to 0}\sech(\frac{g\mu_B B}{T}) \sim \frac{e^{-\frac{g\mu_B B}{}}}{2}$$ and so:
+and the magnetization drops to 0 as $$\sim 1/T$$. in the $$T \to 0$$ limit, $$\lim_{T \to 0}\sech(\frac{g\mu_B B}{T}) \sim \frac{e^{-\frac{g\mu_B B}{T}}}{2}$$ and so:
 
 $$
 \color{blue}{\lim_{T \to 0}\chi \sim \frac{g\mu_B}{8T}e^{-\frac{2g\mu_B B}{T}}}
@@ -343,7 +343,7 @@ $$
 S(\rho_T) = -\frac{e^{\frac{g\mu_B B}{T}}}{Z}\log(\frac{e^{\frac{g\mu_B B}{T}}}{Z}) -\frac{e^{-\frac{g\mu_B B}{T}}}{Z}\log(\frac{e^{-\frac{g\mu_B B}{ T}}}{Z}) = \frac{\log(Z)}{Z}\left(e^{\frac{g\mu_B B}{ T}} + e^{-\frac{g\mu_B B}{T}}\right) -\frac{1}{Z}\frac{g\mu_B B}{T}\left(e^{\frac{g\mu_B B}{T}} - e^{-\frac{g\mu_B B}{T}}\right)
 $$
 
-which with $$Z = 2\cosh(\frac{g\muB}{T})$$ becomes:
+which with $$Z = 2\cosh(\frac{g\mu_B B}{T})$$ becomes:
 
 $$
 \color{blue}{S(\rho_T) = \log(2) + \log(\cosh(\frac{g\mu_B B}{T})) - \frac{g\mu_B B}{T}\tanh(\frac{g\mu_B B}{T})}
@@ -826,10 +826,10 @@ $$
 We also calculate $$[a^\dagger, a]$$:
 
 $$
-[a^\dagger, a] = [\frac{1}{\sqrt{2\hbar\omega}}(\omega x - ip), \frac{1}{\sqrt{2\hbar\omega}}(\omega x + ip)] = \frac{1}{2\hbar\omega}([\omega x, \omega x] + [\omega x, ip] - [ip, \omega x] - [ip, ip]) = \frac{1}{2\hbar\omega}(0 + \omega i (i\hbar) - \omega i (-i\hbar) + 0) = -1
+[a^\dagger, a] = [\frac{1}{\sqrt{2\hbar\omega}}(\omega x - ip), \frac{1}{\sqrt{2\hbar\omega}}(\omega x + ip)] = \frac{1}{2\hbar\omega}([\omega x, \omega x] + [\omega x, ip] - [ip, \omega x] - [ip, ip]) = -1
 $$
 
-Thus the provided identity of operator exponentials applies. Now calculating the probability of measuring $$E_j = \hbar\omega(j + \frac{1}{2})$$ using the Born rule, we have:
+where we have used the canonical commutation relation $$[x, p] = i\hbar$$. Thus the provided identity of operator exponentials applies. Now calculating the probability of measuring $$E_j = \hbar\omega(j + \frac{1}{2})$$ using the Born rule, we have:
 
 $$
 p(j) = \lvert \langle j \rvert e^{-\frac{ipd}{\hbar}} \lvert 0 \rangle \rvert^2 = \lvert \langle j \rvert e^{\sqrt{\frac{\omega d^2}{2\hbar}}(a^\dagger - a)} \lvert 0 \rangle \rvert^2
