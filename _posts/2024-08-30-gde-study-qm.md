@@ -282,7 +282,7 @@ $$a^\dag$$ is linear in $$x, p$$ and so $$Pa^\dag = -a^\dag$$, and more generall
 
 Next, note that $$V_4 = \alpha x^4$$ commutes with $$P$$ as it is even in $$x$$. Therefore, $$[P, H_{\text{SHO}} + V_4] = 0$$ and since the ground state $$\ket{0}$$ and first excited state $$\ket{1}$$ of the harmonic oscillator have different parities, by our result in (a) <span style="color:blue">the transition amplitude vanishes.</span>
 
-#### Thermal States TODO <a id="problem-qm-thermalstates" name="problem-qm-thermalstates"></a>
+#### Thermal States <a id="problem-qm-thermalstates" name="problem-qm-thermalstates"></a>
 **Source:** UBC PHYS 500 2023 HW3 Q1
 
 **Problem Statement:** *Consider a single electron spin (spin-1/2) in a magnetic field with Hamiltonian:*
@@ -297,14 +297,90 @@ $$
 
 *(b) Compute the spin suceptibility $$\chi = \frac{\partial m}{\partial B}$$ as a function of temperature. How does this quantity behave asymptotically in the extreme limits of $$T \to 0, \infty$$?*
 
-*(c) Compare the entropy as a function of temperature. How does this quantity behave asymptotically in the extreme limits of $$T \to 0, \infty$$?*
+*(c) Compute the entropy as a function of temperature. Compute and explain the limiting value of the entropy in the extreme limits of $$T \to 0, \infty$$?*
 
-**Solution:**
+**Solution:** The thermal equilibrium state is given by (working in units with $$ = 1$$):
 
-#### Scattering of Identical Particles <a id="problem-qm-identicalscattering" name="problem-qm-identicalscattering"></a>
+$$
+\rho_T = \frac{e^{-H/T}}{Z} = \frac{1}{e^{-\frac{g\mu_B B}{T}} + e^{\frac{g\mu_B B}{T}}}\begin{pmatrix} e^{\frac{g\mu_B B}{T}} & 0 \\ 0 & e^{-\frac{g\mu_B B}{T}} \end{pmatrix} = \frac{1}{2\cosh(\frac{g\mu_B B}{T})} \begin{pmatrix} e^{\frac{g\mu_B B}{T}} & 0 \\ 0 & e^{-\frac{g\mu_B B}{T}}\end{pmatrix}.
+$$
+
+From this we can easily compute the $$z$$-magnetization:
+
+$$
+m = \langle \frac{1}{2}\sigma_z \rangle = \text{Tr}(\frac{1}{2}\sigma_z\rho_T) =  \frac{1}{4\cosh(\frac{g\mu_B B}{T})}\text{Tr}\left(\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}  \begin{pmatrix} e^{\frac{g\mu_B B}{T}} & 0 \\ 0 & e^{-\frac{g\mu_B B}{T}}\end{pmatrix} \right) = \frac{1}{4\cosh(\frac{g\mu_B B}{T})}(e^{\frac{g\mu_B B}{T}} - e^{-\frac{g\mu_B B}{T}})
+$$
+
+so we conclude:
+
+$$
+\color{blue}{m = \frac{1}{2}\tanh(\frac{g\mu_B B}{T}).}
+$$
+
+(b) Computing the susceptibility we have:
+
+$$
+\color{blue}{\chi = \dpd{m}{B} = \frac{g\mu_B}{2T}\sech^2\left(\frac{g\mu_B B}{T}\right)}
+$$
+
+where we use that $$\partial_x \tanh(x) = \sech^2(x)$$ and the chain rule. In the $$T \to \infty$$ limit, we note first that $$\lim_{T \to \infty}\sech(\frac{g\mu_B B}{T}) \sim \frac{1}{4}$$ and so:
+
+$$
+\color{blue}{\lim_{T \to \infty}\chi \sim \frac{g\mu_B}{32T}}
+$$
+
+and the magnetization drops to 0 as $$\sim 1/T$$. in the $$T \to 0$$ limit, $\lim_{T \to 0}\sech(\frac{g\mu_B B}{T}) \sim \frac{e^{-\frac{g\mu_B B}{}}}{2}$$ and so:
+
+$$
+\color{blue}{\lim_{T \to 0}\chi \sim \frac{g\mu_B}{8T}e^{-\frac{2g\mu_B B}{T}}}
+$$
+
+so the magnetization drops exponentially quickly to 0.
+
+(c) We recall the entropy of a quantum state is given by $$S(\rho) = -\text{Tr}(\rho\log \rho) = - \sum_i \lambda_i \log \lambda_i$$ with $$\lambda_i$$ the eigenvalues of $$\rho$$. Therefore:
+
+$$
+S(\rho_T) = -\frac{e^{\frac{g\mu_B B}{T}}}{Z}\log(\frac{e^{\frac{g\mu_B B}{T}}}{Z}) -\frac{e^{-\frac{g\mu_B B}{T}}}{Z}\log(\frac{e^{-\frac{g\mu_B B}{ T}}}{Z}) = \frac{\log(Z)}{Z}\left(e^{\frac{g\mu_B B}{ T}} + e^{-\frac{g\mu_B B}{T}}\right) -\frac{1}{Z}\frac{g\mu_B B}{T}\left(e^{\frac{g\mu_B B}{T}} - e^{-\frac{g\mu_B B}{T}}\right)
+$$
+
+which with $$Z = 2\cosh(\frac{g\muB}{T})$$ becomes:
+
+$$
+\color{blue}{S(\rho_T) = \log(2) + \log(\cosh(\frac{g\mu_B B}{T})) - \frac{g\mu_B B}{T}\tanh(\frac{g\mu_B B}{T})}
+$$
+
+In the $$T \to \infty$$ limit the second/third terms go to zero and we have:
+
+$$
+\color{blue}{\lim_{T \to \infty} S(\rho_T) = \log(2).}
+$$
+
+This makes sense as at infinite temperature both of the spin states are equally favoured and hence the quantum state is maximally mixed, thus yielding the maximal 1-spin entropy of $$\log(2)$$. The $$T \to 0$$ limit must be taken more carefully as both terms diverge; letting $$x = \frac{T}{g\mu_B B}$$ we find:
+
+$$
+\lim_{x \to 0}  \log(\cosh(\frac{1}{x})) - \frac{1}{x}\tanh(\frac{1}{x}) = \lim_{x \to 0} \log(\frac{e^{\frac{1}{x}}}{2}) - \frac{1}{x}\frac{e^{\frac{1}{x}}}{e^{\frac{1}{x}}} = \lim_{x \to 0} \log(e^{\frac{1}{x}}) - \log(2) - \frac{1}{x} = -\log(2)
+$$
+
+Thus:
+
+$$
+\color{blue}{\lim_{T \to 0}S(\rho_T) = 0.}
+$$
+
+This also makes sense, as at $$T = 0$$ the thermal equilibrium is simply the pure ground state $$\lvert \uparrow \rangle$$ which has no entropy.
+
+#### Scattering of Identical Particles TODO <a id="problem-qm-identicalscattering" name="problem-qm-identicalscattering"></a>
 **Source:** UBC PHYS 500 2023 HW6 Q4
 
-**Problem Statement:**
+**Problem Statement:** *Consider two particles of mass $$m$$, interacting by the Yukawa potential:*
+\begin{equation}\label{eq:yukawa}
+    V(r) = \frac{e^{-\kappa r}}{r}
+\end{equation}
+*where $$r = \lvert \mathbf{r}_1 - \mathbf{r}_2 \rvert^2$$ is the distance between the two particles. Denote the initial momenta of the particles as $$\pm k \hat{z}$$ where $$\hat{z}$$ is the unit vector in the $$z$$-direction. Find the differential cross section $$\frac{d\sigma}{d\Omega}$$ for particles to scatter into a thin shell of solid angle $$d\Omega = \sin\theta d\theta$$ around the final momenta $$\pm \mathbf{k}_f$$, where $$\mathbf{k}_f$$ has angle $$\theta$$ from the $$z$$-axis. Express your final answer in terms of $$k, m \theta$$. Compute separately for the case of (spin-less or spin-polarized) bosons and fermions. Comment on the effect of identical particle statistics for the case $$\theta = \pi/2$$. The Fourier transform of the Yukawa potential may be useful:*
+\begin{equation}\label{eq:yukawaft}
+    \tilde{V}(\mathbf{q}) = \int d^3r e^{-i\mathbf{q} \cdot \mathbf{r}}V(r) = \frac{4\pi}{q^2 + \kappa^2}.
+\end{equation}
+
 
 **Solution:**
 
@@ -580,42 +656,42 @@ $$
 
 Note: We could reach the same conclusion by observing that the eigenstates of the 3-D harmonic oscillator are eigenstates of angular momentum (see <a href="#problem-qm-spinorbitqho" name="#problem-qm-spinorbitqho"> Spin-Orbit Coupling in the 3-D Harmonic Oscillator </a> for more discussion) and can be labelled by quantum numbers $$l, m$$. We also recall that the angular momentum eigenstates are eigenstates of parity $$\Pi\lvert l, m \rangle = (-1)^l\lvert l, m \rangle$$, thus the fermionic exchange statistics/antisymmetric wavefunction forbids $$l = 0$$ and the ground state(s) consist of the 3-fold degenerate $$l = 1$$ subspace with $$E = \frac{5}{2}\hbar\omega$$.
 
-#### A Quantum Spin Chain <a id="problem-qm-spinchain" name="problem-qm-spinchain"></a>
+#### A Quantum Spin Chain TODO <a id="problem-qm-spinchain" name="problem-qm-spinchain"></a>
 **Source:** MIT Fall 2012 Doctoral General Examination Quantum Q1
 
 **Problem Statement:** 
 
 **Solution:**
 
-#### Anomalous Magnetic Moment of the Electron <a id="problem-qm-emagmoment" name="problem-qm-emagmoment"></a>
+#### Anomalous Magnetic Moment of the Electron TODO <a id="problem-qm-emagmoment" name="problem-qm-emagmoment"></a>
 **Source:** MIT Fall 2012 Doctoral General Examination Quantum Q2
 
 **Problem Statement:**
 
 **Solution:**
 
-#### A Heisenberg Ferromagnet <a id="problem-qm-heisenbergferro" name="problem-qm-heisenbergferro"></a>
+#### A Heisenberg Ferromagnet TODO <a id="problem-qm-heisenbergferro" name="problem-qm-heisenbergferro"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q1
 
 **Problem Statement:**
 
 **Solution:**
 
-#### The Supersymmetric Method <a id="problem-qm-susy" name="problem-qm-susy"></a>
+#### The Supersymmetric Method TODO <a id="problem-qm-susy" name="problem-qm-susy"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q2
 
 **Problem Statement:**
 
 **Solution:**
 
-#### Spin-1/2 in Time-Dependent Magnetic Field <a id="problem-qm-timedepmag" name="problem-qm-timedepmag"></a>
+#### Spin-1/2 in Time-Dependent Magnetic Field TODO <a id="problem-qm-timedepmag" name="problem-qm-timedepmag"></a>
 **Source:** MIT Fall 2002 Doctoral General Examination Quantum Q2
 
 **Problem Statement:**
 
 **Solution:**
 
-#### Particle on a 1-D Lattice <a id="problem-qm-onedlattice" name="problem-qm-onedlattice"></a>
+#### Particle on a 1-D Lattice TODO <a id="problem-qm-onedlattice" name="problem-qm-onedlattice"></a>
 **Source:** MIT Spring 2002 Doctoral General Examination Quantum Q1
 
 **Problem Statement:**
