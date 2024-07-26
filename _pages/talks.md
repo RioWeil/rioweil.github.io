@@ -20,7 +20,7 @@ nav_order: 2
     - Format: 45 minute talk
 
 - **UBC 3-Minute Thesis Competition**
-    - Materials: [Slides](/assets/pdf/talks/2024-qcompcanvases-3mt.pdf)
+    - Materials: [Slides](/assets/pdf/talks/2024-qcompcanvases-3mt.pdf) - [Video](https://www.youtube.com/watch?v=LkqlfXDcfrA)
     - Title: The art of quantum computing: Crafting computational canvases on a quantum device
     - Date: February 2024
     - Format: 3 minute talk
