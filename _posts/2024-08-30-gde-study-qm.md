@@ -818,7 +818,7 @@ H = J \sum_{i=1}^{N-1}\vec{S}_i \cdot \vec{S}_{i+1}
 
 **Solution:**
 
-#### Spin-1/2 in Time-Dependent Magnetic Field TODO <a id="problem-qm-timedepmag" name="problem-qm-timedepmag"></a>
+#### Spin-1/2 in Time-Dependent Magnetic Field <a id="problem-qm-timedepmag" name="problem-qm-timedepmag"></a>
 **Source:** MIT Fall 2002 Doctoral General Examination Quantum Q2
 
 **Problem Statement:** Consider a spin-1/2 particle interacting with a time-dependent magneitc field:
@@ -913,7 +913,7 @@ $$
 This is consistent with the adiabatic theorem - because in this limit the magnetic field direction (and hence Hamiltonian) changes slowly, the system remains in the ground state $$\lvert +, t \rangle$$ throughout the evolution.
 
 
-#### Particle on a 1-D Lattice TODO <a id="problem-qm-onedlattice" name="problem-qm-onedlattice"></a>
+#### Particle on a 1-D Lattice <a id="problem-qm-onedlattice" name="problem-qm-onedlattice"></a>
 **Source:** MIT Spring 2002 Doctoral General Examination Quantum Q1
 
 **Problem Statement:** *Consider a particle confined to move on a 1-D lattice. The Hilbert space is spanned by the orthonormal basis states $$\lvert n \rangle$$ where $$n \in \mathbb{Z}$$ denotes the lattice site and $$\langle n \vert m \rangle = \delta_{nm}$$.*
@@ -938,11 +938,85 @@ H\lvert n \rangle = -\frac{1}{2\Deelta^2}\left(\lvert n + 1 \rangle + \lvert n -
 \rangle n \vert \psi_k \rangle = e^{ikn\Delta}.
 \end{equation}
 
-*Show that $$\lvert \psi_k \rangle$$ is an eigenstate of $$H$$.*
+*Show that $$\lvert \psi_k \rangle$$ is an eigenstate of $$H$$. What is the relationship between the eigenvalue $$E_k$$ and $$k$$? What is $$E_k$$ as $$k \to 0$$?*
 
 *(c) Add to the Hamiltonian a potential of height $$V$$ at lattice site $$n = 0$$. What is the translation probability through the barrier as a function of $$k, V$$, and $$\Delta$$?*
 
-**Solution:**
+**Solution:** (a) Since $$T$$ translates by a lattice site, the eigenstates must be an equal weight superposition (up to a phase). For the eigenstates we propose:
+
+$$
+\color{blue}{\lvert \theta \rangle = \sum_{n} e^{in\theta}}
+$$
+
+with eigenvalue $$\color{blue}{e^{-i\theta}.}$$ As proof:
+
+$$
+T\lvert \theta \rangle = \sum_n e^{in\theta} T\lvert n \rangle = \sum_n e^{in\theta}\lvert n + 1 \rangle = \sum_n e^{-i\theta} e^{in\theta}\lvert n \rangle = e^{-i\theta}\lvert \theta \rangle.
+$$
+
+(b) We can rewrite:
+
+$$
+H = -\frac{1}{2\Delta^2}(T + T^\dagger - 2I)
+$$
+
+and since $$T$$ commutes with itself, its Hermitian conjugate, and the identity, we conclude that $$\color{blue}{[T, H] = 0.}$$ Now, verifying that $$\lvert \psi_k \rangle$$ is an eigenstate:
+
+$$
+H\lvert \psi_k \rangle = -\frac{1}{2\Delta^2}\sum_n e^{ikn\Delta}(T + T^\dagger - 2I)\lvert n \rangle = e^{ikn\Delta}(\lvert n + 1 \rangle + \lvert n - 1 \rangle  - 2\lvert n \rangle)
+$$
+
+Re-indexing the sum to collect terms:
+
+$$
+H\lvert \psi_k \rangle =  -\frac{1}{2\Delta^2}\sum_n (e^{i(n-1)k\Delta} + e^{i(n+1)k\Delta} - 2e^{ink\Delta})\lvert n \rangle = -\frac{1}{2\Delta^2}(e^{-ik\Delta} + e^{ik\Delta} - 2) \sum_n e^{ink\Delta}\lvert n \rangle = \frac{1 - \cos(k\Delta)}{\Delta^2} \lvert \psi_k \rangle
+$$
+
+where in the last equality we use Euler's identity. Thus the $$\lvert \psi_k \rangle$$ states are eigenstates with eigenvalue $$\color{blue}{\frac{1 - \cos(k\Delta)}{\Delta^2}}$$. The $$k$$ enters the eigenvalue through the cosine term. As $$k \to 0$$, $$\color{blue}{E_k \to 0.}$$
+
+(c) In the presence of the barrier, the Hamiltonian $$H$ is modified:
+
+$$
+H = -\frac{1}{2\Delta^2}(T + T^\dagger - 2I) + V\lvert 0 \rangle \langle 0 \rvert
+$$
+
+And the eigenstates $$\lvert \psi_k \rangle$$ of (b) are modified to the scattering states $$\lvert S_k \rangle$$ with energy $$E_k$$, where:
+
+$$
+\langle n \vert S_k \rangle = e^{ikn\Delta} + Re^{-ikn\Delta} \quad n \leq 0
+$$
+
+$$
+\langle n \vert S_k \rangle = Te^{ikn\Delta} \quad n \geq 0
+
+$$
+\langle 0 \vert S_k \rangle = 1 + R = T
+$$
+
+The first equation corresponds to a sum of an incoming wave $$e^{ikn\Delta}$$ and a reflected wave $$Re^{-ikn\Delta}$$ with reflection amplitude $$R$$. The second equation corresponds to the transmitted wave $$Te^{ikn\Delta}$$ with transmission amplitude $$T$$. The third equation has the interpretation of probability conservation through the barrier. Now, we take the eigenvalue equation $$H\lvert S_k \rangle = E_k \lvert S_k \rangle$$ and multiply it by $$\langle 0 \rvert$$, which yields:
+
+$$
+-\frac{1}{2\Delta^2}\left(\langle 1 \vert S_k \rangle + \langle - 1 \vert S_k \rangle - 2 \langle 0 \vert S_k \rangle \right) + V \rangle 0 \vert S_k \rangle = E_k \langle 0 \vert S_k \rangle
+$$
+
+Using the previously computed expression for $$E_k$$ in (b) and the coefficients of $$\lvert S_k \rangle$$ as defined above, we obtain an equation relating $$T, k, \Delta, V$$:
+
+$$
+-\frac{1}{2\Delta^2}\left(Te^{ik\Delta} + e^{-ik\Delta} + (1-T)e^{ik\Delta} - 2T) + VT = -\frac{1}{2\Delta^2}(e^{-ik\Delta} + e^{ik\Delta} - 2)T
+$$
+
+which solving for $$T$$ yields:
+
+$$
+T = \frac{i\sin k \Delta}{\sin k \Delta + \Delta^2 V}
+$$
+
+so we conclude the transmission probability to be:
+
+$$
+\color{blue}{\lvert T \rvert^2 = \frac{\sin^2 k \Delta}{\sin^2 k \Delta + \Delta^4 V^2}}
+$$
+
 
 #### Spin-1/2 and Stern-Gerlach <a id="problem-qm-spinhalfsg" name="problem-qm-spinhalfsg"></a>
 **Source:** MIT Spring 2001 Doctoral General Examination Quantum Q1
