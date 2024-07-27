@@ -22,7 +22,7 @@ categories: physics uchicago quantum
 - <a href="#problem-qm-emagmoment" name="#problem-qm-emagmoment"> Anomalous Magnetic Moment of the Electron </a>
 - <a href="#problem-qm-heisenbergferro" name="#problem-qm-heisenbergferro"> A Heisenberg Ferromagnet </a>
 - <a href="#problem-qm-susy" name="#problem-qm-susy"> The Supersymmetric Method </a>
-- <a href="#problem-qm-timedepmag" name="#problem-qm-timedepmag"> Spin 1/2 in Time-Dependent Magnetic Field </a>
+- <a href="#problem-qm-timedepmag" name="#problem-qm-timedepmag"> Spin-1/2 in Time-Dependent Magnetic Field </a>
 - <a href="#problem-qm-onedlattice" name="#problem-qm-onedlattice"> Particle on a 1-D Lattice </a>
 - <a href="#problem-qm-spinhalfsg" name="#problem-qm-spinhalfsg"> Spin-1/2 and Stern-Gerlach </a>
 - <a href="#problem-qm-qhotrans" name="#problem-qm-qhotrans"> Harmonic Oscillator and Translation </a>
@@ -376,9 +376,9 @@ This also makes sense, as at $$T = 0$$ the thermal equilibrium is simply the pur
 \begin{equation}\label{eq:yukawa}
     V(r) = \frac{e^{-\kappa r}}{r}
 \end{equation}
-*where $$r = \lvert \mathbf{r}_1 - \mathbf{r}_2 \rvert^2$$ is the distance between the two particles. Denote the initial momenta of the particles as $$\pm k \hat{z}$$ where $$\hat{z}$$ is the unit vector in the $$z$$-direction. Find the differential cross section $$\frac{d\sigma}{d\Omega}$$ for particles to scatter into a thin shell of solid angle $$d\Omega = \sin\theta d\theta$$ around the final momenta $$\pm \mathbf{k}_f$$, where $$\mathbf{k}_f$$ has angle $$\theta$$ from the $$z$$-axis. Express your final answer in terms of $$k, m \theta$$. Compute separately for the case of (spin-less or spin-polarized) bosons and fermions. Comment on the effect of identical particle statistics for the case $$\theta = \pi/2$$. The Fourier transform of the Yukawa potential may be useful:*
+*where $$r = \lvert \vec{r}_1 - \vec{r}_2 \rvert^2$$ is the distance between the two particles. Denote the initial momenta of the particles as $$\pm k \hat{z}$$ where $$\hat{z}$$ is the unit vector in the $$z$$-direction. Find the differential cross section $$\frac{d\sigma}{d\Omega}$$ for particles to scatter into a thin shell of solid angle $$d\Omega = \sin\theta d\theta$$ around the final momenta $$\pm \vec{k}_f$$, where $$\vec{k}_f$$ has angle $$\theta$$ from the $$z$$-axis. Express your final answer in terms of $$k, m \theta$$. Compute separately for the case of (spin-less or spin-polarized) bosons and fermions. Comment on the effect of identical particle statistics for the case $$\theta = \pi/2$$. The Fourier transform of the Yukawa potential may be useful:*
 \begin{equation}\label{eq:yukawaft}
-    \tilde{V}(\mathbf{q}) = \int d^3r e^{-i\mathbf{q} \cdot \mathbf{r}}V(r) = \frac{4\pi}{q^2 + \kappa^2}.
+    \tilde{V}(\vec{q}) = \int d^3r e^{-i\vec{q} \cdot \vec{r}}V(r) = \frac{4\pi}{q^2 + \kappa^2}.
 \end{equation}
 
 
@@ -387,7 +387,7 @@ This also makes sense, as at $$T = 0$$ the thermal equilibrium is simply the pur
 #### Spin-Orbit Coupling in the 3-D Harmonic Oscillator <a id="problem-qm-spinorbitqho" name="problem-qm-spinorbitqho"></a>
 **Source:** UChicago 2014 Quantum Mechanics Graduate Diagnostic Exam Q2
 
-**Problem Statement:** *Consider a spin 1/2 particle of mass $$m$$ moving in a three-dimensional harmonic oscillator potential:*
+**Problem Statement:** *Consider a spin-1/2 particle of mass $$m$$ moving in a three-dimensional harmonic oscillator potential:*
 \begin{equation}\label{eq:3dqho}
 V(r) = \frac{1}{2}m\omega^2r^2
 \end{equation}
@@ -395,16 +395,16 @@ V(r) = \frac{1}{2}m\omega^2r^2
 
 *(a) What are the energy and degeneracy (including spin) of the ground state(s) and the first excited state(s) of this system?*
 
-*(b) The general form of the spin-orbit coupling for a particle of mass m and spin \mathbf{S} moving in a radial potential $$V(r)$$ is:*
+*(b) The general form of the spin-orbit coupling for a particle of mass m and spin \vec{S} moving in a radial potential $$V(r)$$ is:*
 \begin{equation}\label{eq:spinorbit}
-H_{s-o} = \frac{1}{2m^2c^2}\mathbf{S} \cdot \mathbf{L} \frac{1}{r}\frac{dV(r)}{dr}
+H_{s-o} = \frac{1}{2m^2c^2}\vec{S} \cdot \vec{L} \frac{1}{r}\frac{dV(r)}{dr}
 \end{equation}
-*What are the corrections to the ground state and first excited state energy eigenvalues for a spin 1/2 particle in the three-dimensional isotropic harmonic oscillator potential above when this spin-orbit interaction is included?*
+*What are the corrections to the ground state and first excited state energy eigenvalues for a spin-1/2 particle in the three-dimensional isotropic harmonic oscillator potential above when this spin-orbit interaction is included?*
 
 **Solution:** (a) We can write the 3-D harmonic oscillator Hamiltonian as the sum of 1-D harmonic oscillator Hamiltonians:
 
 $$
-H_{3D} = \frac{\mathbf{p}^2}{2m} + V(r) = \frac{p_x^2 + p_y^2 + p_z^2}{2m} + \frac{1}{2}m\omega^2(x^2 + y^2 + z^2) = H_{x} + H_y + H_z
+H_{3D} = \frac{\vec{p}^2}{2m} + V(r) = \frac{p_x^2 + p_y^2 + p_z^2}{2m} + \frac{1}{2}m\omega^2(x^2 + y^2 + z^2) = H_{x} + H_y + H_z
 $$
 
 Thus the eigenstates of $$H_{3D}$$ are simply the tensor product of the eigenstates of the 1D harmonic oscillators in each direction, denoted by the four (including spin) quantum numbers to be $$\lvert n_x, n_y, n_z, s_z \rangle$$, and with energies:
@@ -459,10 +459,10 @@ $$
 We now have a basis more convenient for thinking about spin-orbit coupling. We treat the spin-orbit coupling as a perturbation, with the form:
 
 $$
-H_{s-o} = \frac{1}{2m^2c^2}\mathbf{S} \cdot \mathbf{L} \frac{1}{r}\frac{dV(r)}{dr} = \frac{1}{2m^2c^2}\mathbf{S} \cdot \mathbf{L} \frac{1}{r}\left(\frac{1}{2}m\omega^2 2r\right) = \frac{\omega^2}{mc^2}\mathbf{S} \cdot \mathbf{L}
+H_{s-o} = \frac{1}{2m^2c^2}\vec{S} \cdot \vec{L} \frac{1}{r}\frac{dV(r)}{dr} = \frac{1}{2m^2c^2}\vec{S} \cdot \vec{L} \frac{1}{r}\left(\frac{1}{2}m\omega^2 2r\right) = \frac{\omega^2}{mc^2}\vec{S} \cdot \vec{L}
 $$ 
 
-The $$\lvert l, m, s, s_z \rangle$$ basis we use is inconvenient for calculating the energy corrections as these states are not eigenstates of $$\mathbf{S} \cdot \mathbf{L}$$. However, defining the joint angular momentum $$J_i = L_i + S_i$$ we find that $$J^2 = L^2 + S^2 + 2\mathbf{S} \cdot \mathbf{L}$$ and so $$\mathbf{S} \cdot \mathbf{L} = \frac{J^2 - L^2 - S^2}{2}$$. Thus we will find it convenient to work in the $$\lvert j, j_z, l, s\rangle$$ basis. To this end we note:
+The $$\lvert l, m, s, s_z \rangle$$ basis we use is inconvenient for calculating the energy corrections as these states are not eigenstates of $$\vec{S} \cdot \vec{L}$$. However, defining the joint angular momentum $$J_i = L_i + S_i$$ we find that $$J^2 = L^2 + S^2 + 2\vec{S} \cdot \vec{L}$$ and so $$\vec{S} \cdot \vec{L} = \frac{J^2 - L^2 - S^2}{2}$$. Thus we will find it convenient to work in the $$\lvert j, j_z, l, s\rangle$$ basis. To this end we note:
 
 $$
 \lvert j=1/2, j_z = \pm 1/2, l = 0, s = 1/2 \rangle = \lvert l = 0, m = 0, s = 1/2, s_z = \pm 1/2 \rangle
@@ -625,12 +625,12 @@ $$
 **Problem Statement:** *Consider two identical fermions of mass $$m$$ interacting with each other through an attractive harmonic potential. The Hamiltonian is*
 
 \begin{equation}\label{eq:twofermions}
-    H = \frac{\mathbf{p}_1^2}{2m} + \frac{\mathbf{p}_2^2}{2m} + \frac{k}{2}(\mathbf{x}_1 - \mathbf{x}_2)^2
+    H = \frac{\vec{p}_1^2}{2m} + \frac{\vec{p}_2^2}{2m} + \frac{k}{2}(\vec{x}_1 - \vec{x}_2)^2
 \end{equation}
 
-*$$\mathbf{x}_{1, 2}$$ are the coordinates of the two fermions, and $$\mathbf{p}_{1,2}$$ are the conjugate momenta. For simplicity assume that the spins of both fermions are polarized in the same direction (e.g, in the $$\uparrow$$ direction) so that we may ignore the spin degree of freedom.*
+*$$\vec{x}_{1, 2}$$ are the coordinates of the two fermions, and $$\vec{p}_{1,2}$$ are the conjugate momenta. For simplicity assume that the spins of both fermions are polarized in the same direction (e.g, in the $$\uparrow$$ direction) so that we may ignore the spin degree of freedom.*
 
-*(a) State the restriction imposed by Fermi statistics on acceptable wave functions $$\psi(\mathbf{x}_1, \mathbf{x}_2)$$ of this system.*
+*(a) State the restriction imposed by Fermi statistics on acceptable wave functions $$\psi(\vec{x}_1, \vec{x}_2)$$ of this system.*
 
 *(b) Rewrite $$H$$ in terms of center-of-mass and relative coordinates.*
 
@@ -641,13 +641,13 @@ $$
 **Solution:** (a) Fermi statistics dictate that the wavefunction must have odd parity/be antisymmetric under exchange of the particles, and therefore:
 
 $$
-\color{blue}{\psi(\mathbf{x}_1, \mathbf{x}_2) = -\psi(\mathbf{x}_2, \mathbf{x}_1)}
+\color{blue}{\psi(\vec{x}_1, \vec{x}_2) = -\psi(\vec{x}_2, \vec{x}_1)}
 $$
 
-(b) We define the center of mass and relative coordinates $$\mathbf{R} = \frac{m\mathbf{r}_1 + m\mathbf{r}_2}{m + m} = \frac{\mathbf{r}_1 + \mathbf{r}_2}{2}$$ and $$\mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2$$. We also have the conjugate center of mass and relative momenta of $$\mathbf{P} = \mathbf{p}_1 + \mathbf{p}_2$$ and $$\mathbf{p} = \frac{\mathbf{p}_1 - \mathbf{p}_2}{2}$$, which inverting we obtain $$\mathbf{p}_1 = \frac{\mathbf{P} + 2\mathbf{p}}{2}$$ and $$\mathbf{p}_2 = \frac{\mathbf{P} - 2\mathbf{p}}{2}$$, and thus we can rewrite $$H$$ as:
+(b) We define the center of mass and relative coordinates $$\vec{R} = \frac{m\vec{r}_1 + m\vec{r}_2}{m + m} = \frac{\vec{r}_1 + \vec{r}_2}{2}$$ and $$\vec{r} = \vec{r}_1 - \vec{r}_2$$. We also have the conjugate center of mass and relative momenta of $$\vec{P} = \vec{p}_1 + \vec{p}_2$$ and $$\vec{p} = \frac{\vec{p}_1 - \vec{p}_2}{2}$$, which inverting we obtain $$\vec{p}_1 = \frac{\vec{P} + 2\vec{p}}{2}$$ and $$\vec{p}_2 = \frac{\vec{P} - 2\vec{p}}{2}$$, and thus we can rewrite $$H$$ as:
 
 $$
-\color{blue}{H = \frac{\mathbf{P}^2}{4m} + \frac{\mathbf{p}^2}{m} + \frac{k}{2}\mathbf{r}^2}
+\color{blue}{H = \frac{\vec{P}^2}{4m} + \frac{\vec{p}^2}{m} + \frac{k}{2}\vec{r}^2}
 $$
 
 (c) The Hamiltonian decouples into $$H = H_{cm} + H_{rel}$$ where $$H_{cm}$$ is the Hamiltonian of a free particle with mass $$2m$$ and $$H_{rel}$$ is the Hamiltonian of a particle of mass $$\frac{m}{2}$$ in a 3-D harmonic oscillator potential with spring constant $$k$$. The former has unbounded spectrum $$E_{cm} = \in [0, \infty)$$ and for simplicity we assume that $$E_{cm} = 0$$ for the rest of the problem. The latter has quantized spectrum $$E_{n_x, n_y, n_z} = \frac{3}{2}\hbar\omega(n_x + n_y + n_z + \frac{3}{2})$$ (as $$H_{rel}$$ can be decomposed into 3 1-D simple harmonic oscillators, each with energy $$E_n = \frac{\hbar}\omega(n + \frac{1}{2})$$), with $$\omega = \sqrt{\frac{2k}{m}}$$. Ignoring the restriction from Fermi statistics, the ground state is then the state with $$n_x = n_y = n_z = 0$$ and has energy $$\color{blue}{\frac{3}{2}\hbar\omega}$$. The excited state has one $$n_i = 1$$ and the other two zero, with energy $$\color{blue}{\frac{5}{2}\hbar\omega}$$.
@@ -659,53 +659,229 @@ Note: We could reach the same conclusion by observing that the eigenstates of th
 #### A Quantum Spin Chain TODO <a id="problem-qm-spinchain" name="problem-qm-spinchain"></a>
 **Source:** MIT Fall 2012 Doctoral General Examination Quantum Q1
 
-**Problem Statement:** 
+**Problem Statement:** *Consider a one-dimensional chain of $$N$$ spin-1/2 particles coupled through the Hamiltonian*
+
+\begin{equation}\label{eq:heisenbergchain}
+H = J \sum_{i=1}^{N-1}\vec{S}_i \cdot \vec{S}_{i+1}
+\end{equation}
+
+*where $$\vec{S} = (S_x, S_y, S_z)$$ are the usual spin operators for a spin-1/2 particle, $$J > 0$$ is a positive constant, and $$N \gg 1$$.*
+
+*In a famous 1931 paper, Hans Bethe showed that for this Hamiltonian, the ground state energy per particle $$E_{GS}/N \equiv E_0$$ was equal to $$\hbar^2 J(\log 2 - 1/4) \approx -0.433\hbar^2J$$. You will not be required to reproduce this result. Instead, you will determine upper and lower bounds for the ground state energy per particle.*
+
+*(a) If the spin operators are treated as classical spin vectors with $$\lvert \vec{S} \rvert = \hbar/2$$, what is the ground state spin configuration and what is the ground state energy per particle $$E_0$$?*
+
+*(b) Consider the trial wave function*
+
+\begin{equation}\label{eq:singletchain}
+    \lvert \Psi \rangle = \bigotimes_{i = \text{odd}}\lvert i, i+1 \rangle_0 = \lvert 1, 2 \rangle_0 \otimes \lvert 3, 4 \rangle_0 \otimes \ldots \otimes \lvert N-1, N \rangle_0
+\end{equation}
+
+*where $$\lvert i, j \rangle_0$$ is the spin singlet state formed from the spins on sites $$i$$ and $$j$$. Use this state to find an upper bound on $$E_0$$.*
+
+*(c) Prove the following lower bound on E_0:*
+
+\begin{equation}\label{eq:lowerbound}
+    -\frac{3}{4}\hbar^2 J \leq E_0
+\end{equation}
 
 **Solution:**
 
 #### Anomalous Magnetic Moment of the Electron TODO <a id="problem-qm-emagmoment" name="problem-qm-emagmoment"></a>
 **Source:** MIT Fall 2012 Doctoral General Examination Quantum Q2
 
-**Problem Statement:**
+**Problem Statement:** *The gyromagnetic factor of the electron $$g$$ determines the relationship between the electron magnetic moment $$\vec{\mu}$$ and the electron spin $$\vec{S}$$,
+
+\begin{equation}\label{eq:emagmoment}
+    \vec{\mu} = g\frac{e}{2m}\vec{S},
+\end{equation}
+
+*where $$e$$ is the electron charge and $$m$$ is the electron mass. Famously, the Dirac equation predicts $$g = 2$$, but in quantum electrodynamics, the electron picks up na anomalous magnetic moment $$g = 2(1+a)$$, where the current experimental value is $$a = 0.00115965218076(27)$$.*
+
+*One way to experimentally measure $$a$$ is the allow a beam of electrons to interact with a constant magnetic field $$\vec{B} = B\hat{z}$$ via the Hamiltonian:*
+
+\begin{equation}\label{eq:emagmoment}
+    H = \frac{1}{2m}\left(\vec{p} - e\vec{A}\right)^2 - \vec{\mu} \cdot \vec{B}
+\end{equation}
+
+*where $$\vec{A}$$ is the vector potential. The electrons are confined to the $$x-y$$ plane, and you can ignore any electron-electron interactions. The electrons will exhibit cyclotron motion with frequency $$\omega = EB/m$$, but will also exhibit spin precession with a slightly different frequency. In this problem, you will show how to use this phenomenon to extract $$a$$.*
+
+*(a) Verify the commutation relations*
+
+\begin{equation}\label{eq:commutationv}
+    [v_x, H] = i\hbar\omega v_y, \quad [v_y, H] = -i\hbar\omega v_x,
+\end{equation}
+
+*where $$\vec{v} = (\vec{p} - e\vec{A})/m$$ is the gauge-invariant velocity operator. Hint: $$\vec{v}$$ is gauge-invariant and thus this problem can be solved in any choice of gauge.*
+
+*(b) Consider the two expectation values*
+
+\begin{equation}\label{eq:spinvelocityexpectation}
+    C_1(t) = \langle S_xv_x + S_yv_y \rangle, \quad C_2(t) = \langle S_xv_y - S_yv_x\rangle.
+\end{equation}
+
+*Derive a set of coupled differential equations that describe the time evolution of $$C_1(t)$$ and $$C_2(t)$$. In the special case that $$a = 0$$ (i.e. $$g=2$$), verify that $$C_1(t)$$ and $$C_2(t)$$ do not change with time.*
+
+*(c) A beam of electrons of velocity $$\vec{v}$$ is prepared at time $$t = 0$$ in a spin state with known values of $$C_1(0)$$ and $$C_2(0)$$. The beam interacts with a magnetic field $$\vec{B} = B\hat{z}$$ between $$t = 0$$ and $$t = T$$. The expectation value $$C_1(T)$$ is experimentally measured to be periodic with period $$2\pi/\Omega$$, i.e. $$C_1(T) = C_1(T + 2\pi/\Omega)$$. Use this information to determine the value of $$a$$ in terms of $$\Omega$$ and other physical parameters.*
 
 **Solution:**
 
 #### A Heisenberg Ferromagnet TODO <a id="problem-qm-heisenbergferro" name="problem-qm-heisenbergferro"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q1
 
-**Problem Statement:**
+**Problem Statement:** *In a ferromagnetic material the electron spins are aligned, suggesting that an interaction of the form:*
+
+\begin{equation}\label{eq:spininteraction}
+\delta H = \kappa \vec{S}_1 \cdot \vec{S}_2
+\end{equation}
+
+*is present between each pair of electrons, where $$\vec{S}_1, \vec{S}_2$$ are the operators corresponding to the spins of the two electrons. While Eq. \eqref{eq:spininteraction} does not appear explicitly in the Hamiltonian for a ferromagnet, Heisenberg realized that Eq. \eqref{eq:spininteraction} could appear as an effective interaction, arising from Coulomb repulsion and fermionic properties of electrons.*
+
+*In this problem you will derive a Heisenberg ferromagnetism for two spin-1/2 electrons in a common potential $$V(\vec{r})$$, with Hamiltonian:*
+
+\begin{equation}\label{eq:interactionelectronsH}
+    H = \frac{\vec{p}_1^2}{2m} + \frac{\vec{p}_2^2}{2m} + V(\vec{r}_1) + V(\vec{r}_2) + \frac{e^2}{\lvert \vec{r}_1 - \vec{r}_2\rvert}
+\end{equation}
+
+*Note that $$\delta H$$ does not appear in the above, so there is no explicit spin dependence. The single-particle Schrodinger equation with potential $$V(\vec{r})$$ has eigenstates with energies $$E_i$$ and wavefunctions $$\psi_i(\vec{r})$$.*
+
+*(a) The total wave function $$\Psi(\vec{r}_1, s_1 \vec{r}_2, s_2)$$ depends on the set of spin variables $$s_1, s_2$$ (use whichever notation for spin that you prefer, including bra/ket notation). Show that the eigenstates of the Hamiltonian can be written as a separable form $$\psi(\vec{r}_1, \vec{r}_2)\chi(s_1, s_2)$$. Construct eigenstates of total spin, and describe the symmetry properties of $$\psi(\vec{r}_1, \vec{r}_2)$$ under particle exchange for each of the spin states.*
+
+*(b) In the absence of Coulomb repulsion, consider the two-particle configurations where one electron is in state $$\psi_a(\vec{r})$$ and the other is in state $$\psi_b(\vec{r})$$. What are the corresponding two-particle wavefunctions, including spin?*
+
+*(c) The degeneracy of the states in part (b) is broken by Coulomb repulsion, yielding two distinct energy levels. Identify the two-particle wavefunctions associated with these two levels, and find an expression for the energy splitting $$\delta E$$ to first order in the Coulomb interaction in terms of $$\psi_a$$ and $$\psi_b$$.*
+
+*(d) Show that the energy splitting in part (c) can be mimicked (at first order) by turning off the Coloumb interaction in Eq. \eqref{eq:interactionelectronsH} and replacing it with Eq. \eqref{eq:spininteraction}. Find an expression for $$\kappa$$ in terms of $$\delta E$$.*
+
+*(e) Determine the sign of $$\kappa$$. Hint: Judicious use of Fourier transforms may be helpful. Recall that*
+
+\begin{equation}\label{eq:fourieridentities}
+\int d^3r e^{i\vec{q} \cdot \vec{r}}  (2\pi)^3\delta^{(3)}(\vec{q}), \quad \int d^3r e^{i\vec{q} \vec{r}} \frac{1}{\lvert \vec{r} \rvert} = \frac{4\pi}{\vec{q}^2}.
+\end{equation}
 
 **Solution:**
 
 #### The Supersymmetric Method TODO <a id="problem-qm-susy" name="problem-qm-susy"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q2
 
-**Problem Statement:**
+**Problem Statement:** *In this problem you will solve for the energy spectrum of a particle of mass $$m$$ confined to a potential*
+
+\begin{equation}\label{eq:tanpotential}
+    V(x) = V_0\left[\sec^2\frac{x}{x_0} + \tan^2\frac{x}{x_0}\right] = V_0\left[1 + 2\tan^2\frac{x}{x_0}\right]
+\end{equation}
+
+*where $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$ (recall that $$\sec x = 1/\cosx$$, and the equality of the two expressions above follows from trigonometric identities). Amazingly, this system is exactly solvable for the especial value:*
+
+\begin{equation}\label{eq:specialV0}
+    V_0 = \frac{\hbar^2}{2m}\frac{1}{x_0^2},
+\end{equation}
+
+*and you will derive the spectrum using the supersymmetric method. (Supersymmetry is a possible symmetry between bosons and fermions, but that fact will not be relevant for this problem).*
+
+*(a) Consider two Hamiltonians*
+
+\begin{equation}\label{eq:HHtilde}
+    H = A^\dag A, \quad \tilde{H} = AA^\dag,
+\end{equation}
+
+*Where $$A$$ is an unspecified operator. Assume that $$H$$ has (normalized) eigenstates $$\lvert n \rangle$$ with*
+
+\begin{equation}\label{eq:eigenvalue}
+    H\lvert n \rangle = E_n \lvert n \rangle
+\end{equation}
+
+*for $$n \geq 1$$. For every $$n$$ with $$E_n \neq 0$$, show that $$A\lvert n \rangle$$ is an unnormalized eigenstate of $$\tilde{H}$$. Find the normalized eigenstates $$\lvert \tilde{n} \rangle$$ and their eigenvalues $$\tilde{E}_n$$ under $$\tilde{H}$$. What goes wrong with this argument if $$E_n = 0$$? Can $$E_n$$ or $$\tilde{E}_n$$ ever be negative? Note: For the remainder of this problem, you can assume that $$\lvert \tilde{n} \rangle$$ forms a complete basis for $$\tilde{H}$$, up to possible zero energy states.*
+
+*(b) Now consider a specific operator $$A$$ of the form*
+
+\begin{equation}\label{eq:A}
+    A = \frac{\partial}{\partial x} + W(x)
+\end{equation}
+
+*where $$W(x)$$ is real. Show that $$H$$ and $$\tilde{H}$$ each describe a particle moving in a potential, in units where $$\hbar^2/2m = 1$$. Find the two potential energy functions, $$V(x)$$ and $$\tilde{V}(x)$$, corresponding to $$H$$ and $$\tilde{H}$$, respectively.*
+
+*(c) We will be considering Hamiltonians defined on a finite range $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$. This means that the wave functions will have Dirichlet boundary conditions at $$x = \frac{\pi}{2}x_0$$, i.e. $$\psi(\pm \frac{\pi}{2}x_0) = 0$$. Assume that $$H$$ has a zero energy ground state consisten with these boundary conditions. Find the unnormalized ground state wave function $$\psi_0(x)$$ for $$H$ in terms of $$W(x)$$. Show that $$\tilde{H}$$ cannot have a zero energy ground state consistent with these boundary conditions.*
+
+*(d) The potential in Eq. \eqref{tanpotential} is dual to a constant potential. That is, there is a $$W(x)$$ such that for $$-\fraC{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$,*
+
+\begin{equation}\label{eq:dualtanpotential}
+    V(x) = a, \quad \tilde{V}(x) = b\left[\sec^2\frac{x}{x_0} + \tan^2\frac{x}{x_0}\right] = b\left[1 + 2\tan^2\frac{x}{x_0}\right]
+\end{equation}
+
+*where $$a, b$$ are constants. What is $$W(x)$$, and what are $$a$$ and $$b$$? You may find the following formulas helpful:*
+
+\begin{equation}\label{eq:integralidentities}
+    \int \frac{dx}{1+x^2} = \arctan x, \quad \int d\theta \sec^2\theta = \tan\theta, \quad \int \tan^2\theta = -\theta + \tan\theta
+\end{equation}
+
+*(e) Find the energy spectrum and energy eigenstates for the potential in Eq. \eqref{eq:tanpotential}. Does this system have a zero energy ground state? You should assume that all wave functions vanish at $$x = \frac{\pi}{2}x_0$$ (i.e. Dirichlet boundary conditions), and you should restore all factors of $$\hbar$$ and $$m$$. You do not need to normalize the states.*
 
 **Solution:**
 
 #### Spin-1/2 in Time-Dependent Magnetic Field TODO <a id="problem-qm-timedepmag" name="problem-qm-timedepmag"></a>
 **Source:** MIT Fall 2002 Doctoral General Examination Quantum Q2
 
-**Problem Statement:**
+**Problem Statement:** Consider a spin-1/2 particle interacting with a time-dependent magneitc field:
+
+\begin{equation}\label{eq:timedepBfield}
+H(t) = \vec{B}(t) \cdot \vec{\sigma}
+\end{equation}
+
+where $$\vec{B}(t) = B(\sin\theta\cos\omega t, \sin\theta \sin \omega t, \cos\theta)$$ and $$\vec{\sigma} = (\sigma_x, \sigma_y, \sigma_z)$$ with $$\sigma_i$$ the Pauli matrices:
+
+\begin{equation}\label{eq:paulis}
+    \sigma_x = \left( \begin{array}{cc} 0 & 1 \\ 1 & 0\end{array} \right) \quad \sigma_y = \left( \begin{array}{cc} 0 & -i \\ i & 0\end{array} \right) \quad \sigma_z = \left( \begin{array}{cc} 1 & 0 \\ 0 & -1\end{array} \right).
+\end{equation}
+
+*(a) Find the instantaneous eigenstates $$\lvert +, t \rangle$$ and $$\lvert -, t \rangle$$ of $$H(t)$$ with eigenvalues $$+B$$ anf $$-B$$ respectively.*
+
+*(b) Let $$\lvert \psi, t \rangle$$ obey the Schrodinger equation:*
+
+\begin{equation}\label{eq:SE}
+    i\hbar\frac{\partial}{\partial t}\lvert \psi, t \rangle = H(t)\lvert \psi, t \rangle
+\end{equation}
+
+*with $$\lvert \psi, 0 \rangle = \lvert +, 0 \rangle$$. Calculate $$P_+(t) \lvert \langle +, t \vert \psi, t \rangle \rvert^2$$ exctly. Hint: Expand $$\lvert \psi, t \rangle$$ in terms of $$\lvert +, t \rangle$$ and $$\lvert-, t \rangle$$ and find the equation for the expansion coefficients.*
+
+*(c) What happens to $$P_+(t)$$ for $$\omega \ll B/\hbar$$? Explain.*
 
 **Solution:**
 
 #### Particle on a 1-D Lattice TODO <a id="problem-qm-onedlattice" name="problem-qm-onedlattice"></a>
 **Source:** MIT Spring 2002 Doctoral General Examination Quantum Q1
 
-**Problem Statement:**
+**Problem Statement:** *Consider a particle confined to move on a 1-D lattice. The Hilbert space is spanned by the orthonormal basis states $$\lvert n \rangle$$ where $$n \in \mathbb{Z}$$ denotes the lattice site and $$\langle n \vert m \rangle = \delta_{nm}$$.*
+
+*(a) Consider the translation operator $$T$$ defined by:*
+
+\begin{equation}\label{eq:transop}
+T\lvert n \rangle = \lvert n + 1 \rangle.
+\end{equation}
+
+*What are the eigenstates and eigenvalues of $$T$$?*
+
+*(b) Consider the Hamiltonian:*
+
+\begin{equation}\label{eq:latticeH}
+H\lvert n \rangle = -\frac{1}{2\Deelta^2}\left(\lvert n + 1 \rangle + \lvert n - 1 \rangle - 2 \lvert n \rangle\right).
+\end{equation}
+
+*Does $$T$$ commute with $$H$$? Let $$\lvert \psi_k \rangle$$ be given by:*
+
+\begin{equation}\label{eq:latticeHeigs}
+\rangle n \vert \psi_k \rangle = e^{ikn\Delta}.
+\end{equation}
+
+*Show that $$\lvert \psi_k \rangle$$ is an eigenstate of $$H$$.*
+
+*(c) Add to the Hamiltonian a potential of height $$V$$ at lattice site $$n = 0$$. What is the translation probability through the barrier as a function of $$k, V$$, and $$\Delta$$?*
 
 **Solution:**
 
 #### Spin-1/2 and Stern-Gerlach <a id="problem-qm-spinhalfsg" name="problem-qm-spinhalfsg"></a>
 **Source:** MIT Spring 2001 Doctoral General Examination Quantum Q1
 
-**Problem Statement:** *Consider a spin-1/2 particle where $$S_j = \frac{\hbar}{2}\sigma_j$$ and*
-
-\begin{equation}\label{eq:paulis}
-    \sigma_x = \left( \begin{array}{cc} 0 & 1 \\ 1 & 0\end{array} \right) \quad \sigma_y = \left( \begin{array}{cc} 0 & -i \\ i & 0\end{array} \right) \quad \sigma_z = \left( \begin{array}{cc} 1 & 0 \\ 0 & -1\end{array} \right)
-\end{equation}
+**Problem Statement:** *Consider a spin-1/2 particle where $$S_j = \frac{\hbar}{2}\sigma_j$$ with $$\sigma_j$$ the Pauli matrices of Eq. \eqref{eq:paulis}.*
 
 *(a) The operator along the $$\hat{n} = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$$ direction is:*
 
@@ -723,7 +899,7 @@ $$
 
 *If it is possible, find $$\lvert \psi \rangle$$. If it is not, show why.*
 
-*(c) A beam of spin-1/2 particles enters a Stern-Gerlach filter which allows only particles whose spin is $$+\frac{\hbar}{2}$$ along the $$z$$ direction to pass. the particles then pass through a region where there is a magnetic field $$\mathbf{B} = (0, B, 0)$$ and spend time $$T$$ in this region. Then the particles enter a Stern-Gerlach filter which allows only particles whose spin is $$+\frac{\hbar}{2}$$ along the $$x$$ direction to pass. What fraction of the electrons which exit the first filter exit the second? Assume that the particles interact with the magnetic field via $$H = -\sum_j B_jS_j$$.* 
+*(c) A beam of spin-1/2 particles enters a Stern-Gerlach filter which allows only particles whose spin is $$+\frac{\hbar}{2}$$ along the $$z$$ direction to pass. the particles then pass through a region where there is a magnetic field $$\vec{B} = (0, B, 0)$$ and spend time $$T$$ in this region. Then the particles enter a Stern-Gerlach filter which allows only particles whose spin is $$+\frac{\hbar}{2}$$ along the $$x$$ direction to pass. What fraction of the electrons which exit the first filter exit the second? Assume that the particles interact with the magnetic field via $$H = -\sum_j B_jS_j$$.* 
 
 **Solution:** (a) We first calculate:
 
@@ -829,13 +1005,13 @@ $$
 [a^\dagger, a] = [\frac{1}{\sqrt{2\hbar\omega}}(\omega x - ip), \frac{1}{\sqrt{2\hbar\omega}}(\omega x + ip)] = \frac{1}{2\hbar\omega}([\omega x, \omega x] + [\omega x, ip] - [ip, \omega x] - [ip, ip]) = -1
 $$
 
-where we have used the canonical commutation relation $$[x, p] = i\hbar$$. Thus the provided identity of operator exponentials applies. Now calculating the probability of measuring $$E_j = \hbar\omega(j + \frac{1}{2})$$ using the Born rule, we have:
+where we have used the canonical commutation relation $$[x, p] = i\hbar$$. Thus the operator exponential identity of Eq. \eqref{eq:opexponential} applies. Now calculating the probability of measuring $$E_j = \hbar\omega(j + \frac{1}{2})$$ using the Born rule, we have:
 
 $$
 p(j) = \lvert \langle j \rvert e^{-\frac{ipd}{\hbar}} \lvert 0 \rangle \rvert^2 = \lvert \langle j \rvert e^{\sqrt{\frac{\omega d^2}{2\hbar}}(a^\dagger - a)} \lvert 0 \rangle \rvert^2
 $$
 
-For brevity let us define $$\alpha = \sqrt{\frac{\omega d^2}{2\hbar}}$$. Then using the operator exponential identity with $$A = \alpha a^\dagger$$ and $$B = -\alpha a$$ (and $$[\alpha a^\dagger, -\alpha a] = -\alpha^2 [a^\dagger, a] = \alpha^2$$) we obtain:
+For brevity let us define $$\alpha = \sqrt{\frac{\omega d^2}{2\hbar}}$$. Then using Eq. \eqref{eq:opexponential} with $$A = \alpha a^\dagger$$ and $$B = -\alpha a$$ (and $$[\alpha a^\dagger, -\alpha a] = -\alpha^2 [a^\dagger, a] = \alpha^2$$) we obtain:
 
 $$
 p(j) = \lvert \langle j \rvert e^{\alpha a^\dagger}e^{-\alpha a}e^{-\frac{\alpha^2}{2}}\lvert 0 \rangle \rvert^2
