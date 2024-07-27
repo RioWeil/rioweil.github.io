@@ -845,7 +845,73 @@ where $$\vec{B}(t) = B(\sin\theta\cos\omega t, \sin\theta \sin \omega t, \cos\th
 
 *(c) What happens to $$P_+(t)$$ for $$\omega \ll B/\hbar$$? Explain.*
 
-**Solution:**
+**Solution:** (a) From <a href="#problem-qm-spinhalfsg" name="#problem-qm-spinhalfsg"> Spin-1/2 and Stern-Gerlach </a> (taking $$\theta \to \theta$$, $$\phi = \omega t$$) we find:
+
+$$
+\color{blue}{\lvert +, t \rangle = \begin{pmatrix} \cos(\frac{\theta}{2}) \\ e^{i\omega t}\sin(\frac{\theta}{2}) \end{pmatrix} \quad \lvert -, t \rangle = \begin{pmatrix} -\sin(\frac{\theta}{2}) \\ e^{i\omega t}\cos(\frac{\theta}{2}) \end{pmatrix}.}
+$$
+
+(b) We expand:
+
+$$
+\lvert \psi, t \rangle = c_+\lvert +, t \rangle + c_-\lvert -, t \rangle
+$$
+
+which we substitute into the SE (with $$\hbar = 1$$) to obtain:
+
+$$
+i(\dot{c}_+\lvert +, t \rangle + c_+\dot{\lvert +, t \rangle} + \dot{c}_-\lvert -, t \rangle + c_-\dot{\lvert -, t \rangle}\right) = H(t)\left(c_+\lvert +, t\rangle + c_-\lvert -, t \rangle\right) = Bc_+\lvert + , t \rangle - B c_-\lvert -, t \rangle.
+$$
+
+We note that:
+
+$$
+\dot{\lvert +, t \rangle} = \begin{pmatrix} 0 \\ i\omega e^{i\omega t}\sin(\frac{\theta}{2}) \end{pmatrix} \quad \dot{\lvert -, t \rangle} = \begin{pmatrix} 0 \\ i\omega e^{i\omega t}\cos(\frac{\theta}{2}) \end{pmatrix}
+$$
+
+Now by multiplying both sides by $$\langle +, t \rvert$$ we obtain the equation for $$c_+$$:
+
+$$
+i(\dot{c}_+ + c_+\langle +, t \dot{\vert +, t \rangle} + c_-\langle +, t \dot{\vert -, t \rangle}) = B c_+
+$$
+
+where we have used the orthogonality of the instantneous eigenstates. An anlogous equation can be derived for $$\dot{c}_-$$, and evaluating the inner products we obtain a set of two coupled differential equations which can be expressed in matrix form:
+
+$$
+i\begin{pmatrix} \dot{c}_+ \\ \dot{c}_- \end{pmatrix} = \begin{pmatrix} B + \omega\sin^2(\frac{\theta}{2}) & \omega\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) \\ \omega\sin(\frac{\theta}{2})\cos(\frac{\theta}{2}) & -B + \omega\cos^2(\frac{\theta}{2}) \end{pmatrix}\begin{pmatrix} c_+ \\ c_- \end{pmatrix}.
+$$
+
+This can be solved via diagonalization (the matrix appearing on the RHS is Hermitian). The result (after solving and plugging in the initial condition of $$\lvert \psi, 0 \rangle = \lvert +, 0 \rangle$$) is:
+
+$$
+\lvert \psi, t \rangle = \left[\cos(\frac{\lambda t}{2}) - i\frac{(B - \omega\cos\theta)}{\lambda}\sin(\frac{\lambda t}{2})\right]\lvert +, t \rangle - i\frac{B}{\lambda}\sin\theta\sin(\frac{\lambda t}{2})\lvert -, t \rangle
+$$
+
+with $$\lambda = \sqrt{\omega^2 + B^2 - 2\omega B \cos\theta}$$. We can then calculate $$P_+(t)$$ as:
+
+$$
+P_+(t) = \lvert \cos(\frac{\lambda t}{2}) - i\frac{(B - \omega\cos\theta)}{\lambda}\sin(\frac{\lambda t}{2})\rvert^2.
+$$
+
+Thus we conbclude:
+$$
+\color{blue}{P_+(t) = \cos^2(\frac{\lambda t}{2}) + \frac{\omega^2\cos^2\theta + B^2 - 2\omega B \cos\theta}{\lambda^2}\sin^2(\frac{\lambda t}{2})}
+$$
+
+(c) if $$\omega \ll B$$, then:
+
+$$
+\frac{\omega^2\cos^2\theta + B^2 - 2\omega B \cos\theta}{\lambda^2} = \frac{\omega^2\cos^2\theta + B^2 - 2\omega B \cos\theta}{\omega^2 + B^2 - 2\omega B \cos\theta} \approx \frac{B^2}{B^2} = 1 
+$$
+
+thus:
+
+$$
+\color{blue}{P_+(t) \approx  \cos^2(\frac{\lambda t}{2}) +  \sin^2(\frac{\lambda t}{2}) = 1.}
+$$
+
+This is consistent with the adiabatic theorem - because in this limit the magnetic field direction (and hence Hamiltonian) changes slowly, the system remains in the ground state $$\lvert +, t \rangle$$ throughout the evolution.
+
 
 #### Particle on a 1-D Lattice TODO <a id="problem-qm-onedlattice" name="problem-qm-onedlattice"></a>
 **Source:** MIT Spring 2002 Doctoral General Examination Quantum Q1
