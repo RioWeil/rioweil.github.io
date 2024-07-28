@@ -656,7 +656,7 @@ $$
 
 Note: We could reach the same conclusion by observing that the eigenstates of the 3-D harmonic oscillator are eigenstates of angular momentum (see <a href="#problem-qm-spinorbitqho" name="#problem-qm-spinorbitqho"> Spin-Orbit Coupling in the 3-D Harmonic Oscillator </a> for more discussion) and can be labelled by quantum numbers $$l, m$$. We also recall that the angular momentum eigenstates are eigenstates of parity $$\Pi\lvert l, m \rangle = (-1)^l\lvert l, m \rangle$$, thus the fermionic exchange statistics/antisymmetric wavefunction forbids $$l = 0$$ and the ground state(s) consist of the 3-fold degenerate $$l = 1$$ subspace with $$E = \frac{5}{2}\hbar\omega$$.
 
-#### A Quantum Spin Chain TODO <a id="problem-qm-spinchain" name="problem-qm-spinchain"></a>
+#### A Quantum Spin Chain <a id="problem-qm-spinchain" name="problem-qm-spinchain"></a>
 **Source:** MIT Fall 2012 Doctoral General Examination Quantum Q1
 
 **Problem Statement:** *Consider a one-dimensional chain of $$N$$ spin-1/2 particles coupled through the Hamiltonian*
