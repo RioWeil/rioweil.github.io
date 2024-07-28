@@ -685,7 +685,80 @@ H = J \sum_{i=1}^{N-1}\vec{S}_i \cdot \vec{S}_{i+1}
     -\frac{3}{4}\hbar^2 J \leq E_0
 \end{equation}
 
-**Solution:**
+**Solution:** (a) If the spin operators are classical spin vectors, then the most energetically optimal configuration is to make $$\vec{S}_{i} \cdot \vec{S}_{i+1} = -\lvert \vec{S}_{i}\rvert \lvert \vec{S}_{i+1}\rvert = -\frac{\hbar^2}{4}$$ for each term in the Hamiltonian. The spin configuration that accomplishes this is <span style="color:blue">$$\vec{S}_{i} = +\frac{\hbar}{2}\hat{z}$$ for odd sites, $$\vec{S}_{i+1} = -\frac{\hbar}{2}\hat{z}$$ for even sites (or vise versa).</span> Since each term in the Hamiltonian contributes $$-\frac{1}{4}\hbar^2J$$, the ground state energy is thus $$E_{GS} = -(N-1)\frac{1}{4}\hbar^2J$$ and thus the energy per particle (in the $$N \gg 1$$ limit in which $$N-1 \sim N$$) is $$\color{blue}{E_0 = E_{GS}/N = -\frac{1}{4}\hbar^2J.}$$
+
+(b) We first prove the variational theorem, that says that for a Hamiltonian $$H$$ with ground state energy $$E_{GS}$$ that $$\langle \psi \rvert H \lvert \psi \rangle \geq E_{GS}$$ for any normalized $$\lvert \psi \rangle$$. To begin, we expand $$\lvert \psi \rangle$$ in the eigenbasis of $$H$$, so $$\lvert \psi \rangle = \sum_n c_n \lvert n \rangle$$ where $$H\lvert n \rangle = E_n \lvert n \rangle$$, with $$E_0 = E_{GS} \leq E_n$$ for all $$n$$. It then follows that:
+
+$$
+\langle \psi \rvert H \lvert \psi \rangle = \left(\sum_n c_n^* \langle n \rvert\right) H \left(\sum_{n'}c_{n'} \lvert n' \rangle \right) = \sum_n \lvert c_n \rvert^2 E_n \geq \sum_n \lvert c_n \rvert^2 E_{GS} = E_{GS} \sum_n \lvert c_n \rvert^2 = E_{GS}.
+$$
+
+In the second equality we use the eigenvalue equation and the orthogonality of the eigenstates, and in the last equality we use the normalization of $$\lvert \psi \rangle$$ that ensures that $$\sum_n \lvert c_n \rvert^2 = 1$$. We now apply the variational theorem with the provided trial state. We will find it convenient to split the Hamiltonian into two parts:
+
+$$
+\langle \Psi \rvert H \lvert \Psi \rangle = J\sum_{i \text{odd}} \langle \Psi \rvert \vec{S}_i \cdot \vec{S}_{i+1} \lvert \Psi \rangle + \sum_{i \text{even}} \langle \Psi \rvert \vec{S}_i \cdot \vec{S}_{i+1} \lvert \Psi \rangle
+$$
+
+Studying the first sum, we have $$(N-1)/2$$ terms of the form:$$ \langle i, i+1 \rvert_0 \vec{S}_i \cdot \vec{S}_{i+1} \rvert i, i + 1 \rangle_0$$. Defining $$\vec{S} = \vec{S}_i + \vec{S}_{i+1}$$, we note that $$\vec{S}_i \cdot \vec{S}_{i+1} = \frac{1}{2}(\vec{S} - \vec{S}_1 - \vec{S}_2)$$ and so joint eigenstates of $$\vec{S}, \vec{S}_1, \vec{S}_2$$ have eigenvalue $$\frac{\hbar^2}{2}(s(s + 1) - s_1(s_1 + 1) - s_2(s_1 + 1)) = \frac{\hbar^2}{2}(s(s+1) - \frac{3}{2})$$ where $$s$$ is the total joint spin. For a singlet state $$s = 0$$ and so:
+
+$$
+\lvert i, i+1 \rvert_0 \vec{S}_i \cdot \vec{S}_{i+1} \rvert i, i + 1 \rangle_0 = \frac{\hbar^2}{2}(0 - \frac{3}{2}) = -\frac{3}{4}\hbar^2
+$$
+
+thus we compute the energy from the odd terms:
+
+$$
+J\sum_{i \text{odd}} \langle \Psi \rvert \vec{S}_i \cdot \vec{S}_{i+1} \lvert \Psi \rangle = -\frac{N-1}{2}\frac{3}{4}\hbar^2J = -(N-1)\frac{3}{8}.
+$$
+
+Now studying the second sum, we have $(N-1)/2$$ terms of the form:
+
+$$ \langle i, i+1 \rvert_0\langle i+2, i+3 \rvert_0 \vec{S}_{i+1} \cdot \vec{S}_{i+2} \rvert i, i+1\rangle_0 \rvert i+2, i+3\rangle_0$$
+
+which we evaluate to be:
+
+$$
+\langle i, i+1 \rvert_0 \vec{S}_{i+1} \rvert i, i+1\rangle_0 \langle i+2, i+3 \rvert_0\vec{S}_{i+2} \rvert i+2, i+3\rangle_0 = 0 \cdot 0 = 0
+$$
+
+where we use that the $$\v{S}_{i+1} \cdot \v{S}_{i+2}$$ acts on the subspaces independently (allowing us to factor the expectation value) and we use that the singlet state is spherically symmeric to conclude that $$\langle i, i+1 \rvert_0 \vec{S}_{i+1} \rvert i, i+1\rangle_0 = 0$$. Thus:
+
+$$
+\sum_{i \text{even}} \langle \Psi \rvert \vec{S}_i \cdot \vec{S}_{i+1} \lvert \Psi \rangle = 0
+$$
+
+Thus, using the variational theorem we conclude:
+
+$$
+E_{GS} \leq \langle \Psi \rvert H \lvert \Psi \rangle \leq -\frac{N-1}{2}\frac{3}{4}\hbar^2J
+$$
+
+from which we can bound $$E_0 = E_{GS}/N$$ to be:
+
+$$
+\color{blue}{E_0 \leq -\frac{3}{8}\hbar^2 J.}
+$$
+
+(c) Let $$H$$ be any Hamiltonian of the form $$H = \sum_k H_k$$ such that $$H$$ has ground state energy $$\lvert \psi_{GS} \rangle$$ and $$E_{GS}$$ and the $$H_k$$s have ground state energy $$E_{GS, k}$$. Then it follows that:
+
+$$
+E_{GS} = \langle \psi_{GS} \rvert H \lvert \psi_{GS} \rangle = \sum_k \langle \psi_{GS} \rvert H_k \lvert \psi_k \rangle \geq \sum_k E_{GS, k}
+$$
+
+where in the last inequality we use the variational theorem on the individual $$H_k$$ terms. Since the ground state energy of $$\vec{S}_i \cdot \vec{S}_{i+1}$$ is $$-\frac{3}{4}\hbar^2J$$, using this we can lower bound $$E_{GS} \geq -(N-1)\frac{3}{4}\hbar^2J$$ and thus we obtain the upper-bound on $$E_0$$:
+
+$$
+\color{blue}{E_0 \geq -\frac{3}{4}\hbar^2J.}
+$$
+
+Combining the above two results we have an upper and lower bound on $$E_0$$:
+
+$$
+-\frac{3}{4}\hbar^2J \leq E_0 \leq -\frac{3}{8}\hbar^2J
+$$
+
+which (as must be the case) the exact result falls within.
+
 
 #### Anomalous Magnetic Moment of the Electron TODO <a id="problem-qm-emagmoment" name="problem-qm-emagmoment"></a>
 **Source:** MIT Fall 2012 Doctoral General Examination Quantum Q2
