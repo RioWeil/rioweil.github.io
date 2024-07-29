@@ -369,7 +369,7 @@ $$
 
 This also makes sense, as at $$T = 0$$ the thermal equilibrium is simply the pure ground state $$\lvert \uparrow \rangle$$ which has no entropy.
 
-#### Scattering of Identical Particles TODO <a id="problem-qm-identicalscattering" name="problem-qm-identicalscattering"></a>
+#### Scattering of Identical Particles <a id="problem-qm-identicalscattering" name="problem-qm-identicalscattering"></a>
 **Source:** UBC PHYS 500 2023 HW6 Q4
 
 **Problem Statement:** *Consider two particles of mass $$m$$, interacting by the Yukawa potential:*
@@ -381,8 +381,85 @@ This also makes sense, as at $$T = 0$$ the thermal equilibrium is simply the pur
     \tilde{V}(\vec{q}) = \int d^3r e^{-i\vec{q} \cdot \vec{r}}V(r) = \frac{4\pi}{q^2 + \kappa^2}.
 \end{equation}
 
+**Solution:** The state corresponding to the particles with momenta $$\vec{k}_1, \vec{k}_2$$ is given by:
 
-**Solution:**
+$$
+\lvert \psi(\vec{k}_1, \vec{k}_2) \rangle = \lvert \vec{k}_1, \vec{k}_2 \rangle + \zeta \lvert \vec{k}_2, \vec{k}_1 \rangle
+$$
+
+where $$\zeta = \pm 1$$ accounts for the particle exchange statistics (1 for bosons, -1 for fermions). Expanding out the above in the position basis:
+
+$$
+\lvert \psi(\vec{k}_1, \vec{k}_2) \rangle = \int d^3r_1 d^3r_2 \frac{1}{L^3\sqrt{2}}\left(e^{i\vec{k}_1 (\vec{r}_1 - \vec{r}_2)} + \zeta e^{-i\vec{k}_2(\vec{r}_1 - \vec{r}_2)}\right)\lvert r_1, r_2 \rangle
+$$
+
+The initial state is the above with $$\vec{k}_1 = \vec{k}_i = k\zhat, \vec{k}_2 = -\vec{k}_i = -k\zhat$$ and the final state is the above with $$\vec{k}_1 = \vec{k}_f, \vec{k}_2 = -\vec{k}_f$$. The scattering matrix element is:
+
+$$
+M(\vec{k}_f, \vec{k}_i) = \langle \psi(\vec{k}_f, -\vec{k}_f) \rvert V(\vec{r}_1 - \vec{r}_2) \lvert \psi(\vec{k}_i, -\vec{k}_i) \rangle
+$$
+
+as an integral this takes the form:
+
+$$
+M(\vec{k}_f, \vec{k}_i) = \int d^3r_1 d^3r_2 \frac{1}{2L^6}\left[e^{i(\vec{k}_f - \vec{k}_i) \cdot (\vec{r}_1 - \vec{r}_2)} + c.c. + \zeta e^{i(\vec{k}_f + \vec{k}_i) \cdot (\vec{r}_1 - \vec{r}_2)} + c.c.]V(\vec{r}_1 - \vec{r}_2)
+$$
+
+with c.c. denoting the complex conjugate. If we convert to center of mass $$\vec{R} = \frac{\vec{r}_1 + \vec{r}_2}{2}$$ and relative coordinates $$\vec{r} = \vec{r}_1 - \vec{r}_2$$, the above simplifies significantly:
+
+$$
+M(\vec{k}_f, \vec{k}_i) = \int \frac{d^3R}{L^3} \frac{d^3r}{2L^3}\left[e^{i(\vec{k}_f - \vec{k}_i) \cdot \vec{r}} + c.c. + \zeta e^{i(\vec{k}_f + \vec{k}_i)\cdot \vec{r}} + c.c.]V(\vec{r}).
+$$
+
+The integral over $$R$$ yields one as the integrand is independent of $$R$$, and the leftover integrals are simply the fourier transform of $$V$$:
+
+$$
+M(\vec{k}_f, \vec{k}_i) = \frac{1}{2}\left(\tilde{V}(\vec{k}_f - \vec{k}_i) + \tilde{V}(\vec{k}_f - \vec{k}_i) + 2\zeta\tilde{V}(\vec{k}_f + \vec{k}_i)\right)
+$$
+
+Up until this point the discussion has been for a totally general potential $$V/\tilde{V}$$. However, using the Hint we see that $$\tilde{V}(\vec{q})$$ for the Yukawa potential only depends on the magnitude of the momenta, and so the above simplifies even further:
+
+$$
+M(\vec{k}_f, \vec{k}_i) = \tilde{V}(\lvert \vec{k}_f - \vec{k}_i\rvert) + \zeta\tilde{V}(\lvert \vec{k}_f + \vec{k}_i \rvert)
+$$
+
+Since the scattering is elastic, $$\lvert \vec{k}_f \rvert = \lvert \vec{k}_i \rvert$$ and hence:
+
+$$
+\lvert \vec{k}_f \pm \vec{k}_i \rvert = k\sqrt{2(1\pm \cos\theta)} = \begin{cases} 2k\cos(\theta/2) & (+) \\ 2k\sin(\frac{\theta}{2}) & (-) \end{cases}
+$$
+
+where $$\theta$$ is the angle between the initial and final momenta (and here also the polar angle, as $$\vec{k}_i = k\zhat$$). Thus:
+
+$$
+M(\vec{k}_f, \vec{k}_i) = M(k, \theta) =  \tilde{V}(2k\sin(\frac{\theta}{2})) + \zeta\tilde{V}(2k\cos(\frac{\theta}{2}))
+$$
+
+Then computing the differential cross section as the square of the scattering matrix element/amplitude:
+
+$$
+\frac{d\sigma}{d\Omega} = \lvert \frac{m}{2\pi} M(k, \theta) \rvert^2 = \frac{m^2}{4\pi^2}\lvert\tilde{V}(2k\sin(\frac{\theta}{2})) + \zeta\tilde{V}(2k\cos(\frac{\theta}{2})) \rvert^2
+$$
+
+using the form of $$\tilde{V}(\vec{q})$$ provided we conclude:
+
+$$
+\color{blue}{\frac{d\sigma}{d\Omega} = 4m^2\left(\frac{1}{4k^2\sin^2(\frac{\theta}{2}) + \kappa^2} + \frac{\zeta}{4k^2\sin^2(\frac{\theta}{2}) + \kappa^2}\right)^2}
+$$
+
+for $$\theta = \pi/2$$, for bosons we have:
+
+$$
+\color{blue}{\frac{d\sigma}{d\Omega}(\theta=\pi/2) = 4m^2\left(\frac{2}{2k^2\sin^2+ \kappa^2}\right)^2.}
+$$
+
+which is twice the result for distinguishable particles. For fermions we have:
+
+$$
+\color{blue}{\frac{d\sigma}{d\Omega}(\theta=\pi/2) = 0.}
+$$
+
+arising from destructive interference between the two possible scattering processes ($$k_i \zhat \to k_f\xhat, -k_i \zhat \to -k_f\xhat$$ and $$k_i \zhat \to -k_f\xhat, -k_i \zhat \to k_f\xhat$$).
 
 #### Spin-Orbit Coupling in the 3-D Harmonic Oscillator <a id="problem-qm-spinorbitqho" name="problem-qm-spinorbitqho"></a>
 **Source:** UChicago 2014 Quantum Mechanics Graduate Diagnostic Exam Q2
