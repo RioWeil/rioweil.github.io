@@ -308,7 +308,7 @@ $$
 From this we can easily compute the $$z$$-magnetization:
 
 $$
-m = \langle \frac{1}{2}\sigma_z \rangle = \text{Tr}(\frac{1}{2}\sigma_z\rho_T) =  \frac{1}{4\cosh(\frac{g\mu_B B}{T})}\text{Tr}\left(\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}  \begin{pmatrix} e^{\frac{g\mu_B B}{T}} & 0 \\ 0 & e^{-\frac{g\mu_B B}{T}}\end{pmatrix} \right) = \frac{1}{4\cosh(\frac{g\mu_B B}{T})}(e^{\frac{g\mu_B B}{T}} - e^{-\frac{g\mu_B B}{T}})
+m = \langle \frac{1}{2}\sigma_z \rangle = \text{Tr}(\frac{1}{2}\sigma_z\rho_T) =  \frac{1}{4\cosh(\frac{g\mu_B B}{T})}\text{Tr}\left(\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}  \begin{pmatrix} e^{\frac{g\mu_B B}{T}} & 0 \\ 0 & e^{-\frac{g\mu_B B}{T}}\end{pmatrix} \right) = \frac{e^{\frac{g\mu_B B}{T}} - e^{-\frac{g\mu_B B}{T}}}{4\cosh(\frac{g\mu_B B}{T})}
 $$
 
 so we conclude:
@@ -329,7 +329,7 @@ $$
 \color{blue}{\lim_{T \to \infty}\chi \sim \frac{g\mu_B}{32T}}
 $$
 
-and the magnetization drops to 0 as $$\sim 1/T$$. in the $$T \to 0$$ limit, $$\lim_{T \to 0}\sech(\frac{g\mu_B B}{T}) \sim \frac{e^{-\frac{g\mu_B B}{T}}}{2}$$ and so:
+and the magnetization drops to 0 as $$\sim 1/T$$. in the $$T \to 0$$ limit, $$\lim_{T \to 0}\text{sech}(\frac{g\mu_B B}{T}) \sim \frac{e^{-\frac{g\mu_B B}{T}}}{2}$$ and so:
 
 $$
 \color{blue}{\lim_{T \to 0}\chi \sim \frac{g\mu_B}{8T}e^{-\frac{2g\mu_B B}{T}}}
@@ -340,7 +340,7 @@ so the magnetization drops exponentially quickly to 0.
 (c) We recall the entropy of a quantum state is given by $$S(\rho) = -\text{Tr}(\rho\log \rho) = - \sum_i \lambda_i \log \lambda_i$$ with $$\lambda_i$$ the eigenvalues of $$\rho$$. Therefore:
 
 $$
-S(\rho_T) = -\frac{e^{\frac{g\mu_B B}{T}}}{Z}\log(\frac{e^{\frac{g\mu_B B}{T}}}{Z}) -\frac{e^{-\frac{g\mu_B B}{T}}}{Z}\log(\frac{e^{-\frac{g\mu_B B}{ T}}}{Z}) = \frac{\log(Z)}{Z}\left(e^{\frac{g\mu_B B}{ T}} + e^{-\frac{g\mu_B B}{T}}\right) -\frac{1}{Z}\frac{g\mu_B B}{T}\left(e^{\frac{g\mu_B B}{T}} - e^{-\frac{g\mu_B B}{T}}\right)
+S(\rho_T) = -\frac{e^{\frac{g\mu_B B}{T}}}{Z}\log(\frac{e^{\frac{g\mu_B B}{T}}}{Z}) -\frac{e^{-\frac{g\mu_B B}{T}}}{Z}\log(\frac{e^{-\frac{g\mu_B B}{ T}}}{Z}) = \frac{\log(Z)}{Z}2\cosh(\frac{g\mu_B B}{T}) -\frac{1}{Z}\frac{g\mu_B B}{T}2\sinh(\frac{g\mu_B B}{T})
 $$
 
 which with $$Z = 2\cosh(\frac{g\mu_B B}{T})$$ becomes:
@@ -393,7 +393,7 @@ $$
 \lvert \psi(\vec{k}_1, \vec{k}_2) \rangle = \int d^3r_1 d^3r_2 \frac{1}{L^3\sqrt{2}}\left(e^{i\vec{k}_1 (\vec{r}_1 - \vec{r}_2)} + \zeta e^{-i\vec{k}_2(\vec{r}_1 - \vec{r}_2)}\right)\lvert r_1, r_2 \rangle
 $$
 
-The initial state is the above with $$\vec{k}_1 = \vec{k}_i = k\zhat, \vec{k}_2 = -\vec{k}_i = -k\zhat$$ and the final state is the above with $$\vec{k}_1 = \vec{k}_f, \vec{k}_2 = -\vec{k}_f$$. The scattering matrix element is:
+The initial state is the above with $$\vec{k}_1 = \vec{k}_i = k\hat{z}, \vec{k}_2 = -\vec{k}_i = -k\hat{z}$$ and the final state is the above with $$\vec{k}_1 = \vec{k}_f, \vec{k}_2 = -\vec{k}_f$$. The scattering matrix element is:
 
 $$
 M(\vec{k}_f, \vec{k}_i) = \langle \psi(\vec{k}_f, -\vec{k}_f) \rvert V(\vec{r}_1 - \vec{r}_2) \lvert \psi(\vec{k}_i, -\vec{k}_i) \rangle
@@ -402,13 +402,13 @@ $$
 as an integral this takes the form:
 
 $$
-M(\vec{k}_f, \vec{k}_i) = \int d^3r_1 d^3r_2 \frac{1}{2L^6}\left[e^{i(\vec{k}_f - \vec{k}_i) \cdot (\vec{r}_1 - \vec{r}_2)} + c.c. + \zeta e^{i(\vec{k}_f + \vec{k}_i) \cdot (\vec{r}_1 - \vec{r}_2)} + c.c.]V(\vec{r}_1 - \vec{r}_2)
+M(\vec{k}_f, \vec{k}_i) = \int d^3r_1 d^3r_2 \frac{1}{2L^6}\left[e^{i(\vec{k}_f - \vec{k}_i) \cdot (\vec{r}_1 - \vec{r}_2)} + c.c. + \zeta e^{i(\vec{k}_f + \vec{k}_i) \cdot (\vec{r}_1 - \vec{r}_2)} + c.c.\right]V(\vec{r}_1 - \vec{r}_2)
 $$
 
 with c.c. denoting the complex conjugate. If we convert to center of mass $$\vec{R} = \frac{\vec{r}_1 + \vec{r}_2}{2}$$ and relative coordinates $$\vec{r} = \vec{r}_1 - \vec{r}_2$$, the above simplifies significantly:
 
 $$
-M(\vec{k}_f, \vec{k}_i) = \int \frac{d^3R}{L^3} \frac{d^3r}{2L^3}\left[e^{i(\vec{k}_f - \vec{k}_i) \cdot \vec{r}} + c.c. + \zeta e^{i(\vec{k}_f + \vec{k}_i)\cdot \vec{r}} + c.c.]V(\vec{r}).
+M(\vec{k}_f, \vec{k}_i) = \int \frac{d^3R}{L^3} \frac{d^3r}{2L^3}\left[e^{i(\vec{k}_f - \vec{k}_i) \cdot \vec{r}} + c.c. + \zeta e^{i(\vec{k}_f + \vec{k}_i)\cdot \vec{r}} + c.c.\right]V(\vec{r}).
 $$
 
 The integral over $$R$$ yields one as the integrand is independent of $$R$$, and the leftover integrals are simply the fourier transform of $$V$$:
@@ -429,7 +429,7 @@ $$
 \lvert \vec{k}_f \pm \vec{k}_i \rvert = k\sqrt{2(1\pm \cos\theta)} = \begin{cases} 2k\cos(\theta/2) & (+) \\ 2k\sin(\frac{\theta}{2}) & (-) \end{cases}
 $$
 
-where $$\theta$$ is the angle between the initial and final momenta (and here also the polar angle, as $$\vec{k}_i = k\zhat$$). Thus:
+where $$\theta$$ is the angle between the initial and final momenta (and here also the polar angle, as $$\vec{k}_i = k\hat{z}$$). Thus:
 
 $$
 M(\vec{k}_f, \vec{k}_i) = M(k, \theta) =  \tilde{V}(2k\sin(\frac{\theta}{2})) + \zeta\tilde{V}(2k\cos(\frac{\theta}{2}))
@@ -459,7 +459,7 @@ $$
 \color{blue}{\frac{d\sigma}{d\Omega}(\theta=\pi/2) = 0.}
 $$
 
-arising from destructive interference between the two possible scattering processes ($$k_i \zhat \to k_f\xhat, -k_i \zhat \to -k_f\xhat$$ and $$k_i \zhat \to -k_f\xhat, -k_i \zhat \to k_f\xhat$$).
+arising from destructive interference between the two possible scattering processes ($$k_i \hat{z} \to k_f\hat{x}, -k_i \hat{z} \to -k_f\hat{x}$$ and $$k_i \hat{z} \to -k_f\hat{x}, -k_i \hat{z} \to k_f\hat{x}$$).
 
 #### Spin-Orbit Coupling in the 3-D Harmonic Oscillator <a id="problem-qm-spinorbitqho" name="problem-qm-spinorbitqho"></a>
 **Source:** UChicago 2014 Quantum Mechanics Graduate Diagnostic Exam Q2
@@ -549,27 +549,32 @@ $$
 \lvert j=3/2, j_z = \pm 3/2, l = 1, s = 1/2 \rangle = \lvert l = 1, m = \pm 1, s = 1/2, s_z = \pm 1/2 \rangle
 $$
 
-$$
-\lvert j=3/2, j_z = 1/2, l = 1, s = 1/2 \rangle = \sqrt{\frac{1}{3}}\lvert l=1, m=1, s=1/2, s_z=-1/2\rangle + \sqrt{\frac{2}{3}}\lvert l=1, m=0, s=1/2, s_z=1/2\rangle
-$$
+\begin{align*}
+\lvert j=3/2, j_z = 1/2, l = 1, s = 1/2 \rangle &= \sqrt{\frac{1}{3}}\lvert l=1, m=1, s=1/2, s_z=-1/2\rangle 
+\\ &+ \sqrt{\frac{2}{3}}\lvert l=1, m=0, s=1/2, s_z=1/2\rangle
+\end{align*}
 
-$$
-\lvert j=1/2, j_z = 1/2, l = 1, s = 1/2 \rangle = \sqrt{\frac{2}{3}}\lvert l=1, m=1, s=1/2, s_z=-1/2\rangle - \sqrt{\frac{1}{3}}\lvert l=1, m=0, s=1/2, s_z=1/2\rangle
-$$
+\begin{align*}
+\lvert j=1/2, j_z = 1/2, l = 1, s = 1/2 \rangle &= \sqrt{\frac{2}{3}}\lvert l=1, m=1, s=1/2, s_z=-1/2\rangle 
+\\ &- \sqrt{\frac{1}{3}}\lvert l=1, m=0, s=1/2, s_z=1/2\rangle
+\end{align*}
 
-$$
-\lvert j=3/2, j_z = -1/2, l = 1, s = 1/2 \rangle = \sqrt{\frac{1}{3}}\lvert l=1, m=-1, s=1/2, s_z=1/2\rangle + \sqrt{\frac{2}{3}}\lvert l=1, m=0, s=1/2, s_z=-1/2\rangle
-$$
+\begin{align*}
+\lvert j=3/2, j_z = -1/2, l = 1, s = 1/2 \rangle &= \sqrt{\frac{1}{3}}\lvert l=1, m=-1, s=1/2, s_z=1/2\rangle 
+\\ &+ \sqrt{\frac{2}{3}}\lvert l=1, m=0, s=1/2, s_z=-1/2\rangle
+\end{align*}
 
-$$
-\lvert j=1/2, j_z = -1/2, l = 1, s = 1/2 \rangle = -\sqrt{\frac{2}{3}}\lvert l=1, m=-1, s=1/2, s_z=1/2\rangle + \sqrt{\frac{1}{3}}\lvert l=1, m=0, s=1/2, s_z=-1/2\rangle.
-$$
+\begin{align*}
+\lvert j=1/2, j_z = -1/2, l = 1, s = 1/2 \rangle &= -\sqrt{\frac{2}{3}}\lvert l=1, m=-1, s=1/2, s_z=1/2\rangle 
+\\ &+ \sqrt{\frac{1}{3}}\lvert l=1, m=0, s=1/2, s_z=-1/2\rangle.
+\end{align*}
 
 These equations can be obtained by comparing the quantum numbers on each side, with the coefficients in the last four equations being determined with the help of a Clebsh-Gordon table (Note: to do this part of the question properly, we could apply the raising/lowering operators of angular momentum to find the coefficients (and indeed this is how the CG-table is derived). However, the exact coefficients presented here are not strictly relevant for solving the problem, and so we omit this (slightly tedious) step of the calculation). With this basis transformation established, we can compute the energy corrections using first-order perturbation theory:
 
-$$
-E^{(1)}_{j, j_z, l, s} = \langle j, j_z, l, s \rvert H_{s-0} \lvert j, j_z, l, s \rangle = \frac{\omega^2}{mc^2}\langle j, j_z, l, s \rvert \frac{J^2 - L^2 - S^2}{2} \lvert j, j_z, l, s \rangle = \frac{\hbar^2\omega^2}{2mc^2}(j(j+1) - l(l+1) - s(s+1))
-$$
+\begin{align*}
+E^{(1)}_{j, j_z, l, s} = \langle j, j_z, l, s \rvert H_{s-0} \lvert j, j_z, l, s \rangle &= \frac{\omega^2}{mc^2}\langle j, j_z, l, s \rvert \frac{J^2 - L^2 - S^2}{2} \lvert j, j_z, l, s \rangle 
+\\ &= \frac{\hbar^2\omega^2}{2mc^2}(j(j+1) - l(l+1) - s(s+1))
+\end{align*}
 
 Thus for the ground state(s) with $$l = 0$$, $$s = 1/2$$ and $$j = 1/2$$ we find:
 
@@ -798,7 +803,7 @@ $$
 \langle i, i+1 \rvert_0 \vec{S}_{i+1} \rvert i, i+1\rangle_0 \langle i+2, i+3 \rvert_0\vec{S}_{i+2} \rvert i+2, i+3\rangle_0 = 0 \cdot 0 = 0
 $$
 
-where we use that the $$\v{S}_{i+1} \cdot \v{S}_{i+2}$$ acts on the subspaces independently (allowing us to factor the expectation value) and we use that the singlet state is spherically symmeric to conclude that $$\langle i, i+1 \rvert_0 \vec{S}_{i+1} \rvert i, i+1\rangle_0 = 0$$. Thus:
+where we use that the $$\vec{S}_{i+1} \cdot \vec{S}_{i+2}$$ acts on the subspaces independently (allowing us to factor the expectation value) and we use that the singlet state is spherically symmeric to conclude that $$\langle i, i+1 \rvert_0 \vec{S}_{i+1} \rvert i, i+1\rangle_0 = 0$$. Thus:
 
 $$
 \sum_{i \text{even}} \langle \Psi \rvert \vec{S}_i \cdot \vec{S}_{i+1} \lvert \Psi \rangle = 0
@@ -850,7 +855,7 @@ which (as must be the case) the exact result falls within.
 
 *One way to experimentally measure $$a$$ is the allow a beam of electrons to interact with a constant magnetic field $$\vec{B} = B\hat{z}$$ via the Hamiltonian:*
 
-\begin{equation}\label{eq:emagmoment}
+\begin{equation}\label{eq:emagHamiltonian}
     H = \frac{1}{2m}\left(\vec{p} - e\vec{A}\right)^2 - \vec{\mu} \cdot \vec{B}
 \end{equation}
 
@@ -874,7 +879,7 @@ which (as must be the case) the exact result falls within.
 
 *(c) A beam of electrons of velocity $$\vec{v}$$ is prepared at time $$t = 0$$ in a spin state with known values of $$C_1(0)$$ and $$C_2(0)$$. The beam interacts with a magnetic field $$\vec{B} = B\hat{z}$$ between $$t = 0$$ and $$t = T$$. The expectation value $$C_1(T)$$ is experimentally measured to be periodic with period $$2\pi/\Omega$$, i.e. $$C_1(T) = C_1(T + 2\pi/\Omega)$$. Use this information to determine the value of $$a$$ in terms of $$\Omega$$ and other physical parameters.*
 
-**Solution:** (a) We follow the hint and work in the Landau gauge $$\vec{A} = (0, Bx, 0)$$ (one can easily verify that $$\vec{\nabla} \times \vec{A} = B\zhat = \vec{B}$$) to make the calculations as simple as possible. We then note that:
+**Solution:** (a) We follow the hint and work in the Landau gauge $$\vec{A} = (0, Bx, 0)$$ (one can easily verify that $$\vec{\nabla} \times \vec{A} = B\hat{z} = \vec{B}$$) to make the calculations as simple as possible. We then note that:
 
 $$
 \vec{v} = \frac{\vec{p} - e\vec{A}}{m} = \frac{1}{m}(p_x, p_y - eBx, p_z)
@@ -920,13 +925,17 @@ $$
 
 to this end we compute the commutators:
 
-$$
-[S_xv_x + S_yv_y, H] = \frac{m}{2}[S_xv_x, v_y^2] - (1+a)\frac{e}{m}B[S_xv_x, S_z] + \frac{m}{2}[S_yv_y, v_x^2] - (1+a)\frac{e}{m}B[S_yv_y, S_z] = \frac{m}{2}S_x(i\hbar\frac{\omega}{m}v_y) - (1+a)\frac{e}{m}B(-i\hbar S_y)v_x + \frac{m}{2}S_y(-i\hbar\frac{\omega}{m}v_x) - (1+a)\frac{e}{m}B(i\hbar S_z)v_y = -i\hbar \omega a[S_xv_y - S_yv_x]
-$$
+\begin{align*}
+[S_xv_x + S_yv_y, H] &= \frac{m}{2}[S_xv_x, v_y^2] - (1+a)\frac{e}{m}B[S_xv_x, S_z] + \frac{m}{2}[S_yv_y, v_x^2] - (1+a)\frac{e}{m}B[S_yv_y, S_z] 
+\\ &= \frac{m}{2}S_x(i\hbar\frac{\omega}{m}v_y) - (1+a)\frac{e}{m}B(-i\hbar S_y)v_x + \frac{m}{2}S_y(-i\hbar\frac{\omega}{m}v_x) - (1+a)\frac{e}{m}B(i\hbar S_z)v_y 
+\\ &= -i\hbar \omega a[S_xv_y - S_yv_x]
+\end{align*}
 
-$$
-[S_xv_y - S_yv_x, H] = \frac{m}{2}[S_xv_y, v_x^2] - (1+a)\frac{e}{m}B[S_xv_y, S_z] - \frac{m}{2}[S_yv_x, v_y^2] + (1+a)\frac{e}{m}B[S_yv_x, S_z] = \frac{m}{2}S_x(-i\hbar\frac{\omega}{m}v_x) - (1+a)\frac{e}{m}B(-i\hbar S_y)v_y + \frac{m}{2}S_y(i\hbar\frac{\omega}{m}v_y) - (1+a)\frac{e}{m}B(i\hbar S_x)v_x = -i\hbar \omega a[S_xv_x - S_yv_y].
-$$
+\begin{align*}
+[S_xv_y - S_yv_x, H] &= \frac{m}{2}[S_xv_y, v_x^2] - (1+a)\frac{e}{m}B[S_xv_y, S_z] - \frac{m}{2}[S_yv_x, v_y^2] + (1+a)\frac{e}{m}B[S_yv_x, S_z] 
+\\ &= \frac{m}{2}S_x(-i\hbar\frac{\omega}{m}v_x) - (1+a)\frac{e}{m}B(-i\hbar S_y)v_y + \frac{m}{2}S_y(i\hbar\frac{\omega}{m}v_y) - (1+a)\frac{e}{m}B(i\hbar S_x)v_x 
+\\ &= -i\hbar \omega a[S_xv_x - S_yv_y].
+\end{align*}
 
 Thus we obtain the two (coupled) differential equations:
 
@@ -940,7 +949,7 @@ $$
 
 if $$a = 0$$ then $$\frac{d C_1}{dt} = \frac{d C_2}{dt} = 0$$ so  <span style="color:blue">$$C_1(t), C_2(t)$$ are constant in time.</span>
 
-(c) Taking the time derivative of the two equations above:
+(c) Taking the time derivative of the $$C_1$$ equation we obtain:
 
 $$
 \ddot{C}_1 = -\omega a \dot{C}_2 = -\omega a (\omega a C_1) = -\omega^2 a^2 C_1
@@ -1029,9 +1038,11 @@ $$
 
 The degeneracy of $$\lvert \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rangle, \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle$$ is a priori a cause for concern, as the perturbation must be diagonal in the above basis for degenerate perturbation theory to give a valid result for the energy splitting. However, since $$\delta H = \frac{e^2}{\lvert \vec{r}_1 - \vec{r}_2\rvert}$$ is symmetric under particle interchange, the off diagonal terms indeed vanish, as can be seen via an insertion of the particle exchange operator $$\Pi$$:
 
-$$
-\langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle = \langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \Pi^\dagger \delta H \Pi\lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle = -\langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle.
-$$
+\begin{align*}
+\langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle 
+\\ &= \langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \Pi^\dagger \delta H \Pi\lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle 
+\\ &= -\langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle.
+\end{align*}
 
 Thus the expression for the energy splitting using perturbation theory is valid. We can evaluate the (diagonal) matrix elements via carrying out integrals by taking integrals in position space and sums in spin space - the sum over spin states drops out as $$\delta H$$ is independent of spin, and thus we have:
 
@@ -1048,7 +1059,7 @@ $$
 (d) Turning off the Coloumb interaction and turning on the spin interactions, if we again study:
 
 $$
-\delta E = E_{s=1}^{(1)} - E_{s=0}^{(1)} = \langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rangle - \langle \Psi(\vec{r}_1, \vec{r}_2, s = 0, m) \rvert \delta H(\vec{r}_1, \vec{r}_2) \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m) \rangle
+\delta E = E_{s=1}^{(1)} - E_{s=0}^{(1)} = \langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rangle - \langle \Psi(\vec{r}_1, \vec{r}_2, s = 0, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m) \rangle
 $$
 
 it is now the integral over position space that drops out as $$\delta H = \kappa \vec{S}_1 \cdot \vec{S}_2$$ is independent of position, and we are left with:
@@ -1057,7 +1068,7 @@ $$
 \delta E = \kappa\left(\langle s = 1, m \rvert \vec{S}_1 \cdot \vec{S}_2 \lvert s = 1, m \rangle - \langle s = 0, m=0\rvert \vec{S}_1 \cdot \vec{S}_2 \lvert s = 0, m=0 \rangle\right)
 $$
 
-We write $$\vec{S}_1 \cdot \vec{S}_2 = \frac{1}{2}(S^2 - S_1^2 - S_2^2)$$, which has eigenvalues $$\frac{\hbar^2}{2}(s(s+1) - s_1(s_1 + 1) - s_2(s_2 + 1))$$. Here $$s_1 = s_2 = \frac{1}{2}$$, and for the triplet ($$s = 1$$) states evaluates to -\frac{\hbar^2}{4}$$ and for the singlet ($$s = 0$$)states evaluates to $$-\frac{3\hbar^2}{4}$$. Thus:
+We write $$\vec{S}_1 \cdot \vec{S}_2 = \frac{1}{2}(S^2 - S_1^2 - S_2^2)$$, which has eigenvalues $$\frac{\hbar^2}{2}(s(s+1) - s_1(s_1 + 1) - s_2(s_2 + 1))$$. Here $$s_1 = s_2 = \frac{1}{2}$$, and for the triplet ($$s = 1$$) states evaluates to $$-\frac{\hbar^2}{4}$$ and for the singlet ($$s = 0$$)states evaluates to $$-\frac{3\hbar^2}{4}$$. Thus:
 
 $$
 \delta E = \kappa\left(\frac{\hbar^2}{4} - \left(-\frac{3\hbar^2}{4}\right)\right) = \kappa\hbar^2
@@ -1111,7 +1122,7 @@ Since the integrand is positive definite, we conclude $$\delta E < 0$$. Since $$
     V(x) = V_0\left[\sec^2\frac{x}{x_0} + \tan^2\frac{x}{x_0}\right] = V_0\left[1 + 2\tan^2\frac{x}{x_0}\right]
 \end{equation}
 
-*where $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$ (recall that $$\sec x = 1/\cosx$$, and the equality of the two expressions above follows from trigonometric identities). Amazingly, this system is exactly solvable for the especial value:*
+*where $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$ (recall that $$\sec x = 1/\cos x$$, and the equality of the two expressions above follows from trigonometric identities). Amazingly, this system is exactly solvable for the especial value:*
 
 \begin{equation}\label{eq:specialV0}
     V_0 = \frac{\hbar^2}{2m}\frac{1}{x_0^2},
@@ -1122,7 +1133,7 @@ Since the integrand is positive definite, we conclude $$\delta E < 0$$. Since $$
 *(a) Consider two Hamiltonians*
 
 \begin{equation}\label{eq:HHtilde}
-    H = A^\dag A, \quad \tilde{H} = AA^\dag,
+    H = A^\dagger A, \quad \tilde{H} = AA^\dagger,
 \end{equation}
 
 *Where $$A$$ is an unspecified operator. Assume that $$H$$ has (normalized) eigenstates $$\lvert n \rangle$$ with*
@@ -1141,7 +1152,7 @@ Since the integrand is positive definite, we conclude $$\delta E < 0$$. Since $$
 
 *where $$W(x)$$ is real. Show that $$H$$ and $$\tilde{H}$$ each describe a particle moving in a potential, in units where $$\hbar^2/2m = 1$$. Find the two potential energy functions, $$V(x)$$ and $$\tilde{V}(x)$$, corresponding to $$H$$ and $$\tilde{H}$$, respectively.*
 
-*(c) We will be considering Hamiltonians defined on a finite range $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$. This means that the wave functions will have Dirichlet boundary conditions at $$x = \frac{\pi}{2}x_0$$, i.e. $$\psi(\pm \frac{\pi}{2}x_0) = 0$$. Assume that $$H$$ has a zero energy ground state consisten with these boundary conditions. Find the unnormalized ground state wave function $$\psi_0(x)$$ for $$H$ in terms of $$W(x)$$. Show that $$\tilde{H}$$ cannot have a zero energy ground state consistent with these boundary conditions.*
+*(c) We will be considering Hamiltonians defined on a finite range $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$. This means that the wave functions will have Dirichlet boundary conditions at $$x = \frac{\pi}{2}x_0$$, i.e. $$\psi(\pm \frac{\pi}{2}x_0) = 0$$. Assume that $$H$$ has a zero energy ground state consisten with these boundary conditions. Find the unnormalized ground state wave function $$\psi_0(x)$$ for $$H$$ in terms of $$W(x)$$. Show that $$\tilde{H}$$ cannot have a zero energy ground state consistent with these boundary conditions.*
 
 *(d) The potential in Eq. \eqref{tanpotential} is dual to a constant potential. That is, there is a $$W(x)$$ such that for $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$,*
 
@@ -1163,16 +1174,16 @@ $$
 \tilde{H}A\lvert n \rangle = AA^\dagger A \lvert n \rangle = A H \lvert n \rangle = A E_n \lvert n \rangle = E_n A \lvert n \rangle.
 $$
 
-Thus <span style="color:blue">$$A \lvert n \rangle$$ is an eigenstate of $$\tilde{H}$$</span>. Since $$\langle n \vert A^\dagger A \lvert n \rangle = \langle n \vert H \lvert n \rangle = E_n \langle n \vert n \rangle$$, the $$A \lvert n \rangle$$ have norm of $$\sqrt{E_n}$$ and thus the normalized eigenstates of $$\tilde{H}$$ are $$\color{blue}{\lvert \tilde{n} \rangle = \frac{1}{\sqrt{E_n}}A\lvert n \rangle}$$ with eigenvalues $$\color{blue}{\tilde{E}_n = E_n}$$. The argument fails if $$E_n = 0$$ as then $$A \lvert n \rangle$$ has zero norm, i.e. it is the zero vector (which cannot be an eigenstate). Further, since $$E_n = \norm{A\lvert n \rangle}^2$$ and norms are positive semidefinite, <span style="color:blue">$$E_n/\tilde{E}_n$$ cannot be negative. </span>
+Thus <span style="color:blue">$$A \lvert n \rangle$$ is an eigenstate of $$\tilde{H}$$</span>. Since $$\langle n \vert A^\dagger A \lvert n \rangle = \langle n \vert H \lvert n \rangle = E_n \langle n \vert n \rangle$$, the $$A \lvert n \rangle$$ have norm of $$\sqrt{E_n}$$ and thus the normalized eigenstates of $$\tilde{H}$$ are $$\color{blue}{\lvert \tilde{n} \rangle = \frac{1}{\sqrt{E_n}}A\lvert n \rangle}$$ with eigenvalues $$\color{blue}{\tilde{E}_n = E_n}$$. The argument fails if $$E_n = 0$$ as then $$A \lvert n \rangle$$ has zero norm, i.e. it is the zero vector (which cannot be an eigenstate). Further, since $$E_n$$ is the norm squared of $$A\lvert n \rangle$$ and norms are positive semidefinite, <span style="color:blue">$$E_n/\tilde{E}_n$$ cannot be negative. </span>
 
-(b) Note that $$A = ip + W(x)$$ as $$p = -i\frac{\partial}{\partial x}$$. Note that from the canonical commutation relation $$[x, p] = i$$ it follows that $$[p, x^n] = -inx^{n-1}$$ (by induction on $$n$$) and thus Taylor expanding a function of $$x$$ it follows that $$[p, G(x)] = -iG'(x)$$ (alternatively, since $$p = -i\frac{\partial}{\partial x}$$ is given, the commutator can be evaluated by acting on a test function). In any case, we then compute:
-
-$$
-H = A^\dagger A = \left(-ip + W(x)\right)\left(ip + W(x)\right) = p^2 - i[p, W(x)] + W^2(x) = p^2 - W'(x) + W^2(x) = -\frac{\partial^2}{\partial x^2} - W'(x) + W^2(x)
-$$
+(b) Note that $$A = ip + W(x)$$ as $$p = -i\frac{\partial}{\partial x}$$. Note that from the canonical commutation relation $$[x, p] = i$$ it follows that $$[p, x^n] = -inx^{n-1}$$ (by induction on $$n$$) and thus Taylor expanding a function of $$x$$ it follows that $$[p, G(x)] = -iG'(x)$$ (alternatively, since $$p = -i\frac{\partial}{\partial x}$$ is given, the commutator can be evaluated by acting on a test function). With this result, we compute:
 
 $$
-\tilde{H} = A A^\dagger = \left(ip + W(x)\right)\left(-ip + W(x)\right) = p^2 + i[p, W(x)] + W^2(x) = p^2 + W'(x) + W^2(x) = -\frac{\partial^2}{\partial x^2} + W'(x) + W^2(x)
+H = A^\dagger A = \left(-ip + W(x)\right)\left(ip + W(x)\right) = p^2 - i[p, W(x)] + W^2(x) = -\frac{\partial^2}{\partial x^2} - W'(x) + W^2(x)
+$$
+
+$$
+\tilde{H} = A A^\dagger = \left(ip + W(x)\right)\left(-ip + W(x)\right) = p^2 + i[p, W(x)] + W^2(x) = -\frac{\partial^2}{\partial x^2} + W'(x) + W^2(x)
 $$
 
 Thus <span style="color:blue">$$H, \tilde{H}$$ both describe a particle in a potential</span> with $$\color{blue}{V(x) = -W'(x) + W^2(x)}$$ and $$\color{blue}{\tilde{V}(x) = W'(x) + W^2(x)}.$$
@@ -1180,7 +1191,7 @@ Thus <span style="color:blue">$$H, \tilde{H}$$ both describe a particle in a pot
 (c) From (a), we know that for eigenstates $$\lvert n \rangle$$ with energy $$E_n = 0$$ it follows that $$A\lvert n \rangle = 0$$. Thus we obtain the following ODE for the wavefunction $$\psi_0(x)$$:
 
 $$
-\left(\frac{\partial}{\partial x} + W(x))\psi_0(x) = 0 \implies \frac{\partial}{\partial x}\psi_0(x) = -W(x)\psi_0(x).
+\left(\frac{\partial}{\partial x} + W(x)\right)\psi_0(x) = 0 \implies \frac{\partial}{\partial x}\psi_0(x) = -W(x)\psi_0(x).
 $$
 
 Which can be solved via inspection:
@@ -1192,7 +1203,7 @@ $$
 Now consider $$\tilde{H}$$; by an anlogous argument, if an eigenstate $$\lvert \tilde{n} \rangle$$ exists with energy $$\tilde{E}_n = 0$$ then $$A^\dagger \lvert n \rangle = 0$$ and thus:
 
 $$
-\left(-\frac{\partial}{\partial x} + W(x))\tilde{\psi}_0(x) = 0 \implies \frac{\partial}{\partial x}\tilde{\psi}_0(x) = W(x)\tilde{\psi}_0(x).
+\left(-\frac{\partial}{\partial x} + W(x)\right)\tilde{\psi}_0(x) = 0 \implies \frac{\partial}{\partial x}\tilde{\psi}_0(x) = W(x)\tilde{\psi}_0(x).
 $$
 
 This has solution:
@@ -1208,7 +1219,7 @@ But $$\psi_0(\pm \frac{\pi}{2}x_0) = 0$$ means that $$\tilde{\psi}_0(\pm \frac{\
 (e) We find the spectrum and eigenstates for the dual potential and use this to construct the spectrum and eigenstates for the potential of Eq. \eqref{eq:dualtanpotential}. The Dirchlet boundary conditions of $$\psi(\pm \frac{\pi}{2}x_0) = 0$$ means that the dual problem is simply that of the infinite square well with walls at $$x = \pm \frac{\pi}{2}x_0$$ and with the bottom of the potential shifted by $-V_0 = \frac{\hbar^2}{2m}\frac{1}{x_0^2}$$. These we recall to be:
 
 $$
-\psi_n(x) = \sin(n\left(\frac{x}{x_0} - \frac{\pi}{2}))
+\psi_n(x) = \sin(n(\frac{x}{x_0} - \frac{\pi}{2}))
 $$
 
 $$
@@ -1224,7 +1235,7 @@ $$
 noting that since the result of (c) tells us that $$H, \tilde{H}$$ cannot share states with zero eigenvalue and hence $$E_1 = 0$$ means that $$\tilde{H}$$ cannot have the $$n = 1$$ state. The eigenstates of $$\tilde{H}$$ are obtained by applying $$A$$ to the above eigenstates and so:
 
 $$
-\tilde{\psi}_n(x) = \left(\frac{\partial}{\partial x} + W(x))\psi_n(x) = \left(\frac{\partial}{\partial x} + \frac{1}{x_0}\tan(\frac{x}{x_0})\right)\sin(n(\frac{x}{x_0} - \frac{\pi}{2}))
+\tilde{\psi}_n(x) = \left(\frac{\partial}{\partial x} + W(x)\right)\psi_n(x) = \left(\frac{\partial}{\partial x} + \frac{1}{x_0}\tan(\frac{x}{x_0})\right)\sin(n(\frac{x}{x_0} - \frac{\pi}{2}))
 $$
 
 thus we conclude:
@@ -1244,9 +1255,9 @@ H(t) = \vec{B}(t) \cdot \vec{\sigma}
 
 where $$\vec{B}(t) = B(\sin\theta\cos\omega t, \sin\theta \sin \omega t, \cos\theta)$$ and $$\vec{\sigma} = (\sigma_x, \sigma_y, \sigma_z)$$ with $$\sigma_i$$ the Pauli matrices:
 
-\begin{equation}\label{eq:paulis}
-    \sigma_x = \left( \begin{array}{cc} 0 & 1 \\ 1 & 0\end{array} \right) \quad \sigma_y = \left( \begin{array}{cc} 0 & -i \\ i & 0\end{array} \right) \quad \sigma_z = \left( \begin{array}{cc} 1 & 0 \\ 0 & -1\end{array} \right).
-\end{equation}
+$$
+\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} & \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+$$
 
 *(a) Find the instantaneous eigenstates $$\lvert +, t \rangle$$ and $$\lvert -, t \rangle$$ of $$H(t)$$ with eigenvalues $$+B$$ anf $$-B$$ respectively.*
 
@@ -1275,7 +1286,7 @@ $$
 which we substitute into the SE (with $$\hbar = 1$$) to obtain:
 
 $$
-i(\dot{c}_+\lvert +, t \rangle + c_+\dot{\lvert +, t \rangle} + \dot{c}_-\lvert -, t \rangle + c_-\dot{\lvert -, t \rangle}\right) = H(t)\left(c_+\lvert +, t\rangle + c_-\lvert -, t \rangle\right) = Bc_+\lvert + , t \rangle - B c_-\lvert -, t \rangle.
+i\left(\dot{c}_+\lvert +, t \rangle + c_+\dot{\lvert +, t \rangle} + \dot{c}_-\lvert -, t \rangle + c_-\dot{\lvert -, t \rangle}\right) = H(t)\left(c_+\lvert +, t\rangle + c_-\lvert -, t \rangle\right) = Bc_+\lvert + , t \rangle - B c_-\lvert -, t \rangle.
 $$
 
 We note that:
@@ -1344,13 +1355,13 @@ T\lvert n \rangle = \lvert n + 1 \rangle.
 *(b) Consider the Hamiltonian:*
 
 \begin{equation}\label{eq:latticeH}
-H\lvert n \rangle = -\frac{1}{2\Deelta^2}\left(\lvert n + 1 \rangle + \lvert n - 1 \rangle - 2 \lvert n \rangle\right).
+H\lvert n \rangle = -\frac{1}{2\Delta^2}\left(\lvert n + 1 \rangle + \lvert n - 1 \rangle - 2 \lvert n \rangle\right).
 \end{equation}
 
 *Does $$T$$ commute with $$H$$? Let $$\lvert \psi_k \rangle$$ be given by:*
 
 \begin{equation}\label{eq:latticeHeigs}
-\rangle n \vert \psi_k \rangle = e^{ikn\Delta}.
+\langle n \vert \psi_k \rangle = e^{ikn\Delta}.
 \end{equation}
 
 *Show that $$\lvert \psi_k \rangle$$ is an eigenstate of $$H$$. What is the relationship between the eigenvalue $$E_k$$ and $$k$$? What is $$E_k$$ as $$k \to 0$$?*
@@ -1384,10 +1395,16 @@ $$
 Re-indexing the sum to collect terms:
 
 $$
-H\lvert \psi_k \rangle =  -\frac{1}{2\Delta^2}\sum_n (e^{i(n-1)k\Delta} + e^{i(n+1)k\Delta} - 2e^{ink\Delta})\lvert n \rangle = -\frac{1}{2\Delta^2}(e^{-ik\Delta} + e^{ik\Delta} - 2) \sum_n e^{ink\Delta}\lvert n \rangle = \frac{1 - \cos(k\Delta)}{\Delta^2} \lvert \psi_k \rangle
+H\lvert \psi_k \rangle =  -\frac{1}{2\Delta^2}\sum_n (e^{i(n-1)k\Delta} + e^{i(n+1)k\Delta} - 2e^{ink\Delta})\lvert n \rangle = -\frac{1}{2\Delta^2}(e^{-ik\Delta} + e^{ik\Delta} - 2) \sum_n e^{ink\Delta}\lvert n \rangle
 $$
 
-where in the last equality we use Euler's identity. Thus the $$\lvert \psi_k \rangle$$ states are eigenstates with eigenvalue $$\color{blue}{\frac{1 - \cos(k\Delta)}{\Delta^2}}$$. The $$k$$ enters the eigenvalue through the cosine term. As $$k \to 0$$, $$\color{blue}{E_k \to 0.}$$
+and applying Euler's identity:
+
+$$
+H\lvert \psi_k \rangle = \frac{1 - \cos(k\Delta)}{\Delta^2} \lvert \psi_k \rangle.
+$$
+
+Thus the $$\lvert \psi_k \rangle$$ states are eigenstates with eigenvalue $$\color{blue}{\frac{1 - \cos(k\Delta)}{\Delta^2}}$$. The $$k$$ enters the eigenvalue through the cosine term. As $$k \to 0$$, $$\color{blue}{E_k \to 0.}$$
 
 (c) In the presence of the barrier, the Hamiltonian $$H$ is modified:
 
@@ -1417,7 +1434,7 @@ $$
 Using the previously computed expression for $$E_k$$ in (b) and the coefficients of $$\lvert S_k \rangle$$ as defined above, we obtain an equation relating $$T, k, \Delta, V$$:
 
 $$
--\frac{1}{2\Delta^2}\left(Te^{ik\Delta} + e^{-ik\Delta} + (1-T)e^{ik\Delta} - 2T) + VT = -\frac{1}{2\Delta^2}(e^{-ik\Delta} + e^{ik\Delta} - 2)T
+-\frac{1}{2\Delta^2}\left(Te^{ik\Delta} + e^{-ik\Delta} + (1-T)e^{ik\Delta} - 2T\right) + VT = -\frac{1}{2\Delta^2}(e^{-ik\Delta} + e^{ik\Delta} - 2)T
 $$
 
 which solving for $$T$$ yields:
@@ -1436,7 +1453,10 @@ $$
 #### Spin-1/2 and Stern-Gerlach <a id="problem-qm-spinhalfsg" name="problem-qm-spinhalfsg"></a>
 **Source:** MIT Spring 2001 Doctoral General Examination Quantum Q1
 
-**Problem Statement:** *Consider a spin-1/2 particle where $$S_j = \frac{\hbar}{2}\sigma_j$$ with $$\sigma_j$$ the Pauli matrices of Eq. \eqref{eq:paulis}.*
+**Problem Statement:** *Consider a spin-1/2 particle where $$S_j = \frac{\hbar}{2}\sigma_j$$ with $$\sigma_j$$ the Pauli matrices:*
+$$
+\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} & \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+$$
 
 *(a) The operator along the $$\hat{n} = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$$ direction is:*
 
