@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "UChicago Graduate Diagnostic Exam Prep - Quantum Mechanics"
-date: 2024-07-18
+date: 2024-07-30
 description: Interesting quantum mechanics problems solved while studying for the graduate diagnostic exam.
 categories: physics uchicago quantum
 ---
-**July 18, 2024.** *Before the start of my PhD program at UChicago this fall, there is a diagnostic exam to test knowledge/ability in the core subjects of classical mechanics, electromagnetism, quantum mechanics, and statistical mechanics. Here, I share some interesting problems and solutions I came across while preparing for this exam. This is the first post in this series, where I go through quantum mechanics problems.*
+**July 30, 2024.** *Before the start of my PhD program at UChicago this fall, there is a diagnostic exam to test knowledge/ability in the core subjects of classical mechanics, electromagnetism, quantum mechanics, and statistical mechanics. Here, I share some interesting problems and solutions I came across while preparing for this exam. This is the first post in this series, where I go through quantum mechanics problems.*
 
 ### Contents
 - <a href="#problem-qm-scmicroresonator" name="#problem-qm-scmicroresonator"> Superconducting Microwave Resonator</a>
