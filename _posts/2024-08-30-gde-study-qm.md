@@ -1020,7 +1020,7 @@ $$
 Since the integrand is positive definite, we conclude $$\delta E < 0$$. Since $$\kappa = \delta E/\hbar^2$$ we conclude that $$\color{blue}{\kappa < 0}$$. The spins being aligned is favoured, as we would expect for a ferromagnet.
 
 
-#### The Supersymmetric Method TODO <a id="problem-qm-susy" name="problem-qm-susy"></a>
+#### The Supersymmetric Method <a id="problem-qm-susy" name="problem-qm-susy"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q2
 
 **Problem Statement:** *In this problem you will solve for the energy spectrum of a particle of mass $$m$$ confined to a potential*
