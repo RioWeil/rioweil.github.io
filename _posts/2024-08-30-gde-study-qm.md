@@ -1061,7 +1061,7 @@ Since the integrand is positive definite, we conclude $$\delta E < 0$$. Since $$
 
 *(c) We will be considering Hamiltonians defined on a finite range $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$. This means that the wave functions will have Dirichlet boundary conditions at $$x = \frac{\pi}{2}x_0$$, i.e. $$\psi(\pm \frac{\pi}{2}x_0) = 0$$. Assume that $$H$$ has a zero energy ground state consisten with these boundary conditions. Find the unnormalized ground state wave function $$\psi_0(x)$$ for $$H$ in terms of $$W(x)$$. Show that $$\tilde{H}$$ cannot have a zero energy ground state consistent with these boundary conditions.*
 
-*(d) The potential in Eq. \eqref{tanpotential} is dual to a constant potential. That is, there is a $$W(x)$$ such that for $$-\fraC{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$,*
+*(d) The potential in Eq. \eqref{tanpotential} is dual to a constant potential. That is, there is a $$W(x)$$ such that for $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$,*
 
 \begin{equation}\label{eq:dualtanpotential}
     V(x) = a, \quad \tilde{V}(x) = b\left[\sec^2\frac{x}{x_0} + \tan^2\frac{x}{x_0}\right] = b\left[1 + 2\tan^2\frac{x}{x_0}\right]
@@ -1075,7 +1075,81 @@ Since the integrand is positive definite, we conclude $$\delta E < 0$$. Since $$
 
 *(e) Find the energy spectrum and energy eigenstates for the potential in Eq. \eqref{eq:tanpotential}. Does this system have a zero energy ground state? You should assume that all wave functions vanish at $$x = \frac{\pi}{2}x_0$$ (i.e. Dirichlet boundary conditions), and you should restore all factors of $$\hbar$$ and $$m$$. You do not need to normalize the states.*
 
-**Solution:**
+**Solution:** (a) We apply $$\tilde{H}$$ to $$A\lvert n \rangle$$:
+
+$$
+\tilde{H}A\lvert n \rangle = AA^\dagger A \lvert n \rangle = A H \lvert n \rangle = A E_n \lvert n \rangle = E_n A \lvert n \rangle.
+$$
+
+Thus <span style="color:blue">$$A \lvert n \rangle$$ is an eigenstate of $$\tilde{H}$$</span>. Since $$\langle n \vert A^\dagger A \lvert n \rangle = \langle n \vert H \lvert n \rangle = E_n \langle n \vert n \rangle$$, the $$A \lvert n \rangle$$ have norm of $$\sqrt{E_n}$$ and thus the normalized eigenstates of $$\tilde{H}$$ are $$\color{blue}{\lvert \tilde{n} \rangle = \frac{1}{\sqrt{E_n}}A\lvert n \rangle}$$ with eigenvalues $$\color{blue}{\tilde{E}_n = E_n}$$. The argument fails if $$E_n = 0$$ as then $$A \lvert n \rangle$$ has zero norm, i.e. it is the zero vector (which cannot be an eigenstate). Further, since $$E_n = \norm{A\lvert n \rangle}^2$$ and norms are positive semidefinite, <span style="color:blue">$$E_n/\tilde{E}_n$$ cannot be negative. </span>
+
+(b) Note that $$A = ip + W(x)$$ as $$p = -i\frac{\partial}{\partial x}$$. Note that from the canonical commutation relation $$[x, p] = i$$ it follows that $$[p, x^n] = -inx^{n-1}$$ (by induction on $$n$$) and thus Taylor expanding a function of $$x$$ it follows that $$[p, G(x)] = -iG'(x)$$ (alternatively, since $$p = -i\frac{\partial}{\partial x}$$ is given, the commutator can be evaluated by acting on a test function). In any case, we then compute:
+
+$$
+H = A^\dagger A = \left(-ip + W(x)\right)\left(ip + W(x)\right) = p^2 - i[p, W(x)] + W^2(x) = p^2 - W'(x) + W^2(x) = -\frac{\partial^2}{\partial x^2} - W'(x) + W^2(x)
+$$
+
+$$
+\tilde{H} = A A^\dagger = \left(ip + W(x)\right)\left(-ip + W(x)\right) = p^2 + i[p, W(x)] + W^2(x) = p^2 + W'(x) + W^2(x) = -\frac{\partial^2}{\partial x^2} + W'(x) + W^2(x)
+$$
+
+Thus <span style="color:blue">$$H, \tilde{H}$$ both describe a particle in a potential</span> with $$\color{blue}{V(x) = -W'(x) + W^2(x)}$$ and $$\color{blue}{\tilde{V}(x) = W'(x) + W^2(x)}.$$
+
+(c) From (a), we know that for eigenstates $$\lvert n \rangle$$ with energy $$E_n = 0$$ it follows that $$A\lvert n \rangle = 0$$. Thus we obtain the following ODE for the wavefunction $$\psi_0(x)$$:
+
+$$
+\left(\frac{\partial}{\partial x} + W(x))\psi_0(x) = 0 \implies \frac{\partial}{\partial x}\psi_0(x) = -W(x)\psi_0(x).
+$$
+
+Which can be solved via inspection:
+
+$$
+\color{blue}{\psi_0(x) = \exp(-\int_0^x W(x')dx').}
+$$
+
+Now consider $$\tilde{H}$$; by an anlogous argument, if an eigenstate $$\lvert \tilde{n} \rangle$$ exists with energy $$\tilde{E}_n = 0$$ then $$A^\dagger \lvert n \rangle = 0$$ and thus:
+
+$$
+\left(-\frac{\partial}{\partial x} + W(x))\tilde{\psi}_0(x) = 0 \implies \frac{\partial}{\partial x}\tilde{\psi}_0(x) = W(x)\tilde{\psi}_0(x).
+$$
+
+This has solution:
+
+$$
+\tilde{\psi}_0(x) = \exp(\int_0^x W(x')dx') = \frac{1}{\psi_0(x)}
+$$
+
+But $$\psi_0(\pm \frac{\pi}{2}x_0) = 0$$ means that $$\tilde{\psi}_0(\pm \frac{\pi}{2}x_0) = \infty$$, so it is impossible for both $$\psi, \tilde{\psi}$$ to have a zero-energy eigenstate that satisfies the Dirchlet boundary conditions.
+
+(d) Since $$\tilde{V}(x) = b\left[\sec^2\frac{x}{x_0} + \tan^2\frac{x}{x_0}\right] = W'(x) + W^2(x)$$, recalling that $$\frac{\partial}{\partial x} \tan x = \sec^2 x$$ we observe $$\color{blue}{W(x) = \frac{1}{x_0}\tan(\frac{x}{x_0})}$$ works with with $$\color{blue}{b = \frac{1}{x_0^2}}$$. Then since $$V(x) = a = W'(x) - W^2(x)$$ we find that $$\color{blue}{a = -\frac{1}{x_0^2}.}$$.
+
+(e) We find the spectrum and eigenstates for the dual potential and use this to construct the spectrum and eigenstates for the potential of Eq. \eqref{eq:dualtanpotential}. The Dirchlet boundary conditions of $$\psi(\pm \frac{\pi}{2}x_0) = 0$$ means that the dual problem is simply that of the infinite square well with walls at $$x = \pm \frac{\pi}{2}x_0$$ and with the bottom of the potential shifted by $-V_0 = \frac{\hbar^2}{2m}\frac{1}{x_0^2}$$. These we recall to be:
+
+$$
+\psi_n(x) = \sin(n\left(\frac{x}{x_0} - \frac{\pi}{2}))
+$$
+
+$$
+E_n = \frac{\hbar^2 n^2}{2m x_0^2} - V_0 = V_0(n^2 - 1) \quad n \geq 1.
+$$
+
+The eigenvalues of $$\tilde{H}$$ are identical:
+
+$$
+\color{blue}{\tilde{E}_n = V_0(n^2 - 1) \quad n \geq 2}
+$$
+
+noting that since the result of (c) tells us that $$H, \tilde{H}$$ cannot share states with zero eigenvalue and hence $$E_1 = 0$$ means that $$\tilde{H}$$ cannot have the $$n = 1$$ state. The eigenstates of $$\tilde{H}$$ are obtained by applying $$A$$ to the above eigenstates and so:
+
+$$
+\tilde{\psi}_n(x) = \left(\frac{\partial}{\partial x} + W(x))\psi_n(x) = \left(\frac{\partial}{\partial x} + \frac{1}{x_0}\tan(\frac{x}{x_0})\right)\sin(n(\frac{x}{x_0} - \frac{\pi}{2}))
+$$
+
+thus we conclude:
+
+$$
+\color{blue}{\tilde{\psi}_n(x) = \frac{1}{x_0}\left(n\cos(n(\frac{x}{x_0} - \frac{\pi}{2})) + \sin(n(\frac{x}{x_0} - \frac{\pi}{2}))\tan(\frac{x}{x_0})\right).}
+$$
 
 #### Spin-1/2 in Time-Dependent Magnetic Field <a id="problem-qm-timedepmag" name="problem-qm-timedepmag"></a>
 **Source:** MIT Fall 2002 Doctoral General Examination Quantum Q2
