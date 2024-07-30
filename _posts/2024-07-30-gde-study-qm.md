@@ -549,32 +549,42 @@ $$
 \lvert j=3/2, j_z = \pm 3/2, l = 1, s = 1/2 \rangle = \lvert l = 1, m = \pm 1, s = 1/2, s_z = \pm 1/2 \rangle
 $$
 
-\begin{align*}
+$$
+\begin{aligned}
 \lvert j=3/2, j_z = 1/2, l = 1, s = 1/2 \rangle &= \sqrt{\frac{1}{3}}\lvert l=1, m=1, s=1/2, s_z=-1/2\rangle 
 \\ &+ \sqrt{\frac{2}{3}}\lvert l=1, m=0, s=1/2, s_z=1/2\rangle
-\end{align*}
+\end{aligned}
+$$
 
-\begin{align*}
+$$
+\begin{aligned}
 \lvert j=1/2, j_z = 1/2, l = 1, s = 1/2 \rangle &= \sqrt{\frac{2}{3}}\lvert l=1, m=1, s=1/2, s_z=-1/2\rangle 
 \\ &- \sqrt{\frac{1}{3}}\lvert l=1, m=0, s=1/2, s_z=1/2\rangle
-\end{align*}
+\end{aligned}
+$$
 
-\begin{align*}
+$$
+\begin{aligned}
 \lvert j=3/2, j_z = -1/2, l = 1, s = 1/2 \rangle &= \sqrt{\frac{1}{3}}\lvert l=1, m=-1, s=1/2, s_z=1/2\rangle 
 \\ &+ \sqrt{\frac{2}{3}}\lvert l=1, m=0, s=1/2, s_z=-1/2\rangle
-\end{align*}
+\end{aligned}
+$$
 
-\begin{align*}
+$$
+\begin{aligned}
 \lvert j=1/2, j_z = -1/2, l = 1, s = 1/2 \rangle &= -\sqrt{\frac{2}{3}}\lvert l=1, m=-1, s=1/2, s_z=1/2\rangle 
 \\ &+ \sqrt{\frac{1}{3}}\lvert l=1, m=0, s=1/2, s_z=-1/2\rangle.
-\end{align*}
+\end{aligned}
+$$
 
 These equations can be obtained by comparing the quantum numbers on each side, with the coefficients in the last four equations being determined with the help of a Clebsh-Gordon table (Note: to do this part of the question properly, we could apply the raising/lowering operators of angular momentum to find the coefficients (and indeed this is how the CG-table is derived). However, the exact coefficients presented here are not strictly relevant for solving the problem, and so we omit this (slightly tedious) step of the calculation). With this basis transformation established, we can compute the energy corrections using first-order perturbation theory:
 
-\begin{align*}
+$$
+\begin{aligned}
 E^{(1)}_{j, j_z, l, s} = \langle j, j_z, l, s \rvert H_{s-0} \lvert j, j_z, l, s \rangle &= \frac{\omega^2}{mc^2}\langle j, j_z, l, s \rvert \frac{J^2 - L^2 - S^2}{2} \lvert j, j_z, l, s \rangle 
 \\ &= \frac{\hbar^2\omega^2}{2mc^2}(j(j+1) - l(l+1) - s(s+1))
-\end{align*}
+\end{aligned}
+$$
 
 Thus for the ground state(s) with $$l = 0$$, $$s = 1/2$$ and $$j = 1/2$$ we find:
 
@@ -925,17 +935,21 @@ $$
 
 to this end we compute the commutators:
 
-\begin{align*}
+$$
+\begin{aligned}
 [S_xv_x + S_yv_y, H] &= \frac{m}{2}[S_xv_x, v_y^2] - (1+a)\frac{e}{m}B[S_xv_x, S_z] + \frac{m}{2}[S_yv_y, v_x^2] - (1+a)\frac{e}{m}B[S_yv_y, S_z] 
 \\ &= \frac{m}{2}S_x(i\hbar\frac{\omega}{m}v_y) - (1+a)\frac{e}{m}B(-i\hbar S_y)v_x + \frac{m}{2}S_y(-i\hbar\frac{\omega}{m}v_x) - (1+a)\frac{e}{m}B(i\hbar S_z)v_y 
 \\ &= -i\hbar \omega a[S_xv_y - S_yv_x]
-\end{align*}
+\end{aligned}
+$$
 
-\begin{align*}
+$$
+\begin{aligned}
 [S_xv_y - S_yv_x, H] &= \frac{m}{2}[S_xv_y, v_x^2] - (1+a)\frac{e}{m}B[S_xv_y, S_z] - \frac{m}{2}[S_yv_x, v_y^2] + (1+a)\frac{e}{m}B[S_yv_x, S_z] 
 \\ &= \frac{m}{2}S_x(-i\hbar\frac{\omega}{m}v_x) - (1+a)\frac{e}{m}B(-i\hbar S_y)v_y + \frac{m}{2}S_y(i\hbar\frac{\omega}{m}v_y) - (1+a)\frac{e}{m}B(i\hbar S_x)v_x 
 \\ &= -i\hbar \omega a[S_xv_x - S_yv_y].
-\end{align*}
+\end{aligned}
+$$
 
 Thus we obtain the two (coupled) differential equations:
 
@@ -1038,11 +1052,13 @@ $$
 
 The degeneracy of $$\lvert \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rangle, \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle$$ is a priori a cause for concern, as the perturbation must be diagonal in the above basis for degenerate perturbation theory to give a valid result for the energy splitting. However, since $$\delta H = \frac{e^2}{\lvert \vec{r}_1 - \vec{r}_2\rvert}$$ is symmetric under particle interchange, the off diagonal terms indeed vanish, as can be seen via an insertion of the particle exchange operator $$\Pi$$:
 
-\begin{align*}
+$$
+\begin{aligned}
 \langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle 
 \\ &= \langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \Pi^\dagger \delta H \Pi\lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle 
 \\ &= -\langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle.
-\end{align*}
+\end{aligned}
+$$
 
 Thus the expression for the energy splitting using perturbation theory is valid. We can evaluate the (diagonal) matrix elements via carrying out integrals by taking integrals in position space and sums in spin space - the sum over spin states drops out as $$\delta H$$ is independent of spin, and thus we have:
 
@@ -1154,7 +1170,7 @@ Since the integrand is positive definite, we conclude $$\delta E < 0$$. Since $$
 
 *(c) We will be considering Hamiltonians defined on a finite range $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$. This means that the wave functions will have Dirichlet boundary conditions at $$x = \frac{\pi}{2}x_0$$, i.e. $$\psi(\pm \frac{\pi}{2}x_0) = 0$$. Assume that $$H$$ has a zero energy ground state consisten with these boundary conditions. Find the unnormalized ground state wave function $$\psi_0(x)$$ for $$H$$ in terms of $$W(x)$$. Show that $$\tilde{H}$$ cannot have a zero energy ground state consistent with these boundary conditions.*
 
-*(d) The potential in Eq. \eqref{tanpotential} is dual to a constant potential. That is, there is a $$W(x)$$ such that for $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$,*
+*(d) The potential in Eq. \eqref{eq:tanpotential} is dual to a constant potential. That is, there is a $$W(x)$$ such that for $$-\frac{\pi}{2}x_0 \leq x \leq \frac{\pi}{2}x_0$$,*
 
 \begin{equation}\label{eq:dualtanpotential}
     V(x) = a, \quad \tilde{V}(x) = b\left[\sec^2\frac{x}{x_0} + \tan^2\frac{x}{x_0}\right] = b\left[1 + 2\tan^2\frac{x}{x_0}\right]
@@ -1256,7 +1272,7 @@ H(t) = \vec{B}(t) \cdot \vec{\sigma}
 where $$\vec{B}(t) = B(\sin\theta\cos\omega t, \sin\theta \sin \omega t, \cos\theta)$$ and $$\vec{\sigma} = (\sigma_x, \sigma_y, \sigma_z)$$ with $$\sigma_i$$ the Pauli matrices:
 
 $$
-\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} & \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \quad \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 $$
 
 *(a) Find the instantaneous eigenstates $$\lvert +, t \rangle$$ and $$\lvert -, t \rangle$$ of $$H(t)$$ with eigenvalues $$+B$$ anf $$-B$$ respectively.*
@@ -1455,7 +1471,7 @@ $$
 
 **Problem Statement:** *Consider a spin-1/2 particle where $$S_j = \frac{\hbar}{2}\sigma_j$$ with $$\sigma_j$$ the Pauli matrices:*
 $$
-\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} & \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} \quad \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 $$
 
 *(a) The operator along the $$\hat{n} = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$$ direction is:*
