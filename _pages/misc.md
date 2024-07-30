@@ -12,4 +12,4 @@ nav: false
 
 ### UBC Course Seat Checker
 - **Files:** [Code (GitHub)](https://github.com/RioWeil/UBC-seatcheck)
-- **Description:** A hacky python script to get notified whenever seats for a full UBC course become available.
+- **Description:** A hacky python script to get notified whenever seats for a full UBC course become available. Note that as of Summer 2024, UBC has switched over to a different system for their course schedule, making this script outdated.
