@@ -876,7 +876,7 @@ which (as must be the case) the exact result falls within.
 
 **Solution:**
 
-#### A Heisenberg Ferromagnet TODO <a id="problem-qm-heisenbergferro" name="problem-qm-heisenbergferro"></a>
+#### A Heisenberg Ferromagnet <a id="problem-qm-heisenbergferro" name="problem-qm-heisenbergferro"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q1
 
 **Problem Statement:** *In a ferromagnetic material the electron spins are aligned, suggesting that an interaction of the form:*
@@ -909,7 +909,116 @@ which (as must be the case) the exact result falls within.
 \int d^3r e^{i\vec{q} \cdot \vec{r}}  (2\pi)^3\delta^{(3)}(\vec{q}), \quad \int d^3r e^{i\vec{q} \vec{r}} \frac{1}{\lvert \vec{r} \rvert} = \frac{4\pi}{\vec{q}^2}.
 \end{equation}
 
-**Solution:**
+**Solution:** (a) Since Eq. \eqref{eq:interactionelectronsH} is independent of spin, its eigenstates are the position eigenstates $$\lvert \psi(\vec{r}_1, \vec{r}_2) \rangle$$ multiplied by an arbitrary spin state $$\lvert \chi(s_1, s_2) \rangle$$. Thus the wavefunctions have the claimed separable form of $$\color{blue}{\Psi(\vec{r}_1, \vec{r}_2, s_1, s_2) = \psi(\vec{r}_1, \vec{r}_2)\chi(s_1, s_2)}$$. The eigenstates of total spin $$\vec{S} = \vec{S}_1 + \vec{S}_2$$ are the triple states:
+
+$$
+\color{blue}{\lvert s=1, m \rangle = \begin{cases} \lvert \uparrow \uparrow \rangle & m = 1 \\ \frac{\lvert \uparrow \downarrow \rangle + \lvert \downarrow \uparrow \rangle}{\sqrt{2}} & m = 0 \\ \lvert \downarrow \downarrow \rangle & m = -1 \end{cases}}
+$$
+
+and the singlet state:
+
+$$
+\color{blue}{\lvert s = 0, m = 0 \rangle = \frac{\lvert \uparrow \downarrow \rangle - \lvert \downarrow \uparrow \rangle}{\sqrt{2}}.}
+$$
+
+Since electrons are fermions, the total wavefunction $$\Psi(\vec{r}_1, \vec{r}_2, s_1, s_2)$$ must be antisymmetric under particle exchange $$1 \leftrightarrow 2$$. For the triplet states (for which the spins are symmetric under exchange) we therefore must have the position wavefunction be antisymmetric and vise versa for the singlet state (for which the spins are antisymmetric under exchange), so we conclude:
+
+$$
+\color{blue}{\psi(\vec{r}_1, \vec{r}_2) = \begin{cases} -\psi(\vec{r}_2, \vec{r}_1) & s = 1 \\ \psi(\vec{r}_2, \vec{r}_1) & s = 0 \end{cases}.}
+$$
+
+(b) In the absence of the coloumb repulsion, $$H$$ splits into the sum of $$H_1 + H_2$$ for the individual electrons. Thus we can find the individual eigenfunctions $$\psi_a(\vec{r}), \psi_b(\vec{r})$$ and antisymmetrize (for triplet states)
+
+$$
+\color{blue}{\Psi(\vec{r}_1, \vec{r}_2, s = 1, m) = \frac{\psi_a(\vec{r}_1)\psi_b(\vec{r}_2) + \psi_b(\vec{r}_1)\psi_a(\vec{r}_2)}{\sqrt{2}}\chi(s=1, m)}
+$$
+
+or symmetrize (for the singlet states):
+
+$$
+\color{blue}{\Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) = \frac{\psi_a(\vec{r}_1)\psi_b(\vec{r}_2) + \psi_b(\vec{r}_1)\psi_a(\vec{r}_2)}{\sqrt{2}}\chi(s=0, m=0).}
+$$
+
+(c) The distinct particle-wavefunctions are those in the triplet states $$\Psi'(\vec{r}_1, \vec{r}_2, s = 1, m)$$ and those in the singlet state $$\Psi'(\vec{r}_1, \vec{r}_2, s = 0, m)$$ (note that due to the Coloumb repulsion, we can no longer write $$H = H_1 + H_2$$ and thus the decomposition into individual one-particle wavefunctions $$\psi_a, \psi_b$$ from (b) no longer holds - thus the eigenfunctions $$\Psi'$$ here are distinct from the $$\Psi$$s in (b)). We can find the energy splitting $$\delta E$$ to first order using perturbation theory, treating $$\delta H = \frac{e^2}{\lvert \vec{r}_1 - \vec{r}_2\rvert}$$ as a perturbation:
+
+$$
+\delta E = E_{s=1}^{(1)} - E_{s=0}^{(1)} = \langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rangle - \langle \Psi(\vec{r}_1, \vec{r}_2, s = 0, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m) \rangle.
+$$
+
+The degeneracy of $$\lvert \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rangle, \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle$$ is a priori a cause for concern, as the perturbation must be diagonal in the above basis for degenerate perturbation theory to give a valid result for the energy splitting. However, since $$\delta H = \frac{e^2}{\lvert \vec{r}_1 - \vec{r}_2\rvert}$$ is symmetric under particle interchange, the off diagonal terms indeed vanish, as can be seen via an insertion of the particle exchange operator $$\Pi$$:
+
+$$
+\langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle = \langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \Pi^\dagger \delta H \Pi\lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle = -\langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m=0) \rangle.
+$$
+
+Thus the expression for the energy splitting using perturbation theory is valid. We can evaluate the (diagonal) matrix elements via carrying out integrals by taking integrals in position space and sums in spin space - the sum over spin states drops out as $$\delta H$$ is independent of spin, and thus we have:
+
+$$
+\delta E = \int d^3r_1 d^3r_2 \frac{e^2}{\lvert \vec{r}_1 - \vec{r}_2\rvert}\left(\frac{\psi_a(\vec{r}_1)\psi_b(\vec{r}_2) - \psi_b(\vec{r}_1)\psi_a(\vec{r}_2)}{\sqrt{2}} \cdot c.c. - \frac{\psi_a(\vec{r}_1)\psi_b(\vec{r}_2) + \psi_b(\vec{r}_1)\psi_a(\vec{r}_2)}{\sqrt{2}} \cdot c.c. \right)
+$$
+
+with c.c. denoting the complex conjugate. After the cancellation of terms, we conclude:
+
+$$
+\color{blue}{\delta E = -2\int d^3r_1 d^3r_2 \frac{e^2}{\lvert \vec{r}_1 - \vec{r}_2\rvert}\psi_a^*(\vec{r}_1)\psi_b^*(\vec{r}_2)\psi_b(\vec{r}_1)\psi_a(\vec{r}_2).}
+$$
+
+(d) Turning off the Coloumb interaction and turning on the spin interactions, if we again study:
+
+$$
+\delta E = E_{s=1}^{(1)} - E_{s=0}^{(1)} = \langle \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rvert \delta H \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 1, m) \rangle - \langle \Psi(\vec{r}_1, \vec{r}_2, s = 0, m) \rvert \delta H(\vec{r}_1, \vec{r}_2) \lvert \Psi(\vec{r}_1, \vec{r}_2, s = 0, m) \rangle
+$$
+
+it is now the integral over position space that drops out as $$\delta H = \kappa \vec{S}_1 \cdot \vec{S}_2$$ is independent of position, and we are left with:
+
+$$
+\delta E = \kappa\left(\langle s = 1, m \rvert \vec{S}_1 \cdot \vec{S}_2 \lvert s = 1, m \rangle - \langle s = 0, m=0\rvert \vec{S}_1 \cdot \vec{S}_2 \lvert s = 0, m=0 \rangle\right)
+$$
+
+We write $$\vec{S}_1 \cdot \vec{S}_2 = \frac{1}{2}(S^2 - S_1^2 - S_2^2)$$, which has eigenvalues $$\frac{\hbar^2}{2}(s(s+1) - s_1(s_1 + 1) - s_2(s_2 + 1))$$. Here $$s_1 = s_2 = \frac{1}{2}$$, and for the triplet ($$s = 1$$) states evaluates to -\frac{\hbar^2}{4}$$ and for the singlet ($$s = 0$$)states evaluates to $$-\frac{3\hbar^2}{4}$$. Thus:
+
+$$
+\delta E = \kappa\left(\frac{\hbar^2}{4} - \left(-\frac{3\hbar^2}{4}\right)\right) = \kappa\hbar^2
+$$
+
+Thus the energy splitting in (c) can be mimicked via the spin interaction. Specifically, we tune $$\kappa$ to:
+
+$$
+\color{blue}{\kappa = \frac{\delta E}{\hbar^2}.}
+$$
+
+(e) We determine the sign of $$\kappa$$ by reasoning about $$\delta E$$ from the expression in (c). Defining $$F(\vec{r}) = \psi_a^*(\vec{r}_1)\psi_b(\vec{r}_1)$$ and $$G(\vec{r}_2 - \vec{r}_1) = \frac{1}{\lvert \vec{r}_2 - \vec{r}_1 \rvert}$$, the expression becomes:
+
+$$
+\delta E = -2e^2\int d^3r_1 d^3r_2 F(\vec{r}_1)G(\vec{r}_2 - \vec{r}_1)F^*(\vec{r}_2)
+$$
+
+Now using the expression in the hint, we can write $$G(\vec{r}_2 - \vec{r}_1)$$ in terms of its Fourier transform:
+
+$$
+G(\vec{r}_2 - \vec{r}_1) = \frac{1}{(2\pi)^3}\int d^3q\tilde{G}(\vec{q})e^{i\vec{q}(\vec{r}_2 - \vec{r}_1)}
+$$
+
+Thus:
+
+$$
+\delta E = -2e^2\frac{1}{(2\pi)^3}\int d^3r_1d^3r_2d^3q F(\vec{r}_1)e^{-i\vec{q} \cdot \vec{r}_1}\tilde{G}(\vec{q})F^*(\vec{r}_2)e^{i\vec{q} \cdot \vec{r}_1}
+$$
+
+The integrals over $$r_1, r_2$$ simply give the Fourier transforms of $$F(\vec{r}_1)/F^*(\vec{r}_2)$$ and thus:
+
+$$
+\delta E = -2e^2\frac{1}{(2\pi)^3}\int d^3q \tilde{F}(\vec{q})\tilde{G}(\vec{q})\tilde{F}^*(\vec{q}) = -2e^2\frac{1}{(2\pi)^3}\int d^3\lvert \tilde{F}(\vec{q})\rvert^2\tilde{G}(\vec{q})
+$$
+
+Now evaluating substituting the expression for $$\tilde{G}(\vec{q})$$ from the hint, we obtain:
+
+$$
+\delta E = -2e^2\frac{1}{(2\pi)^3}\int d^3q \lvert \tilde{F}(\vec{q})\rvert^2 \frac{4\pi}{\vec{q}^2} = -\frac{e^2}{\pi^2}\int d^3q \frac{\lvert \tilde{F}(\vec{q})\rvert^2}{\vec{q}^2}.
+$$
+
+Since the integrand is positive definite, we conclude $$\delta E < 0$$. Since $$\kappa = \delta E/\hbar^2$$ we conclude that $$\color{blue}{\kappa < 0}$$. The spins being aligned is favoured, as we would expect for a ferromagnet.
+
 
 #### The Supersymmetric Method TODO <a id="problem-qm-susy" name="problem-qm-susy"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q2
