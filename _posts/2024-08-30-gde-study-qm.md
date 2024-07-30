@@ -837,7 +837,7 @@ $$
 which (as must be the case) the exact result falls within.
 
 
-#### Anomalous Magnetic Moment of the Electron TODO <a id="problem-qm-emagmoment" name="problem-qm-emagmoment"></a>
+#### Anomalous Magnetic Moment of the Electron <a id="problem-qm-emagmoment" name="problem-qm-emagmoment"></a>
 **Source:** MIT Fall 2012 Doctoral General Examination Quantum Q2
 
 **Problem Statement:** *The gyromagnetic factor of the electron $$g$$ determines the relationship between the electron magnetic moment $$\vec{\mu}$$ and the electron spin $$\vec{S}$$,
@@ -854,7 +854,7 @@ which (as must be the case) the exact result falls within.
     H = \frac{1}{2m}\left(\vec{p} - e\vec{A}\right)^2 - \vec{\mu} \cdot \vec{B}
 \end{equation}
 
-*where $$\vec{A}$$ is the vector potential. The electrons are confined to the $$x-y$$ plane, and you can ignore any electron-electron interactions. The electrons will exhibit cyclotron motion with frequency $$\omega = EB/m$$, but will also exhibit spin precession with a slightly different frequency. In this problem, you will show how to use this phenomenon to extract $$a$$.*
+*where $$\vec{A}$$ is the vector potential. The electrons are confined to the $$x-y$$ plane, and you can ignore any electron-electron interactions. The electrons will exhibit cyclotron motion with frequency $$\omega = eB/m$$, but will also exhibit spin precession with a slightly different frequency. In this problem, you will show how to use this phenomenon to extract $$a$$.*
 
 *(a) Verify the commutation relations*
 
@@ -874,7 +874,89 @@ which (as must be the case) the exact result falls within.
 
 *(c) A beam of electrons of velocity $$\vec{v}$$ is prepared at time $$t = 0$$ in a spin state with known values of $$C_1(0)$$ and $$C_2(0)$$. The beam interacts with a magnetic field $$\vec{B} = B\hat{z}$$ between $$t = 0$$ and $$t = T$$. The expectation value $$C_1(T)$$ is experimentally measured to be periodic with period $$2\pi/\Omega$$, i.e. $$C_1(T) = C_1(T + 2\pi/\Omega)$$. Use this information to determine the value of $$a$$ in terms of $$\Omega$$ and other physical parameters.*
 
-**Solution:**
+**Solution:** (a) We follow the hint and work in the Landau gauge $$\vec{A} = (0, Bx, 0)$$ (one can easily verify that $$\vec{\nabla} \times \vec{A} = B\zhat = \vec{B}$$) to make the calculations as simple as possible. We then note that:
+
+$$
+\vec{v} = \frac{\vec{p} - e\vec{A}}{m} = \frac{1}{m}(p_x, p_y - eBx, p_z)
+$$
+
+we then observe:
+
+$$
+[v_x, v_x] = [v_y, v_y] = 0
+$$
+
+$$
+[v_x, v_y] = -[v_y, v_x] = -\frac{1}{m^2}[p_y - eBx, p_x] = \frac{eB}{m^2}[x, p_x] = i\frac{\hbar eB}{m^2} = i\hbar\frac{\omega}{m}
+$$
+
+Thus if we write:
+
+$$
+H = \frac{m}{2}(v_x^2 + v_y^2) - (1+a)\frac{e}{m}BS_z
+$$
+
+then we can compute:
+
+$$
+[v_x, H] = \frac{m}{2}[v_x, v_y^2] = \frac{m}{2}(i\hbar\frac{\omega}{m}v_y) = i\hbar\omega v_y
+$$
+
+$$
+[v_y, H] = \frac{m}{2}[v_y, v_x^2] = \frac{m}{2}(-i\hbar\frac{\omega}{m}v_x) = -i\hbar\omega v_x
+$$
+
+Thus we conclude:
+
+$$
+\color{blue}{[v_x, H] = i\hbar\omega v_y, \quad [v_y, H] = -i\hbar\omega v_x.}
+$$
+
+(b) We recall Ehrenfest's theorem:
+
+$$
+\frac{d\langle A \rangle}{dt} = \frac{1}{i\hbar}\langle [A, H] \rangle.
+$$
+
+to this end we compute the commutators:
+
+$$
+[S_xv_x + S_yv_y, H] = \frac{m}{2}[S_xv_x, v_y^2] - (1+a)\frac{e}{m}B[S_xv_x, S_z] + \frac{m}{2}[S_yv_y, v_x^2] - (1+a)\frac{e}{m}B[S_yv_y, S_z] = \frac{m}{2}S_x(i\hbar\frac{\omega}{m}v_y) - (1+a)\frac{e}{m}B(-i\hbar S_y)v_x + \frac{m}{2}S_y(-i\hbar\frac{\omega}{m}v_x) - (1+a)\frac{e}{m}B(i\hbar S_z)v_y = -i\hbar \omega a[S_xv_y - S_yv_x]
+$$
+
+$$
+[S_xv_y - S_yv_x, H] = \frac{m}{2}[S_xv_y, v_x^2] - (1+a)\frac{e}{m}B[S_xv_y, S_z] - \frac{m}{2}[S_yv_x, v_y^2] + (1+a)\frac{e}{m}B[S_yv_x, S_z] = \frac{m}{2}S_x(-i\hbar\frac{\omega}{m}v_x) - (1+a)\frac{e}{m}B(-i\hbar S_y)v_y + \frac{m}{2}S_y(i\hbar\frac{\omega}{m}v_y) - (1+a)\frac{e}{m}B(i\hbar S_x)v_x = -i\hbar \omega a[S_xv_x - S_yv_y].
+$$
+
+Thus we obtain the two (coupled) differential equations:
+
+$$
+\color{blue}{\frac{d C_1}{dt} = \langle [S_xv_x + S_yv_y, H] \rangle = -\omega a C_2}
+$$
+
+$$
+\color{blue}{\frac{d C_2}{dt} = \langle [S_xv_y - S_yv_x, H] \rangle = \omega a C_1}
+$$
+
+if $$a = 0$$ then $$\frac{d C_1}{dt} = \frac{d C_2}{dt} = 0$$ so  <span style="color:blue">$$C_1(t), C_2(t)$$ are constant in time.</span>
+
+(c) Taking the time derivative of the two equations above:
+
+$$
+\ddot{C}_1 = -\omega a \dot{C}_2 = -\omega a (\omega a C_1) = -\omega^2 a^2 C_1
+$$
+
+from which we find:
+
+$$
+C_1(t) = A\cos(\omega a t) + B\sin(\omega a t)
+$$
+
+with $$A, B$$ determined by the known initial conditions on $$C_1$$ and $$C_2$$. Thus we find $$C_1$$ to have period $$\frac{2\pi}{\omega a}$$. If we experimentally measure $$C_1$$ to have a period of $$\frac{2\pi}{\Omega}$$, equating the two expressions we can experimentally measure $$a$$ as the ratio:
+
+$$
+\color{blue}{a = \frac{\Omega}{\omega}.}
+$$
 
 #### A Heisenberg Ferromagnet <a id="problem-qm-heisenbergferro" name="problem-qm-heisenbergferro"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q1
