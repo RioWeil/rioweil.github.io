@@ -12,6 +12,10 @@ hr {
   border-top: 1px solid var(--global-divider-color);
 }
 
+html {
+  scroll-padding-top: 100px; /* height of sticky header */
+}
+
 table {
     td, th {
       color: var(--global-text-color);
