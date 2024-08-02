@@ -17,6 +17,11 @@ nav_order: 1
   - arXiv preprint: [arxiv.org:2206.15329](https://arxiv.org/abs/2206.15329)
   - Note: I cannot claim much contribution to this paper beyond taking experiment shifts, but it stands as a nice memory of my pre-quantum information days!
 
+### Master's Thesis
+- **Quantifying resource states and efficient regimes of measurement-based quantum computation on a superconducting processor** 
+  - [PDF](/assets/pdf/papers/ubc_2024_november_weil_ryohei.pdf)
+  - UBC Library Link: [http://hdl.handle.net/2429/88841](http://hdl.handle.net/2429/88841)
+
 ### Bachelor's Thesis
 - **A Simulation of a Simulation: Algorithms for Symmetry-Protected Measurement-Based Quantum Computing Experiments** 
   - [PDF](/assets/pdf/papers/bach_thesis.pdf)
