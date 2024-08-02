@@ -8,27 +8,34 @@ categories: physics uchicago quantum
 **July 30, 2024.** *Before the start of my PhD program at UChicago this fall, there is a diagnostic exam to test knowledge/ability in the core subjects of classical mechanics, electromagnetism, quantum mechanics, and statistical mechanics. Here, I share some interesting problems and solutions I came across while preparing for this exam. This is the first post in this series, where I go through quantum mechanics problems.*
 
 ### Contents
-- <a href="#problem-qm-scmicroresonator" name="#problem-qm-scmicroresonator"> Superconducting Microwave Resonator</a>
-- <a href="#problem-qm-twospinmeasurement" name="#problem-qm-twospinmeasurement"> Measuring a Two-Spin System </a>
-- <a href="#problem-qm-rigidrotor" name="#problem-qm-rigidrotor"> Rigid Rotor in Magnetic Field </a>
-- <a href="#problem-qm-symmetryamplitudes" name="#problem-qm-symmetryamplitudes"> Symmetries and Transition Amplitudes </a>
-- <a href="#problem-qm-thermalstates" name="#problem-qm-thermalstates"> Thermal States </a>
-- <a href="#problem-qm-identicalscattering" name="#problem-qm-identicalscattering"> Scattering of Identical Particles </a>
-- <a href="#problem-qm-spinorbitqho" name="#problem-qm-spinorbitqho"> Spin-Orbit Coupling in the 3-D Harmonic Oscillator </a>
-- <a href="#problem-qm-identicalcubicwell" name="#problem-qm-identicalcubicwell"> Identical Particles in an Infinite Cubic Well </a>
-- <a href="#problem-qm-timevaryforce" name="#problem-qm-timevaryforce"> Time-Varying Force </a>
-- <a href="#problem-qm-twofermions" name="#problem-qm-twofermions"> Two Interacting Fermions </a>
-- <a href="#problem-qm-spinchain" name="#problem-qm-spinchain"> A Quantum Spin Chain </a>
-- <a href="#problem-qm-emagmoment" name="#problem-qm-emagmoment"> Anomalous Magnetic Moment of the Electron </a>
-- <a href="#problem-qm-heisenbergferro" name="#problem-qm-heisenbergferro"> A Heisenberg Ferromagnet </a>
-- <a href="#problem-qm-susy" name="#problem-qm-susy"> The Supersymmetric Method </a>
-- <a href="#problem-qm-timedepmag" name="#problem-qm-timedepmag"> Spin-1/2 in Time-Dependent Magnetic Field </a>
-- <a href="#problem-qm-onedlattice" name="#problem-qm-onedlattice"> Particle on a 1-D Lattice </a>
-- <a href="#problem-qm-spinhalfsg" name="#problem-qm-spinhalfsg"> Spin-1/2 and Stern-Gerlach </a>
-- <a href="#problem-qm-qhotrans" name="#problem-qm-qhotrans"> Harmonic Oscillator and Translation </a>
+- <a href="#scmicroresonator" name="#scmicroresonator"> Superconducting Microwave Resonator</a>
+- <a href="#twospinmeasurement" name="#twospinmeasurement"> Measuring a Two-Spin System </a>
+- <a href="#particleonring" name="#particleonring"> Particle on a Ring </a>
+- <a href="#emancipation" name="#emancipation"> Emancipation from a Distance </a>
+- <a href="#3dqho" name="#3dqho"> Temperature and Adiabatic Changes of the 3-D Harmonic Oscillator </a>
+- <a href="#zeno" name="#zeno"> Quantum Zeno Effect </a>
+- <a href="#positroniumsg" name="#positroniumsg"> Positronium Stern-Gerlach </a>
+- <a href="#quantumdiffraction" name="#quantumdiffraction"> Quantum Single-Slit Diffraction </a>
+- <a href="#gravpotential" name="#gravpotential"> Gravitational Potential </a>
+- <a href="#rigidrotor" name="#rigidrotor"> Rigid Rotor in Magnetic Field </a>
+- <a href="#symmetryamplitudes" name="#symmetryamplitudes"> Symmetries and Transition Amplitudes </a>
+- <a href="#thermalstates" name="#thermalstates"> Thermal States </a>
+- <a href="#identicalscattering" name="#identicalscattering"> Scattering of Identical Particles </a>
+- <a href="#spinorbitqho" name="#spinorbitqho"> Spin-Orbit Coupling in the 3-D Harmonic Oscillator </a>
+- <a href="#identicalcubicwell" name="#identicalcubicwell"> Identical Particles in an Infinite Cubic Well </a>
+- <a href="#timevaryforce" name="#timevaryforce"> Time-Varying Force </a>
+- <a href="#twofermions" name="#twofermions"> Two Interacting Fermions </a>
+- <a href="#spinchain" name="#spinchain"> A Quantum Spin Chain </a>
+- <a href="#emagmoment" name="#emagmoment"> Anomalous Magnetic Moment of the Electron </a>
+- <a href="#heisenbergferro" name="#heisenbergferro"> A Heisenberg Ferromagnet </a>
+- <a href="#susy" name="#susy"> The Supersymmetric Method </a>
+- <a href="#timedepmag" name="#timedepmag"> Spin-1/2 in Time-Dependent Magnetic Field </a>
+- <a href="#onedlattice" name="#onedlattice"> Particle on a 1-D Lattice </a>
+- <a href="#spinhalfsg" name="#spinhalfsg"> Spin-1/2 and Stern-Gerlach </a>
+- <a href="#qhotrans" name="#qhotrans"> Harmonic Oscillator and Translation </a>
 
 
-#### Superconducting Microwave Resonator <a id="problem-qm-scmicroresonator" name="problem-qm-scmicroresonator"></a>
+### Superconducting Microwave Resonator <a id="scmicroresonator" name="scmicroresonator"></a>
 **Source:** UBC Spring 2024 Physics Qualifying Exam Q1
 
 **Problem Statement:** *A superconducting microwave resonator is a small loop with an inductance of $$L$$ and a capacitance of $$C$$. It can be modelled quantum-mechanically. Its quantum state can be described by the charge $$Q$$ on the capacitor and the magnetic flux $$\phi$$ through the loop. The operators for these quantities satisfy an uncertainty relation $$[\hat{Q}, \hat{\phi}] = i\hbar$$. Write down the Hamiltonian for this system, and determine its ground state energy.*
@@ -113,7 +120,7 @@ $$
 \color{blue}{E_0 = \frac{1}{2}\hbar\sqrt{\frac{1}{LC}}.}
 $$
 
-#### Measuring a Two-Spin System <a id="problem-qm-twospinmeasurement" name="problem-qm-twospinmeasurement"></a>
+### Measuring a Two-Spin System <a id="twospinmeasurement" name="twospinmeasurement"></a>
 **Source:** UBC Spring 2024 Physics Qualifying Exam Q6
 
 **Problem Statement:** *Many copies of a system of two spin-1/2 particles are prepared in an identical spin state given by:*
@@ -173,7 +180,98 @@ $$
 \color{blue}{p(s=0)_{\text{min}} = \frac{1}{4} - \frac{\sqrt{6}}{10}.}
 $$
 
-#### Rigid Rotor in Magnetic Field <a id="problem-qm-rigidrotor" name="problem-qm-rigidrotor"></a>
+### Particle on a Ring <a id="particleonring" name="particleonring"></a>
+**Source:** UBC Summer 2022 Physics Qualifying Exam Q3, UBC Summer 2013 Physics Qualifying Exam Q4
+
+**Problem Statement:** *An electron is constrained to move in a ring with radius $$R$$ in the $$x-y$$ plane.*
+
+*(a) Find the eigenstates and eigenvalues for the electron.*
+
+*(b) In organic chemistry, aromatic compounds are cyclic compounds that satisfy Hückel's rule, which says that the compound must have $$4n + 2$$ valence electrons. Such compounds are known for their stability. Explain how Hückel's rule can be derived from the simple model of an electron on a ring.*
+
+*(c) Now an electric field of strength $$E$$ is applied along the $$x$$-direction. Find the leading (non-zero) correction to the ground state energy.*
+
+*(d) Calculate the polarizability of the system (the ratio of the electric dipole moment to the electric field strength)*
+
+*(e) Consider again the case with no electric field. If the system is heated to some temperature $$T$$, calculate the expectation value of the magnitude of the system's angular momentum, $$\langle \lvert \vec{L} \rvert \rangle$$, in the high-$$T$$ limit.*
+
+### Emancipation from a Distance <a id="emancipation" name="emancipation"></a>
+**Source:** UBC Summer 2022 Physics Qualifying Exam Q5
+
+**Problem Statement:** *Consider a 1-D quantum mechanical system with an attractive short-range potential which we approximate by a delta function such that the initial potential energy is given by:*
+
+\begin{equation}\label{eq:deltawell}
+    U_0(x) = -\frac{\hbar^2\kappa}{m}\delta(x).
+\end{equation}
+
+*We assume that we set the system up such that the particle occupies the unique bound state of this potential. This bound state has energy $$E_0 = -\frac{\hbar^2\kappa^2}{2m}$$. Then, we modify the problem by placing an impenetrable wall at position $$x = -L$$ so that the resulting potential energy function is well approximated by:*
+
+\begin{equation}\label{eq:deltawellwithwall}
+    U(x) = \begin{cases}
+        -\frac{\hbar^2\kappa}{m}\delta(x) & -L < x < \infty
+        \\ \infty & -\infty < x < -L
+    \end{cases}
+\end{equation}
+
+*with $$L$$ initially very large. Indeed, if $$L$$ is very large, the system should be undisturbed by the presence of the wall. Now, let us imagine that we adiabatically decrease $$L$$. We expect that the binding energy of the bound state begins to depend on $$L$$; is there a value of $$L$$ at which the binding energy goes to zero and the particle is liberated? If so, what is that value?*
+
+
+### Temperature and Adiabatic Changes of the 3-D Harmonic Oscillator <a id="3dqho" name="3dqho"></a>
+**Source:** UBC Spring 2022 Physics Qualifying Exam Q5, UBC Fall 2020 Physics Qualifying Exam Q2
+
+**Problem Statement:** *Consider an atom of mass $$m$$ trapped in a 3D harmonic potential $$V_c(\vec{r}) = \frac{1}{2}kr^2$$. In modern laboratories, such confining potentials can be easily induced by lasers.*
+
+*(a) Negating the internal energy of the atom, what are the first three eigenenergies of the atom in the central potential $$E_0, E_1, E_2$$?*
+
+*(b) At what temperature $$T$$ will the probability of finding the atom to have energy $$E_0$$ be the same as finding it to have energy $$E_2$$?*
+
+*(c) Suppose we load the trap with atoms at an initial temperature of 1K. Afterwards, the trap is adiabatically turned into a much stepper trap with $$k$$ ten times bigger, i.e. $$k \to 10k$$. Estimate the final temperature of the atoms.*
+
+*(d) Consider again the zero-$$T$$ single atom case, where now we turn on an additional potential such that $$V_a(\vec{r}) = \infty$$ for the half space of $$z > 0$$. How much work is done on the atom during this adiabatic switching on?*
+
+*(e) After keeping $$V_{tot} = V_c + V_a$$ for some time, one decides to suddenly switch off all the potentials, freeing the atom into free space. How much work is done on the atoms in this process?*
+
+### Quantum Zeno Effect <a id="zeno" name="zeno"></a>
+**Source:** UBC Summer 2018 Physics Qualifying Exam Q8
+
+**Problem Statement:** *An electron spin is oriented upward along $$+\hat{z}$$, and subject to a magnetic field of strength $$B$$ along $$+\hat{x}$$. The precession period of the spin around the magnetic field direction is $$T$$. The operator $$S_z$$ is measured repeatedly, $$N$$ times within a time interval $$T/2$$ (assume the measurements are evenly spaced in time). What is the probability that all $$N$$ measurements returns $$+\hbar/2$$, in the limit of large $$N$$?*
+
+### Positronium Stern-Gerlach <a id="positroniumsg" name="positroniumsg"></a>
+**Source:** UBC Summer 2013 Physics Qualifying Exam Q3
+
+**Problem Statement:** *A beam of ground state positronium particles (an ``atom'' composed of an electron and it's anti-particle, a positron) enters a double Stern-Gerlach apparatus. At the input, the particles are an equal mixture of the two spin configurations, that is 50% para-positronium with total spin $$s = 0$$ and ortho-positronium with total spin $$s = 1$$. Assume also that the beam is completely unpolarized. The positronium first encounters a magnetic field along the $$z$$-axis with a gradient increasing in the $$z$$-direction and the beam splits into three. The un-deflected beam then flies through a hole in the beam-stop and encounters a magnetic field directed perpendicular to the first one and along the $$x$$-axis, causing the beam to split in three again.*
+
+*(a) What fraction of the total beam flux passes through the first beamstop? What fraction of the total beam flux will pass through to each of the final outputs (right deflected, undeflected, left deflected)? Write down the spin state for the positronium through each of the three outputs in the $$z$$ basis.*
+
+*(b) Suppose the positronium is disassociated at the three outputs that the spin of the electron and positron can be measured independently and the electron and positron spin projections along the z axis are measured. What is the chance of finding both the electron and the positron in the same spin state for each of the outputs?*
+
+### Quantum Single-Slit Diffraction <a id="quantumdiffraction" name="quantumdiffraction"></a>
+**Source:** UBC Fall 2011 Physics Qualifying Exam Q14
+
+**Problem Statement:** *A beam of atoms of mass $$m$$ and energy $$E$$ is passed through a hole of diameter $$d$$ in an opaque plate normal to the beam. The atoms are then detected by a second plate a distance $$L$$ away. Under the most ideal circumstances, what is the lower bound for the diameter $$D$$ of the spot that the beam forms on the detector plate? $$L$$ and $$E$$ are fixed, but $$d$$ may be varied. Take the beam cross section to be always much wider than the hole. Notice that as $$d \to 0$$, the uncertainty in momentum leads to $$D \to \infty$$, while, as $$d \to \infty$$, clearly $$D$$ also becomes very large. You are asked to find the optimal hole size $$d$$ for which $$D$$ is the smallest.*
+
+### Gravitational Potential <a id="gravpotential" name="gravpotential"></a>
+**Source:** UBC Fall 2005 Physics Qualifying Exam Q6
+
+**Problem Statement:** *A particle of mass $$m$$ is restricted to move in the vertical direction in the Earth's gravitational field. Assume tht the surface of the Earth reflects this particle elastically (like a steel ball falling on a surface of glass) and go through the following steps to quantize the energy of the motion using the momentum representation instead of the position representation. Set $$\hbar = 1$$ for this problem.*
+
+*(a) Set up the Hamiltonian, assuming that the gravitational potential is zero on the surface of the Earth.*
+
+*(b) Set up the Schrödinger equation in the momentum representation, and then solve it. Do not use any boundary conditions yet, but use the abbreviations:*
+
+\begin{equation}\label{eq:abbreviations}
+2mg^2 = \frac{1}{l^3} \quad 2mE = \frac{\lambda}{l^2}
+\end{equation}
+
+*(c) From the momentum space eigenfunctions, obtain the position space eigenfunctions $$\psi(x)$$ (Do not worry about normalization). Express $$\psi(x)$$ in terms of the Airy function, whose integral representation is given by:*
+
+\begin{equation}\label{eq:Airy}
+    \text{Ai}(z) = \frac{1}{2\pi}\int_{-\infty}^{\infty}\exp(i(\frac{u^3}{3} + uz))du.
+\end{equation}
+
+*(d) Elastic reflection means that $$\psi(x=0) = 0$$ - use this to find the fundamental equation that quantizes the energy. How would you use it to find the energy levels?*
+
+### Rigid Rotor in Magnetic Field <a id="rigidrotor" name="rigidrotor"></a>
 **Source:** UBC PHYS 402 2022 Final Q4
 
 **Problem Statement:** *The Hamiltonian of a rigid rotor placed in a magnetic field perpendicular to its axis takes the approximate:*
@@ -189,7 +287,7 @@ E_{l, m} = \alpha \hbar^2l(l+1) + \sqrt{\beta^2 + \gamma^2}\hbar m.
 
 *(b) Assuming $$\gamma \ll \beta$$, use perturbation theory to lowest non-vanishing order to independently obtain approximate energy eigenvalues.*
 
-*(c) Check consistency between the results in (a) and (b)*
+*(c) Check consistency between the results in (a) and (b).*
 
 **Solution:** (a) We can exactly solve the problem via a coordinate transformation. In particular, we rotate the system about the $$y$$-axis by angle $$\theta$$ such that $$\tan\theta = \gamma/\beta$$. This gives us the transformed Hamiltonian:
 
@@ -243,7 +341,7 @@ $$
 
 and the exact result agrees to perturbation theory to second order.
 
-#### Symmetries and Transition Amplitudes <a id="problem-qm-symmetryamplitudes" name="problem-qm-symmetryamplitudes"></a>
+### Symmetries and Transition Amplitudes <a id="symmetryamplitudes" name="symmetryamplitudes"></a>
 **Source:** UBC PHYS 500 2023 HW2 Q2
 
 **Problem Statement:** *One of the most important applications of symmetries in quantum mechanics is that they can be used to constrain the amplitudes for many dynamical processes without doing any calculation.*
@@ -282,7 +380,7 @@ $$a^\dagger$$ is linear in $$x, p$$ and so $$Pa^\dagger = -a^\dagger$$, and more
 
 Next, note that $$V_4 = \alpha x^4$$ commutes with $$P$$ as it is even in $$x$$. Therefore, $$[P, H_{\text{SHO}} + V_4] = 0$$ and since the ground state $$\ket{0}$$ and first excited state $$\ket{1}$$ of the harmonic oscillator have different parities, by our result in (a) <span style="color:blue">the transition amplitude vanishes.</span>
 
-#### Thermal States <a id="problem-qm-thermalstates" name="problem-qm-thermalstates"></a>
+### Thermal States <a id="thermalstates" name="thermalstates"></a>
 **Source:** UBC PHYS 500 2023 HW3 Q1
 
 **Problem Statement:** *Consider a single electron spin (spin-1/2) in a magnetic field with Hamiltonian:*
@@ -369,7 +467,7 @@ $$
 
 This also makes sense, as at $$T = 0$$ the thermal equilibrium is simply the pure ground state $$\lvert \uparrow \rangle$$ which has no entropy.
 
-#### Scattering of Identical Particles <a id="problem-qm-identicalscattering" name="problem-qm-identicalscattering"></a>
+### Scattering of Identical Particles <a id="identicalscattering" name="identicalscattering"></a>
 **Source:** UBC PHYS 500 2023 HW6 Q4
 
 **Problem Statement:** *Consider two particles of mass $$m$$, interacting by the Yukawa potential:*
@@ -461,7 +559,7 @@ $$
 
 arising from destructive interference between the two possible scattering processes ($$k_i \hat{z} \to k_f\hat{x}, -k_i \hat{z} \to -k_f\hat{x}$$ and $$k_i \hat{z} \to -k_f\hat{x}, -k_i \hat{z} \to k_f\hat{x}$$).
 
-#### Spin-Orbit Coupling in the 3-D Harmonic Oscillator <a id="problem-qm-spinorbitqho" name="problem-qm-spinorbitqho"></a>
+### Spin-Orbit Coupling in the 3-D Harmonic Oscillator <a id="spinorbitqho" name="spinorbitqho"></a>
 **Source:** UChicago 2014 Quantum Mechanics Graduate Diagnostic Exam Q2
 
 **Problem Statement:** *Consider a spin-1/2 particle of mass $$m$$ moving in a three-dimensional harmonic oscillator potential:*
@@ -602,7 +700,7 @@ $$
 \color{blue}{E^{(1)}_{j=1/2, j_z=\pm 1/2, l=1, s=1/2} = \frac{\hbar^2\omega^2}{2mc^2}(\frac{1}{2}(\frac{1}{2} + 1) - 1(1+1) - \frac{1}{2}(\frac{1}{2} + 1)) = -\frac{\hbar^2\omega^2}{mc^2}.}
 $$
 
-#### Identical Particles in an Infinite Cubic Well <a id="problem-qm-identicalcubicwell" name="problem-qm-identicalcubicwell"></a>
+### Identical Particles in an Infinite Cubic Well <a id="identicalcubicwell" name="identicalcubicwell"></a>
 **Source:** UChicago 2014 Quantum Mechanics Graduate Diagnostic Exam Q3
 
 **Problem Statement:** *(a) First, consider a single particle of mass $$m$$ in a three-dimensional box of dimensions $$L \times L \times L/4$$:*
@@ -656,7 +754,7 @@ The lowest eigenvalue is with one particle in $$(n_x, n_y, n_z, s_z) = (1, 1, 1,
 
 The lowest eigenvalue is with all particles in $$(n_x, n_y, n_z, s_z) = (1, 1, 1, s_z)$$ states, with eigenvalue $$\color{blue}{54\epsilon_0}$$. The possibilities for the spins are all $$+1$$, all $$0$$, all $$-1$$, two $$+1$$/one $$0$$ or $$-1$$, two $$0$$/one $$+1$$ or $$-1$$, two $$-1$$/one $$+1$$ or $$0$$. Thus this eigenvalue is <span style="color:blue">9-fold degenerate</span>. The next lowest eigenvalue is $$\color{blue}{55\epsilon_0}$$. Here two particles are in $$(1, 1, 1, s_z)$$ and one particle is in $$(2, 1, 1, s_z)$$ or $$(1, 2, 1, s_z)$$. There are 6 choices for the excited particle (3 for the spin state, 2 for which of $$n_x, n_y$$ is 2) and 6 choices for the spin states of the ground state particles (both $$+1$$, both $$0$$, both $$-1$$, one $$+1$$/one $$0$$, one $$+1$$/one $$-1$$, one $$0$$/one $$-1$$) and by multiplying we find <span style="color:blue">36-fold degeneracy</span>.
 
-#### Time-Varying Force <a id="problem-qm-timevaryforce" name="problem-qm-timevaryforce"></a>
+### Time-Varying Force <a id="timevaryforce" name="timevaryforce"></a>
 **Source:** UChicago 2014 Quantum Mechanics Graduate Diagnostic Exam Q4
 
 **Problem Statement:** *A one-dimensional harmonic oscillator of mass $$m$$ and frequency $$\omega$$ is in its ground state for $$t < 0$$. For $$t \geq 0$$ it is subject to a time-dependent but spatially constant force in the $$x$$-direction of $$F(t) = F_0\exp(-t/\tau)$$.*
@@ -711,7 +809,7 @@ $$
 (b) Now considering higher-order perturbation theory, the transition amplitude to the $$\lvert n \rangle$$ state only becomes nonvanishing at $$n$$th order (as each order can raise the energy by one level). Each order picks up a factor of $$F_0$$ in the amplitude and thus the dependency of the probability is $$\color{blue}{F_0^{2n}.}$$
 
 
-#### Two Interacting Fermions <a id="problem-qm-twofermions" name="problem-qm-twofermions"></a>
+### Two Interacting Fermions <a id="twofermions" name="twofermions"></a>
 **Source:** MIT Fall 2015 Doctoral General Examination Quantum Q2
 
 **Problem Statement:** *Consider two identical fermions of mass $$m$$ interacting with each other through an attractive harmonic potential. The Hamiltonian is*
@@ -744,11 +842,11 @@ $$
 
 (c) The Hamiltonian decouples into $$H = H_{cm} + H_{rel}$$ where $$H_{cm}$$ is the Hamiltonian of a free particle with mass $$2m$$ and $$H_{rel}$$ is the Hamiltonian of a particle of mass $$\frac{m}{2}$$ in a 3-D harmonic oscillator potential with spring constant $$k$$. The former has unbounded spectrum $$E_{cm} = \in [0, \infty)$$ and for simplicity we assume that $$E_{cm} = 0$$ for the rest of the problem. The latter has quantized spectrum $$E_{n_x, n_y, n_z} = \frac{3}{2}\hbar\omega(n_x + n_y + n_z + \frac{3}{2})$$ (as $$H_{rel}$$ can be decomposed into 3 1-D simple harmonic oscillators, each with energy $$E_n = \frac{\hbar}\omega(n + \frac{1}{2})$$), with $$\omega = \sqrt{\frac{2k}{m}}$$. Ignoring the restriction from Fermi statistics, the ground state is then the state with $$n_x = n_y = n_z = 0$$ and has energy $$\color{blue}{\frac{3}{2}\hbar\omega}$$. The excited state has one $$n_i = 1$$ and the other two zero, with energy $$\color{blue}{\frac{5}{2}\hbar\omega}$$.
 
-(d) Including the effects of fermionic exchange statistics, the answer to (c) changes. To this end, we note that the eigenstates of the SHO are eigenstates of parity (this follows as $$H$$ is quadratic in the $$x, p$$ quadrature operators and thus $$[\Pi, H] = 0$$), and in particular (recalling the parity of the Hermite polynomials/wavefunctions, or thinking about the parity of raising operators as is done in <a href="#problem-qm-symmetryamplitudes" name="#problem-qm-symmetryamplitudes"> Symmetries and Transition Amplitudes </a>) $$\Pi\lvert n \rangle = (-1)^n\lvert n \rangle$$. In 3-D this generalizes $$\Pi\lvert n_x, n_y, n_z \rangle = (-1)^{n_x + n_y + n_z} \lvert n_x, n_y, n_z \rangle$$. Since fermionic exchange statistics requires that the acceptable states of this system have odd parity, the $$n_x = n_y = n_z$$ state from (c) with even parity is forbidden. The ground states are instead those with one $$n_i = 1$$ and the other two zero (these have odd parity), with energy $$\color{blue}{\frac{5}{2}\hbar\omega}$$. The ground space is thus <span style="color:blue">3-fold degenerate</span>.
+(d) Including the effects of fermionic exchange statistics, the answer to (c) changes. To this end, we note that the eigenstates of the SHO are eigenstates of parity (this follows as $$H$$ is quadratic in the $$x, p$$ quadrature operators and thus $$[\Pi, H] = 0$$), and in particular (recalling the parity of the Hermite polynomials/wavefunctions, or thinking about the parity of raising operators as is done in <a href="#symmetryamplitudes" name="#symmetryamplitudes"> Symmetries and Transition Amplitudes </a>) $$\Pi\lvert n \rangle = (-1)^n\lvert n \rangle$$. In 3-D this generalizes $$\Pi\lvert n_x, n_y, n_z \rangle = (-1)^{n_x + n_y + n_z} \lvert n_x, n_y, n_z \rangle$$. Since fermionic exchange statistics requires that the acceptable states of this system have odd parity, the $$n_x = n_y = n_z$$ state from (c) with even parity is forbidden. The ground states are instead those with one $$n_i = 1$$ and the other two zero (these have odd parity), with energy $$\color{blue}{\frac{5}{2}\hbar\omega}$$. The ground space is thus <span style="color:blue">3-fold degenerate</span>.
 
-Note: We could reach the same conclusion by observing that the eigenstates of the 3-D harmonic oscillator are eigenstates of angular momentum (see <a href="#problem-qm-spinorbitqho" name="#problem-qm-spinorbitqho"> Spin-Orbit Coupling in the 3-D Harmonic Oscillator </a> for more discussion) and can be labelled by quantum numbers $$l, m$$. We also recall that the angular momentum eigenstates are eigenstates of parity $$\Pi\lvert l, m \rangle = (-1)^l\lvert l, m \rangle$$, thus the fermionic exchange statistics/antisymmetric wavefunction forbids $$l = 0$$ and the ground state(s) consist of the 3-fold degenerate $$l = 1$$ subspace with $$E = \frac{5}{2}\hbar\omega$$.
+Note: We could reach the same conclusion by observing that the eigenstates of the 3-D harmonic oscillator are eigenstates of angular momentum (see <a href="#spinorbitqho" name="#spinorbitqho"> Spin-Orbit Coupling in the 3-D Harmonic Oscillator </a> for more discussion) and can be labelled by quantum numbers $$l, m$$. We also recall that the angular momentum eigenstates are eigenstates of parity $$\Pi\lvert l, m \rangle = (-1)^l\lvert l, m \rangle$$, thus the fermionic exchange statistics/antisymmetric wavefunction forbids $$l = 0$$ and the ground state(s) consist of the 3-fold degenerate $$l = 1$$ subspace with $$E = \frac{5}{2}\hbar\omega$$.
 
-#### A Quantum Spin Chain <a id="problem-qm-spinchain" name="problem-qm-spinchain"></a>
+### A Quantum Spin Chain <a id="spinchain" name="spinchain"></a>
 **Source:** MIT Fall 2012 Doctoral General Examination Quantum Q1
 
 **Problem Statement:** *Consider a one-dimensional chain of $$N$$ spin-1/2 particles coupled through the Hamiltonian*
@@ -852,7 +950,7 @@ $$
 which (as must be the case) the exact result falls within.
 
 
-#### Anomalous Magnetic Moment of the Electron <a id="problem-qm-emagmoment" name="problem-qm-emagmoment"></a>
+### Anomalous Magnetic Moment of the Electron <a id="emagmoment" name="emagmoment"></a>
 **Source:** MIT Fall 2012 Doctoral General Examination Quantum Q2
 
 **Problem Statement:** *The gyromagnetic factor of the electron $$g$$ determines the relationship between the electron magnetic moment $$\vec{\mu}$$ and the electron spin $$\vec{S}$$,
@@ -981,7 +1079,7 @@ $$
 \color{blue}{a = \frac{\Omega}{\omega}.}
 $$
 
-#### A Heisenberg Ferromagnet <a id="problem-qm-heisenbergferro" name="problem-qm-heisenbergferro"></a>
+### A Heisenberg Ferromagnet <a id="heisenbergferro" name="heisenbergferro"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q1
 
 **Problem Statement:** *In a ferromagnetic material the electron spins are aligned, suggesting that an interaction of the form:*
@@ -998,7 +1096,7 @@ $$
     H = \frac{\vec{p}_1^2}{2m} + \frac{\vec{p}_2^2}{2m} + V(\vec{r}_1) + V(\vec{r}_2) + \frac{e^2}{\lvert \vec{r}_1 - \vec{r}_2\rvert}
 \end{equation}
 
-*Note that $$\delta H$$ does not appear in the above, so there is no explicit spin dependence. The single-particle Schrodinger equation with potential $$V(\vec{r})$$ has eigenstates with energies $$E_i$$ and wavefunctions $$\psi_i(\vec{r})$$.*
+*Note that $$\delta H$$ does not appear in the above, so there is no explicit spin dependence. The single-particle Schrödinger equation with potential $$V(\vec{r})$$ has eigenstates with energies $$E_i$$ and wavefunctions $$\psi_i(\vec{r})$$.*
 
 *(a) The total wave function $$\Psi(\vec{r}_1, s_1 \vec{r}_2, s_2)$$ depends on the set of spin variables $$s_1, s_2$$ (use whichever notation for spin that you prefer, including bra/ket notation). Show that the eigenstates of the Hamiltonian can be written as a separable form $$\psi(\vec{r}_1, \vec{r}_2)\chi(s_1, s_2)$$. Construct eigenstates of total spin, and describe the symmetry properties of $$\psi(\vec{r}_1, \vec{r}_2)$$ under particle exchange for each of the spin states.*
 
@@ -1129,7 +1227,7 @@ $$
 Since the integrand is positive definite, we conclude $$\delta E < 0$$. Since $$\kappa = \delta E/\hbar^2$$ we conclude that $$\color{blue}{\kappa < 0}$$. The spins being aligned is favoured, as we would expect for a ferromagnet.
 
 
-#### The Supersymmetric Method <a id="problem-qm-susy" name="problem-qm-susy"></a>
+### The Supersymmetric Method <a id="susy" name="susy"></a>
 **Source:** MIT Spring 2012 Doctoral General Examination Quantum Q2
 
 **Problem Statement:** *In this problem you will solve for the energy spectrum of a particle of mass $$m$$ confined to a potential*
@@ -1260,7 +1358,7 @@ $$
 \color{blue}{\tilde{\psi}_n(x) = \frac{1}{x_0}\left(n\cos(n(\frac{x}{x_0} - \frac{\pi}{2})) + \sin(n(\frac{x}{x_0} - \frac{\pi}{2}))\tan(\frac{x}{x_0})\right).}
 $$
 
-#### Spin-1/2 in Time-Dependent Magnetic Field <a id="problem-qm-timedepmag" name="problem-qm-timedepmag"></a>
+### Spin-1/2 in Time-Dependent Magnetic Field <a id="timedepmag" name="timedepmag"></a>
 **Source:** MIT Fall 2002 Doctoral General Examination Quantum Q2
 
 **Problem Statement:** Consider a spin-1/2 particle interacting with a time-dependent magneitc field:
@@ -1277,7 +1375,7 @@ $$
 
 *(a) Find the instantaneous eigenstates $$\lvert +, t \rangle$$ and $$\lvert -, t \rangle$$ of $$H(t)$$ with eigenvalues $$+B$$ anf $$-B$$ respectively.*
 
-*(b) Let $$\lvert \psi, t \rangle$$ obey the Schrodinger equation:*
+*(b) Let $$\lvert \psi, t \rangle$$ obey the Schrödinger equation:*
 
 \begin{equation}\label{eq:SE}
     i\hbar\frac{\partial}{\partial t}\lvert \psi, t \rangle = H(t)\lvert \psi, t \rangle
@@ -1287,7 +1385,7 @@ $$
 
 *(c) What happens to $$P_+(t)$$ for $$\omega \ll B/\hbar$$? Explain.*
 
-**Solution:** (a) From <a href="#problem-qm-spinhalfsg" name="#problem-qm-spinhalfsg"> Spin-1/2 and Stern-Gerlach </a> (taking $$\theta \to \theta$$, $$\phi = \omega t$$) we find:
+**Solution:** (a) From <a href="#spinhalfsg" name="#spinhalfsg"> Spin-1/2 and Stern-Gerlach </a> (taking $$\theta \to \theta$$, $$\phi = \omega t$$) we find:
 
 $$
 \color{blue}{\lvert +, t \rangle = \begin{pmatrix} \cos(\frac{\theta}{2}) \\ e^{i\omega t}\sin(\frac{\theta}{2}) \end{pmatrix} \quad \lvert -, t \rangle = \begin{pmatrix} -\sin(\frac{\theta}{2}) \\ e^{i\omega t}\cos(\frac{\theta}{2}) \end{pmatrix}.}
@@ -1355,7 +1453,7 @@ $$
 This is consistent with the adiabatic theorem - because in this limit the magnetic field direction (and hence Hamiltonian) changes slowly, the system remains in the ground state $$\lvert +, t \rangle$$ throughout the evolution.
 
 
-#### Particle on a 1-D Lattice <a id="problem-qm-onedlattice" name="problem-qm-onedlattice"></a>
+### Particle on a 1-D Lattice <a id="onedlattice" name="onedlattice"></a>
 **Source:** MIT Spring 2002 Doctoral General Examination Quantum Q1
 
 **Problem Statement:** *Consider a particle confined to move on a 1-D lattice. The Hilbert space is spanned by the orthonormal basis states $$\lvert n \rangle$$ where $$n \in \mathbb{Z}$$ denotes the lattice site and $$\langle n \vert m \rangle = \delta_{nm}$$.*
@@ -1466,7 +1564,7 @@ $$
 $$
 
 
-#### Spin-1/2 and Stern-Gerlach <a id="problem-qm-spinhalfsg" name="problem-qm-spinhalfsg"></a>
+### Spin-1/2 and Stern-Gerlach <a id="spinhalfsg" name="spinhalfsg"></a>
 **Source:** MIT Spring 2001 Doctoral General Examination Quantum Q1
 
 **Problem Statement:** *Consider a spin-1/2 particle where $$S_j = \frac{\hbar}{2}\sigma_j$$ with $$\sigma_j$$ the Pauli matrices:*
@@ -1555,7 +1653,7 @@ $$
 \color{blue}{P_+ = \frac{1 - \sin(BT)}{2}.}
 $$
 
-#### Harmonic Oscillator and Translation <a id="problem-qm-qhotrans" name="problem-qm-qhotrans"></a>
+### Harmonic Oscillator and Translation <a id="qhotrans" name="qhotrans"></a>
 **Source:** MIT Spring 2001 Doctoral General Examination Quantum Q2
 
 **Problem Statement:** *A particle with mass $$m=1$$ is in the ground state of a harmonic oscillator with Hamiltonian*
@@ -1578,7 +1676,7 @@ $$
     e^{A + B} = e^Ae^B + e^{-\frac{1}{2}[A, B]}.
 \end{equation}
 
-*At $$t= 0$$ th equantum system is prepared in the translated state described above. It then evolves according to the Schrodinger equation with the Hamiltonian $$H$$*.
+*At $$t= 0$$ th equantum system is prepared in the translated state described above. It then evolves according to the Schrödinger equation with the Hamiltonian $$H$$*.
 
 *(b) Supose that at the time $$t$$ the momentum is measured. At what values of $$t$$ wil the probability distribution for getting any value of the momentum be identical to the $$t = 0$$ probability distribution?*
 
