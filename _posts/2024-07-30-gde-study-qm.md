@@ -360,10 +360,10 @@ $$
 \psi_L(0) = \psi_R(0) \implies A + B = D.
 $$
 
-Finally, we have the boundary condition on the derivative of the wavefunction at $$x = 0$$, modified accordingly via the presence of the delta well:
+Finally, we have the boundary condition on the derivative of the wavefunction at $$x = 0$$, modified accordingly via the presence of the delta well at $$x = 0$$ (which makes the derivative discontinuous):
 
 $$
-\psi_L'(0) - \psi_R'(0) = -\frac{2m}{\hbar^2}\left(-\frac{\hbar^2\kappa}{m})\psi(0) \implies A - B = \left(\frac{2\kappa}{k} - 1\right)D
+\psi_L'(0) - \psi_R'(0) = -\frac{2m}{\hbar^2}\left(-\frac{\hbar^2\kappa}{m}\right)\psi(0) \implies A - B = \left(\frac{2\kappa}{k} - 1\right)D
 $$
 
 Dividing this equation by the continuity condition:
@@ -467,16 +467,16 @@ To see this, consider that the Hamiltonian of the system is $$H = -\frac{\hbar}{
 
 $$\exp(-\frac{iHt}{\hbar}) = \cos(\frac{\mu B}{2}t)I + i\sin(\frac{\mu B}{2}t)\sigma_x$$ 
 
-(obtained via power series expansion of the exponential) and then identifying the period as $$T \coloneqq \frac{4\pi}{\mu B}$$ and applying it to the initial state of $$\lvert \psi(0) \rangle = \lvert \uparrow \rangle$$ we obtain the claimed result. The Born rule tells us that the probability of measuring $$S_z = -\frac{\hbar}{2}$$ is the modulus squared of the coefficient:
+(obtained via power series expansion of the exponential) and then identifying the period as $$T = \frac{4\pi}{\mu B}$$ and applying it to the initial state of $$\lvert \psi(0) \rangle = \lvert \uparrow \rangle$$ we obtain the claimed result. The Born rule tells us that the probability of measuring $$S_z = -\frac{\hbar}{2}$$ is the modulus squared of the coefficient:
 
 $$
-P_\downarrow(t) = \lvert i\sin(\frac{2\pi}{T}t) \rangle^2  = \sin^2(\frac{2\pi}{T}t)
+P_\downarrow(t) = \lvert i\sin(\frac{2\pi}{T}t) \rvert^2  = \sin^2(\frac{2\pi}{T}t)
 $$
 
 If we measure at $$t = \frac{T}{2N}$$ we have:
 
 $$
-P_\downarrow(t=\frac{T}{2N}) = \sin^2(\frac{\pi}{N}) \approx \frac{\pi^2}{N^2}$$
+P_\downarrow(t=\frac{T}{2N}) = \sin^2(\frac{\pi}{N}) \approx \frac{\pi^2}{N^2}
 $$
 
 where we use the small-angle approximation in the large-$$N$$ limit. Thus the probability that all $$N$$ measurements of $$S_z$$ would all yield $$+\frac{\hbar}{2}$$ is given by:
@@ -493,7 +493,7 @@ $$
 
 which yields $$1$$ as $$N \to \infty$$. This is the *quantum Zeno effect*, where measuring the system at high frequency stabilizes it.
 
-### Positronium Stern-Gerlach TODO <a id="positroniumsg" name="positroniumsg"></a>
+### Positronium Stern-Gerlach <a id="positroniumsg" name="positroniumsg"></a>
 **Source:** UBC Summer 2013 Physics Qualifying Exam Q3
 
 **Problem Statement:** *A beam of ground state positronium particles (an ``atom'' composed of an electron and it's anti-particle, a positron) enters a double Stern-Gerlach apparatus. At the input, the particles are an equal mixture of the two spin configurations, that is 50% para-positronium with total spin $$s = 0$$ and ortho-positronium with total spin $$s = 1$$. Assume also that the beam is completely unpolarized. The positronium first encounters a magnetic field along the $$z$$-axis with a gradient increasing in the $$z$$-direction and the beam splits into three. The un-deflected beam then flies through a hole in the beam-stop and encounters a magnetic field directed perpendicular to the first one and along the $$x$$-axis, causing the beam to split in three again.*
@@ -515,7 +515,7 @@ $$
 \lvert s=1, m_z \rangle = \begin{cases} \lvert \uparrow \uparrow \rangle & m_z = 1 \\ \frac{\lvert \uparrow \downarrow \rangle + \lvert \downarrow \uparrow \rangle}{\sqrt{2}} & m_z = 0 \\ \lvert \downarrow \downarrow \rangle & m_z = -1 \end{cases}
 $$
 
-Assuming we have a 50/50 mixture of para and ortho positronium and the initial beam is unpolarized, to begin the composition of the beam is 1/2 $\lvert s=0, m_z = 0 \rangle$$ and 1/6 for each of the $\lvert s = 1 \rangle$ states. Since only $$m_z = 0$$ positronium atoms pass through the first beamstop, we conclude that $$\color{blue}{2/3}$$ of the initial beam flux passes through.
+Assuming we have a 50/50 mixture of para and ortho positronium and the initial beam is unpolarized, to begin the composition of the beam is 1/2 $$\lvert s=0, m_z = 0 \rangle$$ and 1/6 for each of the $$\lvert s = 1 \rangle$$ states. Since only $$m_z = 0$$ positronium atoms pass through the first beamstop, we conclude that $$\color{blue}{2/3}$$ of the initial beam flux passes through.
 
 Let us denote the single-qubit $$S_x$$ eigenstates as $$\lvert \pm \rangle = \frac{\lvert \uparrow \rangle \pm \lvert \downarrow \rangle}{\sqrt{2}}$$. The joint total spin and joint x-spin eigenstates are obtained by replacement of $$\uparrow \to +$$, $$\downarrow \to -$$. We have the spin singlet:
 
@@ -538,7 +538,7 @@ $$
 Thus:
 
 $$
-\lvert s = 1, m_z = 0 \rangle = \frac{1}{\sqrt{2}}\left(\lvert s = 1, m_x = 1\rangle + \lvert s = 1, m_x = -1 \rangle)
+\lvert s = 1, m_z = 0 \rangle = \frac{1}{\sqrt{2}}\left(\lvert s = 1, m_x = 1\rangle + \lvert s = 1, m_x = -1 \rangle\right)
 $$
 
 Therefore of the $$\lvert s = 1, m_z = 0\rangle$$ states that pass through the first beamstop, 1/2 will be right deflected and 1/2 will be left deflected.
@@ -636,7 +636,7 @@ with $$\hat{p}$$ the operator corresponding to $$z$$-momentum.
 (b) In the momentum representation $$\hat{p} \to p$$ and $$\hat{z} \to i\hbar\frac{\partial}{\partial p}$$ so the Schrodinger equation $$H\lvert \psi \rangle = E\lvert \psi \rangle$$ reads:
 
 $$
-\color{blue}{\left(\frac{p^2}{2m} + mgi\frac{\partial}{\partial p})\tilde{\psi}(p) = E\tilde{\psi}(p)}
+\color{blue}{\left(\frac{p^2}{2m} + mgi\frac{\partial}{\partial p}\right)\tilde{\psi}(p) = E\tilde{\psi}(p)}
 $$
 
 with $$\tilde{\psi}(p)$$ the momentum eigenfunctions. Using the provided abbreviations, we write the above as:
@@ -660,7 +660,7 @@ $$
 Substituting $$u = lp$$ the above can be written in terms of the Airy function:
 
 $$
-\tilde{\psi(x) = \frac{\sqrt{2\pi}}{l}\text{Ai}(\frac{x}{l} - \lambda).}
+\psi(x) = \frac{\sqrt{2\pi}}{l}\text{Ai}(\frac{x}{l} - \lambda).
 $$
 
 (d) Using the boundary condition of $$\psi(0) = 0$$, we find the transcendental equation:

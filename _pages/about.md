@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Incoming PhD Physics student at <a href="https://physics.uchicago.edu">The University of Chicago</a>
+subtitle: Incoming PhD Physics student at <a href="https://physics.uchicago.edu">The University of Chicago</a>.
 
 profile:
   align: right
