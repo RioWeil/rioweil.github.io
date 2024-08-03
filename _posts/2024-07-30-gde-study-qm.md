@@ -461,7 +461,7 @@ $$
 
 **Solution** The quantum spin state is given by:
 
-$$\lvert \psi(t) \rangle = \cos(\frac{2\pi}{T}t)\lvert \uparrow \rangle + i\sin(\frac{2\pi}{T}t)\lvert \downarrow \rangle$$. 
+$$\lvert \psi(t) \rangle = \cos(\frac{2\pi}{T}t)\lvert \uparrow \rangle + i\sin(\frac{2\pi}{T}t)\lvert \downarrow \rangle.$$
 
 To see this, consider that the Hamiltonian of the system is $$H = -\frac{\hbar}{2}\mu B\sigma_x$$ with $$\mu$$ the magnetic moment, and thus the time evolution operator is:
 
