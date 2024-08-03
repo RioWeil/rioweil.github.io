@@ -195,6 +195,119 @@ $$
 
 *(e) Consider again the case with no electric field. If the system is heated to some temperature $$T$$, calculate the expectation value of the magnitude of the system's angular momentum, $$\langle \lvert \vec{L} \rvert \rangle$$, in the high-$$T$$ limit.*
 
+**Solution:** (a) In the absence of a potential, we have the 1-D Shrodinger equation:
+
+$$
+\frac{d^2}{dx^2}\psi(x) = -\frac{2mE}{\hbar^2}\psi(x)
+$$
+
+since we are confined to a ring, it is convenient to work with the angle $$\phi = x/R$$:
+
+$$
+\frac{d^2}{d\phi^2}\psi(\phi) = -\frac{2mR^2 E}{\hbar^2}\psi(\phi)
+$$
+
+with the boundary conditions of $$\psi(0) = \psi(2\pi), \quad \psi'(0) = \psi'(2\pi)$$. The solutions can be found via inspection:
+
+$$
+\color{blue}{\psi_n(\phi) = \frac{1}{\sqrt{2\pi}}e^{in\phi}, \quad n \in \mathbb{Z}}
+$$
+
+with associated energies:
+
+$$
+\color{blue}{E_n = \frac{\hbar^2n^2}{2mR^2}.}
+$$
+
+where we note that the energies (excepting $$E_0 = 0$$) are two-fold degenerate (with $$E_n = E_{-n}$$).
+
+(b) Filling up an orbital (all states of a given energy) gives rise to a more stable molecule (as it has a full valence shell and is less likely to react). Accounting for the two spin states $$s_z = \pm\frac{\hbar}{2}$$, each of the energy levels $$E_n$$ as found in (a) can furnish up to two electrons - with our prior observation that the energy levels are two-fold degenerate, with the additional spin degeneracy to fill up all orbitals up to energy $$E_n$$ requires $$2 \cdot (2n) + 2 = \color{blue}{4n + 2}$$ electrons, which is precisely Hückel's rule.
+
+(c) The perturbation expressed in terms of $$\phi$$ is given by:
+
+$$
+V = E\hat{x} = E\cos(\phi) = \frac{E}{2}(e^{i\phi} + e^{-i\phi})
+$$
+
+Looking at the matrix elements of the peturbation:
+
+$$
+\langle \psi_m \rvert V \lvert \psi_n \rangle = \frac{E}{2}\frac{1}{2\pi}\int_{0}^{2\pi} e^{-im\phi}(e^{i\phi} + e^{-i\phi})e^{in\phi} = \frac{E}{2}(\delta_{m, n +1} + \delta{m, n-1})
+$$
+
+where in the last equality we use the orthogonality of imaginary exponentials. Thus we find that the first-order energy correction to the ground state (note: we can use non-degenerate perturbation theory here, as the ground state is non-degenerate ) vanishes:
+
+$$
+E_0^{(1)} = \langle \psi_0 \rvert V \lvert \psi_0 \rangle = 0
+$$
+
+and we must go to second order to obtain the non-vanishing energy corrections.
+
+$$
+E_0^{(2)} =  \sum_{n \neq 0} \frac{\lvert \langle \psi_n \vert V \lvert \psi_0 \rangle \rvert^2}{E^{(0)}_{0} - E^{(0)}_{n}} = \frac{E^2}{4}\left(\frac{1}{E_0 - E_1} + \frac{1}{E_0 - E_{-1}}\right) = \frac{E^2}{4} \cdot 2\frac{-\hbar^2(1)^2}{2mR^2}
+$$
+
+thus:
+
+$$
+\color{blue}{E_0^{(2)} = -\frac{E^2\hbar^2}{4mR^2}}
+$$
+
+(d) We proceed by computing the first order corrections to the ground state:
+
+$$
+\lvert \psi_0^{(1)} \rangle = \sum_{n \neq 0} \frac{\lvert \langle \psi_n \vert V \lvert \psi_0 \rangle \rvert^2}{E^{(0)}_{0} - E^{(0)}_{n}}\lvert \psi_n \rangle =  -\frac{E\hbar^2}{4mR^2}\left(\lvert \psi_1 \rangle + \lvert \psi_{-1} \rangle\right)
+$$
+
+Thus computing the dipole moment:
+
+$$
+\langle d \rangle = (\langle \psi_0^{(1)} \rvert + \langle \psi_0^{(0)} \rvert)x(\lvert \psi_0^{(1)} \rangle + \lvert \psi_0^{(0)} \rangle)
+$$
+
+Recalling the matrix elements, only the off-diagonal elements between $$n = \pm 1$$ and $$0$$ are nonvanishing, and thus we obtain:
+
+$$
+\langle d \rangle = -\frac{E\hbar^2}{4mR^2} -\frac{E\hbar^2}{4mR^2} = -\frac{E\hbar^2}{2mR^2}
+$$
+
+Thus the polarizability is:
+
+$$
+\color{blue}{\alpha = \frac{\lvert \langle d \rangle \rvert}{E} = \frac{\hbar^2}{2mR^2}}
+$$
+
+(e) The $$\lvert \psi_m \rangle$$ are also eigenstates of $$L_z = -i\hbar\frac{d}{d\phi}$$ with eigenvalue $$\hbar m$$. Since the electron is confined to the $$x-y$$ plane, it can only have a $$z$$-component of angular momentum and hence $$\lvert L \rvert = \lvert L_z \rvert = \hbar \lvert n \rvert$$. 
+
+At finite temperature, we can compute the expectation value using the machinery of statistical mechanics. The partition function is computed as the sum of Boltzmann factors:
+
+$$
+Z = \sum_{n = -\infty}^\infty e^{-\beta E_n} = \sum_{n = -\infty}^\infty e^{-\frac{\hbar^2}{2mR^2k_B T} n^2}
+$$
+
+and the expectation value is then:
+
+$$
+\langle \lvert L \rvert \rangle = \frac{\sum_{n=-\infty}^\infty \lvert L \rvert(n)e^{-\beta E_n} }{Z} = \frac{\sum_{n = -\infty}^\infty \hbar \lvert n \rvert e^{-\frac{\hbar^2}{2mR^2k_B T} n^2}}{\sum_{n = -\infty}^\infty e^{-\frac{\hbar^2}{2mR^2k_B T} n^2}}.
+$$
+
+These sums cannot be computed analytically, but in the high temperature limit we can approximate them as integrals:
+
+$$
+Z \approx \int_{-\infty}^\infty e^{-\frac{\hbar^2}{2mR^2k_B T} n^2}dn = \sqrt{\frac{2\pi m R^2k_B T}{\hbar^2}}
+$$
+
+$$
+\sum_{n = -\infty}^\infty \hbar \lvert n \rvert e^{-\frac{\hbar^2}{2mR^2k_B T} n^2} \approx 2\hbar \int_0^\infty n e^{-\frac{\hbar^2}{2mR^2k_B T} n^2}dn = 2\hbar \frac{1}{2} \frac{2m R^2k_B T}{\hbar^2} = \frac{2mR^2 k_B T}{\hbar}
+$$
+
+Thus:
+
+$$
+\color{blue}{\langle \lvert L \rvert \rangle \approx \sqrt{\frac{2 m R^2 k_B T}{\pi}}}
+$$
+
+
 ### Emancipation from a Distance <a id="emancipation" name="emancipation"></a>
 **Source:** UBC Summer 2022 Physics Qualifying Exam Q5
 
@@ -215,6 +328,74 @@ $$
 
 *with $$L$$ initially very large. Indeed, if $$L$$ is very large, the system should be undisturbed by the presence of the wall. Now, let us imagine that we adiabatically decrease $$L$$. We expect that the binding energy of the bound state begins to depend on $$L$$; is there a value of $$L$$ at which the binding energy goes to zero and the particle is liberated? If so, what is that value?*
 
+**Solution:** It is clear that there is some value of $$L$$ for which the binding energy must go to zero. This conclusion can be reached by considering the limiting case of $$L \to 0$$ where we have the infinite step potential which admits no bound states, only scattering states. 
+
+Finding the liberating value of $$L$$ requires a little more work. We solve the Schrödinger equation in the left region $$-L \leq x \leq 0$$ and the right region $$0 \leq x \leq \infty$$. For each of those two regions, the potential is zero, and the SE thus reads:
+
+$$
+\frac{d^2\psi}{dx^2} = k^2\psi
+$$
+
+with $$k = \frac{\sqrt{2m(-E)}}{\hbar^2}$$. Note that here $$E$$ is negative (as we assume a bound state) and thus $$k$$ is positive. In the left region we have:
+
+$$
+\psi_L(x) = Ae^{kx} + Be^{-kx}
+$$
+
+with the boundary condition of $$\psi(-L) = 0$$ yielding:
+
+$$
+Ae^{-kL} + Be^{kL} = 0 \implies A = -Be^{2kL}.
+$$
+
+In the right region we have:
+
+$$
+\psi_R(x) = Ce^{kx} + De^{-kx}
+$$
+
+with the boundary condition of $$\psi(x \to \infty) = 0$$ enforcing that $$C = 0$$. The continuity of the wavefunction at $$x = 0$$ gives:
+
+$$
+\psi_L(0) = \psi_R(0) \implies A + B = D.
+$$
+
+Finally, we have the boundary condition on the derivative of the wavefunction at $$x = 0$$, modified accordingly via the presence of the delta well:
+
+$$
+\psi_L'(0) - \psi_R'(0) = -\frac{2m}{\hbar^2}\left(-\frac{\hbar^2\kappa}{m})\psi(0) \implies A - B = \left(\frac{2\kappa}{k} - 1\right)D
+$$
+
+Dividing this equation by the continuity condition:
+
+$$
+\frac{A - B}{A + B} = \frac{2\kappa}{k} - 1
+$$
+
+and now using the boundary condition at $$x = -L$$:
+
+$$
+\frac{-Be^{2kL} - B}{-Be^{2kL} + B} = \frac{2\kappa}{k} - 1.
+$$
+
+Rearranging this expression we obtain the transcendental equation for $$k$$:
+
+$$
+\frac{k}{1 - e^{2kL}} = \kappa.
+$$
+
+Since we are interested in the $$E \to 0$$ limit, $$k \to 0$$ and thus $$e^{2kL} \approx 1- 2kL$$:
+
+$$
+\frac{k}{1 - (1  - 2kL)} = \frac{k}{2kL} = \kappa
+$$
+
+thus rearranging for $$L$$, we find the length at which the particle is liberated:
+
+$$
+\color{blue}{L = \frac{1}{2\kappa}.}
+$$
+
 
 ### Temperature and Adiabatic Changes of the 3-D Harmonic Oscillator <a id="3dqho" name="3dqho"></a>
 **Source:** UBC Spring 2022 Physics Qualifying Exam Q5, UBC Fall 2020 Physics Qualifying Exam Q2
@@ -231,12 +412,88 @@ $$
 
 *(e) After keeping $$V_{tot} = V_c + V_a$$ for some time, one decides to suddenly switch off all the potentials, freeing the atom into free space. How much work is done on the atoms in this process?*
 
+**Solution:** (a) The 3D harmonic potential is simply the sum of independent harmonic potentials in the $$x, y, z$$ directions and thus the eigenenergies are just the respective sum of the 1-D harmonic oscillators:
+
+$$
+E_{n_x, n_y, n_z} = E_{n_x} + E_{n_y} + E_{n_z} = \hbar\omega(n_x + n_y + n_z + \frac{3}{2})
+$$
+
+with $$\omega = \sqrt{\frac{k}{m}}$$ and $$n_i = 0, 1, 2, \ldots$$. From the above we can read off the three lowest energies as $$\color{blue}{E_0 = \frac{3}{2}\hbar\omega, E_1 = \frac{5}{2}\hbar\omega, \frac{5}{2}\hbar\omega.}$$ Note that $$E_0$$ is non-degenerate, $$E_1$$ is three-fold degenerate (choose one of three $$n_i$$s to be 1) and $$E_2$$ is six-fold degenerate (choose one of three $$n_i$$s to be 2, or choose two of three $$n_i$$s to be 1.)
+
+(b) The probabilities are equal when the Boltzmann weights (with degeneracy) are equal, so:
+
+$$
+\frac{P(E_0)}{P(E_6)} = 1 \implies \frac{e^{-\beta E_0}}{6e^{-\beta E_2}} = \frac{1}{6}e^{\frac{2\hbar\omega}{k_B T}} = 1
+$$
+
+therefore:
+
+$$
+\color{blue}{T = \frac{2\hbar\omega}{k_B\ln(6)}.}
+$$
+
+(c) Since the modification to the trap is done adiabatically, the atoms stay in the $$n_x, n_y, n_z$$ eigenstate. Their energy is modified via the frequency modification $$\omega \to \omega' = \sqrt{\frac{10k}{m}} = \sqrt{10}\omega$$:
+
+$$
+E_{n_x, n_y, n_z}' = \hbar\omega'(n_x + n_y + n_z + \frac{3}{2}) = \sqrt{10}\hbar\omega(n_x + n_y + n_z + \frac{3}{2}) = \sqrt{10}E_{n_x, n_y, n_z}.
+$$
+
+The atoms are cooled in such a way that the Boltzmann factors/probabilities of occupying a given state are preserved:
+
+$$
+e^{-\beta E_{n_x, n_y, n_z}} = e^{-\beta'E_{n_x, n_y, n_z}'} \implies \frac{E_{n_x, n_y, n_z}}{T} = \frac{\sqrt{10}E_{n_x, n_y, n_z}}{T'}
+$$
+
+and thus:
+
+$$
+\color{blue}{T' = \sqrt{10}T.}
+$$
+
+(d) At zero temperature, the atom is in the ground state with $$E_{0} = \frac{3}{2}\hbar\omega$$. The $$x$$ and $$y$$ components of the state (and thus the energy contributions) are unchanged by the turning on of $$V_a$$, but the $$z$$ component is; namely, we note that only odd parity eigenstates (i.e. odd $$n_z$$) are allowed with the infinite potential in half space (as there must be a node in the wavefunction at $$x = 0$$. These odd parity eigenstates form a complete basis of functions for the half-space of $$z < 0$$.) Thus the lowest energy eigenstate after $$V_a$$ is fully switched on is that with $$n_x = n_y = 0$$ and $$n_z = 1$$ (the lowest energy odd parity eigenstate in $$z$$) and thus the ground state energy becomes $$E_0 = \frac{5}{2}\hbar\omega$$. Thus work of $$\text{color}{W = \hbar\omega}$$ is done on the atom.
+
+(e) If the potential is suddenly switched off, the quantum state of the atom has no time to react to the changing Hamiltonian, and thus stays in the $$\lvert n_x=0, n_y = 0, n_z = 1 \rangle$$ state with energy $$\frac{5}{2}\hbar\omega$$. Thus, <span style="color:blue">no work is done.</span>
+
 ### Quantum Zeno Effect <a id="zeno" name="zeno"></a>
 **Source:** UBC Summer 2018 Physics Qualifying Exam Q8
 
 **Problem Statement:** *An electron spin is oriented upward along $$+\hat{z}$$, and subject to a magnetic field of strength $$B$$ along $$+\hat{x}$$. The precession period of the spin around the magnetic field direction is $$T$$. The operator $$S_z$$ is measured repeatedly, $$N$$ times within a time interval $$T/2$$ (assume the measurements are evenly spaced in time). What is the probability that all $$N$$ measurements returns $$+\hbar/2$$, in the limit of large $$N$$?*
 
-### Positronium Stern-Gerlach <a id="positroniumsg" name="positroniumsg"></a>
+**Solution** The quantum spin state is given by:
+
+$$\lvert \psi(t) \rangle = \cos(\frac{2\pi}{T}t)\lvert \uparrow \rangle + i\sin(\frac{2\pi}{T}t)\lvert \downarrow \rangle$$. 
+
+To see this, consider that the Hamiltonian of the system is $$H = -\frac{\hbar}{2}\mu B\sigma_x$$ with $$\mu$$ the magnetic moment, and thus the time evolution operator is:
+
+$$\exp(-\frac{iHt}{\hbar}) = \cos(\frac{\mu B}{2}t)I + i\sin(\frac{\mu B}{2}t)\sigma_x$$ 
+
+(obtained via power series expansion of the exponential) and then identifying the period as $$T \coloneqq \frac{4\pi}{\mu B}$$ and applying it to the initial state of $$\lvert \psi(0) \rangle = \lvert \uparrow \rangle$$ we obtain the claimed result. The Born rule tells us that the probability of measuring $$S_z = -\frac{\hbar}{2}$$ is the modulus squared of the coefficient:
+
+$$
+P_\downarrow(t) = \lvert i\sin(\frac{2\pi}{T}t) \rangle^2  = \sin^2(\frac{2\pi}{T}t)
+$$
+
+If we measure at $$t = \frac{T}{2N}$$ we have:
+
+$$
+P_\downarrow(t=\frac{T}{2N}) = \sin^2(\frac{\pi}{N}) \approx \frac{\pi^2}{N^2}$$
+$$
+
+where we use the small-angle approximation in the large-$$N$$ limit. Thus the probability that all $$N$$ measurements of $$S_z$$ would all yield $$+\frac{\hbar}{2}$$ is given by:
+
+$$
+P_{\text{all} \uparrow} = \left(1 - P_\downarrow(t=\frac{T}{2N})\right)^N \approx \left(1 - \frac{\pi^2}{N^2}\right)^N \approx (e^{-\frac{\pi^2}{N^2}})^N = e^{-\frac{\pi^2}{N}}
+$$
+
+where we use the first-order approximation for the exponential. Thus we conclude:
+
+$$
+\color{blue}{P_{\text{all} \uparrow} = e^{-\frac{\pi^2}{N}}}
+$$
+
+which yields $$1$$ as $$N \to \infty$$. This is the *quantum Zeno effect*, where measuring the system at high frequency stabilizes it.
+
+### Positronium Stern-Gerlach TODO <a id="positroniumsg" name="positroniumsg"></a>
 **Source:** UBC Summer 2013 Physics Qualifying Exam Q3
 
 **Problem Statement:** *A beam of ground state positronium particles (an ``atom'' composed of an electron and it's anti-particle, a positron) enters a double Stern-Gerlach apparatus. At the input, the particles are an equal mixture of the two spin configurations, that is 50% para-positronium with total spin $$s = 0$$ and ortho-positronium with total spin $$s = 1$$. Assume also that the beam is completely unpolarized. The positronium first encounters a magnetic field along the $$z$$-axis with a gradient increasing in the $$z$$-direction and the beam splits into three. The un-deflected beam then flies through a hole in the beam-stop and encounters a magnetic field directed perpendicular to the first one and along the $$x$$-axis, causing the beam to split in three again.*
@@ -245,22 +502,119 @@ $$
 
 *(b) Suppose the positronium is disassociated at the three outputs that the spin of the electron and positron can be measured independently and the electron and positron spin projections along the z axis are measured. What is the chance of finding both the electron and the positron in the same spin state for each of the outputs?*
 
+**Solution:** The joint total spin and joint z-spin eigenstates of positronium we recall from the addition of angular momenta of two spin-1/2 particles. For para-positronium we have the spin singlet:
+
+$$
+\lvert s=0, m_z = 0 \rangle = \frac{\lvert \uparrow \downarrow \rangle - \lvert \downarrow \uparrow \rangle}{\sqrt{2}}
+$$
+
+and for ortho-positronium we have the three (spin triplet) states:
+
+
+$$
+\lvert s=1, m_z \rangle = \begin{cases} \lvert \uparrow \uparrow \rangle & m_z = 1 \\ \frac{\lvert \uparrow \downarrow \rangle + \lvert \downarrow \uparrow \rangle}{\sqrt{2}} & m_z = 0 \\ \lvert \downarrow \downarrow \rangle & m_z = -1 \end{cases}
+$$
+
+Assuming we have a 50/50 mixture of para and ortho positronium and the initial beam is unpolarized, to begin the composition of the beam is 1/2 $\lvert s=0, m_z = 0 \rangle$$ and 1/6 for each of the $\lvert s = 1 \rangle$ states. Since only $$m_z = 0$$ positronium atoms pass through the first beamstop, we conclude that $$\color{blue}{2/3}$$ of the initial beam flux passes through.
+
+Let us denote the single-qubit $$S_x$$ eigenstates as $$\lvert \pm \rangle = \frac{\lvert \uparrow \rangle \pm \lvert \downarrow \rangle}{\sqrt{2}}$$. The joint total spin and joint x-spin eigenstates are obtained by replacement of $$\uparrow \to +$$, $$\downarrow \to -$$. We have the spin singlet:
+
+$$
+\lvert s=0, m_x = 0 \rangle = \frac{\lvert +- \rangle - \lvert -+ \rangle}{\sqrt{2}}
+$$
+
+and the triplet states:
+
+$$
+\lvert s=1, m_x \rangle = \begin{cases} \lvert ++ \rangle & m_x = 1 \\ \frac{\lvert +- \rangle + \lvert -+ \rangle}{\sqrt{2}} & m_x = 0 \\ \lvert -- \rangle & m_x = -1 \end{cases}
+$$
+
+The singlet state is basis invariant, so $$\lvert s=0, m_z = 0 \rangle = \lvert s=0, m_x = 0 \rangle$$ and hence all the singlet states that pass through the first stop are part of the undeflected output. For the spin triplet $$\lvert s = 1, m_z = 0 \rangle$$ state we observe that:
+
+$$
+\lvert s = 1, m_z = 0 \rangle = \frac{\left(\frac{\lvert + \rangle + \lvert - \rangle}{\sqrt{2}}\right)\left(\frac{\lvert + \rangle - \lvert - \rangle}{\sqrt{2}}\right)+ \left(\frac{\lvert + \rangle - \lvert - \rangle}{\sqrt{2}}\right)\left(\frac{\lvert + \rangle + \lvert - \rangle}{\sqrt{2}}\right)}{\sqrt{2}} = \frac{\lvert + + \rangle  + \lvert - - \rangle}{\sqrt{2}}
+$$
+
+Thus:
+
+$$
+\lvert s = 1, m_z = 0 \rangle = \frac{1}{\sqrt{2}}\left(\lvert s = 1, m_x = 1\rangle + \lvert s = 1, m_x = -1 \rangle)
+$$
+
+Therefore of the $$\lvert s = 1, m_z = 0\rangle$$ states that pass through the first beamstop, 1/2 will be right deflected and 1/2 will be left deflected.
+
+In conclusion - the right-deflected beam contains $$\frac{1}{6} \cdot \frac{1}{2} = \color{blue}{\frac{1}{12}}$$ of the original beam, in state:
+
+$$
+\lvert s = 1, m_x = 1 \rangle = \lvert ++ \rangle = \color{blue}{\frac{\lvert \uparrow \uparrow \rangle + \lvert \uparrow \downarrow \rangle + \lvert \downarrow \uparrow \rangle + \lvert \downarrow \downarrow \rangle}{2}.}
+$$
+
+The left deflected beam contains $$\frac{1}{6} \cdot \frac{1}{2} = \color{blue}{\frac{1}{12}}$$ of the original beam, in state:
+
+$$
+\lvert s = 1, m_x = -1 \rangle = \lvert -- \rangle = \color{blue}{\frac{\lvert \uparrow \uparrow \rangle - \lvert \uparrow \downarrow \rangle - \lvert \downarrow \uparrow \rangle + \lvert \downarrow \downarrow \rangle}{2}.}
+$$
+
+The undeflected beam contains $$\frac{1}{2} \cdot 1 = \color{blue}{\frac{1}{2}}$$ of the original beam, in state:
+
+$$
+\lvert s = 0, m_x = 0 \rangle =  \frac{\lvert +- \rangle - \lvert -+ \rangle}{\sqrt{2}} = \color{blue}{\frac{\lvert \uparrow \downarrow \rangle - \lvert \downarrow \uparrow \rangle}{\sqrt{2}}.}
+$$
+
+(b) This can be simply read off from the expressions of the output states (in the $$z$$-basis) for each of the three outputs given in (a). For the right and left deflected beams, the probability of finding the electron and positron to be in the same spin state is $$\color{blue}{\frac{1}{2}}$$. For the undeflected beam, the probability is $$\color{blue}{0}$$.
+
 ### Quantum Single-Slit Diffraction <a id="quantumdiffraction" name="quantumdiffraction"></a>
 **Source:** UBC Fall 2011 Physics Qualifying Exam Q14
 
 **Problem Statement:** *A beam of atoms of mass $$m$$ and energy $$E$$ is passed through a hole of diameter $$d$$ in an opaque plate normal to the beam. The atoms are then detected by a second plate a distance $$L$$ away. Under the most ideal circumstances, what is the lower bound for the diameter $$D$$ of the spot that the beam forms on the detector plate? $$L$$ and $$E$$ are fixed, but $$d$$ may be varied. Take the beam cross section to be always much wider than the hole. Notice that as $$d \to 0$$, the uncertainty in momentum leads to $$D \to \infty$$, while, as $$d \to \infty$$, clearly $$D$$ also becomes very large. You are asked to find the optimal hole size $$d$$ for which $$D$$ is the smallest.*
 
+**Solution:** Assuming the hole size $$d$$ is smaller than the characteristic length scale of an atom (which we take to twice the Bohr radius $$a_0$$), when the atom passes through the hole we can approximate their spatial wavefunction as uniform across the hole:
+
+$$
+\psi(x) = \begin{cases} \frac{1}{\sqrt{d}} & -\frac{d}{2} \leq x \leq \frac{d}{2} \\ 0 & \text{otherwise} \end{cases}.
+$$
+
+Here we consider the $$x$$ direction as normal to the beam axis. By taking the Fourier transform, we obtain the momentum wavefunction:
+
+$$
+\tilde{\psi}(p) = \frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^\infty e^{-ipx/\hbar}\psi(x)dx = \frac{1}{\sqrt{2\pi\hbar d}}\int_{-d/2}^{d/2}e^{-ipx/\hbar}
+$$
+
+Carrying out the integral we obtain:
+
+$$
+\tilde{\psi}(p) = \frac{1}{\sqrt{2\pi \hbar d}} \frac{\hbar}{-ip}(e^{-ipd/2\hbar} - e^{ipd/2\hbar}) = \sqrt{\frac{2\hbar}{\pi d}}\frac{1}{p}\sin(\frac{pd}{2}).
+$$
+
+If the atoms have energy $$E$$, they have total momentum $$p = \sqrt{2mE}$$ and the component of their momenta normal to the flight axis is given by $$p_x = p\sin\theta = \sqrt{2mE}\sin\theta$$ where $$\theta$$ is the angle between the beam axis and the vertical position on the final detector plate. For small $$\theta$$ we approximate $$\sin\theta \approx \tan\theta = \frac{x}{L}$$ and so $$p_x \approx \frac{\sqrt{2mE}x}{L}$$. Substituting $$p_x$$ into $$\tilde{\psi}$$ and taking the modulus squared, we obtain the intensity of atoms on the final detector as a function of $$x$$:
+
+$$
+I(x) = \lvert \tilde{\psi}(p_x)\rvert^2 = \frac{2\hbar}{\pi d}\frac{1}{p_x^2}\sin^2(\frac{p_x d}{2}) = \frac{\hbar L^2}{\pi m Ed x^2}\sin^2(\frac{\sqrt{mE}dx}{\sqrt{2}L}).
+$$
+
+The diameter of the spot on the detector is simply the width of the central fringe of $$I(x)$$, which has zeroes at $$x = \frac{n\sqrt{2}\pi L}{\sqrt{mE} d}$$ for all nonzero $$n \in \mathbb{Z}$$ and so:
+
+$$
+D = \frac{2\sqrt{2}\pi L}{\sqrt{mE}d}
+$$
+
+$$D \propto \frac{1}{d}$$ and so to minimize the size of the spot we take $$d$$ as large as possible. The constraint is with our initial assumption of $$\psi(x)$$ uniform across the hole only applies if $$d \leq 2a_0$$, so we substituting in this value we conclude:
+
+$$
+\color{blue}{D \leq \frac{\sqrt{2} \pi L}{\sqrt{m E} a_0}.}
+$$
+
 ### Gravitational Potential <a id="gravpotential" name="gravpotential"></a>
 **Source:** UBC Fall 2005 Physics Qualifying Exam Q6
 
-**Problem Statement:** *A particle of mass $$m$$ is restricted to move in the vertical direction in the Earth's gravitational field. Assume tht the surface of the Earth reflects this particle elastically (like a steel ball falling on a surface of glass) and go through the following steps to quantize the energy of the motion using the momentum representation instead of the position representation. Set $$\hbar = 1$$ for this problem.*
+**Problem Statement:** *A particle of mass $$m$$ is restricted to move in the vertical direction in the Earth's gravitational field. Assume tht the surface of the Earth reflects this particle elastically (like a steel ball falling on a surface of glass) and go through the following steps to quantize the energy of the motion using the momentum representation instead of the position representation. Set $$\hbar = 1$$ throughout for convenience.
 
 *(a) Set up the Hamiltonian, assuming that the gravitational potential is zero on the surface of the Earth.*
 
 *(b) Set up the Schrödinger equation in the momentum representation, and then solve it. Do not use any boundary conditions yet, but use the abbreviations:*
 
 \begin{equation}\label{eq:abbreviations}
-2mg^2 = \frac{1}{l^3} \quad 2mE = \frac{\lambda}{l^2}
+2m^2g= \frac{1}{l^3} \quad 2mE = \frac{\lambda}{l^2}
 \end{equation}
 
 *(c) From the momentum space eigenfunctions, obtain the position space eigenfunctions $$\psi(x)$$ (Do not worry about normalization). Express $$\psi(x)$$ in terms of the Airy function, whose integral representation is given by:*
@@ -269,7 +623,59 @@ $$
     \text{Ai}(z) = \frac{1}{2\pi}\int_{-\infty}^{\infty}\exp(i(\frac{u^3}{3} + uz))du.
 \end{equation}
 
-*(d) Elastic reflection means that $$\psi(x=0) = 0$$ - use this to find the fundamental equation that quantizes the energy. How would you use it to find the energy levels?*
+*(d) Elastic reflection means that $$\psi(x=0) = 0$$ - use this to find the transcendental equation that quantizes the energy. How would you use it to find the energy levels?*
+
+**Solution:** (a) The potential energy (assuming zero potential at $$z = 0$$) is given by $$V(z) = mgz$$, and thus the Hamiltonian has the form:
+
+$$
+\color{blue}{\hat{H} = \frac{\hat{p}^2}{2m} + mg\hat{z}.}
+$$
+
+with $$\hat{p}$$ the operator corresponding to $$z$$-momentum.
+
+(b) In the momentum representation $$\hat{p} \to p$$ and $$\hat{z} \to i\hbar\frac{\partial}{\partial p}$$ so the Schrodinger equation $$H\lvert \psi \rangle = E\lvert \psi \rangle$$ reads:
+
+$$
+\color{blue}{\left(\frac{p^2}{2m} + mgi\frac{\partial}{\partial p})\tilde{\psi}(p) = E\tilde{\psi}(p)}
+$$
+
+with $$\tilde{\psi}(p)$$ the momentum eigenfunctions. Using the provided abbreviations, we write the above as:
+
+$$
+\frac{\partial}{\partial p}\tilde{\psi}(p) = -i\left(l\lambda - l^3p^2\right)\tilde{\psi}(p)
+$$
+
+This can be solved by inspection:
+
+$$
+\color{blue}{\tilde{\psi}(p) = \exp(-i(l\lambda p - \frac{1}{3}l^3p^3)).}
+$$
+
+(c) The position eigenfunctions can be obtained via a Fourier transform:
+
+$$
+\psi(x) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty e^{ipx}\tilde{\psi}(p)dp = \frac{1}{2\pi}\int_{-\infty}^\infty \exp(i(-(l\lambda - x)p + \frac{1}{3}l^3p^3))
+$$
+
+Substituting $$u = lp$$ the above can be written in terms of the Airy function:
+
+$$
+\tilde{\psi(x) = \frac{\sqrt{2\pi}}{l}\text{Ai}(\frac{x}{l} - \lambda).}
+$$
+
+(d) Using the boundary condition of $$\psi(0) = 0$$, we find the transcendental equation:
+
+$$
+\color{blue}{\text{Ai}(-\lambda) = 0}
+$$
+ 
+Thus based on the zeros $$-\lambda_n$$ of the Airy function (which can be found numerically), we can invert the defining relation of $$\lambda$$ to find the energies:
+
+$$
+\color{blue}{E_n = -\sqrt[3]{\frac{mg^2}{2}}\lambda_n.}
+$$
+
+Note that the energies will be positive as the roots of the Airy function are negative.
 
 ### Rigid Rotor in Magnetic Field <a id="rigidrotor" name="rigidrotor"></a>
 **Source:** UBC PHYS 402 2022 Final Q4
@@ -397,7 +803,7 @@ $$
 
 *(c) Compute the entropy as a function of temperature. Compute and explain the limiting value of the entropy in the extreme limits of $$T \to 0, \infty$$?*
 
-**Solution:** The thermal equilibrium state is given by (working in units with $$ = 1$$):
+**Solution:** The thermal equilibrium state is given by (working in units with $$k_B = 1$$):
 
 $$
 \rho_T = \frac{e^{-H/T}}{Z} = \frac{1}{e^{-\frac{g\mu_B B}{T}} + e^{\frac{g\mu_B B}{T}}}\begin{pmatrix} e^{\frac{g\mu_B B}{T}} & 0 \\ 0 & e^{-\frac{g\mu_B B}{T}} \end{pmatrix} = \frac{1}{2\cosh(\frac{g\mu_B B}{T})} \begin{pmatrix} e^{\frac{g\mu_B B}{T}} & 0 \\ 0 & e^{-\frac{g\mu_B B}{T}}\end{pmatrix}.
