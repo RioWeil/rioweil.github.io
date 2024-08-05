@@ -450,7 +450,7 @@ $$
 \color{blue}{T' = \sqrt{10}T.}
 $$
 
-(d) At zero temperature, the atom is in the ground state with $$E_{0} = \frac{3}{2}\hbar\omega$$. The $$x$$ and $$y$$ components of the state (and thus the energy contributions) are unchanged by the turning on of $$V_a$$, but the $$z$$ component is; namely, we note that only odd parity eigenstates (i.e. odd $$n_z$$) are allowed with the infinite potential in half space (as there must be a node in the wavefunction at $$x = 0$$. These odd parity eigenstates form a complete basis of functions for the half-space of $$z < 0$$.) Thus the lowest energy eigenstate after $$V_a$$ is fully switched on is that with $$n_x = n_y = 0$$ and $$n_z = 1$$ (the lowest energy odd parity eigenstate in $$z$$) and thus the ground state energy becomes $$E_0 = \frac{5}{2}\hbar\omega$$. Thus work of $$\text{color}{W = \hbar\omega}$$ is done on the atom.
+(d) At zero temperature, the atom is in the ground state with $$E_{0} = \frac{3}{2}\hbar\omega$$. The $$x$$ and $$y$$ components of the state (and thus the energy contributions) are unchanged by the turning on of $$V_a$$, but the $$z$$ component is; namely, we note that only odd parity eigenstates (i.e. odd $$n_z$$) are allowed with the infinite potential in half space (as there must be a node in the wavefunction at $$x = 0$$. These odd parity eigenstates form a complete basis of functions for the half-space of $$z < 0$$.) Thus the lowest energy eigenstate after $$V_a$$ is fully switched on is that with $$n_x = n_y = 0$$ and $$n_z = 1$$ (the lowest energy odd parity eigenstate in $$z$$) and thus the ground state energy becomes $$E_0 = \frac{5}{2}\hbar\omega$$. Thus work of $$\color{blue}{W = \hbar\omega}$$ is done on the atom.
 
 (e) If the potential is suddenly switched off, the quantum state of the atom has no time to react to the changing Hamiltonian, and thus stays in the $$\lvert n_x=0, n_y = 0, n_z = 1 \rangle$$ state with energy $$\frac{5}{2}\hbar\omega$$. Thus, <span style="color:blue">no work is done.</span>
 
@@ -782,7 +782,7 @@ $$
   a^\dagger = \sqrt{\frac{m\omega}{2}}(x - i\frac{p}{m\omega}).
 $$
 
-$$a^\dagger$$ is linear in $$x, p$$ and so $$Pa^\dagger = -a^\dagger$$, and more generally $$P (a^\dagger)^n = (-1)^n (a^\dagger)^n$$. Noting that $$\ket{0}$$ has even parity (its wavefunction is a Gaussian symmetric about $$x = 0$$), the parity of $$\ket{n} = \frac{1}{\sqrt(n+1)!}(a^\dagger)^n\ket{0}$$ is therefore $\color{blue}{(-1)^n}$.
+$$a^\dagger$$ is linear in $$x, p$$ and so $$Pa^\dagger = -a^\dagger$$, and more generally $$P (a^\dagger)^n = (-1)^n (a^\dagger)^n$$. Noting that $$\ket{0}$$ has even parity (its wavefunction is a Gaussian symmetric about $$x = 0$$), the parity of $$\ket{n} = \frac{1}{\sqrt(n+1)!}(a^\dagger)^n\ket{0}$$ is therefore $$\color{blue}{(-1)^n}$$.
 
 Next, note that $$V_4 = \alpha x^4$$ commutes with $$P$$ as it is even in $$x$$. Therefore, $$[P, H_{\text{SHO}} + V_4] = 0$$ and since the ground state $$\ket{0}$$ and first excited state $$\ket{1}$$ of the harmonic oscillator have different parities, by our result in (a) <span style="color:blue">the transition amplitude vanishes.</span>
 
@@ -1203,7 +1203,7 @@ $$
 Carrying out the integral:
 
 $$
-p_{0 \to 1}(t) =  \frac{F_0^2\hbar^2}{2m\omega} \lvert \frac{exp(-(i\omega + \frac{1}{\tau})t) - 1}{i\omega + \frac{1}{\tau}} \rvert^2
+p_{0 \to 1}(t) =  \frac{F_0^2\hbar^2}{2m\omega} \lvert \frac{\exp(-(i\omega + \frac{1}{\tau})t) - 1}{i\omega + \frac{1}{\tau}} \rvert^2
 $$
 
 Computing the modulus squared we conclude:
