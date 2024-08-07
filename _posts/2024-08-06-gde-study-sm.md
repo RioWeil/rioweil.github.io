@@ -114,7 +114,7 @@ $$
 dF = dU - TdS - SdT = (-PdV + TdS) - TdS - SdT = -pdV - SdT.
 $$
 
-From this expression we find that $$\left(\frac{\partial F}{\partial T})_V = -S$$ and $$\left(\frac{\partial F}{\partial V})_T = -P$$, and via the equality of partial derivatives we obtain the Maxwell relation:
+From this expression we find that $$\left(\frac{\partial F}{\partial T}\right)_V = -S$$ and $$\left(\frac{\partial F}{\partial V}\right)_T = -P$$, and via the equality of partial derivatives we obtain the Maxwell relation:
 
 $$
 \left(\frac{\partial S}{\partial V}\right)_{T} = \left(\frac{\partial P}{\partial T}\right)_{V}.
@@ -123,13 +123,13 @@ $$
 The RHS we can compute for Eq. \eqref{eq:nonidealgas} via the quotient rule:
 
 $$
-\left(\frac{\partial P}{\partial T}\right)_{V} = Nk\left(\frac{V + \frac{3a}{T^2}}{(V + \frac{a}{T})^2})
+\left(\frac{\partial P}{\partial T}\right)_{V} = Nk\left(\frac{V + \frac{3a}{T^2}}{(V + \frac{a}{T})^2}\right)
 $$
 
 so by substituting into our initial expression we conclude:
 
 $$
-\color{blue}{\left(\frac{\partial E}{\partial V}\right)_{T} = -P + NkT\left(\frac{V + \frac{3a}{T^2}}{(V + \frac{a}{T})^2}).}
+\color{blue}{\left(\frac{\partial E}{\partial V}\right)_{T} = -P + NkT\left(\frac{V + \frac{3a}{T^2}}{(V + \frac{a}{T})^2}\right).}
 $$
 
 In the case of an ideal gas, we have that $$\color{blue}{\left(\frac{\partial E}{\partial V}\right)_{T} = 0}$$ as the internal energy of an ideal gas only depends on temperature; we can also recover this from the general expression we have derived by setting $$a=0$$:
@@ -198,13 +198,13 @@ $$
 which substituting in $$Z$$ and carrying out the computation we obtain:
 
 $$
-S = Nk_B\left[\ln(1 + 2\cosh(\frac{\mu B}{k_B T})) - \frac{2\mu B}{k_B T}\frac{\sinh(\frac{\mu B}{k_B T})}{1 + 2\cosh(\frac{\mu B}{k_B T})}]
+S = Nk_B\left[\ln(1 + 2\cosh(\frac{\mu B}{k_B T})) - \frac{2\mu B}{k_B T}\frac{\sinh(\frac{\mu B}{k_B T})}{1 + 2\cosh(\frac{\mu B}{k_B T})}\right]
 $$
 
 As $$T \to 0$$ we find that $$\cosh(\frac{\mu B}{k_B T}) \to \frac{e^{\frac{\mu B}{k_B T}}}{2}$$, $$\sinh(\frac{\mu B}{k_B T}) \to \frac{e^{\frac{\mu B}{k_B T}}}{2}$$ and the above becomes:
 
 $$
-\color{blue}{\lim_{T \to 0}S = Nk_B\left(\frac{\mu B}{k_B T} - \frac{\mu B}{k_B T}) = 0}
+\color{blue}{\lim_{T \to 0}S = Nk_B\left(\frac{\mu B}{k_B T} - \frac{\mu B}{k_B T}\right) = 0}
 $$
 
 which makes physical sense as at $$T = 0$$ all the spins are in the ground state of $$s_{z} = 1$$ with unit probability and therefore each has entropy zero. As $$T \to \infty$$, $$\cosh(\frac{\mu B}{k_B T}) \to 1$$ and $$\sinh(\frac{\mu B}{k_B T}) \to \frac{\mu B}{k_B T} \to 0 $$ and so taking the limit:
@@ -238,7 +238,7 @@ so the Curie law is satisfied with $$\color{blue}{c = \frac{2}{3}\frac{\mu^2N}{k
 
 *(b) Calculate the average values $$\langle n_R \rangle, \langle n_R^2 \rangle$$, and the dispersion $$\langle \Delta n_R^2 \rangle = \langle (n_R - \langle n_R \rangle)^2 \rangle$$.*
 
-*(c)Show that for very large $$N$ the probability of taking $$n_R$$ steps to the right has the form:*
+*(c)Show that for very large $$N$$ the probability of taking $$n_R$$ steps to the right has the form:*
 
 \begin{equation}\label{eq:Gaussianrwalk}
     C\exp(-\frac{(n_R - x)^2}{y})
@@ -324,10 +324,10 @@ $$
 Using the Sterling approximation, the above becomes:
 
 $$
-\ln(P(n)) = N\ln N - N - \frac{N + n}{2}\ln(\frac{N + n}{2}) + \frac{N + n}{2} - \frac{N - n}{2}\ln(\frac{N - n}{2}) + \frac{N - n}{2} + \frac{N + n}{2}\ln(\frac{1}{2} + r) + \frac{N-n}{2}\ln(\frac{1}{2} - r)
+\ln(P(n)) = N\ln N - \frac{N + n}{2}\ln(\frac{N + n}{2}) - \frac{N - n}{2}\ln(\frac{N - n}{2}) + \frac{N + n}{2}\ln(\frac{1}{2} + r) + \frac{N-n}{2}\ln(\frac{1}{2} - r)
 $$
 
-Now using the second-order Taylor expansion of the logarithm, we note that:
+where we note the cancellation of $$N - \frac{N + n}{2} - \frac{N - n}{2} = 0$$.  Now using the second-order Taylor expansion of the logarithm, we note that:
 
 $$
 \ln(\frac{N \pm n}{2}) \approx \ln(\frac{N}{2}) \pm \frac{n}{N} - \frac{1}{2}\left(\frac{n}{N}\right)^2
@@ -366,7 +366,7 @@ $$
 so the claim is proven, with:
 
 $$
-\color{blue}{C = 1, x = Np, y = \frac{N}{2}.}
+\color{blue}{C = 1, \quad x = Np, \quad y = \frac{N}{2}.}
 $$
 
 #### Bose and Fermi Gases <a id="problem-sm-bosefermigases" name="problem-sm-bosefermigases"></a>
@@ -390,9 +390,9 @@ Z = \sum_{\text{states}} e^{-E_{\text{tot}}/k_B T}
 
 *(c) Now consider a gas of electrons and positrons confined to a box of volume $$V$$. Assume the temperature satisfies $$k_B T \gg m_e c^2$$, where $$m_e$$ is the mass of the electron, so that electrons and positrons can be treated as ultra-relativistic particles with dispersion relation $$E = \hbar c \lvert \vec{k} \rvert$$. Suppose also that both particles are at vanishing chemical potential $$\mu_{e^-} = \mu_{e^+} = 0$$. As in part (b), write down an integral expression for the free energy $$F_e$$ of the electron/positron gas of the form:*
 
-$$
+\begin{equation}\label{eq:epgasF}
 F_e(V, T) = \int d^3\vec{k} h(\lvert \vec{k} \rvert)
-$$
+\end{equation}
 
 *and find the function $$h$$. You can treat the electrons and positrons as non-interacting particles.*
 
@@ -400,7 +400,7 @@ $$
 
 \begin{equation}\label{eq:gasFs}
 F_{ph}(V, T) = -\frac{\pi^2}{45}\frac{(k_BT)^4}{(\hbar c)^3}V, \quad F_{e}(V, T) = -\frac{7\pi^2}{180}\frac{(k_BT)^4}{(\hbar c)^3}V,
-\end{equations}
+\end{equation}
 
 *Imagine we have a box containing a mixture of electrons, positrons, and photons with $$\mu_{e^-} = \mu_{e^+} = 0$$. We slowly compress the box from an initial volume $$V_i$$ to a final volume $$V_f$$, while keeping it thermally insulated during the process. Suppose that the initial temperature satisfies $$k_BT_i \ll m_e c^2$$ so that only photons significantly contribute to its contents, while the final temperature satisfies $$k_B T_f \gg m_e c^2$$ so that the final mixture includes both photons and ultra-relativistic electrons and positrons. Find the final temperature $$T_f$$.*
 
@@ -425,7 +425,7 @@ $$
 (b) Denoting $$n_{\alpha}(\vec{k})$$ as the number of photons with polarization $$\alpha$$ and wavevector $$\vec{k}$$, the Hamiltonian of the system can be written as:
 
 $$
-H = \sum_{\{n_\alpha(\vec{k})\}} \hbar c \lvert \vec{k} \rvert \left(n_{\alpha}(\vec{k}) + \frac{1}{2})
+H = \sum_{\{n_\alpha(\vec{k})\}} \hbar c \lvert \vec{k} \rvert \left(n_{\alpha}(\vec{k}) + \frac{1}{2}\right)
 $$
 
 The (grand) partition function for this system is then:
@@ -474,7 +474,7 @@ $$
 
 with the integrand as $$h(\lvert \vec{k} \rvert)$$. 
 
-(d) Since the box is kept thermally insulated through the compression, $$\Delta F = 0$$ through the evolution. At the initial temperature/pressure we just have the photon contribution:
+(d) Since the box is kept thermally insulated through the compression, $$\Delta F = 0$$ through the evolution. We use Eq. \eqref{eq:gasFs} for the free energies. At the initial temperature/pressure we just have the photon contribution:
 
 $$
 F_i = -\frac{\pi^2}{45}\frac{(k_B T_i)^4}{(\hbar c)^3}V_i
