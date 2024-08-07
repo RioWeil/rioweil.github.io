@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "UChicago Graduate Diagnostic Exam Prep - Statistical Mechanics"
-date: 2024-08-06
+date: 2024-08-07
 description: Interesting statistical mechanics problems solved while studying for the graduate diagnostic exam.
 categories: physics uchicago
 ---
-**July 18, 2024.** *Before the start of my PhD program at UChicago this fall, there is a diagnostic exam to test knowledge/ability in the core subjects of classical mechanics, electromagnetism, quantum mechanics, and statistical mechanics. Here, I share some interesting problems and solutions I came across while preparing for this exam. This is the second post in this series, where I go through statistical mechanics problems.*
+**August 7, 2024.** *Before the start of my PhD program at UChicago this fall, there is a diagnostic exam to test knowledge/ability in the core subjects of classical mechanics, electromagnetism, quantum mechanics, and statistical mechanics. Here, I share some interesting problems and solutions I came across while preparing for this exam. This is the second post in this series, where I go through statistical mechanics problems.*
 
 ### Contents
 - <a href="#problem-sm-lennardjonescrystal" name="#problem-sm-lennardjonescrystal"> Lennard-Jones Crystal</a>
