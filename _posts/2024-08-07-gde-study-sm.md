@@ -85,7 +85,7 @@ $$
 #### Non-Ideal Gas <a id="problem-sm-nonidealgas" name="problem-sm-nonidealgas"></a>
 **Source:** UChicago 2014 Statistical Mechanics Graduate Diagnostic Exam Q1
 
-**Problem Statement:** *Consider a gas with the equation of state relating the pressure $$P$$ to the volume $$V$$, temperature $$T$$ and the number of moles $$N$:*
+**Problem Statement:** *Consider a gas with the equation of state relating the pressure $$P$$ to the volume $$V$$, temperature $$T$$ and the number of moles $$N$$:*
 
 \begin{equation}\label{eq:nonidealgas}
     p = \frac{NkT}{V + a/T^2}.
@@ -247,7 +247,7 @@ so the Curie law is satisfied with $$\color{blue}{c = \frac{2}{3}\frac{\mu^2N}{k
 *and determine $$C, x, y$$ in terms of $$N, p$$. You may find Stirling's approximation useful:*
 
 \begin{equation}\label{eq:Stirling}
-    \log N! \approx N\log N  N, \quad N \gg 1
+    \log N! \approx N\log N - N, \quad N \gg 1
 \end{equation}
 
 **Solution:** (a) Note that throughout we abuse notation and use $$n_R$$ to denote both a number of steps right and the random variable corresponding to the number of steps right. It will be generally clear from context which is meant. There are $$\binom{N}{n_R}$$ ways to choose $$n_R$$ steps out of $$N$$ to be to the right, and each has probability $$p^{n_R}(1-p)^{N - n_R}$$. Thus:
