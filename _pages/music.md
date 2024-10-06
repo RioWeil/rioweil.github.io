@@ -22,7 +22,11 @@ nav: false
 
 ##### Matsuri (opb. Fujii Kaze)
 - **Files:** [PDF](/assets/pdf/music/Matsuri-FujiiKaze.pdf) - [Musescore](/assets/pdf/music/Matsuri-FujiiKaze.mscz)
-- **Description:** A SATB arrangement of [まつり (Matsuri)](https://www.youtube.com/watch?v=NwOvu-j_WjY) by Fujii Kaze, co-arranged with Lisa Li. The English version is based on the [cover](https://www.youtube.com/watch?v=NwOvu-j_WjY) by Will Stetson. A performance of the arrangement by my a cappella group Choral Reef can be found [here](https://youtu.be/V1FTrZg6yUs?si=0xNoZks8KjzXxvl0).
+- **Description:** A SATB arrangement of [まつり (Matsuri)](https://www.youtube.com/watch?v=NwOvu-j_WjY) by Fujii Kaze, co-arranged with Lisa Li. The English version is based on the [cover](https://www.youtube.com/watch?v=NwOvu-j_WjY) by Will Stetson. A performance of the arrangement with my (former) cappella group Choral Reef can be found [here](https://youtu.be/V1FTrZg6yUs?si=0xNoZks8KjzXxvl0).
+
+##### Midnight Plastic Love (opb. Mariya Takeuchi & Miki Matsubara)
+- **Files:** [PDF](/assets/pdf/music/MidnightPlasticLove-MariyaTakeuchi+MikiMatsubara.pdf) - [Musescore](/assets/pdf/music/MidnightPlasticLove-MariyaTakeuchi+MikiMatsubara.mscz)
+- **Description:** A SATB mash-up of [Plastic Love](https://www.youtube.com/watch?v=T_lC2O1oIew) by Mariya Takeuchi and [Stay With Me](https://www.youtube.com/watch?v=lags8E4hvow) by Miki Matsubara. The English translations are based on the covers (([Plastic Love](https://www.youtube.com/watch?v=vunm-W-ovLc)), ([Stay With Me](https://www.youtube.com/watch?v=xZ4p3PsGGA0))) by Caitlyn Myers.
 
 ##### Racing Into the Night (opb. YOASOBI)
 - **Files:** [PDF](/assets/pdf/music/RacingIntotheNight-YOASOBI.pdf) - [Musescore](/assets/pdf/music/RacingIntotheNight-YOASOBI.mscz)
@@ -34,7 +38,7 @@ nav: false
 
 ##### Seasons of Love (opb. Original Broadway Cast of Rent)
 - **Files:** [PDF](/assets/pdf/music/SeasonsofLove-OriginalBroadwayCastofRent.pdf) - [Musescore](/assets/pdf/music/SeasonsofLove-OriginalBroadwayCastofRent.mscz)
-- **Description:** An SATBarB arrangement of [Seasons of Love](https://www.youtube.com/watch?v=hj7LRuusFqo) by the Original Broadway Cast of Rent. The arrangement is a transcription/edit of Sinfonia's [A capella cover](https://www.youtube.com/watch?v=udtJSgOds0s). A performance of the arrangement by my a cappella group Choral Reef can be found [here](https://www.youtube.com/watch?v=sfmHd9AKK4w).
+- **Description:** An SATBarB arrangement of [Seasons of Love](https://www.youtube.com/watch?v=hj7LRuusFqo) by the Original Broadway Cast of Rent. The arrangement is a transcription/edit of Sinfonia's [A capella cover](https://www.youtube.com/watch?v=udtJSgOds0s). A performance of the arrangement by my (former) a cappella group Choral Reef can be found [here](https://www.youtube.com/watch?v=sfmHd9AKK4w).
 
 ##### Universe (opb. Official 髭男dism)
 - **Files:** [PDF](/assets/pdf/music/Universe-Official髭男dism.pdf) - [Musescore](/assets/pdf/music/Universe-Official髭男dism.mscz)
