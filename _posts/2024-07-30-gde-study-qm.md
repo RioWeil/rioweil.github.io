@@ -598,16 +598,16 @@ $$
 D = \frac{2\sqrt{2}\pi L}{\sqrt{mE}d}
 $$
 
-$$D \propto \frac{1}{d}$$ and so to minimize the size of the spot we take $$d$$ as large as possible. The constraint is with our initial assumption of $$\psi(x)$$ uniform across the hole only applies if $$d \leq 2a_0$$, so we substituting in this value we conclude:
+$$D \propto \frac{1}{d}$$ and so to minimize the size of the spot we take $$d$$ as large as possible. The constraint is with our initial assumption of $$\psi(x)$$ uniform across the hole only applies if $$d \leq 2a_0$$, so $$D$$ is minimized at $$d = 2a_0$$ where it has the minimum value:
 
 $$
-\color{blue}{D \leq \frac{\sqrt{2} \pi L}{\sqrt{m E} a_0}.}
+\color{blue}{D = \frac{\sqrt{2} \pi L}{\sqrt{m E} a_0}.}
 $$
 
 ### Gravitational Potential <a id="gravpotential" name="gravpotential"></a>
 **Source:** UBC Fall 2005 Physics Qualifying Exam Q6
 
-**Problem Statement:** *A particle of mass $$m$$ is restricted to move in the vertical direction in the Earth's gravitational field. Assume tht the surface of the Earth reflects this particle elastically (like a steel ball falling on a surface of glass) and go through the following steps to quantize the energy of the motion using the momentum representation instead of the position representation. Set $$\hbar = 1$$ throughout for convenience.
+**Problem Statement:** *A particle of mass $$m$$ is restricted to move in the vertical direction in the Earth's gravitational field. Assume tht the surface of the Earth reflects this particle elastically (like a steel ball falling on a surface of glass) and go through the following steps to quantize the energy of the motion using the momentum representation instead of the position representation. Set $$\hbar = 1$$ throughout for convenience.*
 
 *(a) Set up the Hamiltonian, assuming that the gravitational potential is zero on the surface of the Earth.*
 
@@ -1258,7 +1258,7 @@ Note: We could reach the same conclusion by observing that the eigenstates of th
 **Problem Statement:** *Consider a one-dimensional chain of $$N$$ spin-1/2 particles coupled through the Hamiltonian*
 
 \begin{equation}\label{eq:heisenbergchain}
-H = J \sum_{i=1}^{N-1}\vec{S}_i \cdot \vec{S}_{i+1}
+    H = J\sum_{i=1}^{N-1}\vec{S}_{i} \cdot \vec{S}_{i+1}
 \end{equation}
 
 *where $$\vec{S} = (S_x, S_y, S_z)$$ are the usual spin operators for a spin-1/2 particle, $$J > 0$$ is a positive constant, and $$N \gg 1$$.*
