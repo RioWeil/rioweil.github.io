@@ -168,6 +168,18 @@ categories: misc
 - **Decor:** Inside of a repurposed old barnhouse building; very open.
 - **Studying Potential:** A good south-side campus study spot.
 
+#### C41
+- **Location:** Kitsilano - [Google Maps](https://maps.app.goo.gl/qyfreqB4v6pon3V39 )
+- **Coffee:** Had a choice between darker/lighter roast, went for the lighter. The coffee was just OK, pretty standard.
+- **Decor:** Comfy, woody neighbourhood spot.
+- **Studying Potential:** Seems like it could be a good study location, particularly given its relative proximity to campus.
+
+#### Comma Cafe
+- **Location:** Shaughnessy - [Google Maps](https://maps.app.goo.gl/nuJ5ZJxGDtJuLvyEA)
+- **Coffee:** Pretty decent, a mix of roasty and acidic.
+- **Decor:** Bright and open, a cross between picnic/camping and child's bedroom.
+- **Studying Potential:** Fairly spatious, works as a study spot!
+
 #### Craft Cafe
 - **Location:** New Westminster - [Google Maps](https://maps.app.goo.gl/A1bambMJziqtTifi6)
 - **Coffee:** Smooth, with little bitterness or acidity.
@@ -247,6 +259,12 @@ categories: misc
 - **Decor:** Low-key hole-in-the-wall cafe/restaurant.
 - **Studying Potential:** The fact that it is a restaurant more than a cafe makes this not the best suited for studying. 
 
+#### Matchstick
+- **Location:** Yaletown - [Google Maps](https://maps.app.goo.gl/RWFAr3pLZZJvRtV37)
+- **Coffee:** Chocolatey with minimal acidity, fairly standard, though good.
+- **Decor:** Wood, white, and mint green with colourful art.
+- **Studying Potential:** Could work as a study space - good selection of seating.
+
 #### Modus
 - **Location:** Mount Pleasant - [Google Maps](https://maps.app.goo.gl/WgakXs1k4PKNphNB9)
 - **Coffee:** Pretty good coffee, on the quite fruity/acidic side.
@@ -277,11 +295,11 @@ categories: misc
 - **Decor:** Bright and open.
 - **Studying Potential:** Can get a little bit busy/loud (in the heart of Steveston), but can work as a study spot!
 
-#### Matchstick
-- **Location:** Yaletown - [Google Maps](https://maps.app.goo.gl/RWFAr3pLZZJvRtV37)
-- **Coffee:** Chocolatey with minimal acidity, fairly standard, though good.
-- **Decor:** Wood, white, and mint green with colourful art.
-- **Studying Potential:** Could work as a study space - good selection of seating.
+#### Sweet Barrel
+- **Location:** Kitsilano - [Google Maps](https://maps.app.goo.gl/KLtz966PL3vqig859)
+- **Coffee:** Roasts their own beans and makes their own ice cream! Pretty standard chocolaty profile, nothing special, though pretty good.
+- **Decor:** Woody dark industrial aesthetic.
+- **Studying Potential:** A couple tables but it leans a bit more creamery than cafe so maybe better as a social dessert place than for study.
 
 #### To Live For
 - **Location:** Grandview-Woodland - [Google Maps](https://maps.app.goo.gl/vuw4peyazVVV23cu6)
@@ -295,24 +313,6 @@ categories: misc
 - **Coffee:** Roasts beans in-house. Smooth with a roasty tail end and a touch of fruitiness
 - **Decor:** Very classic dark woody vibes.
 - **Studying Potential:** Has quite a couple tables that would be good for self-study.
-
-#### Sweet Barrel
-- **Location:** Kitsilano - [Google Maps](https://maps.app.goo.gl/KLtz966PL3vqig859)
-- **Coffee:** Roasts their own beans and makes their own ice cream! Pretty standard chocolaty profile, nothing special, though pretty good.
-- **Decor:** Woody dark industrial aesthetic.
-- **Studying Potential:** A couple tables but it leans a bit more creamery than cafe so maybe better as a social dessert place than for study.
-
-#### Comma Cafe
-- **Location:** Shaughnessy - [Google Maps](https://maps.app.goo.gl/nuJ5ZJxGDtJuLvyEA)
-- **Coffee:** Pretty decent, a mix of roasty and acidic.
-- **Decor:** Bright and open, a cross between picnic/camping and child's bedroom.
-- **Studying Potential:** Fairly spatious, works as a study spot!
-
-#### C41
-- **Location:** Kitsilano - [Google Maps](https://maps.app.goo.gl/qyfreqB4v6pon3V39 )
-- **Coffee:** Had a choice between darker/lighter roast, went for the lighter. The coffee was just OK, pretty standard.
-- **Decor:** Comfy, woody neighbourhood spot.
-- **Studying Potential:** Seems like it could be a good study location, particularly given its relative proximity to campus.
 
 ### C-tier (OK - Not particularly recommended)
 
