@@ -24,9 +24,9 @@ Below are solutions to textbooks I have worked through. Please send me an [email
 | 5       |           |          |
 | 6       |           |          |
 | 7       |           |          |
-| 8       |           |          |
+| 8       | P         | X        |
 | 9       |           |          |
-| 10      | P         |  P       |
+| 10      | P         | P        |
 | 11      |           |          |
 | 12      |           |          |
 | A1      | X         | N/A      |
