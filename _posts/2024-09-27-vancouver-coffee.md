@@ -123,12 +123,6 @@ categories: misc
 - **Decor:** Very cute neighbourhood cornerstore X coffeeshop aesthetic.
 - **Studying Potential:** A bit small but on a nice day could be nice to get a table outside and work for a bit!
 
-#### Milano
-- **Location:** Mount Pleasant - [Google Maps](https://maps.app.goo.gl/QqL5d1VGuYWsgeA76)
-- **Coffee:** Good (but not overwhelming) selection of house roasts, with an options for espresso flights to compare. Cappuccino was chocolatey and tasty.
-- **Decor:** Cozy Woody/plant vibes, like a spatious living room.
-- **Studying Potential:** Has enough seating combining outside/inside, can be a good spot!
-
 #### Sanctuary Cafe
 - **Location:** Richmond-Steveston - [Google Maps](https://maps.app.goo.gl/J8dB7MBY2yZwg4co9)
 - **Coffee:** Straddles acidity/brightness and bitterness, making for a nice balance.
@@ -264,6 +258,12 @@ categories: misc
 - **Coffee:** Chocolatey with minimal acidity, fairly standard, though good.
 - **Decor:** Wood, white, and mint green with colourful art.
 - **Studying Potential:** Could work as a study space - good selection of seating.
+
+#### Milano
+- **Location:** Mount Pleasant - [Google Maps](https://maps.app.goo.gl/QqL5d1VGuYWsgeA76)
+- **Coffee:** Good (but not overwhelming) selection of house roasts, with an options for espresso flights to compare. Cappuccino was chocolatey and tasty. On a revisit, flat white was fairly generically roasty/a bit bitter.
+- **Decor:** Cozy Woody/plant vibes, like a spatious living room.
+- **Studying Potential:** Has enough seating combining outside/inside, can be a good spot!
 
 #### Modus
 - **Location:** Mount Pleasant - [Google Maps](https://maps.app.goo.gl/WgakXs1k4PKNphNB9)
