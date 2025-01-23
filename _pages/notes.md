@@ -10,12 +10,12 @@ Below are lecture notes for courses I have taken and/or TA'd. Please send me an 
 ## UChicago
 ### Advanced Statistical Mechanics (PHYS 353)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-asm-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS353-notes)
-- **Description:** Notes taken (live) from UChicagos's PHYS 353. The course covers statistical field theory and advanced topics.
+- **Description:** Notes taken (live) from UChicagos's PHYS 353. The course covers statistical field theory and advanced topics, and uses Mehran Kardar's *Statistical Physics of Fields* as the primary textbook.
 - **Topics Covered:** The discrete to continuous transition, the ferromagnetic and antiferromagnetic Heisenberg chain, Ginzburg-Landau Theory, Fluctuations, The Scaling Hypothesis, The Renormalization Group, Perturbative RG, Continuous Symmetries, the non-linear sigma model, the 2-D XY model, Disorder and random system, Random fields, Spin glasses, Replica symmetry breaking, Neural networks and Boltzmann machines, and Non-equilibrium dynamics.
 
 ### Quantum Field Theory I (PHYS 443)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-qft1-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS443-notes)
-- **Description:** Notes taken (live) from UChicago's PHYS 443. The course covers various aspects of scalar field theory.
+- **Description:** Notes taken (live) from UChicago's PHYS 443. The course covers various aspects of scalar field theory, and uses Mark Srednicki's *Quantum Field Theory* as the primary textbook.
 - **Topics Covered:** The classical to quantum transition, Free scalar field theory, Lorentz Invariance, Symmetries, Correlation functions, The path integral formalism, Wick’s theorem, Noether's theorem and Ward identities, Interacting theories, Counterterms, The renormalization group, Scattering and the LSZ formula, The S-matrix and particle cross-sections.
 
 
