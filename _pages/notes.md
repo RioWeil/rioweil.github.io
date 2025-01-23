@@ -21,25 +21,31 @@ Below are lecture notes for courses I have taken and/or TA'd. Please send me an 
 
 ## UBC
 
-### Graduate Statistical Mechanics (PHYS 516)
+### Quantum Algorithms (PHYS 536W)
+- **Files:** [PDF](/assets/pdf/projects/notes/qalgos-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/CPSC536-notes)
+- **Description:** Notes taken (live) from UBC's CPSC 536W. The course is a topics course in quantum algorithms, and uses Andrew Child's *Lecture Notes on Quantum Algorithms* as the primary reference.
+- **Topics Covered:** Formalism of quantum mechanics, Classical and quantum query complexity, Time complexity, Simon's problem, Period finding, Factoring/Shor's algorithm, The Hidden subgroup problem, The Element distinctness problem, Amplitude amplification, Quantum walks, Adversary method, Quantum divide and conquer, Hamiltonian simulation, Quantum signal processing.
+- **Pre-requisites:** Linear algebra. Quantum mechanics/information, Analysis of algorithms, and probability may also be useful.
+
+### Statistical Mechanics (PHYS 516)
 - **Files:** [PDF](/assets/pdf/projects/notes/statmech-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS516-notes)
-- **Description:** Notes taken (live) from UBC's PHYS 516. The course is a topics course in statistical mechanics.
+- **Description:** Notes taken (live) from UBC's PHYS 516. The course is a graduate course in statistical mechanics.
 - **Topics Covered:** Fundamentals of statistical mechanics, Phase transitions and critical exponents, $$D = 1,2,3$$ Ising models, mean field theory, quantum field theory, universality, renormalization, and elementary conformal field theory. 
 - **Pre-requisites:** Undergraduate statistical mechanics, thermodynamics, and quantum mechanics.
 
-### Graduate Quantum Field Theory I (PHYS 526)
+### Quantum Field Theory I (PHYS 526)
 - **Files:** [PDF](/assets/pdf/projects/notes/qft-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS526-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 526. The course is a first course in graduate quantum field theory, and uses Gordon Semenoff's *Quantum Field Theory: A Physicist’s Introduction* as the primary textbook.
 - **Topics Covered:** Many-particle systems, Second Quantization, Symmetries and Noether's theorem, Space-time symmetries, Scalar/Tensor/Vector fields, Emergent relativistic QFT, Dirac equation and Dirac QFT, Photons, Quantum Electrodynamics, Functional methods, Perturbation theory, Feynman diagrams, Renormalization of QED. 
 - **Pre-requisites:** (Advanced) undergraduate courses in quantum mechanics, special relativity, calculus, differential equations and linear algebra.
 
-### Graduate Condensed Matter Physics I (PHYS 502)
+### Condensed Matter Physics I (PHYS 502)
 - **Files:** [PDF](/assets/pdf/projects/notes/cm-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS502-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 502. The course is a first course in graduate condensed matter theory, and uses Aschroft & Mermin's *Solid State Physics* as the primary textbook.
 - **Topics Covered:** Solids as interacting quantum many-body systems, Second quantization for fermions and bosons, Electrons in solids, Boson systems, Electrons in periodic potentials, Semiclassical theory of conduction in metals, Electron-phonon interactions, Elements of superconductivity.
 - **Pre-requisites:** Undergraduate courses in solid-state physics, quantum mechanics, and statistical mechanics.
 
-### Graduate Quantum Mechanics I (PHYS 500)
+### Quantum Mechanics I (PHYS 500)
 - **Files:** [PDF](/assets/pdf/projects/notes/gquantum-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS500-notes)
 - **Description:** Notes taken (live) from UBC's PHYS 500. The course is a first course in graduate quantum mechanics, and does not follow a set textbook in particular (though primarily references Goswami's *Quantum Mechanics* and Griffith's *Introduction to Quantum Mechanics*).
 - **Topics Covered:** Angular momentum and spin, Electromagnetic interactions, Gauge invariance, Addition of angular momentum, Time-independent perturbation theory, Fine and hyperfine structure of Hydrogen, WKB approximation, Time-dependent perturbation theory, Spontaneous Emission, Electric transitions, Selection rules, Adiabatic approximation, Berry phase, Aharonov-Bohm Effect, Scattering and resonance scattering.
