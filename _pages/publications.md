@@ -10,9 +10,19 @@ nav_order: 1
 <!-- ## Publications -->
 
 ### Publications/Preprints
+- **Scaling and networking a modular photonic quantum computer**
+  - Authors: H. Aghaee Rad, T. Ainsworth, R. N. Alexander, B. Altieri, M. F. Askarani, R. Baby, L. Banchi, B. Q. Baragiola, J. E. Bourassa, R. S. Chadwick, I. Charania, H. Chen, M. J. Collins, P. Contu, N. D’Arcy, G. Dauphinais, R. De Prins, D. Deschenes, I. Di Luch, S. Duque, P. Edke, S. E. Fayer, S. Ferracin, H. Ferretti, J. Gefaell, S. Glancy, C. González-Arciniegas, T. Grainge, Z. Han, J. Hastrup, L. G. Helt, T. Hillmann, J. Hundal, S. Izumi, T. Jaeken, M. Jonas, S. Kocsis, I. Krasnokutska, M. V. Larsen, P. Laskowski, F. Laudenbach, J. Lavoie, M. Li, E. Lomonte, C. E. Lopetegui, B. Luey, A. P. Lund, C. Ma, L. S. Madsen, D. H. Mahler, L. Mantilla Calderón, M. Menotti, F. M. Miatto, B. Morrison, P. J. Nadkarni, T. Nakamura, L. Neuhaus, Z. Niu, R. Noro, K. Papirov, A. Pesah, D. S. Phillips, W. N. Plick, T. Rogalsky, F. Rortais, J. Sabines-Chesterking, S. Safavi-Bayat, E. Sazhaev, M. Seymour, K. Rezaei Shad, M. Silverman, S. A. Srinivasan, M. Stephan, Q. Y. Tang, J. F. Tasker, Y. S. Teo, R. B. Then, J. E. Tremblay, I. Tzitrin, V. D. Vaidya, M. Vasmer, Z. Vernon, L. F. S. S. M. Villalobos, B. W. Walshe, **R. Weil**, X. Xin, X. Yan, Y. Yao, M. Zamani Abnili and Y. Zhang
+  - Published article: [Nature (2025)](https://www.nature.com/articles/s41586-024-08406-9)
+
 - **Linear-optical quantum computation with arbitrary error-correcting codes**
   - Authors: Blayney W. Walshe, Ben Q. Baragiola, Hugo Ferretti, Jose Gefaell, Michael Vasmer, **Ryohei Weil**, Takaya Matsuura, Thomas Jaeken, Giacomo Pantaleoni, Zhihua Han, Nicolas C. Menicucci, Ilan Tzitrin, and Rafael N. Alexander
   - arXiv preprint: [arxiv.org:2408.04126](https://arxiv.org/abs/2408.04126)
+
+- **Staking out the Proton Drip-Line of Thulium at the $$N=82$$ Shell Closure**
+  <!--- [PDF](/assets/pdf/papers/2206.15329.pdf) -->
+  - Authors: B. Kootte, M.P. Reiter, C. Andreoiu, S. Beck, J. Bergmann, T. Brunner, T. Dickel, K.A. Dietrich, J. Dilling, E. Dunling, J. Flowerdew, L. Graham, G. Gwinner, Z. Hockenbery, C. Izzo, A. Jacobs, A. Javaji, R. Klawitter, Y. Lan, E. Leistenschneider, E.M. Lykiardopoulou, I. Miskun, I. Mukul, T. Murb ̈ock, S.F. Paul, W.R. Plaß, J. Ringuette, C. Scheidenberger, R. Silwal, R. Simpson, A. Teigelhofer, R.I. Thompson, J.L. Tracy, Jr., M. Vansteenkiste, **R. Weil**, M.E. Wieser, C. Will, and A.A. Kwiatkowski
+  <!--- - Published article: [Phys. Rev. C]-->
+  - arXiv preprint: [arxiv.org:2412.10259](https://arxiv.org/abs/2412.10259)
 
 - **Investigating nuclear structure around $$N = 32$$ and $$N = 34$$: Precision mass measurements of neutron-rich Ca, Ti and V isotopes**
   <!-- - [PDF](/assets/pdf/papers/2206.15329.pdf) -->
