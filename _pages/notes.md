@@ -5,7 +5,7 @@ title: Lecture Notes
 # description: lecture notes for courses I have taken.
 nav: false
 ---
-Below are lecture notes for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoheiweil@phas.ubc.ca) if you spot any errors!
+Below are lecture notes for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoheiweil@uchicago.edu) if you spot any errors!
 
 ## UChicago
 ### Advanced Statistical Mechanics (PHYS 353)
