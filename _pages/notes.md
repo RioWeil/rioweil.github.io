@@ -21,8 +21,8 @@ Below are lecture notes for courses I have taken and/or TA'd. Please send me an 
 
 ### Advanced Condensed Matter Physics (PHYS 366)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-advcm-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS366-notes)
-- **Description:** Notes taken (live) from UChicagos's PHYS 366. The course covers the theory of superconductivity and superfluidity.
-- **Topics Covered:** 
+- **Description:** Notes taken (live) from UChicagos's PHYS 366. The course covers the theory of superconductivity and superfluidity. 
+- **Topics Covered:** Magnetism, Mean Field Theory, Second Quantization, The Coloumb Gas, The Hubbard Model, BCS Theory, Bose Gases, Bose Superfluids, Landau-Gnsberg Theory, Gross-Pitaevskii Theory, The Proximity Effect, The Meissner Effect, The Josephson Effect.
 
 ### Quantum Field Theory I (PHYS 443)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-qft1-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS443-notes)
