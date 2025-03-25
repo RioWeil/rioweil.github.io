@@ -8,15 +8,31 @@ nav: false
 Below are lecture notes for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoheiweil@uchicago.edu) if you spot any errors!
 
 ## UChicago
-### Advanced Statistical Mechanics (PHYS 353)
-- **Files:** [PDF](/assets/pdf/projects/notes/uchi-asm-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS353-notes)
-- **Description:** Notes taken (live) from UChicagos's PHYS 353. The course covers statistical field theory and advanced topics, and uses Mehran Kardar's *Statistical Physics of Fields* as the primary textbook.
-- **Topics Covered:** The discrete to continuous transition, the ferromagnetic and antiferromagnetic Heisenberg chain, Ginzburg-Landau Theory, Fluctuations, The Scaling Hypothesis, The Renormalization Group, Perturbative RG, Continuous Symmetries, the non-linear sigma model, the 2-D XY model, Disorder and random system, Random fields, Spin glasses, Replica symmetry breaking, Neural networks and Boltzmann machines, and Non-equilibrium dynamics.
+### Quantum Field Theory II (PHYS 444)
+- **Files:** [PDF](/assets/pdf/projects/notes/uchi-qft2-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS444-notes)
+- **Description:** Notes taken (live) from UChicago's PHYS 444. The course covers fermion fields, vector fields, and QED, and uses Mark Srednicki's *Quantum Field Theory* as the primary textbook.
+- **Topics Covered:** Representations of the Lorentz group, Quantizing the Dirac field, Path integrals for fermions, Interacting fermions, Relativistic electrodynamics, Path integral for gauge fields, Radiative corrections, The electron magnetic dipole moment, Renormalization for QED, LSZ for fermions/photons, QED scattering, Soft divergences in QED, Non-Abelian gauge fields, QCD and quantizing Yang-Mills, Wilson line and loop operators.
+
+### Entanglement in Many-Body Systems (PHYS 411)
+- **Files:** [PDF](/assets/pdf/projects/notes/uchi-entanglement-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS411-notes)
+- **Description:** Notes taken (live) from UChicagos's PHYS 411. The course covers various topics at the intersection of condensed matter and quantum information theory.
+- **Topics Covered:** Toric code, Abelian anyons, Quantum double models, Non-Abelian anyons, Topological quantum computtion, Gapped phases, SPT phases, the AKLT model, Entanglement entropy in gapped and gapless systems, and topological entanglement entropy.
+
+
+### Advanced Condensed Matter Physics (PHYS 366)
+- **Files:** [PDF](/assets/pdf/projects/notes/uchi-advcm-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS366-notes)
+- **Description:** Notes taken (live) from UChicagos's PHYS 366. The course covers the theory of superconductivity and superfluidity.
+- **Topics Covered:** 
 
 ### Quantum Field Theory I (PHYS 443)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-qft1-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS443-notes)
 - **Description:** Notes taken (live) from UChicago's PHYS 443. The course covers various aspects of scalar field theory, and uses Mark Srednicki's *Quantum Field Theory* as the primary textbook.
 - **Topics Covered:** The classical to quantum transition, Free scalar field theory, Lorentz Invariance, Symmetries, Correlation functions, The path integral formalism, Wick’s theorem, Noether's theorem and Ward identities, Interacting theories, Counterterms, The renormalization group, Scattering and the LSZ formula, The S-matrix and particle cross-sections.
+
+### Advanced Statistical Mechanics (PHYS 353)
+- **Files:** [PDF](/assets/pdf/projects/notes/uchi-asm-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS353-notes)
+- **Description:** Notes taken (live) from UChicagos's PHYS 353. The course covers statistical field theory and advanced topics, and uses Mehran Kardar's *Statistical Physics of Fields* as the primary textbook.
+- **Topics Covered:** The discrete to continuous transition, the ferromagnetic and antiferromagnetic Heisenberg chain, Ginzburg-Landau Theory, Fluctuations, The Scaling Hypothesis, The Renormalization Group, Perturbative RG, Continuous Symmetries, the non-linear sigma model, the 2-D XY model, Disorder and random system, Random fields, Spin glasses, Replica symmetry breaking, Neural networks and Boltzmann machines, and Non-equilibrium dynamics.
 
 
 ## UBC
