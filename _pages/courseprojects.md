@@ -6,6 +6,10 @@ title: Course Projects
 nav: false
 ---
 
+### PHYS 334: Advanced Experimental Physics
+- **Files:** [Gamma Report](/assets/pdf/projects/courses/p334-gamma-report.pdf) - [pNMR Report](/assets/pdf/projects/courses/p334-pnmr-report.pdf) - [Xray Report](/assets/pdf/projects/courses/p334-xray-report.pdf)
+- **Description:** Reports for gamma-ray cross section, pulsed nuclear magnetic resonance, and x-ray experiments conducted for UChicago's graduate experimental physics course.
+
 ### ASTR 403: Cosmology Poster
 - **Files:** [Poster](/assets/pdf/projects/courses/a403-poster.pdf)
 - **Description:** A poster discussing the uses of the (classical) Metropolis-Hasting Algorithm and (quantum) variational eigensolver algorithms in contemporary cosmology.
