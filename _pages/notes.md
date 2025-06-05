@@ -8,16 +8,26 @@ nav: false
 Below are lecture notes for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoheiweil@uchicago.edu) if you spot any errors!
 
 ## UChicago
+
+### Many-Body Dynamics (PHYS 41120)
+- **Files:** [PDF](/assets/pdf/projects/notes/uchi-mb-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS41120-notes)
+- **Description:** Notes taken (live) from UChicagos's PHYS 41120. The course covers various research-level topics in soft matter, with a focus on non-variational and parity-breaking dynamics.
+- **Topics Covered:** Continuum mechanics, Classification of elastic moduli, Odd elastodynamics, Self-propelled particles, Odd viscosity, Turbulence, Active brownian motion and MIPS, Pattern formation, and Non-reciprocal phase transitions.
+
+### Advanced Electromagnetism (PHYS 323)
+- **Files:** [PDF](/assets/pdf/projects/notes/uchi-em2-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS323-notes)
+- **Description:** Notes taken (live) from UChicago's PHYS 323. The course covers relativistic electrodynamics, and other advanced topics in electromagnetism, and uses Bob Wald's *Advanced Classical Electromagnetism* (second half) as the primary textbook.
+- **Topics Covered:** Special relativity, Relativistic formulations of the free particle & Maxwell theory, The Lagrangian formulation of electromagnetism, Symmetries and the stress tensor, Plane waves, Charged particle motion and radiation, Radiation from continuous Sources, Electromagnetic fields in media, The Lorentz model for permittivity, Magnetohydrodynamics, and Geometric optics. 
+
 ### Quantum Field Theory II (PHYS 444)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-qft2-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS444-notes)
 - **Description:** Notes taken (live) from UChicago's PHYS 444. The course covers fermion fields, vector fields, and QED, and uses Mark Srednicki's *Quantum Field Theory* as the primary textbook.
 - **Topics Covered:** Representations of the Lorentz group, Quantizing the Dirac field, Path integrals for fermions, Interacting fermions, Relativistic electrodynamics, Path integral for gauge fields, Radiative corrections, The electron magnetic dipole moment, Renormalization for QED, LSZ for fermions/photons, QED scattering, Soft divergences in QED, Non-Abelian gauge fields, QCD and quantizing Yang-Mills, Wilson line and loop operators.
 
-### Entanglement in Many-Body Systems (PHYS 411)
+### Entanglement in Many-Body Systems (PHYS 41101)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-entanglement-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS411-notes)
 - **Description:** Notes taken (live) from UChicagos's PHYS 411. The course covers various topics at the intersection of condensed matter and quantum information theory.
 - **Topics Covered:** Toric code, Abelian anyons, Quantum double models, Non-Abelian anyons, Topological quantum computtion, Gapped phases, SPT phases, the AKLT model, Entanglement entropy in gapped and gapless systems, and topological entanglement entropy.
-
 
 ### Advanced Condensed Matter Physics (PHYS 366)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-advcm-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS366-notes)
@@ -68,10 +78,11 @@ Below are lecture notes for courses I have taken and/or TA'd. Please send me an 
 - **Pre-requisites:** One or two courses in undergraduate quantum mechanics.
 
 ### Quantum Mechanics II (PHYS 402)
-- **Files:** (Work In Progress) [TeX Source (GitHub)](https://github.com/RioWeil/PHYS402-notes)
+- **Files:** [PDF](/assets/pdf/projects/notes/quantum2-notes.pdf) [TeX Source (GitHub)](https://github.com/RioWeil/PHYS402-notes)
 - **Description:** Notes written for students of UBC's PHYS 402. The course is an advanced undergraduate course in quantum mechanics, covering portions of the first six chapters in Sakurai's *Modern Quantum Mechanics* as well as some additional topics.
 - **Topics Covered:** Fundamental concepts/formalism, Quantum dynamics, Quantum information and foundations, Symmetries, Angular momentum, Approximation methods.
 - **Pre-requisites:** A first course in quantum mechanics (covering the first four chapters of Griffith's *Introduction to Quantum Mechanics*). However, the theory is developed from the ground up, and formally one only needs linear algebra and some experience with differential equations.
+- **Remark:** At the time of writing, only the first half of the notes have been typeset (up to quantum information and foundations). Hopefully I may have time to finish to the second half.
 
 ### Real Analysis I/II (MATH 320/321)
 - **Files:** [PDF](/assets/pdf/projects/notes/analysis-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/MATH320-321-notes)
