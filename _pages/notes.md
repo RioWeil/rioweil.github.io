@@ -14,7 +14,7 @@ Below are lecture notes for courses I have taken and/or TA'd. Please send me an 
 - **Description:** Notes taken (live) from UChicagos's PHYS 41120. The course covers various research-level topics in soft matter, with a focus on non-variational and parity-breaking dynamics.
 - **Topics Covered:** Continuum mechanics, Classification of elastic moduli, Odd elastodynamics, Self-propelled particles, Odd viscosity, Turbulence, Active brownian motion and MIPS, Pattern formation, and Non-reciprocal phase transitions.
 
-### Advanced Electromagnetism (PHYS 323)
+### Advanced Electromagnetism II (PHYS 323)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-em2-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS323-notes)
 - **Description:** Notes taken (live) from UChicago's PHYS 323. The course covers relativistic electrodynamics, and other advanced topics in electromagnetism, and uses Bob Wald's *Advanced Classical Electromagnetism* (second half) as the primary textbook.
 - **Topics Covered:** Special relativity, Relativistic formulations of the free particle & Maxwell theory, The Lagrangian formulation of electromagnetism, Symmetries and the stress tensor, Plane waves, Charged particle motion and radiation, Radiation from continuous Sources, Electromagnetic fields in media, The Lorentz model for permittivity, Magnetohydrodynamics, and Geometric optics. 
