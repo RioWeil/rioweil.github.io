@@ -16,19 +16,19 @@ nav_order: 1
 
 - **Linear-optical quantum computation with arbitrary error-correcting codes**
   - Authors: Blayney W. Walshe, Ben Q. Baragiola, Hugo Ferretti, Jose Gefaell, Michael Vasmer, **Ryohei Weil**, Takaya Matsuura, Thomas Jaeken, Giacomo Pantaleoni, Zhihua Han, Nicolas C. Menicucci, Ilan Tzitrin, and Rafael N. Alexander
-  - Published article: [Phys. Rev. Lett. 134, 100602](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.100602)
+  - Published article: [Phys. Rev. Lett. 134, 100602 (2025)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.100602)
   - arXiv preprint: [arxiv.org:2408.04126](https://arxiv.org/abs/2408.04126)
 
-- **Staking out the Proton Drip-Line of Thulium at the $$N=82$$ Shell Closure**
+- **Convergence on the proton dripline in thulium**
   <!--- [PDF](/assets/pdf/papers/2206.15329.pdf) -->
   - Authors: B. Kootte, M.P. Reiter, C. Andreoiu, S. Beck, J. Bergmann, T. Brunner, T. Dickel, K.A. Dietrich, J. Dilling, E. Dunling, J. Flowerdew, L. Graham, G. Gwinner, Z. Hockenbery, C. Izzo, A. Jacobs, A. Javaji, R. Klawitter, Y. Lan, E. Leistenschneider, E.M. Lykiardopoulou, I. Miskun, I. Mukul, T. Murb ̈ock, S.F. Paul, W.R. Plaß, J. Ringuette, C. Scheidenberger, R. Silwal, R. Simpson, A. Teigelhofer, R.I. Thompson, J.L. Tracy, Jr., M. Vansteenkiste, **R. Weil**, M.E. Wieser, C. Will, and A.A. Kwiatkowski
-  <!--- - Published article: [Phys. Rev. C]-->
+  - Published article: [Phys. Rev. C 112, 024318 (2025)](https://journals.aps.org/prc/abstract/10.1103/s8h6-f6kc)
   - arXiv preprint: [arxiv.org:2412.10259](https://arxiv.org/abs/2412.10259)
 
 - **Investigating nuclear structure around $$N = 32$$ and $$N = 34$$: Precision mass measurements of neutron-rich Ca, Ti and V isotopes**
   <!-- - [PDF](/assets/pdf/papers/2206.15329.pdf) -->
   - Authors: W. S. Porter, E. Dunling, E. Leistenschneider, J. Bergmann, G. Bollen, T. Dickel, K. A. Dietrich, A. Hamaker, Z. Hockenbery, C. Izzo, A. Jacobs, A. Javaji, B. Kootte, Y. Lan, I. Miskun, I. Mukul, T. Murböck, S. F. Paul, W. R. Plaß, D. Puentes, M. Redshaw, M. P. Reiter, R. Ringle, J. Ringuette, R. Sandler, C. Scheidenberger, R. Silwal, R. Simpson, C. S. Sumithrarachchi, A. Teigelhöfer, A. A. Valverde, **R. Weil**, I. T. Yandow, J. Dilling, A. A. Kwiatkowski
-  - Published article: [Phys. Rev. C 106, 024312](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024312)
+  - Published article: [Phys. Rev. C 106, 024312 (2022)](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.106.024312)
   - arXiv preprint: [arxiv.org:2206.15329](https://arxiv.org/abs/2206.15329)
 
 ### Master's Thesis
