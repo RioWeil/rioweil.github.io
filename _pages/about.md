@@ -7,10 +7,10 @@ subtitle: PhD Physics candidate at <a href="https://physics.uchicago.edu">The Un
 profile:
   align: right
   image: self_pic.jpeg
-  #address:
-    #<p>BRIM 380</p>
-    #<p>2355 East Mall</p>
-    #<p>Vancouver, BC, V6T 1Z4</p>
+  address:
+    <p>MeMo 125</p>
+    <p>5607 S. Drexel Ave.</p>
+    <p>Chicago, IL, 60637</p>
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
