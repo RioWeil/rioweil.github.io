@@ -6,7 +6,7 @@ subtitle: PhD Physics candidate at <a href="https://physics.uchicago.edu">The Un
 
 profile:
   align: right
-  image: self_pic.jpg
+  image: self_pic.png
   address:
     <p>MeMo 125</p>
     <p>5607 S. Drexel Ave.</p>
