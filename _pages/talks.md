@@ -6,7 +6,26 @@ title: Talks
 nav: true
 nav_order: 2
 ---
+### 2025
+- **Internal Talk for UChicago Veressen Group**
+    - Materials: [Lecture Notes](/assets/pdf/talks/2025-hyperbolicphases-hannover.pdf)
+    - Title: Quantum Phases of Matter in Hyperbolic Space
+    - Date: October 2025
+    - Format: 30 minute talk
+
+- **Internal Talk for UChicago Veressen Group**
+    - Materials: [Lecture Notes](/assets/pdf/talks/2025-infcoordmodels.pdf)
+    - Title: Phase Transitions in Infinitely Coordinated Models
+    - Date: May 2025
+    - Format: Blackboard Talk
+
 ### 2024
+- **Internal Talk for UChicago Veressen Group**
+    - Materials: [Lecture Notes](/assets/pdf/talks/2024-mbqcintro.pdf)
+    - Title: An Introduction to Measurement-Based Quantum Computation
+    - Date: November 2024
+    - Format: Blackboard Talk
+
 - **MSc Thesis Presentation @ UBC**
     - Materials: [Slides](/assets/pdf/talks/2024-sptmbqcnisq-msc-ubc.pdf)
     - Title: Quantifying resource states and efficient regimes of MBQC on a superconducting processor
@@ -43,7 +62,7 @@ nav_order: 2
     - Materials: [Lecture Notes](/assets/pdf/talks/2022-nlts.pdf)
     - Title: Proof of the NLTS Theorem
     - Date: November 2022
-    - Format: 90 minute talk
+    - Format: Blackboard Talk
 
 - **Perimeter Institute Quantum Matter Workshop**
     - Materials: [Poster](/assets/pdf/talks/2022-sptmbqcnisq-mpubcutokyo.pdf)
