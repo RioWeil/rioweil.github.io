@@ -7,8 +7,14 @@ nav: true
 nav_order: 2
 ---
 ### 2025
-- **Internal Talk for UChicago Veressen Group**
-    - Materials: [Lecture Notes](/assets/pdf/talks/2025-hyperbolicphases-hannover.pdf)
+- **EQUIPTNT Workshop Munich**
+    - Materials: [Slides](/assets/pdf/talks/2025-sptmbqcnisq-equiptnt.pdf)
+    - Title: Efficient regimes of measurement-based quantum computation on a superconducting processor
+    - Date: October 2025
+    - Format: 20 minute talk
+
+- **Seminar for Leibniz University Hannover Quantum Information Group**
+    - Materials: [Slides](/assets/pdf/talks/2025-hyperbolicphases-hannover.pdf)
     - Title: Quantum Phases of Matter in Hyperbolic Space
     - Date: October 2025
     - Format: 30 minute talk
