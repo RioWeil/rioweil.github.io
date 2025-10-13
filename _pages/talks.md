@@ -8,7 +8,7 @@ nav_order: 2
 ---
 ### 2025
 - **EQUIPTNT Workshop Munich**
-    - Materials: [Slides](/assets/pdf/talks/2025-sptmbqcnisq-equiptnt.pdf)
+    - Materials: [Slides](/assets/pdf/talks/2025-sptmbqcnisq-equiptnt.pdf) - [Video](https://www.youtube.com/watch?v=99Bxvetl-cg)
     - Title: Efficient regimes of measurement-based quantum computation on a superconducting processor
     - Date: October 2025
     - Format: 20 minute talk
