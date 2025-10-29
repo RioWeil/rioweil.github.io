@@ -5,7 +5,7 @@ title: Lecture Notes
 # description: lecture notes for courses I have taken.
 nav: false
 ---
-Below are lecture notes for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoheiweil@uchicago.edu) if you spot any errors!
+Below are lecture notes/resources for courses I have taken and/or TA'd. Please send me an [email](mailto:ryoheiweil@uchicago.edu) if you spot any errors!
 
 ### Contents
 - <a href="#topics" name="#topics"> Research Topics in Condensed Matter/Quantum Information</a>
@@ -110,6 +110,32 @@ Below are lecture notes for courses I have taken and/or TA'd. Please send me an 
 - **Topics Covered:** The laws of thermodynamics, Microscopic definition of temperature, Degrees of freedom, Ideal gases, Thermodynamic processes, Heat engines, Entropy.
 - **Pre-requisites:** Basic mechanics, derivative and integral calculus.
 - **Remark:** Includes practice problems and solutions.
+
+#### Honours Introductory Classical Mechanics/E&M/Waves (UChicago PHYS 141/142/143)
+- **Files:**
+    - [PDF](/assets/pdf/projects/notes/uchi-mechanics-discussion1.pdf) (Mechanics Discussion 1 - Kinematics) 
+    - [PDF](/assets/pdf/projects/notes/uchi-mechanics-discussion7.pdf) (Mechanics Discussion 7 - Rotational Dynamics) 
+    - [PDF](/assets/pdf/projects/notes/uchi-mechanics-discussion8.pdf) (Mechanics Discussion 8 - Rotational Dynamics 2) 
+    - [PDF](/assets/pdf/projects/notes/uchi-mechanics-discussion9.pdf) (Mechanics Discussion 9 - Special Relativity) 
+    - [PDF](/assets/pdf/projects/notes/uchi-em-discussion1.pdf) (E&M Discussion 1 - Superposition and Gauss' Law)
+    - [PDF](/assets/pdf/projects/notes/uchi-em-discussion2.pdf) (E&M Discussion 2 - Energy in Fields)
+    - [PDF](/assets/pdf/projects/notes/uchi-em-discussion2.pdf) (E&M Discussion 3 - Conductors)
+    - [PDF](/assets/pdf/projects/notes/uchi-em-discussion4.pdf) (E&M Discussion 4 - Midterm Review)
+    - [PDF](/assets/pdf/projects/notes/uchi-em-discussion5.pdf) (E&M Discussion 5 - Resistors)
+    - [PDF](/assets/pdf/projects/notes/uchi-em-discussion7.pdf) (E&M Discussion 7 - Magnetic Fields)
+    - [PDF](/assets/pdf/projects/notes/uchi-em-practicefinal.pdf) (E&M Practice Final)
+    - [PDF](/assets/pdf/projects/notes/uchi-waves-discussion1.pdf) (Waves Discussion 1 - Coupled Oscillators)
+    - [PDF](/assets/pdf/projects/notes/uchi-waves-discussion2.pdf) (Waves Discussion 2 - Diatomic 1-D Crystal)
+    - [PDF](/assets/pdf/projects/notes/uchi-waves-discussion3.pdf) (Waves Discussion 3 - Fourier Series and Transform)
+    - [PDF](/assets/pdf/projects/notes/uchi-waves-practicemidterm.pdf) (Waves Practice Midterm)
+    - [PDF](/assets/pdf/projects/notes/uchi-waves-discussion5.pdf) (Waves Discussion 5 - EM Waves)
+    - [PDF](/assets/pdf/projects/notes/uchi-waves-discussion6.pdf) (Waves Discussion 6 - Relativistic Doppler Effect & Dispersion)
+    - [PDF](/assets/pdf/projects/notes/uchi-waves-discussion7.pdf) (Waves Discussion 7 - Diffraction)
+    - [PDF](/assets/pdf/projects/notes/uchi-waves-discussion8.pdf) (Waves Discussion 8 - Thermodynamics)
+    - [PDF](/assets/pdf/projects/notes/uchi-waves-practicefinal.pdf) (Waves Practice Final)
+- **Description:** Various practice problems (from discussion sections, as well as practice exams) from the yearlong honours introductory physics sequence at UChicago. Most discussion problems come with solutions.
+- **Topics Covered:** Kinematics, Rotational Dynamics, Special Relativity, Electric and Magnetic Fields, Gauss' Law, Energy in Fields, Electrostatic and Vector Potential, Conductors, Resistors, Capacitors, Coupled Oscillators, Driven 
+- **Pre-requisites:** Derivative and integral calculus.
 
 ### Mathematics <a id="math" name="math"></a>
 
