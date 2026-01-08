@@ -7,6 +7,12 @@ nav: true
 nav_order: 2
 ---
 ### 2025
+- **Internal Talk for UChicago Veressen Group**
+    - Materials: [Lecture Notes](/assets/pdf/talks/2025-qLDPCphysics.pdf)
+    - Title: Intro to qLDPC Physics
+    - Date: November 2025
+    - Format: Blackboard Talk
+
 - **EQUIPTNT Workshop Munich**
     - Materials: [Slides](/assets/pdf/talks/2025-sptmbqcnisq-equiptnt.pdf) - [Video](https://www.youtube.com/watch?v=99Bxvetl-cg)
     - Title: Efficient regimes of measurement-based quantum computation on a superconducting processor
