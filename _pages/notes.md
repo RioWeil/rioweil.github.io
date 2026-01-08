@@ -33,6 +33,12 @@ Below are lecture notes/resources for courses I have taken and/or TA'd. Please s
 - **Topics Covered:** Formalism of quantum mechanics, Classical and quantum query complexity, Time complexity, Simon's problem, Period finding, Factoring/Shor's algorithm, The Hidden subgroup problem, The Element distinctness problem, Amplitude amplification, Quantum walks, Adversary method, Quantum divide and conquer, Hamiltonian simulation, Quantum signal processing.
 - **Pre-requisites:** Linear algebra. Quantum mechanics/information, Analysis of algorithms, and probability may also be useful.
 
+#### Physical Computation (UChicago CMSC 391)
+- **Files:** [PDF](/assets/pdf/projects/notes/uchi-comp-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/CMSC391-notes)
+- **Description:** Notes taken (live) from Uchicago's CMSC 391. The course is a topics course in quantum algorithms/complexity theory.
+- **Topics Covered:** Formalism of quantum mechanics, Computational models, Computational complexity theory, Quantum algorithms.
+- **Pre-requisites:** Linear algebra. Quantum mechanics/information, Analysis of algorithms, and probability may also be useful.
+
 ### Field Theory <a id="fieldtheory" name="fieldtheory"></a>
 
 #### Quantum Field Theory I (UChicago PHYS 443)
