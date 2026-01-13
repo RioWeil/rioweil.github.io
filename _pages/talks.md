@@ -7,6 +7,12 @@ nav: true
 nav_order: 2
 ---
 ### 2025
+- **UChicago-UTokyo Quantum Information Theory Workshop**
+    - Materials: [Lecture Notes](/assets/pdf/talks/2025-hyperbolicphases-uchiutokyos.pdf)
+    - Title: Intro to qLDPC Physics
+    - Date: December 2025
+    - Format: 20 minute talk
+
 - **Internal Talk for UChicago Veressen Group**
     - Materials: [Lecture Notes](/assets/pdf/talks/2025-qLDPCphysics.pdf)
     - Title: Intro to qLDPC Physics
