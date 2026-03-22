@@ -6,6 +6,13 @@ title: Talks
 nav: true
 nav_order: 2
 ---
+### 2026
+- **APS Global Summit 2026**
+    - Materials: [Slides](/assets/pdf/talks/2026-hyperbolicphases-aps.pdf)
+    - Title: Quantum Phases of Matter in Hyperbolic Space
+    - Date: March 2026
+    - Format: 10 minute talk
+
 ### 2025
 - **UChicago-UTokyo Quantum Information Theory Workshop**
     - Materials: [Slides](/assets/pdf/talks/2025-hyperbolicphases-uchiutokyo.pdf)
