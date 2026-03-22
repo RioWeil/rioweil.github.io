@@ -6,6 +6,10 @@ title: Course Projects
 nav: false
 ---
 
+### (UChicago) PHYS 364: General Relativity Final Paper
+- **Files:** [Paper](/assets/pdf/projects/courses/p364-paper.pdf)
+- **Description:** Expository paper giving the background and argument of the [Hayden-Preskill thought experiment](https://arxiv.org/abs/0708.4025).
+
 ### (UChicago) PHYS 334: Experimental Physics Reports
 - **Files:** [Gamma Report](/assets/pdf/projects/courses/p334-gamma-report.pdf) - [pNMR Report](/assets/pdf/projects/courses/p334-pnmr-report.pdf) - [Xray Report](/assets/pdf/projects/courses/p334-xray-report.pdf)
 - **Description:** Reports for gamma-ray cross section, pulsed nuclear magnetic resonance, and x-ray experiments conducted for UChicago's graduate experimental physics course.
