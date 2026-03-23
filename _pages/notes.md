@@ -39,7 +39,7 @@ Below are lecture notes/resources for courses I have taken and/or TA'd. Please s
 - **Topics Covered:** Formalism of quantum mechanics, Computational models, Computational complexity theory, Quantum algorithms.
 - **Pre-requisites:** Linear algebra. Quantum mechanics/information, Analysis of algorithms, and probability may also be useful.
 
-### Field Theory <a id="fieldtheory" name="fieldtheory"></a>
+### (Quantum + Statistical) Field Theory <a id="fieldtheory" name="fieldtheory"></a>
 
 #### Quantum Field Theory I (UChicago PHYS 443)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-qft1-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS443-notes)
@@ -98,9 +98,14 @@ Below are lecture notes/resources for courses I have taken and/or TA'd. Please s
 
 ### Classical Physics <a id="classical" name="classical"></a>
 
+#### General Relativity (UChicago PHYS 364)
+- **Files:** [PDF](/assets/pdf/projects/notes/uchi-gr-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS364-notes)
+- **Description:** Notes taken (live) from UChicago's PHYS 364. The course is a graduate-level introduction to general relativity, following Carroll's *Spacetime and Geometry* and Wald's *General Relativity*.
+- **Topics Covered:** Special relativity, Electromagnetism, Differential Geometry, Curvature, Einstein's Equations, Weak Gravity, The Schwarzchild Solution, Stars, Black Holes, Cosmology.
+
 #### Advanced Electromagnetism II (UChicago PHYS 323)
 - **Files:** [PDF](/assets/pdf/projects/notes/uchi-em2-notes.pdf) - [TeX Source (GitHub)](https://github.com/RioWeil/PHYS323-notes)
-- **Description:** Notes taken (live) from UChicago's PHYS 323. The course covers relativistic electrodynamics, and other advanced topics in electromagnetism, and uses Bob Wald's *Advanced Classical Electromagnetism* (second half) as the primary textbook.
+- **Description:** Notes taken (live) from UChicago's PHYS 323. The course covers relativistic electrodynamics and other advanced topics in electromagnetism, and uses Bob Wald's *Advanced Classical Electromagnetism* (second half) as the primary textbook.
 - **Topics Covered:** Special relativity, Relativistic formulations of the free particle & Maxwell theory, The Lagrangian formulation of electromagnetism, Symmetries and the stress tensor, Plane waves, Charged particle motion and radiation, Radiation from continuous Sources, Electromagnetic fields in media, The Lorentz model for permittivity, Magnetohydrodynamics, and Geometric optics. 
 
 #### Classical Mechanics II (UBC PHYS 306)
