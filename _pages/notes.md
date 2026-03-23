@@ -9,7 +9,7 @@ Below are lecture notes/resources for courses I have taken and/or TA'd. Please s
 
 ### Contents
 - <a href="#topics" name="#topics"> Research Topics in Condensed Matter/Quantum Information</a>
-- <a href="#fieldtheory" name="#fieldtheory"> Field Theory</a>
+- <a href="#fieldtheory" name="#fieldtheory"> (Quantum + Statistical) Field Theory</a>
 - <a href="#cm" name="#cm"> Condensed Matter</a>
 - <a href="#qm" name="#qm"> Quantum Mechanics</a>
 - <a href="#classical" name="#classical"> Classical Physics</a>
