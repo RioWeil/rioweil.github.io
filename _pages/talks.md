@@ -7,26 +7,38 @@ nav: true
 nav_order: 2
 ---
 ### 2026
-- **APS Global Summit 2026**
+- **Physics of Quantum Information II @ Perimeter**
+    - Materials: [Poster](/assets/pdf/talks/2026-hyperbolicphases-physicsqinfo2.HEIC)
+    - Title: Quantum Phases of Matter in Hyperbolic Space
+    - Date: May 2026
+    - Format: "Poster" (Hand-drawn)
+
+- **APS Global Summit 2026 @ Denver**
     - Materials: [Slides](/assets/pdf/talks/2026-hyperbolicphases-aps.pdf)
     - Title: Quantum Phases of Matter in Hyperbolic Space
     - Date: March 2026
     - Format: 10 minute talk
 
+- **UIUC-UChicago Workshop @ UChicago**
+    - Materials: [Poster](/assets/pdf/talks/2026-hyperbolicphases-uiucuchi.pdf)
+    - Title: Quantum Phases of Matter in Hyperbolic Space
+    - Date: February 2026
+    - Format: Poster
+
 ### 2025
-- **UChicago-UTokyo Quantum Information Theory Workshop**
+- **UChicago-UTokyo Quantum Information Theory Workshop @ UChicago**
     - Materials: [Slides](/assets/pdf/talks/2025-hyperbolicphases-uchiutokyo.pdf)
     - Title: Quantum Phases of Matter in Hyperbolic Space
     - Date: December 2025
     - Format: 20 minute talk
 
-- **Internal Talk for UChicago Veressen Group**
+- **Internal Talk for Veressen Group @ UChicago**
     - Materials: [Lecture Notes](/assets/pdf/talks/2025-qLDPCphysics.pdf)
     - Title: Intro to qLDPC Physics
     - Date: November 2025
     - Format: Blackboard Talk
 
-- **EQUIPTNT Workshop Munich**
+- **EQUIPTNT Workshop @ TUM**
     - Materials: [Slides](/assets/pdf/talks/2025-sptmbqcnisq-equiptnt.pdf) - [Video](https://www.youtube.com/watch?v=99Bxvetl-cg)
     - Title: Efficient regimes of measurement-based quantum computation on a superconducting processor
     - Date: October 2025
