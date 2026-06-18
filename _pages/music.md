@@ -40,6 +40,10 @@ nav: false
 - **Files:** [PDF](/assets/pdf/music/SeasonsofLove-OriginalBroadwayCastofRent.pdf) - [Musescore](/assets/pdf/music/SeasonsofLove-OriginalBroadwayCastofRent.mscz)
 - **Description:** An SATBarB arrangement of [Seasons of Love](https://www.youtube.com/watch?v=hj7LRuusFqo) by the Original Broadway Cast of Rent. The arrangement is a transcription/edit of Sinfonia's [A capella cover](https://www.youtube.com/watch?v=udtJSgOds0s). A performance of the arrangement by my (former) a cappella group Choral Reef can be found [here](https://www.youtube.com/watch?v=sfmHd9AKK4w).
 
+##### Still Feel (opb. half alive)
+- **Files:** [PDF](/assets/pdf/music/StillFeel-HalfAlive.pdf) - [Musescore](/assets/pdf/music/StillFeel-HalfAlive.mscz)
+- **Description:** An SATB arrangement of [still feel.](https://www.youtube.com/watch?v=KOOhPfMbuIQ) by the band half alive.
+
 ##### Universe (opb. Official 髭男dism)
 - **Files:** [PDF](/assets/pdf/music/Universe-Official髭男dism.pdf) - [Musescore](/assets/pdf/music/Universe-Official髭男dism.mscz)
 - **Description:** A SATBarB arrangement of [Universe](https://www.youtube.com/watch?v=6lnS-8FVod4) by Official 髭男dism. The arrangement is a mix of transcribed elements from is-me's [piano cover](https://www.youtube.com), Shimo-Ren's [A capella cover](https://www.youtube.com/watch?v=4-QO8myhHSI), and my own ideas. I performed a cover with Lydia Li, Churan Chang, Doris Zeng, Myles Hemy-Bain, Caleb Chuang, and Weiyoung Tan which you can find [here](https://drive.google.com/drive/u/0/search?q=universe)
