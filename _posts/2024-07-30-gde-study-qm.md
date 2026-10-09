@@ -1307,7 +1307,7 @@ $$
 J\sum_{i \text{odd}} \langle \Psi \rvert \vec{S}_i \cdot \vec{S}_{i+1} \lvert \Psi \rangle = -\frac{N-1}{2}\frac{3}{4}\hbar^2J = -(N-1)\frac{3}{8}.
 $$
 
-Now studying the second sum, we have $(N-1)/2$$ terms of the form:
+Now studying the second sum, we have $$(N-1)/2$$ terms of the form:
 
 $$ \langle i, i+1 \rvert_0\langle i+2, i+3 \rvert_0 \vec{S}_{i+1} \cdot \vec{S}_{i+2} \rvert i, i+1\rangle_0 \rvert i+2, i+3\rangle_0$$
 
@@ -1594,7 +1594,7 @@ $$
 \delta E = \kappa\left(\frac{\hbar^2}{4} - \left(-\frac{3\hbar^2}{4}\right)\right) = \kappa\hbar^2
 $$
 
-Thus the energy splitting in (c) can be mimicked via the spin interaction. Specifically, we tune $$\kappa$ to:
+Thus the energy splitting in (c) can be mimicked via the spin interaction. Specifically, we tune $$\kappa$$ to:
 
 $$
 \color{blue}{\kappa = \frac{\delta E}{\hbar^2}.}
@@ -1736,7 +1736,7 @@ But $$\psi_0(\pm \frac{\pi}{2}x_0) = 0$$ means that $$\tilde{\psi}_0(\pm \frac{\
 
 (d) Since $$\tilde{V}(x) = b\left[\sec^2\frac{x}{x_0} + \tan^2\frac{x}{x_0}\right] = W'(x) + W^2(x)$$, recalling that $$\frac{\partial}{\partial x} \tan x = \sec^2 x$$ we observe $$\color{blue}{W(x) = \frac{1}{x_0}\tan(\frac{x}{x_0})}$$ works with with $$\color{blue}{b = \frac{1}{x_0^2}}$$. Then since $$V(x) = a = W'(x) - W^2(x)$$ we find that $$\color{blue}{a = -\frac{1}{x_0^2}.}$$.
 
-(e) We find the spectrum and eigenstates for the dual potential and use this to construct the spectrum and eigenstates for the potential of Eq. \eqref{eq:dualtanpotential}. The Dirchlet boundary conditions of $$\psi(\pm \frac{\pi}{2}x_0) = 0$$ means that the dual problem is simply that of the infinite square well with walls at $$x = \pm \frac{\pi}{2}x_0$$ and with the bottom of the potential shifted by $-V_0 = \frac{\hbar^2}{2m}\frac{1}{x_0^2}$$. These we recall to be:
+(e) We find the spectrum and eigenstates for the dual potential and use this to construct the spectrum and eigenstates for the potential of Eq. \eqref{eq:dualtanpotential}. The Dirchlet boundary conditions of $$\psi(\pm \frac{\pi}{2}x_0) = 0$$ means that the dual problem is simply that of the infinite square well with walls at $$x = \pm \frac{\pi}{2}x_0$$ and with the bottom of the potential shifted by $$-V_0 = \frac{\hbar^2}{2m}\frac{1}{x_0^2}$$. These we recall to be:
 
 $$
 \psi_n(x) = \sin(n(\frac{x}{x_0} - \frac{\pi}{2}))
@@ -1926,7 +1926,7 @@ $$
 
 Thus the $$\lvert \psi_k \rangle$$ states are eigenstates with eigenvalue $$\color{blue}{\frac{1 - \cos(k\Delta)}{\Delta^2}}$$. The $$k$$ enters the eigenvalue through the cosine term. As $$k \to 0$$, $$\color{blue}{E_k \to 0.}$$
 
-(c) In the presence of the barrier, the Hamiltonian $$H$ is modified:
+(c) In the presence of the barrier, the Hamiltonian $$H$$ is modified:
 
 $$
 H = -\frac{1}{2\Delta^2}(T + T^\dagger - 2I) + V\lvert 0 \rangle \langle 0 \rvert
@@ -1940,6 +1940,7 @@ $$
 
 $$
 \langle n \vert S_k \rangle = Te^{ikn\Delta} \quad n \geq 0
+$$
 
 $$
 \langle 0 \vert S_k \rangle = 1 + R = T
